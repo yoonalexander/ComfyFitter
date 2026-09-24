@@ -1,10 +1,22 @@
+<div align="center">
+
 # ComfyFitter
 
 AI-powered virtual clothing try-on using **ComfyUI** and **Qwen Image 2.1 Image Edit**.
 
+[![Python][python-shield]][python-url]
+[![ComfyUI][comfyui-shield]][comfyui-url]
+[![Qwen Image 2.1][qwen-shield]][qwen-url]
+[![Project Status][status-shield]][repo-url]
+[![GitHub Stars][stars-shield]][stars-url]
+[![GitHub Issues][issues-shield]][issues-url]
+[![GitHub License][license-shield]][license-url]
+
+</div>
+
 The goal of this project is to let a user upload a photo of themselves, provide one or more clothing reference images, and generate a realistic preview of how that clothing could look on them while preserving their identity, pose, body proportions, lighting, and background as closely as possible.
 
-> This project is intended for visual outfit preview, not exact physical sizing or garment fit prediction.
+> ComfyFitter is intended for visual outfit preview, not exact physical sizing or garment fit prediction.
 
 ---
 
@@ -606,3 +618,28 @@ Possible future features include:
 - model and workflow comparison
 
 The core architecture should remain modular so that Qwen Image 2.1, ComfyUI workflows, segmentation models, and future image-editing models can evolve independently from the product UI.
+
+---
+
+## Badge References
+
+[python-shield]: https://img.shields.io/badge/Python-3.10%2B-3776AB?style=flat&logo=python&logoColor=white
+[python-url]: https://www.python.org/
+
+[comfyui-shield]: https://img.shields.io/badge/ComfyUI-000000?style=flat
+[comfyui-url]: https://github.com/comfyanonymous/ComfyUI
+
+[qwen-shield]: https://img.shields.io/badge/Qwen-Image%202.1-6C5CE7?style=flat
+[qwen-url]: https://huggingface.co/Qwen
+
+[status-shield]: https://img.shields.io/badge/status-in%20development-orange?style=flat
+[repo-url]: https://github.com/yoonalexander/ComfyFitter
+
+[stars-shield]: https://img.shields.io/github/stars/yoonalexander/ComfyFitter?style=flat&logo=github
+[stars-url]: https://github.com/yoonalexander/ComfyFitter/stargazers
+
+[issues-shield]: https://img.shields.io/github/issues/yoonalexander/ComfyFitter?style=flat&logo=github
+[issues-url]: https://github.com/yoonalexander/ComfyFitter/issues
+
+[license-shield]: https://img.shields.io/github/license/yoonalexander/ComfyFitter?style=flat
+[license-url]: https://github.com/yoonalexander/ComfyFitter/blob/main/LICENSE
