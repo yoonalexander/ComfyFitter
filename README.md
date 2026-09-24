@@ -252,7 +252,7 @@ This allows:
 ## Suggested Repository Structure
 
 ```text
-virtual-try-on/
+comfyfitter/
 |
 +-- frontend/
 |   +-- src/

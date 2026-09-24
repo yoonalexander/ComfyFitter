@@ -1,4 +1,4 @@
-# Virtual Try-On App Design Document
+# ComfyFitter App Design Document
 
 **Status:** Draft v0.1  
 **Primary inference backend:** ComfyUI  
@@ -719,7 +719,7 @@ Stored generation metadata should include:
 
 ```text
 +------------------------------------------------+
-|                Virtual Try-On                  |
+|                ComfyFitter                  |
 +------------------------------------------------+
 
   Your Photo
@@ -1022,7 +1022,7 @@ Already achieved:
 - official Image Edit template working
 - reference-based coat color editing validated
 
-### Phase 1: Manual Virtual Try-On
+### Phase 1: Manual ComfyFitter
 
 Goal:
 
@@ -1153,7 +1153,7 @@ Requirements:
 ## 27. Suggested Repository Structure
 
 ```text
-virtual-try-on/
+comfyfitter/
 |
 +-- frontend/
 |   +-- src/
