@@ -1,4 +1,4 @@
-# Virtual Try-On
+# ComfyFitter
 
 AI-powered virtual clothing try-on using **ComfyUI** and **Qwen Image 2.1 Image Edit**.
 
