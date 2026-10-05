@@ -13,6 +13,8 @@ export default function handler(request, response) {
     response.setHeader('Allow', 'GET')
     return response.status(405).json({error:'Method not allowed'})
   }
+  if (process.env.COMFYFITTER_WEB_ENABLED !== 'true')
+    return response.status(200).json({url:null, available:false, paused:true})
   const url = roomURL(process.env.COMFYFITTER_PRIVATE_URL)
   return response.status(200).json({url, available:!!url})
 }

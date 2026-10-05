@@ -7,11 +7,17 @@ The local roadmap and deployment-file preparation are complete for the offered f
 Implementation and a passed live quality gate are separate; unqualified
 combinations remain unavailable. Live hosted release is excluded by the owner.
 
-The owner's subsequent request on 2026-10-04 authorizes free private web access
+The owner subsequently prioritized the local desktop application on 2026-10-04.
+The experimental web tunnel is stopped and further web work is deferred.
+See [desktop setup](DESKTOP.md) for the native window and local startup/recovery.
+
+The owner's earlier request on 2026-10-04 authorized free private web access
 through Vercel and the existing GPU PC. That additional work is tracked in
 [WEB_GPU_PC.md](WEB_GPU_PC.md), with 14 new gateway checks (91 backend checks
-total) and two web-entry checks passing. Email admission, protected tunnel
-sign-in and actual remote generation remain pending; paid hosting is excluded.
+total) and two web-entry checks passing. Vercel is deployed and connected to the
+running tunnel; one-email admission and anonymous rejection are verified. The
+owner's initial PIN opened the fitting room, but session persistence and actual
+remote generation remain pending; paid hosting is excluded.
 
 | Phase | Current evidence | Required remaining evidence |
 |---|---|---|
@@ -55,7 +61,9 @@ Nonterminal feature submissions are deliberately not resubmitted. Preserve
 intentional local work, model files and evaluation evidence. Never use test-only
 reports to enable the real app.
 
-The owner selected MIT and no paid services. Hosted work is authorized as file
-preparation only. Model rights are separate in THIRD_PARTY_NOTICES.md.
+The owner selected MIT and no paid services. The later 2026-10-04 request
+additionally authorizes free Vercel access using the existing Windows GPU PC;
+paid GPU hosting remains excluded. Model rights are separate in
+THIRD_PARTY_NOTICES.md.
 See [BACKEND.md](BACKEND.md), [BROWSER.md](BROWSER.md) and
 [DEPLOYMENT.md](DEPLOYMENT.md) for implementation details.

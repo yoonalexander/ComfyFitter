@@ -1,4 +1,5 @@
 @import "tailwindcss";
+.connection-recovery{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px;margin:16px 0;padding:16px 20px;border:1px solid #BCC8D0;border-radius:6px;background:#F9FBFC}.connection-recovery p{flex:1;min-width:220px;font-size:13px}
 
 :root{font-family:"Segoe UI",Arial,sans-serif;color:#172B3B;background:#E7EDF1;font-synthesis:none;--paper:#F9FBFC;--ink:#172B3B;--denim:#335C77;--acid:#D9E67A;--line:#BCC8D0;--muted:#526673;line-height:1.5}
 *{box-sizing:border-box}body{margin:0;min-width:320px}button,input,select{font:inherit}button,a,select,input{touch-action:manipulation}button{cursor:pointer}button:disabled{cursor:not-allowed;opacity:.46}a{color:inherit}h1,h2,h3,p{margin:0}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid var(--denim);outline-offset:4px}select{width:100%;min-height:46px;border:1px solid var(--line);border-radius:5px;padding:9px 12px;color:var(--ink);background:white}select:disabled{opacity:.7}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}

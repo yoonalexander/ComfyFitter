@@ -1,5 +1,10 @@
 # Free web access through the existing GPU PC
 
+**Deferred:** the owner returned priority to the local desktop app on 2026-10-04
+after the experimental sign-in session did not persist. The tunnel is stopped.
+Use the Windows ComfyFitter shortcut; see [desktop setup](DESKTOP.md). The
+remaining connection/remote-generation gates below are not complete.
+
 The owner authorized Vercel web setup using the existing GPU PC on 2026-10-04.
 No paid hosting is authorized. The website is a stable Vercel entry point; the
 actual fitting room, durable jobs and photos stay on the evaluated Windows PC.
@@ -47,6 +52,10 @@ printed HTTPS tunnel origin, then redeploy the `web/` project. Never put an emai
 token, private connector host, photo or model in that variable. Open the Vercel
 website, follow its fitting-room link and complete Cloudflare's email PIN sign-in.
 
+The entry now defaults to paused even when a stale tunnel URL remains configured.
+Do not set `COMFYFITTER_WEB_ENABLED=true` until the owner resumes web work and
+the unresolved session/remote-generation gate has passed.
+
 Use `scripts/Stop-ComfyFitterWeb.ps1` to stop only the verified launcher-owned
 connector and gateway. It preserves the local app and GPU worker. The PC must
 remain on and connected. Quick Tunnel URLs change after a restart; update the
@@ -61,5 +70,15 @@ admission, deny-native/arbitrary paths, credential stripping, mutation checks,
 request limiting, failed-upstream behavior and persistent idempotent daily limits.
 The Vercel destination has separate Node checks for safe HTTPS origin handling
 and an explicit pending state. These do not establish successful tunnel login or
-remote GPU generation. Live URL, email admission and real web generation must be
-verified after the owner supplies the approved email and signs in.
+remote GPU generation.
+
+On 2026-10-04, `https://comfyfitter.vercel.app` was deployed on Vercel Hobby and
+configured to open the running protected tunnel. The connector confirmed exactly
+one approved address. Anonymous requests to the UI, health, library and native
+routes redirected to the authentication broker. Live gateway checks confirmed
+application/GPU readiness, rejection of direct gateway requests and rejection of
+native worker routes. The approved owner's PIN opened the fitting room once, but
+the session did not persist for later requests. A fresh sign-in and session
+persistence investigation remain necessary before claiming successful remote
+generation. No remote GPU job has been submitted yet. Private deployment evidence
+is retained in ignored `.local/web-deployment-verification.json`.

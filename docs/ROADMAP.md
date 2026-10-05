@@ -10,6 +10,13 @@ launch remains distinguishable from prepared deployment artifacts. See
 
 ## Product and architecture decision
 
+Updated owner priority, 2026-10-04: stabilize the local desktop application before
+resuming web deployment. The WebView2 wrapper reuses the qualified local UI,
+backend and GPU runtime, adds automatic service startup and explicit recovery,
+and retains active jobs across window closure. See [DESKTOP.md](DESKTOP.md).
+The experimental web tunnel is stopped; its session/remote-generation gate is
+still incomplete. No paid hosting is authorized.
+
 Build a full stack web application that runs locally first. Use React, Vite, TypeScript, and Tailwind CSS for the browser UI; FastAPI, Pydantic, and Pillow for the application backend; SQLite for durable local job records; and the existing ComfyUI installation for GPU inference.
 
 The application provides visual clothing previews, not physical fit or size predictions. Start with one person photo and one upper-body garment reference. Offer only categories that pass the quality gate.

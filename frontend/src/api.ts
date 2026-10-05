@@ -23,7 +23,10 @@ async function response(path: string, options: RequestInit = {}) {
   return result
 }
 export async function json<T>(path: string, options: RequestInit = {}): Promise<T> {
-  return (await response(path, options)).json()
+  const result = await response(path, options)
+  if (result.redirected || !result.headers.get('content-type')?.includes('application/json'))
+    throw new ApiError(503,'CONNECTION_REOPEN_REQUIRED','The application connection needs to be reopened. Your running preview is preserved.')
+  return result.json()
 }
 export async function photo(path: string, signal?: AbortSignal): Promise<Blob> {
   const result = await response(path, { signal })
@@ -51,5 +54,6 @@ export async function hash(file: File) {
   return Array.from(new Uint8Array(bytes), b => b.toString(16).padStart(2,'0')).join('')
 }
 export function message(error: unknown) {
-  return error instanceof ApiError ? error.message : 'The application could not be reached. Keep this page open and check the connection.'
+  if (error instanceof ApiError || error instanceof Error && !(error instanceof TypeError) && error.name!=='AbortError' && error.name!=='TimeoutError') return error.message
+  return 'The application connection was interrupted. Reconnect local services or close and reopen ComfyFitter.'
 }

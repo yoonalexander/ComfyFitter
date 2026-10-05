@@ -1,0 +1,12 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ComfyFitter</title><style>
+body{margin:0;background:#E7EDF1;color:#172B3B;font:16px/1.6 'Segoe UI',sans-serif;display:grid;place-items:center;min-height:100vh}main{width:min(600px,80%);padding:40px;background:#F9FBFC;border:1px solid #BCC8D0;border-radius:10px}h1{font-size:44px;line-height:1.15;margin:20px 0}small{color:#526673}button{font:inherit;border:1px solid #335C77;border-radius:5px;padding:12px 20px;background:#D9E67A;color:#172B3B;cursor:pointer}button:disabled{opacity:.5;cursor:wait}button:focus-visible{outline:3px solid #335C77;outline-offset:3px}#status{margin:20px 0;min-height:60px}#error{white-space:pre-wrap;color:#8d2734}#retry{display:none}footer{margin-top:30px;font-size:13px;color:#526673}</style>
+<main><small>CF · ComfyFitter · Desktop</small><h1>Your fitting room,<br>on your PC.</h1>
+<p id="status" role="status">Starting your local fitting room…</p><p id="error" role="alert"></p>
+<button id="retry">Retry startup</button><footer>Photos and image generation stay on this device.<br>Closing the window leaves running jobs safe to resume.</footer></main>
+<script>
+const status=document.querySelector('#status'),error=document.querySelector('#error'),retry=document.querySelector('#retry');
+async function update(){try{const value=await window.pywebview.api.status();status.textContent=value.state==='error'?'Startup needs attention':value.message;error.textContent=value.state==='error'?value.message:'';retry.style.display=value.state==='error'?'inline-block':'none'}catch{status.textContent='The desktop connection was interrupted. Close and reopen ComfyFitter.'}}
+retry.addEventListener('click',async()=>{retry.disabled=true;error.textContent='';status.textContent='Retrying startup…';await window.pywebview.api.repair();retry.disabled=false;await update()});
+window.addEventListener('pywebviewready',()=>{update();setInterval(update,1000)});
+</script></html>

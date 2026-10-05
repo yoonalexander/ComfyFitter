@@ -4,6 +4,7 @@ import { ApiError, hash, inputPath, json, message, photo, resultPath, validatePh
 import type { Category, Health, Job } from './api'
 import Upload, { useObjectURL } from './Upload'
 import SavedLooks from './SavedLooks'
+import { desktopAPI } from './desktop'
 
 const IDS = 'comfyfitter.temporaryJobs.v1', ACTIVE = 'comfyfitter.activeJob.v1', PENDING = 'comfyfitter.pending.v1'
 const labels: Record<Category,string> = {shirt:'Shirt',hoodie:'Hoodie',jacket:'Jacket',coat:'Coat'}
@@ -31,6 +32,8 @@ function initialPending() {
 export default function App() {
   const [health, setHealth] = useState<Health | null>(null), [serviceError,setServiceError] = useState('')
   const [pollError,setPollError] = useState('')
+  const [desktop,setDesktop] = useState(!!desktopAPI()), [repairing,setRepairing] = useState(false)
+  const [connectionRevision,setConnectionRevision] = useState(0)
   const [ids,setIds] = useState(initialIds)
   const [jobId,setJobId] = useState<string | null>(() => { const id = read<string | null>(ACTIVE,null); return id && uuid.test(id) ? id : null })
   const [job,setJob] = useState<Job | null>(null), [pending,setPending] = useState(initialPending)
@@ -45,6 +48,7 @@ export default function App() {
   const [now,setNow] = useState(Date.now()), [notice,setNotice] = useState('')
   const personURL = useObjectURL(person), resultURL = useObjectURL(result)
   const submitting = useRef(false), selection = useRef(jobId)
+  const reportedReady = useRef(false)
   const pickSequence = useRef({person:0,garment:0})
   const extraSequence = useRef({back:0,side:0,detail:0,outer:0})
   const active = !!job && (job.state === 'queued' || job.state === 'processing' || job.upstream_active)
@@ -65,6 +69,31 @@ export default function App() {
   }
 
   useEffect(() => {
+    const connected = () => setDesktop(!!desktopAPI())
+    window.addEventListener('pywebviewready',connected)
+    connected()
+    return () => window.removeEventListener('pywebviewready',connected)
+  }, [])
+
+  useEffect(() => {
+    if (desktop && health?.comfyui.ready && !serviceError && !reportedReady.current) {
+      reportedReady.current=true
+      void desktopAPI()?.ready().catch(() => { reportedReady.current=false })
+    }
+  }, [desktop,health,serviceError])
+
+  async function repairConnection() {
+    if (repairing) return
+    setRepairing(true)
+    try {
+      const result = await desktopAPI()?.repair()
+      if (result && result.state!=='ready') setServiceError(result.message)
+      else { setServiceError(''); setConnectionRevision(value => value+1) }
+    } catch { setServiceError('The desktop connection was interrupted. Close and reopen ComfyFitter.') }
+    finally { setRepairing(false) }
+  }
+
+  useEffect(() => {
     const controller = new AbortController(); let timer: ReturnType<typeof setTimeout>
     async function poll() {
       try {
@@ -76,7 +105,7 @@ export default function App() {
       if (!controller.signal.aborted) timer = setTimeout(poll,5000)
     }
     void poll(); return () => { controller.abort(); clearTimeout(timer) }
-  }, [])
+  }, [connectionRevision])
 
   useEffect(() => {
     if (!jobId) return
@@ -261,6 +290,10 @@ export default function App() {
     <main><div className="workspace-heading"><div><p className="eyebrow">A different garment. Still you.</p><h1>Try a new look.</h1><p className="intro">Pair your photo with a garment reference to create a visual preview.</p></div>
       <button type="button" className="secondary-button" disabled={active || busy || !!pending} onClick={newPreview}>New preview <span aria-hidden="true">↗</span></button></div>
       {(error || serviceError || pollError) && <div className="alert" role="alert">{error || serviceError || pollError}</div>}
+      {(serviceError || health && !health.comfyui.ready) && <div className="connection-recovery">
+        <p>{desktop ? 'Restore the local services to continue. Running previews and saved looks are preserved.' : 'Open the ComfyFitter desktop shortcut to start the local services. Waiting here does not start them.'}</p>
+        {desktop && <button type="button" className="secondary-button" disabled={repairing} onClick={() => void repairConnection()}>{repairing ? 'Starting local services…' : 'Reconnect local services'}</button>}
+      </div>}
       {notice && <p className="notice" role="status">{notice}</p>}
       {health && !health.comfyui.ready && <div className="setup-note"><strong>{badge}.</strong> {health.comfyui.error?.message}
         {!!(health.comfyui.error?.missing_models?.length || health.comfyui.error?.missing_nodes?.length) && <details><summary>Setup details</summary><p>{[...health.comfyui.error.missing_nodes ?? [],...health.comfyui.error.missing_models ?? []].join(', ')}</p></details>}</div>}

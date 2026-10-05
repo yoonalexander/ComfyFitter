@@ -22,6 +22,12 @@ The goal of this project is to let a user upload a photo of themselves, provide 
 
 ## Current Status
 
+**Desktop first:** open the **ComfyFitter** shortcut on this Windows PC. The native
+window starts/reuses the local app and GPU service and offers startup/reconnection
+recovery. See [desktop setup and behavior](docs/DESKTOP.md). Web deployment is
+deferred; the experimental tunnel is stopped after its sign-in session failed
+to persist.
+
 The local application is implemented, its single-garment workflow is validated,
 and its live backend/browser acceptance checks have passed.
 

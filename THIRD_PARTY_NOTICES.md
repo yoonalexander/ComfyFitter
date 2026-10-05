@@ -42,6 +42,17 @@ ComfyUI and custom nodes are separate prerequisites with their own upstream
 licenses. Packaging/distribution must inventory the actual dependency artifacts;
 the application license does not cover them.
 
+## Windows desktop window dependencies
+
+The desktop window installs pywebview 6.2.1 (BSD-3-Clause), pythonnet 3.2.0
+(MIT), clr_loader 0.3.1 (MIT), Bottle 0.13.4 (MIT), and proxy_tools 0.1.0
+(MIT). These dependencies are separate from the original MIT application code.
+Their installed packages retain upstream license notices. The current desktop
+setup reuses this checkout and the pre-existing ComfyUI/model installation;
+it does not bundle or redistribute the model weights. A future standalone
+installer must retain the dependency notices and review WebView2 distribution
+requirements. See [desktop setup](docs/DESKTOP.md).
+
 ## Optional local segmentation investigation
 
 The protected-region experiment uses
