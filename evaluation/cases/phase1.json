@@ -1,0 +1,379 @@
+{
+  "protocol_version": "phase1_v1",
+  "status": "admitted_for_evaluation",
+  "seeds": [
+    2026093001,
+    2026093002
+  ],
+  "coverage_review": "Five distinct subjects cross four categories, with visible variation in body silhouette and skin tone, front/profile/three-quarter views, crossed arms, backpack/hair/hand/bouquet occlusion, studio/directional/coastal/field light. Printed hoodie and ornate jacket provide pattern cases. Limited to five subjects and five garment references (one shirt, one hoodie, two jackets, one coat); four subjects are upstream example imagery whose synthetic status is unknown, so this is an engineering benchmark, not representative customer validation.",
+  "cases": [
+    {
+      "id": "shirt_01",
+      "category": "shirt",
+      "coverage_target": "Front/full body, backpack straps and hands in pockets",
+      "person_image": "assets/upstream/casual_male_portrait.png",
+      "garment_image": "assets/upstream/clothing_light_blue_denim_shirt.png",
+      "garment_features": [
+        "light-blue denim",
+        "pointed fold-down collar",
+        "pale button placket",
+        "single left chest patch pocket",
+        "long sleeves with buttoned cuffs"
+      ],
+      "asset_rights": {
+        "person": "Comfy-Org/workflow_templates example asset, MIT; see THIRD_PARTY_NOTICES.md",
+        "garment": "Comfy-Org/workflow_templates example asset, MIT; see THIRD_PARTY_NOTICES.md"
+      }
+    },
+    {
+      "id": "shirt_02",
+      "category": "shirt",
+      "coverage_target": "Side profile, dark skin tone, textured original garment",
+      "person_image": "assets/upstream/portrait_model_denim.png",
+      "garment_image": "assets/upstream/clothing_light_blue_denim_shirt.png",
+      "garment_features": [
+        "light-blue denim",
+        "pointed fold-down collar",
+        "pale button placket",
+        "single left chest patch pocket",
+        "long sleeves with buttoned cuffs"
+      ],
+      "asset_rights": {
+        "person": "Comfy-Org/workflow_templates example asset, MIT; see THIRD_PARTY_NOTICES.md",
+        "garment": "Comfy-Org/workflow_templates example asset, MIT; see THIRD_PARTY_NOTICES.md"
+      }
+    },
+    {
+      "id": "shirt_03",
+      "category": "shirt",
+      "coverage_target": "Front portrait, crossed arms, strong directional light",
+      "person_image": "assets/upstream/urban_man.png",
+      "garment_image": "assets/upstream/clothing_light_blue_denim_shirt.png",
+      "garment_features": [
+        "light-blue denim",
+        "pointed fold-down collar",
+        "pale button placket",
+        "single left chest patch pocket",
+        "long sleeves with buttoned cuffs"
+      ],
+      "asset_rights": {
+        "person": "Comfy-Org/workflow_templates example asset, MIT; see THIRD_PARTY_NOTICES.md",
+        "garment": "Comfy-Org/workflow_templates example asset, MIT; see THIRD_PARTY_NOTICES.md"
+      }
+    },
+    {
+      "id": "shirt_04",
+      "category": "shirt",
+      "coverage_target": "Three-quarter back view, windblown hair, sunlit detailed coastal background",
+      "person_image": "assets/upstream/coastal_smiling_woman.png",
+      "garment_image": "assets/upstream/clothing_light_blue_denim_shirt.png",
+      "garment_features": [
+        "light-blue denim",
+        "pointed fold-down collar",
+        "pale button placket",
+        "single left chest patch pocket",
+        "long sleeves with buttoned cuffs"
+      ],
+      "asset_rights": {
+        "person": "Comfy-Org/workflow_templates example asset, MIT; see THIRD_PARTY_NOTICES.md",
+        "garment": "Comfy-Org/workflow_templates example asset, MIT; see THIRD_PARTY_NOTICES.md"
+      }
+    },
+    {
+      "id": "shirt_05",
+      "category": "shirt",
+      "coverage_target": "Larger body silhouette, long hair and hands/bouquet occluding torso, outdoor field",
+      "person_image": "assets/commons/plus_size_model.jpg",
+      "garment_image": "assets/upstream/clothing_light_blue_denim_shirt.png",
+      "garment_features": [
+        "light-blue denim",
+        "pointed fold-down collar",
+        "pale button placket",
+        "single left chest patch pocket",
+        "long sleeves with buttoned cuffs"
+      ],
+      "asset_rights": {
+        "person": "Reba Spike, Plus Size Model 1, CC BY 2.0; attribution and AI modification notice in ASSETS.md",
+        "garment": "Comfy-Org/workflow_templates example asset, MIT; see THIRD_PARTY_NOTICES.md"
+      }
+    },
+    {
+      "id": "hoodie_01",
+      "category": "hoodie",
+      "coverage_target": "Front/full body, backpack straps and hands in pockets",
+      "person_image": "assets/upstream/casual_male_portrait.png",
+      "garment_image": "assets/commons/hoodie_m7agar.jpg",
+      "garment_features": [
+        "charcoal pullover with hood",
+        "kangaroo pocket",
+        "ribbed cuffs and hem",
+        "yellow outlined flames over SUPERIOR outlined chest lettering",
+        "white sleeve star emblems and lettering"
+      ],
+      "asset_rights": {
+        "person": "Comfy-Org/workflow_templates example asset, MIT; see THIRD_PARTY_NOTICES.md",
+        "garment": "YoussefTahoun, Hoodie m7agar, CC0 1.0; see ASSETS.md"
+      }
+    },
+    {
+      "id": "hoodie_02",
+      "category": "hoodie",
+      "coverage_target": "Side profile, dark skin tone, textured original garment",
+      "person_image": "assets/upstream/portrait_model_denim.png",
+      "garment_image": "assets/commons/hoodie_m7agar.jpg",
+      "garment_features": [
+        "charcoal pullover with hood",
+        "kangaroo pocket",
+        "ribbed cuffs and hem",
+        "yellow outlined flames over SUPERIOR outlined chest lettering",
+        "white sleeve star emblems and lettering"
+      ],
+      "asset_rights": {
+        "person": "Comfy-Org/workflow_templates example asset, MIT; see THIRD_PARTY_NOTICES.md",
+        "garment": "YoussefTahoun, Hoodie m7agar, CC0 1.0; see ASSETS.md"
+      }
+    },
+    {
+      "id": "hoodie_03",
+      "category": "hoodie",
+      "coverage_target": "Front portrait, crossed arms, strong directional light",
+      "person_image": "assets/upstream/urban_man.png",
+      "garment_image": "assets/commons/hoodie_m7agar.jpg",
+      "garment_features": [
+        "charcoal pullover with hood",
+        "kangaroo pocket",
+        "ribbed cuffs and hem",
+        "yellow outlined flames over SUPERIOR outlined chest lettering",
+        "white sleeve star emblems and lettering"
+      ],
+      "asset_rights": {
+        "person": "Comfy-Org/workflow_templates example asset, MIT; see THIRD_PARTY_NOTICES.md",
+        "garment": "YoussefTahoun, Hoodie m7agar, CC0 1.0; see ASSETS.md"
+      }
+    },
+    {
+      "id": "hoodie_04",
+      "category": "hoodie",
+      "coverage_target": "Three-quarter back view, windblown hair, sunlit detailed coastal background",
+      "person_image": "assets/upstream/coastal_smiling_woman.png",
+      "garment_image": "assets/commons/hoodie_m7agar.jpg",
+      "garment_features": [
+        "charcoal pullover with hood",
+        "kangaroo pocket",
+        "ribbed cuffs and hem",
+        "yellow outlined flames over SUPERIOR outlined chest lettering",
+        "white sleeve star emblems and lettering"
+      ],
+      "asset_rights": {
+        "person": "Comfy-Org/workflow_templates example asset, MIT; see THIRD_PARTY_NOTICES.md",
+        "garment": "YoussefTahoun, Hoodie m7agar, CC0 1.0; see ASSETS.md"
+      }
+    },
+    {
+      "id": "hoodie_05",
+      "category": "hoodie",
+      "coverage_target": "Larger body silhouette, long hair and hands/bouquet occluding torso, outdoor field",
+      "person_image": "assets/commons/plus_size_model.jpg",
+      "garment_image": "assets/commons/hoodie_m7agar.jpg",
+      "garment_features": [
+        "charcoal pullover with hood",
+        "kangaroo pocket",
+        "ribbed cuffs and hem",
+        "yellow outlined flames over SUPERIOR outlined chest lettering",
+        "white sleeve star emblems and lettering"
+      ],
+      "asset_rights": {
+        "person": "Reba Spike, Plus Size Model 1, CC BY 2.0; attribution and AI modification notice in ASSETS.md",
+        "garment": "YoussefTahoun, Hoodie m7agar, CC0 1.0; see ASSETS.md"
+      }
+    },
+    {
+      "id": "jacket_01",
+      "category": "jacket",
+      "coverage_target": "Front/full body, backpack straps and hands in pockets",
+      "person_image": "assets/upstream/casual_male_portrait.png",
+      "garment_image": "assets/commons/tender_denim_jacket.jpg",
+      "garment_features": [
+        "dark worn denim",
+        "stand collar",
+        "brass button front",
+        "two tall chest patch pockets",
+        "two hip patch pockets",
+        "long sleeves"
+      ],
+      "asset_rights": {
+        "person": "Comfy-Org/workflow_templates example asset, MIT; see THIRD_PARTY_NOTICES.md",
+        "garment": "Dma132, Worn Tender Co. denim jacket, CC0 1.0; see ASSETS.md"
+      }
+    },
+    {
+      "id": "jacket_02",
+      "category": "jacket",
+      "coverage_target": "Side profile, dark skin tone, textured original garment",
+      "person_image": "assets/upstream/portrait_model_denim.png",
+      "garment_image": "assets/commons/tender_denim_jacket.jpg",
+      "garment_features": [
+        "dark worn denim",
+        "stand collar",
+        "brass button front",
+        "two tall chest patch pockets",
+        "two hip patch pockets",
+        "long sleeves"
+      ],
+      "asset_rights": {
+        "person": "Comfy-Org/workflow_templates example asset, MIT; see THIRD_PARTY_NOTICES.md",
+        "garment": "Dma132, Worn Tender Co. denim jacket, CC0 1.0; see ASSETS.md"
+      }
+    },
+    {
+      "id": "jacket_03",
+      "category": "jacket",
+      "coverage_target": "Front portrait, crossed arms, strong directional light",
+      "person_image": "assets/upstream/urban_man.png",
+      "garment_image": "assets/commons/tender_denim_jacket.jpg",
+      "garment_features": [
+        "dark worn denim",
+        "stand collar",
+        "brass button front",
+        "two tall chest patch pockets",
+        "two hip patch pockets",
+        "long sleeves"
+      ],
+      "asset_rights": {
+        "person": "Comfy-Org/workflow_templates example asset, MIT; see THIRD_PARTY_NOTICES.md",
+        "garment": "Dma132, Worn Tender Co. denim jacket, CC0 1.0; see ASSETS.md"
+      }
+    },
+    {
+      "id": "jacket_04",
+      "category": "jacket",
+      "coverage_target": "Three-quarter back view, windblown hair, sunlit detailed coastal background",
+      "person_image": "assets/upstream/coastal_smiling_woman.png",
+      "garment_image": "assets/met/jacket_159165.jpg",
+      "garment_features": [
+        "burgundy velvet cropped jacket",
+        "wide gold embroidered shawl collar",
+        "gold fringe on collar cuffs and hem",
+        "long sleeves with wide cuffs",
+        "small central hook closure"
+      ],
+      "asset_rights": {
+        "person": "Comfy-Org/workflow_templates example asset, MIT; see THIRD_PARTY_NOTICES.md",
+        "garment": "The Metropolitan Museum of Art, Jacket 23.225, CC0 1.0; see ASSETS.md"
+      }
+    },
+    {
+      "id": "jacket_05",
+      "category": "jacket",
+      "coverage_target": "Larger body silhouette, long hair and hands/bouquet occluding torso, outdoor field",
+      "person_image": "assets/commons/plus_size_model.jpg",
+      "garment_image": "assets/met/jacket_159165.jpg",
+      "garment_features": [
+        "burgundy velvet cropped jacket",
+        "wide gold embroidered shawl collar",
+        "gold fringe on collar cuffs and hem",
+        "long sleeves with wide cuffs",
+        "small central hook closure"
+      ],
+      "asset_rights": {
+        "person": "Reba Spike, Plus Size Model 1, CC BY 2.0; attribution and AI modification notice in ASSETS.md",
+        "garment": "The Metropolitan Museum of Art, Jacket 23.225, CC0 1.0; see ASSETS.md"
+      }
+    },
+    {
+      "id": "coat_01",
+      "category": "coat",
+      "coverage_target": "Front/full body, backpack straps and hands in pockets",
+      "person_image": "assets/upstream/casual_male_portrait.png",
+      "garment_image": "assets/commons/ford_trenchcoat.jpg",
+      "garment_features": [
+        "beige knee-length straight coat",
+        "pointed fold-down collar",
+        "single-breasted large brown button front",
+        "slanted welt hip pockets",
+        "long sleeves and subtle cuff details",
+        "no waist belt"
+      ],
+      "asset_rights": {
+        "person": "Comfy-Org/workflow_templates example asset, MIT; see THIRD_PARTY_NOTICES.md",
+        "garment": "Gerald R. Ford Presidential Museum, US federal work public domain; see ASSETS.md"
+      }
+    },
+    {
+      "id": "coat_02",
+      "category": "coat",
+      "coverage_target": "Side profile, dark skin tone, textured original garment",
+      "person_image": "assets/upstream/portrait_model_denim.png",
+      "garment_image": "assets/commons/ford_trenchcoat.jpg",
+      "garment_features": [
+        "beige knee-length straight coat",
+        "pointed fold-down collar",
+        "single-breasted large brown button front",
+        "slanted welt hip pockets",
+        "long sleeves and subtle cuff details",
+        "no waist belt"
+      ],
+      "asset_rights": {
+        "person": "Comfy-Org/workflow_templates example asset, MIT; see THIRD_PARTY_NOTICES.md",
+        "garment": "Gerald R. Ford Presidential Museum, US federal work public domain; see ASSETS.md"
+      }
+    },
+    {
+      "id": "coat_03",
+      "category": "coat",
+      "coverage_target": "Front portrait, crossed arms, strong directional light",
+      "person_image": "assets/upstream/urban_man.png",
+      "garment_image": "assets/commons/ford_trenchcoat.jpg",
+      "garment_features": [
+        "beige knee-length straight coat",
+        "pointed fold-down collar",
+        "single-breasted large brown button front",
+        "slanted welt hip pockets",
+        "long sleeves and subtle cuff details",
+        "no waist belt"
+      ],
+      "asset_rights": {
+        "person": "Comfy-Org/workflow_templates example asset, MIT; see THIRD_PARTY_NOTICES.md",
+        "garment": "Gerald R. Ford Presidential Museum, US federal work public domain; see ASSETS.md"
+      }
+    },
+    {
+      "id": "coat_04",
+      "category": "coat",
+      "coverage_target": "Three-quarter back view, windblown hair, sunlit detailed coastal background",
+      "person_image": "assets/upstream/coastal_smiling_woman.png",
+      "garment_image": "assets/commons/ford_trenchcoat.jpg",
+      "garment_features": [
+        "beige knee-length straight coat",
+        "pointed fold-down collar",
+        "single-breasted large brown button front",
+        "slanted welt hip pockets",
+        "long sleeves and subtle cuff details",
+        "no waist belt"
+      ],
+      "asset_rights": {
+        "person": "Comfy-Org/workflow_templates example asset, MIT; see THIRD_PARTY_NOTICES.md",
+        "garment": "Gerald R. Ford Presidential Museum, US federal work public domain; see ASSETS.md"
+      }
+    },
+    {
+      "id": "coat_05",
+      "category": "coat",
+      "coverage_target": "Larger body silhouette, long hair and hands/bouquet occluding torso, outdoor field",
+      "person_image": "assets/commons/plus_size_model.jpg",
+      "garment_image": "assets/commons/ford_trenchcoat.jpg",
+      "garment_features": [
+        "beige knee-length straight coat",
+        "pointed fold-down collar",
+        "single-breasted large brown button front",
+        "slanted welt hip pockets",
+        "long sleeves and subtle cuff details",
+        "no waist belt"
+      ],
+      "asset_rights": {
+        "person": "Reba Spike, Plus Size Model 1, CC BY 2.0; attribution and AI modification notice in ASSETS.md",
+        "garment": "Gerald R. Ford Presidential Museum, US federal work public domain; see ASSETS.md"
+      }
+    }
+  ]
+}

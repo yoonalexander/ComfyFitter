@@ -1,0 +1,714 @@
+[
+  {
+    "experiment": "multiple_reference_v1",
+    "sample_id": "hoodie_02",
+    "seed": 2026093001,
+    "status": "complete",
+    "graph_sha256": "a15a3e4e41a6bcd37396155ad2884e8a0b15fc40f864ea2aad638bff1f6d0964",
+    "protocol_sha256": "a4fd6253087d54cf0b5e71ad12fcb33c3431fcec4a4b7d641c90dd1316507144",
+    "inputs": {
+      "person": {
+        "path": "evaluation/assets/upstream/portrait_model_denim.png",
+        "sha256": "d888e9396587a3fd4ad500bbf5988fed0f7ba60ffa71628c29fced78bece3ac6"
+      },
+      "garment": {
+        "path": "evaluation/assets/commons/hoodie_m7agar.jpg",
+        "sha256": "9caf8b20c8a567c2ee3e7b56b1556942eed6eefa993f65b4d07d2f87bcafd2ad"
+      },
+      "detail": {
+        "path": "evaluation/assets/met/hoodie_detail.png",
+        "sha256": "8909d327f4d62ad94e3a7120993da11adbea193fafb219160c9b64a070c05585"
+      }
+    },
+    "uploaded": {
+      "person": "cf_study_d01c63d8a04a4c50bb8a612a7c66def5_person.png",
+      "garment": "cf_study_d01c63d8a04a4c50bb8a612a7c66def5_garment.jpg",
+      "detail": "cf_study_d01c63d8a04a4c50bb8a612a7c66def5_detail.png"
+    },
+    "image_order": [
+      "person",
+      "garment",
+      "detail"
+    ],
+    "prompt": "Use <image1> as the edit target and <image2> only as the garment reference.\nReplace the foreground person's main upper-body garment in <image1> with the actual hoodie shown in <image2>. Transfer the reference design rather than making a generic garment of that category.\nMatch the visible reference silhouette, neckline or collar shape, sleeves, closures, pockets, fabric, color, pattern and printed graphics. Do not invent garment details absent from <image2>, including drawstrings, extra pockets, buttons or belts. When the reference hood has no drawstrings, keep it without drawstrings. Preserve visible text and graphics as accurately as possible.\nPreserve the foreground person's facial identity, hairstyle and hair length, skin tone, body proportions, pose, hands and camera angle from <image1>. Preserve the source's existing accessories exactly. If there is no eyewear on the source face, keep the face without eyewear. Do not add or remove personal accessories.\nPreserve the background, background people, lighting, lower-body clothing and unrelated garments. Adapt only the replacement garment to the existing pose with coherent folds, shadows and natural occlusion by hair, hands and foreground objects. Do not shorten hair to reveal the garment.\nMake only the changes required for this garment transfer. A recolor of the original clothing is insufficient.\n\n<image2> is the front view of the SAME garment, not an additional garment. <image3> is the detail view of the SAME garment, not an additional garment. Use the front view to determine the visible silhouette; use other views only to clarify corresponding construction, pattern and details. Do not paste a back design onto the front.",
+    "client_id": "cf_study_d01c63d8a04a4c50bb8a612a7c66def5",
+    "scores": {
+      "identity": 2,
+      "body_pose": 2,
+      "garment_transfer": 2,
+      "background_lighting": 2,
+      "artifacts": 2,
+      "detailed_fidelity": 4
+    },
+    "reviewer": "Codex visual review (single AI reviewer)",
+    "notes": "Source, front, supplied chest detail, matched raw and multi-reference output visually compared. Bowed pose, face/hair and blue-gray scene retained. No drawstrings; kangaroo pocket and sleeve star remain. Detail improves chest print construction, including the small yellow line below SUPERIOR that is missing from the matched raw output. Fine sleeve lettering remains approximate; no claim of exact text reproduction.",
+    "prompt_id": "1dcbe518-b182-482d-a1d1-7a8151ba0660",
+    "execution_seconds": 279.161,
+    "wall_seconds": 284.136,
+    "sampled_device_peak_mib": 7167,
+    "output": "evaluation/benchmarks/multiple_reference_v1/hoodie_02/2026093001/output.png",
+    "output_sha256": "fc3498e6d27ecede8704d9938c0e7fd25dadb5ba0a6fe4a2e97461be2a7c4272",
+    "output_size": [
+      896,
+      1152
+    ],
+    "matched_review": {
+      "output_sha256": "d10b81c739827bc55d5a2e3fa7520ebe9f1d24cabbb7cd307d755e822e7c8c26",
+      "scores": {
+        "identity": 2,
+        "body_pose": 2,
+        "garment_transfer": 2,
+        "background_lighting": 2,
+        "artifacts": 1,
+        "detailed_fidelity": 3
+      },
+      "notes": "Matched raw reviewed alongside the same references: recognizable flame/SUPERIOR graphic and sleeve star, hood/pocket construction present; the small secondary yellow line below the main chest word is absent. Published baseline preservation and garment scores unchanged."
+    },
+    "category": "hoodie",
+    "outer_category": null,
+    "mode": "multi_reference"
+  },
+  {
+    "experiment": "multiple_reference_v1",
+    "sample_id": "hoodie_02",
+    "seed": 2026093002,
+    "status": "complete",
+    "graph_sha256": "2181c679692b31a7e2b1d742a410dbf78027d21c2a6e476978488848c5ebef6a",
+    "protocol_sha256": "a4fd6253087d54cf0b5e71ad12fcb33c3431fcec4a4b7d641c90dd1316507144",
+    "inputs": {
+      "person": {
+        "path": "evaluation/assets/upstream/portrait_model_denim.png",
+        "sha256": "d888e9396587a3fd4ad500bbf5988fed0f7ba60ffa71628c29fced78bece3ac6"
+      },
+      "garment": {
+        "path": "evaluation/assets/commons/hoodie_m7agar.jpg",
+        "sha256": "9caf8b20c8a567c2ee3e7b56b1556942eed6eefa993f65b4d07d2f87bcafd2ad"
+      },
+      "detail": {
+        "path": "evaluation/assets/met/hoodie_detail.png",
+        "sha256": "8909d327f4d62ad94e3a7120993da11adbea193fafb219160c9b64a070c05585"
+      }
+    },
+    "uploaded": {
+      "person": "cf_study_ad1f9704873c43839632d9fc31d7d5c3_person.png",
+      "garment": "cf_study_ad1f9704873c43839632d9fc31d7d5c3_garment.jpg",
+      "detail": "cf_study_ad1f9704873c43839632d9fc31d7d5c3_detail.png"
+    },
+    "image_order": [
+      "person",
+      "garment",
+      "detail"
+    ],
+    "prompt": "Use <image1> as the edit target and <image2> only as the garment reference.\nReplace the foreground person's main upper-body garment in <image1> with the actual hoodie shown in <image2>. Transfer the reference design rather than making a generic garment of that category.\nMatch the visible reference silhouette, neckline or collar shape, sleeves, closures, pockets, fabric, color, pattern and printed graphics. Do not invent garment details absent from <image2>, including drawstrings, extra pockets, buttons or belts. When the reference hood has no drawstrings, keep it without drawstrings. Preserve visible text and graphics as accurately as possible.\nPreserve the foreground person's facial identity, hairstyle and hair length, skin tone, body proportions, pose, hands and camera angle from <image1>. Preserve the source's existing accessories exactly. If there is no eyewear on the source face, keep the face without eyewear. Do not add or remove personal accessories.\nPreserve the background, background people, lighting, lower-body clothing and unrelated garments. Adapt only the replacement garment to the existing pose with coherent folds, shadows and natural occlusion by hair, hands and foreground objects. Do not shorten hair to reveal the garment.\nMake only the changes required for this garment transfer. A recolor of the original clothing is insufficient.\n\n<image2> is the front view of the SAME garment, not an additional garment. <image3> is the detail view of the SAME garment, not an additional garment. Use the front view to determine the visible silhouette; use other views only to clarify corresponding construction, pattern and details. Do not paste a back design onto the front.",
+    "client_id": "cf_study_ad1f9704873c43839632d9fc31d7d5c3",
+    "scores": {
+      "identity": 2,
+      "body_pose": 2,
+      "garment_transfer": 2,
+      "background_lighting": 2,
+      "artifacts": 2,
+      "detailed_fidelity": 4
+    },
+    "reviewer": "Codex visual review (single AI reviewer)",
+    "notes": "Both-seed matched sheet inspected with source/front/chest detail. Second-seed face, full hair, bowed pose and scene retained. Hood without drawstrings, pocket, flame/SUPERIOR chest layout, small yellow secondary line and sleeve star transferred. Fine sleeve letters are approximate. Unlike first seed, matched raw already contains the small chest line, so this seed has no additional detailed-fidelity gain.",
+    "prompt_id": "a682171a-feba-4d09-8ecb-dd26998df3c5",
+    "execution_seconds": 277.394,
+    "wall_seconds": 280.442,
+    "sampled_device_peak_mib": 7263,
+    "output": "evaluation/benchmarks/multiple_reference_v1/hoodie_02/2026093002/output.png",
+    "output_sha256": "3826361a041f7d171d0987137881bba29c740a90b9ebebebd485d9de1c1204a1",
+    "output_size": [
+      896,
+      1152
+    ],
+    "matched_review": {
+      "output_sha256": "5c54b9721c12c6fb631981ff48127da35d7f73f6229189419ae3fc3c1f847a1f",
+      "scores": {
+        "identity": 2,
+        "body_pose": 2,
+        "garment_transfer": 2,
+        "background_lighting": 2,
+        "artifacts": 1,
+        "detailed_fidelity": 4
+      },
+      "notes": "Second-seed raw reviewed with the same supplied detail: chest flame/word layout and secondary yellow line present, with hood, pocket and sleeve star. No additional measurable detailed-fidelity difference versus multiple references in this seed. Original published baseline scores retained."
+    },
+    "category": "hoodie",
+    "outer_category": null,
+    "mode": "multi_reference"
+  },
+  {
+    "experiment": "multiple_reference_v1",
+    "sample_id": "hoodie_03",
+    "seed": 2026093001,
+    "status": "complete",
+    "graph_sha256": "4d181998c85622aed70d9e2cb7e9d0f1cdecfd1495a8a461ae1d9fd8f7947258",
+    "protocol_sha256": "a4fd6253087d54cf0b5e71ad12fcb33c3431fcec4a4b7d641c90dd1316507144",
+    "inputs": {
+      "person": {
+        "path": "evaluation/assets/upstream/urban_man.png",
+        "sha256": "8886ff6ccd369739e227274af8ad42d0f8627129d83c1643c84e3da1348ca986"
+      },
+      "garment": {
+        "path": "evaluation/assets/commons/hoodie_m7agar.jpg",
+        "sha256": "9caf8b20c8a567c2ee3e7b56b1556942eed6eefa993f65b4d07d2f87bcafd2ad"
+      },
+      "detail": {
+        "path": "evaluation/assets/met/hoodie_detail.png",
+        "sha256": "8909d327f4d62ad94e3a7120993da11adbea193fafb219160c9b64a070c05585"
+      }
+    },
+    "uploaded": {
+      "person": "cf_study_00cc2f5d283d4fe699755958a5d6ba93_person.png",
+      "garment": "cf_study_00cc2f5d283d4fe699755958a5d6ba93_garment.jpg",
+      "detail": "cf_study_00cc2f5d283d4fe699755958a5d6ba93_detail.png"
+    },
+    "image_order": [
+      "person",
+      "garment",
+      "detail"
+    ],
+    "prompt": "Use <image1> as the edit target and <image2> only as the garment reference.\nReplace the foreground person's main upper-body garment in <image1> with the actual hoodie shown in <image2>. Transfer the reference design rather than making a generic garment of that category.\nMatch the visible reference silhouette, neckline or collar shape, sleeves, closures, pockets, fabric, color, pattern and printed graphics. Do not invent garment details absent from <image2>, including drawstrings, extra pockets, buttons or belts. When the reference hood has no drawstrings, keep it without drawstrings. Preserve visible text and graphics as accurately as possible.\nPreserve the foreground person's facial identity, hairstyle and hair length, skin tone, body proportions, pose, hands and camera angle from <image1>. Preserve the source's existing accessories exactly. If there is no eyewear on the source face, keep the face without eyewear. Do not add or remove personal accessories.\nPreserve the background, background people, lighting, lower-body clothing and unrelated garments. Adapt only the replacement garment to the existing pose with coherent folds, shadows and natural occlusion by hair, hands and foreground objects. Do not shorten hair to reveal the garment.\nMake only the changes required for this garment transfer. A recolor of the original clothing is insufficient.\n\n<image2> is the front view of the SAME garment, not an additional garment. <image3> is the detail view of the SAME garment, not an additional garment. Use the front view to determine the visible silhouette; use other views only to clarify corresponding construction, pattern and details. Do not paste a back design onto the front.",
+    "client_id": "cf_study_00cc2f5d283d4fe699755958a5d6ba93",
+    "scores": {
+      "identity": 2,
+      "body_pose": 2,
+      "garment_transfer": 2,
+      "background_lighting": 2,
+      "artifacts": 1,
+      "detailed_fidelity": 3
+    },
+    "reviewer": "Codex visual review (single AI reviewer)",
+    "notes": "Both matched seeds reviewed with source/front/chest crop. Eyewear-free face, beard, full curls, crossed arms and background retained. Charcoal hood, chest flames/word/secondary line, pocket, cuffs and sleeve stars remain; fine sleeve glyphs and minor wrist/cloth boundaries are approximate. Multiple references do not produce a clear additional detail gain on this crossed-arm pair; garment features and preservation remain usable.",
+    "prompt_id": "8bfbe474-6a9b-4f87-9af1-9f87cc8b7d3d",
+    "execution_seconds": 282.862,
+    "wall_seconds": 285.967,
+    "sampled_device_peak_mib": 7455,
+    "output": "evaluation/benchmarks/multiple_reference_v1/hoodie_03/2026093001/output.png",
+    "output_sha256": "b196ab7c5c6e5a1a7aa198a8f2de4299467d0c5ae0a5268ade0d79a23bc0bc9e",
+    "output_size": [
+      768,
+      1376
+    ],
+    "matched_review": {
+      "output_sha256": "75fdac0e5fc47b380b5f54851be464eb2f7c5b1ce7f3dfaefb51b73c512c2f17",
+      "scores": {
+        "identity": 2,
+        "body_pose": 2,
+        "garment_transfer": 2,
+        "background_lighting": 2,
+        "artifacts": 1,
+        "detailed_fidelity": 3
+      },
+      "notes": "Matched raw reviewed with same front/detail: charcoal hood and crossed-arm drape, chest flame/word/secondary line and sleeve stars present; fine sleeve lettering and small wrist/cloth transitions are approximate. No clear detailed-fidelity difference versus multiple references for this pair. Published baseline scores retained unchanged."
+    },
+    "category": "hoodie",
+    "outer_category": null,
+    "mode": "multi_reference"
+  },
+  {
+    "experiment": "multiple_reference_v1",
+    "sample_id": "hoodie_03",
+    "seed": 2026093002,
+    "status": "complete",
+    "graph_sha256": "c13f1d12169ffbe2e505ccd3eb849d1366c6de7d9a9d780a4e38bf5c32faacf0",
+    "protocol_sha256": "a4fd6253087d54cf0b5e71ad12fcb33c3431fcec4a4b7d641c90dd1316507144",
+    "inputs": {
+      "person": {
+        "path": "evaluation/assets/upstream/urban_man.png",
+        "sha256": "8886ff6ccd369739e227274af8ad42d0f8627129d83c1643c84e3da1348ca986"
+      },
+      "garment": {
+        "path": "evaluation/assets/commons/hoodie_m7agar.jpg",
+        "sha256": "9caf8b20c8a567c2ee3e7b56b1556942eed6eefa993f65b4d07d2f87bcafd2ad"
+      },
+      "detail": {
+        "path": "evaluation/assets/met/hoodie_detail.png",
+        "sha256": "8909d327f4d62ad94e3a7120993da11adbea193fafb219160c9b64a070c05585"
+      }
+    },
+    "uploaded": {
+      "person": "cf_study_4ed17b84a2af4af9958f5b90edd4a5ac_person.png",
+      "garment": "cf_study_4ed17b84a2af4af9958f5b90edd4a5ac_garment.jpg",
+      "detail": "cf_study_4ed17b84a2af4af9958f5b90edd4a5ac_detail.png"
+    },
+    "image_order": [
+      "person",
+      "garment",
+      "detail"
+    ],
+    "prompt": "Use <image1> as the edit target and <image2> only as the garment reference.\nReplace the foreground person's main upper-body garment in <image1> with the actual hoodie shown in <image2>. Transfer the reference design rather than making a generic garment of that category.\nMatch the visible reference silhouette, neckline or collar shape, sleeves, closures, pockets, fabric, color, pattern and printed graphics. Do not invent garment details absent from <image2>, including drawstrings, extra pockets, buttons or belts. When the reference hood has no drawstrings, keep it without drawstrings. Preserve visible text and graphics as accurately as possible.\nPreserve the foreground person's facial identity, hairstyle and hair length, skin tone, body proportions, pose, hands and camera angle from <image1>. Preserve the source's existing accessories exactly. If there is no eyewear on the source face, keep the face without eyewear. Do not add or remove personal accessories.\nPreserve the background, background people, lighting, lower-body clothing and unrelated garments. Adapt only the replacement garment to the existing pose with coherent folds, shadows and natural occlusion by hair, hands and foreground objects. Do not shorten hair to reveal the garment.\nMake only the changes required for this garment transfer. A recolor of the original clothing is insufficient.\n\n<image2> is the front view of the SAME garment, not an additional garment. <image3> is the detail view of the SAME garment, not an additional garment. Use the front view to determine the visible silhouette; use other views only to clarify corresponding construction, pattern and details. Do not paste a back design onto the front.",
+    "client_id": "cf_study_4ed17b84a2af4af9958f5b90edd4a5ac",
+    "scores": {
+      "identity": 2,
+      "body_pose": 2,
+      "garment_transfer": 2,
+      "background_lighting": 2,
+      "artifacts": 1,
+      "detailed_fidelity": 3
+    },
+    "reviewer": "Codex visual review (single AI reviewer)",
+    "notes": "Both matched seeds reviewed with source/front/chest crop. Eyewear-free face, beard, full curls, crossed arms and background retained. Charcoal hood, chest flames/word/secondary line, pocket, cuffs and sleeve stars remain; fine sleeve glyphs and minor wrist/cloth boundaries are approximate. Multiple references do not produce a clear additional detail gain on this crossed-arm pair; garment features and preservation remain usable.",
+    "prompt_id": "0f82fb30-cba0-4d1c-938e-47e65ee02bd0",
+    "execution_seconds": 283.51,
+    "wall_seconds": 288.351,
+    "sampled_device_peak_mib": 7483,
+    "output": "evaluation/benchmarks/multiple_reference_v1/hoodie_03/2026093002/output.png",
+    "output_sha256": "e4e4447b140f77cf6d2a54c4098a37b9ba67264315152c81dabea9e8414b8240",
+    "output_size": [
+      768,
+      1376
+    ],
+    "matched_review": {
+      "output_sha256": "3cede03765643461815ab99d132a5b8db26291617b508ac8d5b57fbb720d2eba",
+      "scores": {
+        "identity": 2,
+        "body_pose": 2,
+        "garment_transfer": 2,
+        "background_lighting": 2,
+        "artifacts": 1,
+        "detailed_fidelity": 3
+      },
+      "notes": "Matched raw reviewed with same front/detail: charcoal hood and crossed-arm drape, chest flame/word/secondary line and sleeve stars present; fine sleeve lettering and small wrist/cloth transitions are approximate. No clear detailed-fidelity difference versus multiple references for this pair. Published baseline scores retained unchanged."
+    },
+    "category": "hoodie",
+    "outer_category": null,
+    "mode": "multi_reference"
+  },
+  {
+    "experiment": "multiple_reference_v1",
+    "sample_id": "jacket_04",
+    "seed": 2026093001,
+    "status": "complete",
+    "graph_sha256": "6e9af5d8f24b3b351ef123367c0d6375bf292710b119f5bd84e6b9834fe32226",
+    "protocol_sha256": "a4fd6253087d54cf0b5e71ad12fcb33c3431fcec4a4b7d641c90dd1316507144",
+    "inputs": {
+      "person": {
+        "path": "evaluation/assets/upstream/coastal_smiling_woman.png",
+        "sha256": "d78bb2fe877531938e596026cb3c577ff7af7188cb911ea2c6f49c1daf62d174"
+      },
+      "garment": {
+        "path": "evaluation/assets/met/jacket_159165.jpg",
+        "sha256": "121f658b5f3ed6c683fa5dee12bb8b23d1190c54852cbfdf28aff53327e8ad63"
+      },
+      "back": {
+        "path": "evaluation/assets/met/jacket_159165_back.jpg",
+        "sha256": "0dad675e723f4b7733a0a1cb48193705379475f983acb2bdbd5b1e2ca8398cac"
+      },
+      "detail": {
+        "path": "evaluation/assets/met/jacket_detail.png",
+        "sha256": "12b6288ef235d4faddbbc77a84f49b066a6647380364a85776a9ae629a6061b1"
+      }
+    },
+    "uploaded": {
+      "person": "cf_study_8a76324573ac4fce8a7e05520096d7a0_person.png",
+      "garment": "cf_study_8a76324573ac4fce8a7e05520096d7a0_garment.jpg",
+      "back": "cf_study_8a76324573ac4fce8a7e05520096d7a0_back.jpg",
+      "detail": "cf_study_8a76324573ac4fce8a7e05520096d7a0_detail.png"
+    },
+    "image_order": [
+      "person",
+      "garment",
+      "back",
+      "detail"
+    ],
+    "prompt": "Use <image1> as the edit target and <image2> only as the garment reference.\nReplace the foreground person's outermost upper-body garment in <image1> with the actual jacket shown in <image2>. Transfer the reference design rather than making a generic coat or jacket.\nCopy the reference collar architecture exactly. An upright stand collar must remain narrow and upright; do not replace it with a wide pointed shirt collar or lapels. A folded collar or embroidered shawl collar must retain the reference's visible shape and trim. Do not reuse the collar of the source's old outer garment. Preserve underlying clothing only where the new garment's opening would naturally expose it.\nMatch the visible reference length, silhouette, sleeve and cuff shape, closures, pockets, seams, color, pattern, material and decorative trim. Do not invent belts, extra pockets or closures absent from <image2>. A cropped jacket remains cropped; a long straight coat retains its long straight outline.\nPreserve the foreground person's facial identity, hairstyle and hair length, skin tone, body proportions, pose, hands and camera angle from <image1>. Preserve the source's existing accessories exactly. If there is no eyewear on the source face, keep the face without eyewear. Do not add or remove personal accessories.\nPreserve the background, background people, lighting, lower-body clothing and unrelated garments where they remain visible. Adapt only the replacement garment to the existing body and pose with coherent folds, shadows and natural occlusion by hair, hands and foreground objects. Do not shorten hair to reveal the garment.\nMake only the changes required for this garment transfer. A recolor of the original clothing is insufficient.\n\n<image2> is the front view of the SAME garment, not an additional garment. <image3> is the back view of the SAME garment, not an additional garment. <image4> is the detail view of the SAME garment, not an additional garment. Use the front view to determine the visible silhouette; use other views only to clarify corresponding construction, pattern and details. Do not paste a back design onto the front.",
+    "client_id": "cf_study_8a76324573ac4fce8a7e05520096d7a0",
+    "scores": {
+      "identity": 2,
+      "body_pose": 1,
+      "garment_transfer": 2,
+      "background_lighting": 2,
+      "artifacts": 1,
+      "detailed_fidelity": 3
+    },
+    "reviewer": "Codex visual review (single AI reviewer)",
+    "notes": "Source/front/genuine back/collar crop and matched raw compared. Red velvet cropped jacket, broad embroidered/fringed collar, fringed cuffs/hem remain recognizable. Face, curls, side-facing pose and sea scene remain. Visible original pale lower garment is still replaced with dark fabric, as in matched raw: body/unrelated-clothing score stays1. Both renders approximate the fine embroidery; no clear extra fidelity gain in this seed. Back construction largely hidden by the pose is not treated as proved fidelity.",
+    "prompt_id": "616dba61-50a1-4862-902a-25ffae7e494d",
+    "execution_seconds": 365.667,
+    "wall_seconds": 370.697,
+    "sampled_device_peak_mib": 7619,
+    "output": "evaluation/benchmarks/multiple_reference_v1/jacket_04/2026093001/output.png",
+    "output_sha256": "94d600f2031e7471c24deebd0c4f5347810d751549a733990d8118f727b6b287",
+    "output_size": [
+      1024,
+      1024
+    ],
+    "matched_review": {
+      "output_sha256": "810c4cb155541494eb7b99eae2d6f78eef3f1738d548c3ca64881e629125471b",
+      "scores": {
+        "identity": 2,
+        "body_pose": 1,
+        "garment_transfer": 2,
+        "background_lighting": 2,
+        "artifacts": 1,
+        "detailed_fidelity": 3
+      },
+      "notes": "Matched raw reviewed alongside front/back/detail: red velvet, broad embroidered collar and fringe cuffs/hem transfer, with fine embroidered motifs approximate. Pale lower garment replaced with dark fabric, retaining the published body score1. No clear additional detailed-fidelity difference from the extra-reference result; original published scores unchanged."
+    },
+    "category": "jacket",
+    "outer_category": null,
+    "mode": "multi_reference"
+  },
+  {
+    "experiment": "multiple_reference_v1",
+    "sample_id": "jacket_04",
+    "seed": 2026093002,
+    "status": "complete",
+    "graph_sha256": "ef94bb58c4de91ec77df74726dec51ff16d1d7c74fe4675efab50b7533faf0f1",
+    "protocol_sha256": "a4fd6253087d54cf0b5e71ad12fcb33c3431fcec4a4b7d641c90dd1316507144",
+    "inputs": {
+      "person": {
+        "path": "evaluation/assets/upstream/coastal_smiling_woman.png",
+        "sha256": "d78bb2fe877531938e596026cb3c577ff7af7188cb911ea2c6f49c1daf62d174"
+      },
+      "garment": {
+        "path": "evaluation/assets/met/jacket_159165.jpg",
+        "sha256": "121f658b5f3ed6c683fa5dee12bb8b23d1190c54852cbfdf28aff53327e8ad63"
+      },
+      "back": {
+        "path": "evaluation/assets/met/jacket_159165_back.jpg",
+        "sha256": "0dad675e723f4b7733a0a1cb48193705379475f983acb2bdbd5b1e2ca8398cac"
+      },
+      "detail": {
+        "path": "evaluation/assets/met/jacket_detail.png",
+        "sha256": "12b6288ef235d4faddbbc77a84f49b066a6647380364a85776a9ae629a6061b1"
+      }
+    },
+    "uploaded": {
+      "person": "cf_study_b156b887561643288410104335ae5ad9_person.png",
+      "garment": "cf_study_b156b887561643288410104335ae5ad9_garment.jpg",
+      "back": "cf_study_b156b887561643288410104335ae5ad9_back.jpg",
+      "detail": "cf_study_b156b887561643288410104335ae5ad9_detail.png"
+    },
+    "image_order": [
+      "person",
+      "garment",
+      "back",
+      "detail"
+    ],
+    "prompt": "Use <image1> as the edit target and <image2> only as the garment reference.\nReplace the foreground person's outermost upper-body garment in <image1> with the actual jacket shown in <image2>. Transfer the reference design rather than making a generic coat or jacket.\nCopy the reference collar architecture exactly. An upright stand collar must remain narrow and upright; do not replace it with a wide pointed shirt collar or lapels. A folded collar or embroidered shawl collar must retain the reference's visible shape and trim. Do not reuse the collar of the source's old outer garment. Preserve underlying clothing only where the new garment's opening would naturally expose it.\nMatch the visible reference length, silhouette, sleeve and cuff shape, closures, pockets, seams, color, pattern, material and decorative trim. Do not invent belts, extra pockets or closures absent from <image2>. A cropped jacket remains cropped; a long straight coat retains its long straight outline.\nPreserve the foreground person's facial identity, hairstyle and hair length, skin tone, body proportions, pose, hands and camera angle from <image1>. Preserve the source's existing accessories exactly. If there is no eyewear on the source face, keep the face without eyewear. Do not add or remove personal accessories.\nPreserve the background, background people, lighting, lower-body clothing and unrelated garments where they remain visible. Adapt only the replacement garment to the existing body and pose with coherent folds, shadows and natural occlusion by hair, hands and foreground objects. Do not shorten hair to reveal the garment.\nMake only the changes required for this garment transfer. A recolor of the original clothing is insufficient.\n\n<image2> is the front view of the SAME garment, not an additional garment. <image3> is the back view of the SAME garment, not an additional garment. <image4> is the detail view of the SAME garment, not an additional garment. Use the front view to determine the visible silhouette; use other views only to clarify corresponding construction, pattern and details. Do not paste a back design onto the front.",
+    "client_id": "cf_study_b156b887561643288410104335ae5ad9",
+    "scores": {
+      "identity": 2,
+      "body_pose": 1,
+      "garment_transfer": 2,
+      "background_lighting": 2,
+      "artifacts": 1,
+      "detailed_fidelity": 3
+    },
+    "reviewer": "Codex visual review (single AI reviewer)",
+    "notes": "Both-seed matched sheet reviewed against source/front/genuine back/detail. Red velvet, broad embroidered/fringed collar, cuffs and hem remain. Face, hair, side pose and coastal scene retained. Unlike the matched second-seed raw preview, added references replace the visible original pale skirt below the jacket with dark fabric: body/unrelated-clothing score regresses2 to1. Fine embroidery remains approximate; no extra detail gain established.",
+    "prompt_id": "9e101434-9897-4c0c-bb6b-665b922c7ba8",
+    "execution_seconds": 364.742,
+    "wall_seconds": 369.687,
+    "sampled_device_peak_mib": 7393,
+    "output": "evaluation/benchmarks/multiple_reference_v1/jacket_04/2026093002/output.png",
+    "output_sha256": "b203f32dc11d34be2d1afa4d0e94fad06d333787206e2cf8e79ce64bd65dec9c",
+    "output_size": [
+      1024,
+      1024
+    ],
+    "matched_review": {
+      "output_sha256": "346c14fb64f5a57dbd2abbeec05748142882684a51b17a25a0300c2533b77256",
+      "scores": {
+        "identity": 2,
+        "body_pose": 2,
+        "garment_transfer": 2,
+        "background_lighting": 2,
+        "artifacts": 2,
+        "detailed_fidelity": 3
+      },
+      "notes": "Matched second-seed raw retains the pale lower garment, along with the red velvet cropped jacket, embroidered/fringed collar, cuffs/hem and source pose/identity. Fine embroidered motifs approximate; published baseline scores unchanged. Added references lose the pale lower garment."
+    },
+    "category": "jacket",
+    "outer_category": null,
+    "mode": "multi_reference"
+  },
+  {
+    "experiment": "multiple_reference_v1",
+    "sample_id": "jacket_05",
+    "seed": 2026093001,
+    "status": "complete",
+    "graph_sha256": "493b4711aaa41d3029e948837f508fd2d8ba5159be69d3ab409bd8dced8e7371",
+    "protocol_sha256": "a4fd6253087d54cf0b5e71ad12fcb33c3431fcec4a4b7d641c90dd1316507144",
+    "inputs": {
+      "person": {
+        "path": "evaluation/assets/commons/plus_size_model.jpg",
+        "sha256": "51a0ddb8e992fb7d005715ae32fa43f3cdbfd3229e67e5f84448ca0ccb8dae35"
+      },
+      "garment": {
+        "path": "evaluation/assets/met/jacket_159165.jpg",
+        "sha256": "121f658b5f3ed6c683fa5dee12bb8b23d1190c54852cbfdf28aff53327e8ad63"
+      },
+      "back": {
+        "path": "evaluation/assets/met/jacket_159165_back.jpg",
+        "sha256": "0dad675e723f4b7733a0a1cb48193705379475f983acb2bdbd5b1e2ca8398cac"
+      },
+      "detail": {
+        "path": "evaluation/assets/met/jacket_detail.png",
+        "sha256": "12b6288ef235d4faddbbc77a84f49b066a6647380364a85776a9ae629a6061b1"
+      }
+    },
+    "uploaded": {
+      "person": "cf_study_74f1995ce013447cb5cfcc26ecd92d2f_person.jpg",
+      "garment": "cf_study_74f1995ce013447cb5cfcc26ecd92d2f_garment.jpg",
+      "back": "cf_study_74f1995ce013447cb5cfcc26ecd92d2f_back.jpg",
+      "detail": "cf_study_74f1995ce013447cb5cfcc26ecd92d2f_detail.png"
+    },
+    "image_order": [
+      "person",
+      "garment",
+      "back",
+      "detail"
+    ],
+    "prompt": "Use <image1> as the edit target and <image2> only as the garment reference.\nReplace the foreground person's outermost upper-body garment in <image1> with the actual jacket shown in <image2>. Transfer the reference design rather than making a generic coat or jacket.\nCopy the reference collar architecture exactly. An upright stand collar must remain narrow and upright; do not replace it with a wide pointed shirt collar or lapels. A folded collar or embroidered shawl collar must retain the reference's visible shape and trim. Do not reuse the collar of the source's old outer garment. Preserve underlying clothing only where the new garment's opening would naturally expose it.\nMatch the visible reference length, silhouette, sleeve and cuff shape, closures, pockets, seams, color, pattern, material and decorative trim. Do not invent belts, extra pockets or closures absent from <image2>. A cropped jacket remains cropped; a long straight coat retains its long straight outline.\nPreserve the foreground person's facial identity, hairstyle and hair length, skin tone, body proportions, pose, hands and camera angle from <image1>. Preserve the source's existing accessories exactly. If there is no eyewear on the source face, keep the face without eyewear. Do not add or remove personal accessories.\nPreserve the background, background people, lighting, lower-body clothing and unrelated garments where they remain visible. Adapt only the replacement garment to the existing body and pose with coherent folds, shadows and natural occlusion by hair, hands and foreground objects. Do not shorten hair to reveal the garment.\nMake only the changes required for this garment transfer. A recolor of the original clothing is insufficient.\n\n<image2> is the front view of the SAME garment, not an additional garment. <image3> is the back view of the SAME garment, not an additional garment. <image4> is the detail view of the SAME garment, not an additional garment. Use the front view to determine the visible silhouette; use other views only to clarify corresponding construction, pattern and details. Do not paste a back design onto the front.",
+    "client_id": "cf_study_74f1995ce013447cb5cfcc26ecd92d2f",
+    "scores": {
+      "identity": 2,
+      "body_pose": 2,
+      "garment_transfer": 2,
+      "background_lighting": 2,
+      "artifacts": 2,
+      "detailed_fidelity": 3
+    },
+    "reviewer": "Codex visual review, 2026-10-03",
+    "notes": "Viewed source, front/back/detail and matched fixed-seed outputs together. Cropped burgundy velvet jacket, broad embroidered collar, fringe and cuffs transfer; face, long hair, wheat, hands, white skirt and field retained. Extra views do not visibly improve the fine embroidered motif at this distance; no exact stitching claim.",
+    "prompt_id": "716126c4-b69b-45bc-b749-2b155c5dd3e6",
+    "execution_seconds": 366.372,
+    "wall_seconds": 368.536,
+    "sampled_device_peak_mib": 7455,
+    "output": "evaluation/benchmarks/multiple_reference_v1/jacket_05/2026093001/output.png",
+    "output_sha256": "ea55347d62b5c4cf3df02889e186e088df2605b2dd7b806f7791673dd442d42d",
+    "output_size": [
+      1216,
+      864
+    ],
+    "matched_review": {
+      "output_sha256": "e871895984a3eca2ecead3c0ea8c0d00a2ae194aec0419956b2e1457886fc549",
+      "scores": {
+        "identity": 2,
+        "body_pose": 2,
+        "garment_transfer": 2,
+        "background_lighting": 2,
+        "artifacts": 2,
+        "detailed_fidelity": 3
+      },
+      "notes": "Matched single-reference output independently viewed on the same sheet. Broad embroidered collar, fringe and cuff construction visible; small ornate motif remains approximate. Published five preservation/transfer scores retained unchanged."
+    },
+    "category": "jacket",
+    "outer_category": null,
+    "mode": "multi_reference"
+  },
+  {
+    "experiment": "multiple_reference_v1",
+    "sample_id": "jacket_05",
+    "seed": 2026093002,
+    "status": "complete",
+    "graph_sha256": "578121bb6a849cb277ad31ca73675aa9260129507c8654b2f802d15c3de919ed",
+    "protocol_sha256": "a4fd6253087d54cf0b5e71ad12fcb33c3431fcec4a4b7d641c90dd1316507144",
+    "inputs": {
+      "person": {
+        "path": "evaluation/assets/commons/plus_size_model.jpg",
+        "sha256": "51a0ddb8e992fb7d005715ae32fa43f3cdbfd3229e67e5f84448ca0ccb8dae35"
+      },
+      "garment": {
+        "path": "evaluation/assets/met/jacket_159165.jpg",
+        "sha256": "121f658b5f3ed6c683fa5dee12bb8b23d1190c54852cbfdf28aff53327e8ad63"
+      },
+      "back": {
+        "path": "evaluation/assets/met/jacket_159165_back.jpg",
+        "sha256": "0dad675e723f4b7733a0a1cb48193705379475f983acb2bdbd5b1e2ca8398cac"
+      },
+      "detail": {
+        "path": "evaluation/assets/met/jacket_detail.png",
+        "sha256": "12b6288ef235d4faddbbc77a84f49b066a6647380364a85776a9ae629a6061b1"
+      }
+    },
+    "uploaded": {
+      "person": "cf_study_f4817e9e4d9a448e939ad3454b45e193_person.jpg",
+      "garment": "cf_study_f4817e9e4d9a448e939ad3454b45e193_garment.jpg",
+      "back": "cf_study_f4817e9e4d9a448e939ad3454b45e193_back.jpg",
+      "detail": "cf_study_f4817e9e4d9a448e939ad3454b45e193_detail.png"
+    },
+    "image_order": [
+      "person",
+      "garment",
+      "back",
+      "detail"
+    ],
+    "prompt": "Use <image1> as the edit target and <image2> only as the garment reference.\nReplace the foreground person's outermost upper-body garment in <image1> with the actual jacket shown in <image2>. Transfer the reference design rather than making a generic coat or jacket.\nCopy the reference collar architecture exactly. An upright stand collar must remain narrow and upright; do not replace it with a wide pointed shirt collar or lapels. A folded collar or embroidered shawl collar must retain the reference's visible shape and trim. Do not reuse the collar of the source's old outer garment. Preserve underlying clothing only where the new garment's opening would naturally expose it.\nMatch the visible reference length, silhouette, sleeve and cuff shape, closures, pockets, seams, color, pattern, material and decorative trim. Do not invent belts, extra pockets or closures absent from <image2>. A cropped jacket remains cropped; a long straight coat retains its long straight outline.\nPreserve the foreground person's facial identity, hairstyle and hair length, skin tone, body proportions, pose, hands and camera angle from <image1>. Preserve the source's existing accessories exactly. If there is no eyewear on the source face, keep the face without eyewear. Do not add or remove personal accessories.\nPreserve the background, background people, lighting, lower-body clothing and unrelated garments where they remain visible. Adapt only the replacement garment to the existing body and pose with coherent folds, shadows and natural occlusion by hair, hands and foreground objects. Do not shorten hair to reveal the garment.\nMake only the changes required for this garment transfer. A recolor of the original clothing is insufficient.\n\n<image2> is the front view of the SAME garment, not an additional garment. <image3> is the back view of the SAME garment, not an additional garment. <image4> is the detail view of the SAME garment, not an additional garment. Use the front view to determine the visible silhouette; use other views only to clarify corresponding construction, pattern and details. Do not paste a back design onto the front.",
+    "client_id": "cf_study_f4817e9e4d9a448e939ad3454b45e193",
+    "scores": {
+      "identity": 2,
+      "body_pose": 2,
+      "garment_transfer": 2,
+      "background_lighting": 2,
+      "artifacts": 2,
+      "detailed_fidelity": 3
+    },
+    "reviewer": "Codex visual review, 2026-10-03",
+    "notes": "Viewed source, front/back/detail and matched fixed-seed outputs together. Cropped burgundy velvet jacket, broad embroidered collar, fringe and cuffs transfer; face, long hair, wheat, hands, white skirt and field retained. Extra views do not visibly improve the fine embroidered motif at this distance; no exact stitching claim.",
+    "prompt_id": "cebc2b2a-2ba8-407f-8205-4630f0035880",
+    "execution_seconds": 366.626,
+    "wall_seconds": 369.785,
+    "sampled_device_peak_mib": 7391,
+    "output": "evaluation/benchmarks/multiple_reference_v1/jacket_05/2026093002/output.png",
+    "output_sha256": "e850b312f5e605f617bce9c5ce1403e6bfbfb2743cce88bcf4733741fe37e0cf",
+    "output_size": [
+      1216,
+      864
+    ],
+    "matched_review": {
+      "output_sha256": "a31eeb28628f925f9b9df26d9eb9c88b4252d7a1f010f752bf1cf91313060a20",
+      "scores": {
+        "identity": 2,
+        "body_pose": 2,
+        "garment_transfer": 2,
+        "background_lighting": 2,
+        "artifacts": 2,
+        "detailed_fidelity": 3
+      },
+      "notes": "Matched single-reference output independently viewed on the same sheet. Broad embroidered collar, fringe and cuff construction visible; small ornate motif remains approximate. Published five preservation/transfer scores retained unchanged."
+    },
+    "category": "jacket",
+    "outer_category": null,
+    "mode": "multi_reference"
+  },
+  {
+    "experiment": "multiple_reference_v1",
+    "sample_id": "capacity_five_inputs",
+    "seed": 2026093001,
+    "status": "complete",
+    "graph_sha256": "265c7cd3a68e4b30304f7f287b2048cce4b2a234dad04f45e05b6694a14d4655",
+    "protocol_sha256": "a4fd6253087d54cf0b5e71ad12fcb33c3431fcec4a4b7d641c90dd1316507144",
+    "inputs": {
+      "person": {
+        "path": "evaluation/assets/upstream/coastal_smiling_woman.png",
+        "sha256": "d78bb2fe877531938e596026cb3c577ff7af7188cb911ea2c6f49c1daf62d174"
+      },
+      "garment": {
+        "path": "evaluation/assets/met/jacket_159165.jpg",
+        "sha256": "121f658b5f3ed6c683fa5dee12bb8b23d1190c54852cbfdf28aff53327e8ad63"
+      },
+      "back": {
+        "path": "evaluation/assets/met/jacket_159165_back.jpg",
+        "sha256": "0dad675e723f4b7733a0a1cb48193705379475f983acb2bdbd5b1e2ca8398cac"
+      },
+      "side": {
+        "path": "evaluation/assets/met/jacket_159165.jpg",
+        "sha256": "121f658b5f3ed6c683fa5dee12bb8b23d1190c54852cbfdf28aff53327e8ad63"
+      },
+      "detail": {
+        "path": "evaluation/assets/met/jacket_detail.png",
+        "sha256": "12b6288ef235d4faddbbc77a84f49b066a6647380364a85776a9ae629a6061b1"
+      }
+    },
+    "uploaded": {
+      "person": "cf_study_b44e9fd7dc54434e9eefc368c2288fdb_person.png",
+      "garment": "cf_study_b44e9fd7dc54434e9eefc368c2288fdb_garment.jpg",
+      "back": "cf_study_b44e9fd7dc54434e9eefc368c2288fdb_back.jpg",
+      "side": "cf_study_b44e9fd7dc54434e9eefc368c2288fdb_side.jpg",
+      "detail": "cf_study_b44e9fd7dc54434e9eefc368c2288fdb_detail.png"
+    },
+    "image_order": [
+      "person",
+      "garment",
+      "back",
+      "side",
+      "detail"
+    ],
+    "prompt": "Use image1 as the edit target and transfer the red jacket from image2. Image3 is its real back view, image4 repeats the front solely to test five-input capacity, and image5 is a collar detail. Preserve the person and scene.",
+    "client_id": "cf_study_b44e9fd7dc54434e9eefc368c2288fdb",
+    "scores": {
+      "identity": 2,
+      "body_pose": 2,
+      "garment_transfer": 0,
+      "background_lighting": 1,
+      "artifacts": 0
+    },
+    "reviewer": "Codex visual review, 2026-10-03",
+    "notes": "Five inputs completed with retained native output. Visually reviewed capacity-only result: source person remains in original pale clothing and separate mannequin jacket views intrude beside her. This is not a successful try-on or evidence of side-view fidelity; capacity tests execution only.",
+    "prompt_id": "4b271c56-89c9-413e-9ad1-0dd69f7137d4",
+    "execution_seconds": 446.067,
+    "wall_seconds": 450.258,
+    "sampled_device_peak_mib": 7694,
+    "output": "evaluation/benchmarks/multiple_reference_v1/capacity_five_inputs/2026093001/output.png",
+    "output_sha256": "5dee8a2ef80b56e2267f4f2b6845c22e4d0271ab0347ae2d2484ba567e129b33",
+    "output_size": [
+      1024,
+      1024
+    ],
+    "category": "jacket",
+    "outer_category": null,
+    "mode": "capacity"
+  },
+  {
+    "experiment": "multiple_reference_v1",
+    "sample_id": "capacity_five_inputs",
+    "seed": 2026093002,
+    "status": "complete",
+    "graph_sha256": "e4a622bd4a4a8980460262d1b289dad38919e118e46ca0e085a2a0e1affc5a65",
+    "protocol_sha256": "a4fd6253087d54cf0b5e71ad12fcb33c3431fcec4a4b7d641c90dd1316507144",
+    "inputs": {
+      "person": {
+        "path": "evaluation/assets/upstream/coastal_smiling_woman.png",
+        "sha256": "d78bb2fe877531938e596026cb3c577ff7af7188cb911ea2c6f49c1daf62d174"
+      },
+      "garment": {
+        "path": "evaluation/assets/met/jacket_159165.jpg",
+        "sha256": "121f658b5f3ed6c683fa5dee12bb8b23d1190c54852cbfdf28aff53327e8ad63"
+      },
+      "back": {
+        "path": "evaluation/assets/met/jacket_159165_back.jpg",
+        "sha256": "0dad675e723f4b7733a0a1cb48193705379475f983acb2bdbd5b1e2ca8398cac"
+      },
+      "side": {
+        "path": "evaluation/assets/met/jacket_159165.jpg",
+        "sha256": "121f658b5f3ed6c683fa5dee12bb8b23d1190c54852cbfdf28aff53327e8ad63"
+      },
+      "detail": {
+        "path": "evaluation/assets/met/jacket_detail.png",
+        "sha256": "12b6288ef235d4faddbbc77a84f49b066a6647380364a85776a9ae629a6061b1"
+      }
+    },
+    "uploaded": {
+      "person": "cf_study_eb3b7055b7944b79ab17e53e3fbcbc01_person.png",
+      "garment": "cf_study_eb3b7055b7944b79ab17e53e3fbcbc01_garment.jpg",
+      "back": "cf_study_eb3b7055b7944b79ab17e53e3fbcbc01_back.jpg",
+      "side": "cf_study_eb3b7055b7944b79ab17e53e3fbcbc01_side.jpg",
+      "detail": "cf_study_eb3b7055b7944b79ab17e53e3fbcbc01_detail.png"
+    },
+    "image_order": [
+      "person",
+      "garment",
+      "back",
+      "side",
+      "detail"
+    ],
+    "prompt": "Use image1 as the edit target and transfer the red jacket from image2. Image3 is its real back view, image4 repeats the front solely to test five-input capacity, and image5 is a collar detail. Preserve the person and scene.",
+    "client_id": "cf_study_eb3b7055b7944b79ab17e53e3fbcbc01",
+    "scores": {
+      "identity": 2,
+      "body_pose": 2,
+      "garment_transfer": 0,
+      "background_lighting": 1,
+      "artifacts": 0
+    },
+    "reviewer": "Codex visual review, 2026-10-03",
+    "notes": "Second five-input capacity output visually reviewed with source and all inputs. Source remains in pale clothing, with intrusive front and back mannequin jackets beside her. Successful native execution, failed try-on quality; no genuine side-view claim.",
+    "prompt_id": "e584618a-198c-4edf-ba6e-7d07c5ae0e6b",
+    "execution_seconds": 441.178,
+    "wall_seconds": 441.727,
+    "sampled_device_peak_mib": 7606,
+    "output": "evaluation/benchmarks/multiple_reference_v1/capacity_five_inputs/2026093002/output.png",
+    "output_sha256": "67b3587b3312c3c2fb9f2512b96aaf64dc58fecd3b2be62553e65390fb6e0d0e",
+    "output_size": [
+      1024,
+      1024
+    ],
+    "category": "jacket",
+    "outer_category": null,
+    "mode": "capacity"
+  }
+]

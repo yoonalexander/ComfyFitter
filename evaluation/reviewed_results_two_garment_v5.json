@@ -1,0 +1,474 @@
+[
+  {
+    "experiment": "two_garment_v5",
+    "sample_id": "shirt_coat_01",
+    "seed": 2026093001,
+    "status": "complete",
+    "graph_sha256": "169e99def6b9a6a85f28b0dfafc76493faeec1db72460f8025635cc55cf0eb17",
+    "protocol_sha256": "d3f620955634d03c2e079710ab9aa24b2556727954432549ed83b19564074078",
+    "inputs": {
+      "person": {
+        "path": "evaluation/assets/upstream/casual_male_portrait.png",
+        "sha256": "f750ded4fa7d359510b86d2973c33091238c01f089f2d67f619838b1051a02d0"
+      },
+      "garment": {
+        "path": "evaluation/assets/upstream/clothing_light_blue_denim_shirt.png",
+        "sha256": "5f8d348aa0079922743e53ab687ba5661c57696d373a0113cc61dae9a36761a3"
+      },
+      "outer": {
+        "path": "evaluation/assets/commons/ford_trenchcoat.jpg",
+        "sha256": "d92ad38cd74e71bd566e9bf94eb445490b08049469f26d3eb15b14b562f5d26a"
+      }
+    },
+    "uploaded": {
+      "person": "cf_study_8e21047a8136466a88037dd5c27757d0_person.png",
+      "garment": "cf_study_8e21047a8136466a88037dd5c27757d0_garment.png",
+      "outer": "cf_study_8e21047a8136466a88037dd5c27757d0_outer.jpg"
+    },
+    "image_order": [
+      "person",
+      "garment",
+      "outer"
+    ],
+    "prompt": "Use <image1> as the edit target. Dress the foreground person in the exact shirt from <image2>, with the exact coat from <image3> worn OPEN over it. The inner garment is a separate garment, not a texture for the outer layer. Keep both reference identities distinct: copy each collar, sleeves, seams, closures, material, color and visible detail from its own image. Show the inner garment naturally through the outer opening. Match the outer reference length. Preserve the original face, full hairstyle, pose, hands, body proportions, accessories, lighting, background and unrelated lower clothing. Respect layering and natural hair/hand occlusion; add no absent garment details or accessories. Wear the inner shirt TUCKED INTO the EXISTING lower-body garment from image1. Keep that original lower garment, its waistband, skirt or trouser shape, color and hem intact. The shirt ends at the original waist; its hem must not replace a skirt or expose additional bare legs. The open outer coat may naturally cover part of the original lower garment, but the lower garment must remain visible through the coat opening wherever it was visible in image1. Copy the outer coat collar orientation from image3: a folded pointed collar remains folded down, and an upright collar remains upright only if image3 shows it. Keep the inner collar separate from the outer collar; copy only the closures and cuffs shown in each reference. Preserve the exact original arm, elbow, wrist and hand positions AND their original visibility. Hands in pockets stay in pockets; crossed arms stay crossed; held objects stay held by the same hands. Retain only accessories and objects already present in image1; invent no new props, cuff straps or pockets. Keep the original person, lower clothing and scene as fixed constraints; edit only the upper garments. Preserve existing backpacks, bags and their shoulder straps exactly OVER the new coat. Match the inner shirt front closures and collar opening to image2; do not copy image1's original neckline onto the supplied inner shirt.",
+    "client_id": "cf_study_8e21047a8136466a88037dd5c27757d0",
+    "scores": {
+      "identity": 2,
+      "body_pose": 2,
+      "inner_transfer": 2,
+      "outer_transfer": 2,
+      "background_lighting": 2,
+      "artifacts": 2,
+      "layering_occlusion": 2
+    },
+    "reviewer": "Codex visual review, 2026-10-04",
+    "notes": "With source bag choice true, the existing backpack and both shoulder straps remain over open tan coat. Face, glasses, hair, tilted stance, pocketed hands, original trousers, shoes and studio light retained. Distinct blue button-front shirt tucked at original waist and matching tan folded-collar long coat; no visible structural artifacts.",
+    "source_has_bag": true,
+    "prompt_id": "fa955c83-cb45-4296-b97c-4cd6e7aa457a",
+    "execution_seconds": 281.138,
+    "wall_seconds": 284.614,
+    "sampled_device_peak_mib": 7680,
+    "output": "evaluation/benchmarks/two_garment_v5/shirt_coat_01/2026093001/output.png",
+    "output_sha256": "ad3cc7c1b2617aa7204cb0f75e3119c160f7781acb738257452c63e7c12525f2",
+    "output_size": [
+      832,
+      1248
+    ],
+    "category": "shirt",
+    "outer_category": "coat",
+    "mode": "two_garment"
+  },
+  {
+    "experiment": "two_garment_v5",
+    "sample_id": "shirt_coat_01",
+    "seed": 2026093002,
+    "status": "complete",
+    "graph_sha256": "30ff9345cc5e44a37475f77eb6225ecba815bdedd0c3f12c96239c1831bd36d4",
+    "protocol_sha256": "d3f620955634d03c2e079710ab9aa24b2556727954432549ed83b19564074078",
+    "inputs": {
+      "person": {
+        "path": "evaluation/assets/upstream/casual_male_portrait.png",
+        "sha256": "f750ded4fa7d359510b86d2973c33091238c01f089f2d67f619838b1051a02d0"
+      },
+      "garment": {
+        "path": "evaluation/assets/upstream/clothing_light_blue_denim_shirt.png",
+        "sha256": "5f8d348aa0079922743e53ab687ba5661c57696d373a0113cc61dae9a36761a3"
+      },
+      "outer": {
+        "path": "evaluation/assets/commons/ford_trenchcoat.jpg",
+        "sha256": "d92ad38cd74e71bd566e9bf94eb445490b08049469f26d3eb15b14b562f5d26a"
+      }
+    },
+    "uploaded": {
+      "person": "cf_study_c1b38ecf8b6f43daad85a7e7820d8cb0_person.png",
+      "garment": "cf_study_c1b38ecf8b6f43daad85a7e7820d8cb0_garment.png",
+      "outer": "cf_study_c1b38ecf8b6f43daad85a7e7820d8cb0_outer.jpg"
+    },
+    "image_order": [
+      "person",
+      "garment",
+      "outer"
+    ],
+    "prompt": "Use <image1> as the edit target. Dress the foreground person in the exact shirt from <image2>, with the exact coat from <image3> worn OPEN over it. The inner garment is a separate garment, not a texture for the outer layer. Keep both reference identities distinct: copy each collar, sleeves, seams, closures, material, color and visible detail from its own image. Show the inner garment naturally through the outer opening. Match the outer reference length. Preserve the original face, full hairstyle, pose, hands, body proportions, accessories, lighting, background and unrelated lower clothing. Respect layering and natural hair/hand occlusion; add no absent garment details or accessories. Wear the inner shirt TUCKED INTO the EXISTING lower-body garment from image1. Keep that original lower garment, its waistband, skirt or trouser shape, color and hem intact. The shirt ends at the original waist; its hem must not replace a skirt or expose additional bare legs. The open outer coat may naturally cover part of the original lower garment, but the lower garment must remain visible through the coat opening wherever it was visible in image1. Copy the outer coat collar orientation from image3: a folded pointed collar remains folded down, and an upright collar remains upright only if image3 shows it. Keep the inner collar separate from the outer collar; copy only the closures and cuffs shown in each reference. Preserve the exact original arm, elbow, wrist and hand positions AND their original visibility. Hands in pockets stay in pockets; crossed arms stay crossed; held objects stay held by the same hands. Retain only accessories and objects already present in image1; invent no new props, cuff straps or pockets. Keep the original person, lower clothing and scene as fixed constraints; edit only the upper garments. Preserve existing backpacks, bags and their shoulder straps exactly OVER the new coat. Match the inner shirt front closures and collar opening to image2; do not copy image1's original neckline onto the supplied inner shirt.",
+    "client_id": "cf_study_c1b38ecf8b6f43daad85a7e7820d8cb0",
+    "scores": {
+      "identity": 2,
+      "body_pose": 2,
+      "inner_transfer": 2,
+      "outer_transfer": 2,
+      "background_lighting": 2,
+      "artifacts": 2,
+      "layering_occlusion": 2
+    },
+    "reviewer": "Codex visual review, 2026-10-04",
+    "notes": "With source bag choice true, both original backpack straps and bag remain over the new tan coat. Original face, glasses, hair, tilted pose, hands in pockets, loose trousers, shoes and studio backdrop retained. Distinct blue reference collar and pearl-button shirt tucked at waist, open tan long coat with correct folded collar. No visible structural artifacts.",
+    "source_has_bag": true,
+    "prompt_id": "04936aa3-0be0-4d2f-8f09-a903360eff87",
+    "execution_seconds": 282.094,
+    "wall_seconds": 284.31,
+    "sampled_device_peak_mib": 7644,
+    "output": "evaluation/benchmarks/two_garment_v5/shirt_coat_01/2026093002/output.png",
+    "output_sha256": "e9bacfd3247c687353ccfd07e9cdf3f1268525f8b5438fefa5c3efb05d4f3df8",
+    "output_size": [
+      832,
+      1248
+    ],
+    "category": "shirt",
+    "outer_category": "coat",
+    "mode": "two_garment"
+  },
+  {
+    "experiment": "two_garment_v5",
+    "sample_id": "shirt_coat_02",
+    "seed": 2026093001,
+    "status": "complete",
+    "graph_sha256": "5c91ea51999320ae2da274539d8ac2b80026fcfb4356794f52f27740d1ae95a7",
+    "protocol_sha256": "d3f620955634d03c2e079710ab9aa24b2556727954432549ed83b19564074078",
+    "inputs": {
+      "person": {
+        "path": "evaluation/assets/upstream/portrait_model_denim.png",
+        "sha256": "d888e9396587a3fd4ad500bbf5988fed0f7ba60ffa71628c29fced78bece3ac6"
+      },
+      "garment": {
+        "path": "evaluation/assets/upstream/clothing_light_blue_denim_shirt.png",
+        "sha256": "5f8d348aa0079922743e53ab687ba5661c57696d373a0113cc61dae9a36761a3"
+      },
+      "outer": {
+        "path": "evaluation/assets/commons/ford_trenchcoat.jpg",
+        "sha256": "d92ad38cd74e71bd566e9bf94eb445490b08049469f26d3eb15b14b562f5d26a"
+      }
+    },
+    "uploaded": {
+      "person": "cf_study_44204ded589e4e738ed65574536b72f3_person.png",
+      "garment": "cf_study_44204ded589e4e738ed65574536b72f3_garment.png",
+      "outer": "cf_study_44204ded589e4e738ed65574536b72f3_outer.jpg"
+    },
+    "image_order": [
+      "person",
+      "garment",
+      "outer"
+    ],
+    "prompt": "Use <image1> as the edit target. Dress the foreground person in the exact shirt from <image2>, with the exact coat from <image3> worn OPEN over it. The inner garment is a separate garment, not a texture for the outer layer. Keep both reference identities distinct: copy each collar, sleeves, seams, closures, material, color and visible detail from its own image. Show the inner garment naturally through the outer opening. Match the outer reference length. Preserve the original face, full hairstyle, pose, hands, body proportions, accessories, lighting, background and unrelated lower clothing. Respect layering and natural hair/hand occlusion; add no absent garment details or accessories. Wear the inner shirt TUCKED INTO the EXISTING lower-body garment from image1. Keep that original lower garment, its waistband, skirt or trouser shape, color and hem intact. The shirt ends at the original waist; its hem must not replace a skirt or expose additional bare legs. The open outer coat may naturally cover part of the original lower garment, but the lower garment must remain visible through the coat opening wherever it was visible in image1. Copy the outer coat collar orientation from image3: a folded pointed collar remains folded down, and an upright collar remains upright only if image3 shows it. Keep the inner collar separate from the outer collar; copy only the closures and cuffs shown in each reference. Preserve the exact original arm, elbow, wrist and hand positions AND their original visibility. Hands in pockets stay in pockets; crossed arms stay crossed; held objects stay held by the same hands. Retain only accessories and objects already present in image1; invent no new props, cuff straps or pockets. Keep the original person, lower clothing and scene as fixed constraints; edit only the upper garments. Match the inner shirt front closures and collar opening to image2; do not copy image1's original neckline onto the supplied inner shirt.",
+    "client_id": "cf_study_44204ded589e4e738ed65574536b72f3",
+    "scores": {
+      "identity": 2,
+      "body_pose": 2,
+      "inner_transfer": 2,
+      "outer_transfer": 2,
+      "background_lighting": 2,
+      "artifacts": 1,
+      "layering_occlusion": 2
+    },
+    "reviewer": "Codex visual review, 2026-10-04",
+    "notes": "With source bag choice false, no invented bag or shoulder straps. Original profile face, hair, bent head, arm orientation, framing and studio background retained. Blue reference collar, pearl-button front and chest pocket remain distinct under open tan folded-collar coat, shirt at original waist. Minor cuff/closure approximation; no structural artifacts.",
+    "source_has_bag": false,
+    "prompt_id": "85108456-8621-4d09-a0b2-269945b246f4",
+    "execution_seconds": 279.417,
+    "wall_seconds": 282.398,
+    "sampled_device_peak_mib": 7553,
+    "output": "evaluation/benchmarks/two_garment_v5/shirt_coat_02/2026093001/output.png",
+    "output_sha256": "1d5cdfc2a1e7c7deec03100bec015e0a29eff3c55a2a2186b3c95882f51b5d87",
+    "output_size": [
+      896,
+      1152
+    ],
+    "category": "shirt",
+    "outer_category": "coat",
+    "mode": "two_garment"
+  },
+  {
+    "experiment": "two_garment_v5",
+    "sample_id": "shirt_coat_02",
+    "seed": 2026093002,
+    "status": "complete",
+    "graph_sha256": "09d640dd9d9a6a4592fa4ddd3a0b73a6e50e7dfc686b4d70228e1542ba22d93f",
+    "protocol_sha256": "d3f620955634d03c2e079710ab9aa24b2556727954432549ed83b19564074078",
+    "inputs": {
+      "person": {
+        "path": "evaluation/assets/upstream/portrait_model_denim.png",
+        "sha256": "d888e9396587a3fd4ad500bbf5988fed0f7ba60ffa71628c29fced78bece3ac6"
+      },
+      "garment": {
+        "path": "evaluation/assets/upstream/clothing_light_blue_denim_shirt.png",
+        "sha256": "5f8d348aa0079922743e53ab687ba5661c57696d373a0113cc61dae9a36761a3"
+      },
+      "outer": {
+        "path": "evaluation/assets/commons/ford_trenchcoat.jpg",
+        "sha256": "d92ad38cd74e71bd566e9bf94eb445490b08049469f26d3eb15b14b562f5d26a"
+      }
+    },
+    "uploaded": {
+      "person": "cf_study_b619eafda8d640adad02e5c0b9132007_person.png",
+      "garment": "cf_study_b619eafda8d640adad02e5c0b9132007_garment.png",
+      "outer": "cf_study_b619eafda8d640adad02e5c0b9132007_outer.jpg"
+    },
+    "image_order": [
+      "person",
+      "garment",
+      "outer"
+    ],
+    "prompt": "Use <image1> as the edit target. Dress the foreground person in the exact shirt from <image2>, with the exact coat from <image3> worn OPEN over it. The inner garment is a separate garment, not a texture for the outer layer. Keep both reference identities distinct: copy each collar, sleeves, seams, closures, material, color and visible detail from its own image. Show the inner garment naturally through the outer opening. Match the outer reference length. Preserve the original face, full hairstyle, pose, hands, body proportions, accessories, lighting, background and unrelated lower clothing. Respect layering and natural hair/hand occlusion; add no absent garment details or accessories. Wear the inner shirt TUCKED INTO the EXISTING lower-body garment from image1. Keep that original lower garment, its waistband, skirt or trouser shape, color and hem intact. The shirt ends at the original waist; its hem must not replace a skirt or expose additional bare legs. The open outer coat may naturally cover part of the original lower garment, but the lower garment must remain visible through the coat opening wherever it was visible in image1. Copy the outer coat collar orientation from image3: a folded pointed collar remains folded down, and an upright collar remains upright only if image3 shows it. Keep the inner collar separate from the outer collar; copy only the closures and cuffs shown in each reference. Preserve the exact original arm, elbow, wrist and hand positions AND their original visibility. Hands in pockets stay in pockets; crossed arms stay crossed; held objects stay held by the same hands. Retain only accessories and objects already present in image1; invent no new props, cuff straps or pockets. Keep the original person, lower clothing and scene as fixed constraints; edit only the upper garments. Match the inner shirt front closures and collar opening to image2; do not copy image1's original neckline onto the supplied inner shirt.",
+    "client_id": "cf_study_b619eafda8d640adad02e5c0b9132007",
+    "scores": {
+      "identity": 2,
+      "body_pose": 2,
+      "inner_transfer": 2,
+      "outer_transfer": 2,
+      "background_lighting": 2,
+      "artifacts": 1,
+      "layering_occlusion": 2
+    },
+    "reviewer": "Codex visual review, 2026-10-04",
+    "notes": "With source bag choice false, no invented backpack or shoulder straps. Profile face, hair, bent head, arm orientation, framing and original studio retained. Distinct blue reference collar, pearl-button front and chest pocket under open tan folded-collar coat; original waistband retained. Minor cuff/closure approximation, no structural artifacts.",
+    "source_has_bag": false,
+    "prompt_id": "2398422e-0bcf-4075-a500-2e6f25177cbd",
+    "execution_seconds": 279.848,
+    "wall_seconds": 284.508,
+    "sampled_device_peak_mib": 7571,
+    "output": "evaluation/benchmarks/two_garment_v5/shirt_coat_02/2026093002/output.png",
+    "output_sha256": "b707bf09a55d3f71a2afdaa030837db4af490dded455bb64d9fe219e0ef0743f",
+    "output_size": [
+      896,
+      1152
+    ],
+    "category": "shirt",
+    "outer_category": "coat",
+    "mode": "two_garment"
+  },
+  {
+    "experiment": "two_garment_v5",
+    "sample_id": "shirt_coat_03",
+    "seed": 2026093001,
+    "status": "complete",
+    "graph_sha256": "d5541968b9aa5d58d4a993a5f31b754d1cd19ca51b81269b23e6bf69b1af0937",
+    "protocol_sha256": "d3f620955634d03c2e079710ab9aa24b2556727954432549ed83b19564074078",
+    "inputs": {
+      "person": {
+        "path": "evaluation/assets/upstream/urban_man.png",
+        "sha256": "8886ff6ccd369739e227274af8ad42d0f8627129d83c1643c84e3da1348ca986"
+      },
+      "garment": {
+        "path": "evaluation/assets/upstream/clothing_light_blue_denim_shirt.png",
+        "sha256": "5f8d348aa0079922743e53ab687ba5661c57696d373a0113cc61dae9a36761a3"
+      },
+      "outer": {
+        "path": "evaluation/assets/commons/ford_trenchcoat.jpg",
+        "sha256": "d92ad38cd74e71bd566e9bf94eb445490b08049469f26d3eb15b14b562f5d26a"
+      }
+    },
+    "uploaded": {
+      "person": "cf_study_5fc2d4abed994489b51c294fdf30d816_person.png",
+      "garment": "cf_study_5fc2d4abed994489b51c294fdf30d816_garment.png",
+      "outer": "cf_study_5fc2d4abed994489b51c294fdf30d816_outer.jpg"
+    },
+    "image_order": [
+      "person",
+      "garment",
+      "outer"
+    ],
+    "prompt": "Use <image1> as the edit target. Dress the foreground person in the exact shirt from <image2>, with the exact coat from <image3> worn OPEN over it. The inner garment is a separate garment, not a texture for the outer layer. Keep both reference identities distinct: copy each collar, sleeves, seams, closures, material, color and visible detail from its own image. Show the inner garment naturally through the outer opening. Match the outer reference length. Preserve the original face, full hairstyle, pose, hands, body proportions, accessories, lighting, background and unrelated lower clothing. Respect layering and natural hair/hand occlusion; add no absent garment details or accessories. Wear the inner shirt TUCKED INTO the EXISTING lower-body garment from image1. Keep that original lower garment, its waistband, skirt or trouser shape, color and hem intact. The shirt ends at the original waist; its hem must not replace a skirt or expose additional bare legs. The open outer coat may naturally cover part of the original lower garment, but the lower garment must remain visible through the coat opening wherever it was visible in image1. Copy the outer coat collar orientation from image3: a folded pointed collar remains folded down, and an upright collar remains upright only if image3 shows it. Keep the inner collar separate from the outer collar; copy only the closures and cuffs shown in each reference. Preserve the exact original arm, elbow, wrist and hand positions AND their original visibility. Hands in pockets stay in pockets; crossed arms stay crossed; held objects stay held by the same hands. Retain only accessories and objects already present in image1; invent no new props, cuff straps or pockets. Keep the original person, lower clothing and scene as fixed constraints; edit only the upper garments. Match the inner shirt front closures and collar opening to image2; do not copy image1's original neckline onto the supplied inner shirt.",
+    "client_id": "cf_study_5fc2d4abed994489b51c294fdf30d816",
+    "scores": {
+      "identity": 2,
+      "body_pose": 2,
+      "inner_transfer": 2,
+      "outer_transfer": 2,
+      "background_lighting": 2,
+      "artifacts": 1,
+      "layering_occlusion": 2
+    },
+    "reviewer": "Codex visual review, 2026-10-04",
+    "notes": "With source bag choice false, no invented straps or bags. Original face, hairstyle, gaze, crossed arms and hands, lower patterned clothing and urban background retained. Blue reference collar and pearl-button shirt remain distinct inside long tan open folded-collar coat, with natural arm occlusion. Minor cuff/closure approximation; no structural artifacts.",
+    "source_has_bag": false,
+    "prompt_id": "cae99357-7cb4-4589-a807-516345a37b9f",
+    "execution_seconds": 284.9,
+    "wall_seconds": 288.33,
+    "sampled_device_peak_mib": 7594,
+    "output": "evaluation/benchmarks/two_garment_v5/shirt_coat_03/2026093001/output.png",
+    "output_sha256": "f53df7d104add0dd4884de8d25cdc5a8210386f1d6467f4a5d90fc80dc370fb5",
+    "output_size": [
+      768,
+      1376
+    ],
+    "category": "shirt",
+    "outer_category": "coat",
+    "mode": "two_garment"
+  },
+  {
+    "experiment": "two_garment_v5",
+    "sample_id": "shirt_coat_03",
+    "seed": 2026093002,
+    "status": "complete",
+    "graph_sha256": "7be636d10a546ec913b46a091d642488c8ce91e996d65fd716992e02af83e059",
+    "protocol_sha256": "d3f620955634d03c2e079710ab9aa24b2556727954432549ed83b19564074078",
+    "inputs": {
+      "person": {
+        "path": "evaluation/assets/upstream/urban_man.png",
+        "sha256": "8886ff6ccd369739e227274af8ad42d0f8627129d83c1643c84e3da1348ca986"
+      },
+      "garment": {
+        "path": "evaluation/assets/upstream/clothing_light_blue_denim_shirt.png",
+        "sha256": "5f8d348aa0079922743e53ab687ba5661c57696d373a0113cc61dae9a36761a3"
+      },
+      "outer": {
+        "path": "evaluation/assets/commons/ford_trenchcoat.jpg",
+        "sha256": "d92ad38cd74e71bd566e9bf94eb445490b08049469f26d3eb15b14b562f5d26a"
+      }
+    },
+    "uploaded": {
+      "person": "cf_study_7b3dbacb293345d89fe3ea19ed016b10_person.png",
+      "garment": "cf_study_7b3dbacb293345d89fe3ea19ed016b10_garment.png",
+      "outer": "cf_study_7b3dbacb293345d89fe3ea19ed016b10_outer.jpg"
+    },
+    "image_order": [
+      "person",
+      "garment",
+      "outer"
+    ],
+    "prompt": "Use <image1> as the edit target. Dress the foreground person in the exact shirt from <image2>, with the exact coat from <image3> worn OPEN over it. The inner garment is a separate garment, not a texture for the outer layer. Keep both reference identities distinct: copy each collar, sleeves, seams, closures, material, color and visible detail from its own image. Show the inner garment naturally through the outer opening. Match the outer reference length. Preserve the original face, full hairstyle, pose, hands, body proportions, accessories, lighting, background and unrelated lower clothing. Respect layering and natural hair/hand occlusion; add no absent garment details or accessories. Wear the inner shirt TUCKED INTO the EXISTING lower-body garment from image1. Keep that original lower garment, its waistband, skirt or trouser shape, color and hem intact. The shirt ends at the original waist; its hem must not replace a skirt or expose additional bare legs. The open outer coat may naturally cover part of the original lower garment, but the lower garment must remain visible through the coat opening wherever it was visible in image1. Copy the outer coat collar orientation from image3: a folded pointed collar remains folded down, and an upright collar remains upright only if image3 shows it. Keep the inner collar separate from the outer collar; copy only the closures and cuffs shown in each reference. Preserve the exact original arm, elbow, wrist and hand positions AND their original visibility. Hands in pockets stay in pockets; crossed arms stay crossed; held objects stay held by the same hands. Retain only accessories and objects already present in image1; invent no new props, cuff straps or pockets. Keep the original person, lower clothing and scene as fixed constraints; edit only the upper garments. Match the inner shirt front closures and collar opening to image2; do not copy image1's original neckline onto the supplied inner shirt.",
+    "client_id": "cf_study_7b3dbacb293345d89fe3ea19ed016b10",
+    "scores": {
+      "identity": 2,
+      "body_pose": 2,
+      "inner_transfer": 2,
+      "outer_transfer": 2,
+      "background_lighting": 2,
+      "artifacts": 1,
+      "layering_occlusion": 2
+    },
+    "reviewer": "Codex visual review, 2026-10-04",
+    "notes": "With source bag choice false, no invented bags or straps. Original face, hair, gaze, crossed arm/hand positions, lower patterned garment and urban background retained. Reference blue collar and pearl buttons remain separate from the tan long folded-collar open coat; natural arm and sleeve occlusion. Minor cuff/closure approximation, no structural artifacts.",
+    "source_has_bag": false,
+    "prompt_id": "8d74f75f-e272-438b-8f8b-86c42555196f",
+    "execution_seconds": 288.472,
+    "wall_seconds": 293.314,
+    "sampled_device_peak_mib": 7587,
+    "output": "evaluation/benchmarks/two_garment_v5/shirt_coat_03/2026093002/output.png",
+    "output_sha256": "4805855ba748563157859bc469a2b80265c1191665c219476b8cbbed67c74a83",
+    "output_size": [
+      768,
+      1376
+    ],
+    "category": "shirt",
+    "outer_category": "coat",
+    "mode": "two_garment"
+  },
+  {
+    "experiment": "two_garment_v5",
+    "sample_id": "shirt_coat_05",
+    "seed": 2026093001,
+    "status": "complete",
+    "graph_sha256": "9610715b5daccde2d5c0cc84b88ad5d35551fd6529643a9f6301a9d1d894d2a2",
+    "protocol_sha256": "d3f620955634d03c2e079710ab9aa24b2556727954432549ed83b19564074078",
+    "inputs": {
+      "person": {
+        "path": "evaluation/assets/commons/plus_size_model.jpg",
+        "sha256": "51a0ddb8e992fb7d005715ae32fa43f3cdbfd3229e67e5f84448ca0ccb8dae35"
+      },
+      "garment": {
+        "path": "evaluation/assets/upstream/clothing_light_blue_denim_shirt.png",
+        "sha256": "5f8d348aa0079922743e53ab687ba5661c57696d373a0113cc61dae9a36761a3"
+      },
+      "outer": {
+        "path": "evaluation/assets/commons/ford_trenchcoat.jpg",
+        "sha256": "d92ad38cd74e71bd566e9bf94eb445490b08049469f26d3eb15b14b562f5d26a"
+      }
+    },
+    "uploaded": {
+      "person": "cf_study_98c2a6d8a06f4da2a1e7f1e26d746427_person.jpg",
+      "garment": "cf_study_98c2a6d8a06f4da2a1e7f1e26d746427_garment.png",
+      "outer": "cf_study_98c2a6d8a06f4da2a1e7f1e26d746427_outer.jpg"
+    },
+    "image_order": [
+      "person",
+      "garment",
+      "outer"
+    ],
+    "prompt": "Use <image1> as the edit target. Dress the foreground person in the exact shirt from <image2>, with the exact coat from <image3> worn OPEN over it. The inner garment is a separate garment, not a texture for the outer layer. Keep both reference identities distinct: copy each collar, sleeves, seams, closures, material, color and visible detail from its own image. Show the inner garment naturally through the outer opening. Match the outer reference length. Preserve the original face, full hairstyle, pose, hands, body proportions, accessories, lighting, background and unrelated lower clothing. Respect layering and natural hair/hand occlusion; add no absent garment details or accessories. Wear the inner shirt TUCKED INTO the EXISTING lower-body garment from image1. Keep that original lower garment, its waistband, skirt or trouser shape, color and hem intact. The shirt ends at the original waist; its hem must not replace a skirt or expose additional bare legs. The open outer coat may naturally cover part of the original lower garment, but the lower garment must remain visible through the coat opening wherever it was visible in image1. Copy the outer coat collar orientation from image3: a folded pointed collar remains folded down, and an upright collar remains upright only if image3 shows it. Keep the inner collar separate from the outer collar; copy only the closures and cuffs shown in each reference. Preserve the exact original arm, elbow, wrist and hand positions AND their original visibility. Hands in pockets stay in pockets; crossed arms stay crossed; held objects stay held by the same hands. Retain only accessories and objects already present in image1; invent no new props, cuff straps or pockets. Keep the original person, lower clothing and scene as fixed constraints; edit only the upper garments. Match the inner shirt front closures and collar opening to image2; do not copy image1's original neckline onto the supplied inner shirt.",
+    "client_id": "cf_study_98c2a6d8a06f4da2a1e7f1e26d746427",
+    "scores": {
+      "identity": 2,
+      "body_pose": 2,
+      "inner_transfer": 2,
+      "outer_transfer": 2,
+      "background_lighting": 2,
+      "artifacts": 1,
+      "layering_occlusion": 2
+    },
+    "reviewer": "Codex visual review, 2026-10-04",
+    "notes": "With source bag choice false, no invented shoulder bag or straps. Face, long hair, original arm/hand positions and held wheat, white skirt and field lighting retained. Blue pearl-button reference shirt with chest pocket stays distinct under tan long open folded-collar coat; original lower clothing remains visible. Minor hand/fine-closure approximation; no floating props or structural artifacts.",
+    "source_has_bag": false,
+    "prompt_id": "b1b95636-8a45-4916-b011-a236dae616ac",
+    "execution_seconds": 283.164,
+    "wall_seconds": 287.435,
+    "sampled_device_peak_mib": 7573,
+    "output": "evaluation/benchmarks/two_garment_v5/shirt_coat_05/2026093001/output.png",
+    "output_sha256": "ec34962ceebf8b33446f1a9ac7147d9eba88e2a1ed615ec84052fb9ef3bfbb9a",
+    "output_size": [
+      1216,
+      864
+    ],
+    "category": "shirt",
+    "outer_category": "coat",
+    "mode": "two_garment"
+  },
+  {
+    "experiment": "two_garment_v5",
+    "sample_id": "shirt_coat_05",
+    "seed": 2026093002,
+    "status": "complete",
+    "graph_sha256": "31580bcfeab0ea0d5f181103c63a03aad9f40fc752efb24ff64a28be1be8fe84",
+    "protocol_sha256": "d3f620955634d03c2e079710ab9aa24b2556727954432549ed83b19564074078",
+    "inputs": {
+      "person": {
+        "path": "evaluation/assets/commons/plus_size_model.jpg",
+        "sha256": "51a0ddb8e992fb7d005715ae32fa43f3cdbfd3229e67e5f84448ca0ccb8dae35"
+      },
+      "garment": {
+        "path": "evaluation/assets/upstream/clothing_light_blue_denim_shirt.png",
+        "sha256": "5f8d348aa0079922743e53ab687ba5661c57696d373a0113cc61dae9a36761a3"
+      },
+      "outer": {
+        "path": "evaluation/assets/commons/ford_trenchcoat.jpg",
+        "sha256": "d92ad38cd74e71bd566e9bf94eb445490b08049469f26d3eb15b14b562f5d26a"
+      }
+    },
+    "uploaded": {
+      "person": "cf_study_44b300f6d1db4ef4a2c1443985868303_person.jpg",
+      "garment": "cf_study_44b300f6d1db4ef4a2c1443985868303_garment.png",
+      "outer": "cf_study_44b300f6d1db4ef4a2c1443985868303_outer.jpg"
+    },
+    "image_order": [
+      "person",
+      "garment",
+      "outer"
+    ],
+    "prompt": "Use <image1> as the edit target. Dress the foreground person in the exact shirt from <image2>, with the exact coat from <image3> worn OPEN over it. The inner garment is a separate garment, not a texture for the outer layer. Keep both reference identities distinct: copy each collar, sleeves, seams, closures, material, color and visible detail from its own image. Show the inner garment naturally through the outer opening. Match the outer reference length. Preserve the original face, full hairstyle, pose, hands, body proportions, accessories, lighting, background and unrelated lower clothing. Respect layering and natural hair/hand occlusion; add no absent garment details or accessories. Wear the inner shirt TUCKED INTO the EXISTING lower-body garment from image1. Keep that original lower garment, its waistband, skirt or trouser shape, color and hem intact. The shirt ends at the original waist; its hem must not replace a skirt or expose additional bare legs. The open outer coat may naturally cover part of the original lower garment, but the lower garment must remain visible through the coat opening wherever it was visible in image1. Copy the outer coat collar orientation from image3: a folded pointed collar remains folded down, and an upright collar remains upright only if image3 shows it. Keep the inner collar separate from the outer collar; copy only the closures and cuffs shown in each reference. Preserve the exact original arm, elbow, wrist and hand positions AND their original visibility. Hands in pockets stay in pockets; crossed arms stay crossed; held objects stay held by the same hands. Retain only accessories and objects already present in image1; invent no new props, cuff straps or pockets. Keep the original person, lower clothing and scene as fixed constraints; edit only the upper garments. Match the inner shirt front closures and collar opening to image2; do not copy image1's original neckline onto the supplied inner shirt.",
+    "client_id": "cf_study_44b300f6d1db4ef4a2c1443985868303",
+    "scores": {
+      "identity": 2,
+      "body_pose": 2,
+      "inner_transfer": 1,
+      "outer_transfer": 2,
+      "background_lighting": 2,
+      "artifacts": 1,
+      "layering_occlusion": 2
+    },
+    "reviewer": "Codex visual review, 2026-10-04",
+    "notes": "With source bag choice false, no invented bag or straps. Original face, hair, field scene, arm/hand positions, held wheat and white skirt retained; tan long folded-collar open coat matches outer reference. Inner blue shirt has a deeper open V neckline and lacks the clearly visible closed pearl-button front of its reference, consistent with the earlier rejected inner-fidelity case. Inner-transfer score1 fails this output; minor hand/cuff approximation.",
+    "source_has_bag": false,
+    "prompt_id": "d5c4b9ec-a09c-4e47-a25f-5dcb8d0d65d6",
+    "execution_seconds": 282.197,
+    "wall_seconds": 285.023,
+    "sampled_device_peak_mib": 7499,
+    "output": "evaluation/benchmarks/two_garment_v5/shirt_coat_05/2026093002/output.png",
+    "output_sha256": "c280f9d7c58a1bb22023dd9e7f26f6049622a0ec2345ad640def67652054fa30",
+    "output_size": [
+      1216,
+      864
+    ],
+    "category": "shirt",
+    "outer_category": "coat",
+    "mode": "two_garment"
+  }
+]

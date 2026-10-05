@@ -1,0 +1,138 @@
+{
+  "defined_date": "2026-10-03",
+  "status": "defined_before_execution",
+  "baseline_experiment": "category_reference_v4",
+  "seeds": [
+    2026093001,
+    2026093002
+  ],
+  "graph_sha256": "13fff76af45b4b336476ceac019f6b9c276d45b368e3c43ba490340689a46fd5",
+  "implementation_sha256": "221cff1c5af678bd99b4724cc93a7bb72d58664423163440f5b61b660cdfff50",
+  "scoring": "All declared outputs retained, including failures. Identity/pose 2 required; artifacts/background at least1. Detailed fidelity 0-4 scored separately for visible collar, hem, print/trim and closures; masks and outfit modes do not inherit single-garment validation.",
+  "experiment": "multiple_reference_v1",
+  "matched_outputs": 8,
+  "capacity_outputs": 2,
+  "gate": "Matched detailed-fidelity improvement with no identity/pose/background regression; every output reviewed. Five-input capacity reported separately, including memory or execution failures.",
+  "samples": [
+    {
+      "id": "hoodie_02",
+      "baseline_case": "hoodie_02",
+      "category": "hoodie",
+      "mode": "multi_reference",
+      "base_prompt": "evaluation/prompts/upper_body_reference_v2.txt",
+      "images": {
+        "person": {
+          "path": "evaluation/assets/upstream/portrait_model_denim.png",
+          "sha256": "d888e9396587a3fd4ad500bbf5988fed0f7ba60ffa71628c29fced78bece3ac6"
+        },
+        "garment": {
+          "path": "evaluation/assets/commons/hoodie_m7agar.jpg",
+          "sha256": "9caf8b20c8a567c2ee3e7b56b1556942eed6eefa993f65b4d07d2f87bcafd2ad"
+        },
+        "detail": {
+          "path": "evaluation/assets/met/hoodie_detail.png",
+          "sha256": "8909d327f4d62ad94e3a7120993da11adbea193fafb219160c9b64a070c05585"
+        }
+      }
+    },
+    {
+      "id": "hoodie_03",
+      "baseline_case": "hoodie_03",
+      "category": "hoodie",
+      "mode": "multi_reference",
+      "base_prompt": "evaluation/prompts/upper_body_reference_v2.txt",
+      "images": {
+        "person": {
+          "path": "evaluation/assets/upstream/urban_man.png",
+          "sha256": "8886ff6ccd369739e227274af8ad42d0f8627129d83c1643c84e3da1348ca986"
+        },
+        "garment": {
+          "path": "evaluation/assets/commons/hoodie_m7agar.jpg",
+          "sha256": "9caf8b20c8a567c2ee3e7b56b1556942eed6eefa993f65b4d07d2f87bcafd2ad"
+        },
+        "detail": {
+          "path": "evaluation/assets/met/hoodie_detail.png",
+          "sha256": "8909d327f4d62ad94e3a7120993da11adbea193fafb219160c9b64a070c05585"
+        }
+      }
+    },
+    {
+      "id": "jacket_04",
+      "baseline_case": "jacket_04",
+      "category": "jacket",
+      "mode": "multi_reference",
+      "base_prompt": "evaluation/prompts/outerwear_reference_v2.txt",
+      "images": {
+        "person": {
+          "path": "evaluation/assets/upstream/coastal_smiling_woman.png",
+          "sha256": "d78bb2fe877531938e596026cb3c577ff7af7188cb911ea2c6f49c1daf62d174"
+        },
+        "garment": {
+          "path": "evaluation/assets/met/jacket_159165.jpg",
+          "sha256": "121f658b5f3ed6c683fa5dee12bb8b23d1190c54852cbfdf28aff53327e8ad63"
+        },
+        "back": {
+          "path": "evaluation/assets/met/jacket_159165_back.jpg",
+          "sha256": "0dad675e723f4b7733a0a1cb48193705379475f983acb2bdbd5b1e2ca8398cac"
+        },
+        "detail": {
+          "path": "evaluation/assets/met/jacket_detail.png",
+          "sha256": "12b6288ef235d4faddbbc77a84f49b066a6647380364a85776a9ae629a6061b1"
+        }
+      }
+    },
+    {
+      "id": "jacket_05",
+      "baseline_case": "jacket_05",
+      "category": "jacket",
+      "mode": "multi_reference",
+      "base_prompt": "evaluation/prompts/outerwear_reference_v2.txt",
+      "images": {
+        "person": {
+          "path": "evaluation/assets/commons/plus_size_model.jpg",
+          "sha256": "51a0ddb8e992fb7d005715ae32fa43f3cdbfd3229e67e5f84448ca0ccb8dae35"
+        },
+        "garment": {
+          "path": "evaluation/assets/met/jacket_159165.jpg",
+          "sha256": "121f658b5f3ed6c683fa5dee12bb8b23d1190c54852cbfdf28aff53327e8ad63"
+        },
+        "back": {
+          "path": "evaluation/assets/met/jacket_159165_back.jpg",
+          "sha256": "0dad675e723f4b7733a0a1cb48193705379475f983acb2bdbd5b1e2ca8398cac"
+        },
+        "detail": {
+          "path": "evaluation/assets/met/jacket_detail.png",
+          "sha256": "12b6288ef235d4faddbbc77a84f49b066a6647380364a85776a9ae629a6061b1"
+        }
+      }
+    },
+    {
+      "id": "capacity_five_inputs",
+      "category": "jacket",
+      "mode": "capacity",
+      "images": {
+        "person": {
+          "path": "evaluation/assets/upstream/coastal_smiling_woman.png",
+          "sha256": "d78bb2fe877531938e596026cb3c577ff7af7188cb911ea2c6f49c1daf62d174"
+        },
+        "garment": {
+          "path": "evaluation/assets/met/jacket_159165.jpg",
+          "sha256": "121f658b5f3ed6c683fa5dee12bb8b23d1190c54852cbfdf28aff53327e8ad63"
+        },
+        "back": {
+          "path": "evaluation/assets/met/jacket_159165_back.jpg",
+          "sha256": "0dad675e723f4b7733a0a1cb48193705379475f983acb2bdbd5b1e2ca8398cac"
+        },
+        "side": {
+          "path": "evaluation/assets/met/jacket_159165.jpg",
+          "sha256": "121f658b5f3ed6c683fa5dee12bb8b23d1190c54852cbfdf28aff53327e8ad63"
+        },
+        "detail": {
+          "path": "evaluation/assets/met/jacket_detail.png",
+          "sha256": "12b6288ef235d4faddbbc77a84f49b066a6647380364a85776a9ae629a6061b1"
+        }
+      },
+      "prompt": "Use image1 as the edit target and transfer the red jacket from image2. Image3 is its real back view, image4 repeats the front solely to test five-input capacity, and image5 is a collar detail. Preserve the person and scene."
+    }
+  ]
+}

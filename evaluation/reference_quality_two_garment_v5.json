@@ -1,0 +1,33 @@
+{
+  "status": "passed",
+  "reviewed": 8,
+  "counts": {
+    "shirt+coat": {
+      "expected": 8,
+      "passed": 7
+    }
+  },
+  "combinations": [
+    "shirt+coat"
+  ],
+  "all_combinations_passed": true,
+  "preservation_noninferior": true,
+  "verified_total_inputs": 3,
+  "experiment": "two_garment_v5",
+  "protocol_sha256": "d3f620955634d03c2e079710ab9aa24b2556727954432549ed83b19564074078",
+  "execution_seconds": {
+    "count": 8,
+    "minimum": 279.417,
+    "median": 282.14549999999997,
+    "maximum": 288.472
+  },
+  "sampled_device_peak_mib": 7680,
+  "outfit_implementation_sha256": "28501c0284ef5bdb39659cef938167a7172476c0b323596095534a4f54686e2b",
+  "coat_refinement_sha256": "5d2e4536fde9ea575dce6bf6c1ff9e0ea55bb3183ee8ef09a3fe1c25d826c0ff",
+  "bag_refinement_sha256": "93b815f7cae5bce14de48435925a34263b72c8606bced311c0007473ef8d4503",
+  "conditional_refinement_sha256": "640c28e432f29daf3e9cc3daa06490c13141b797389a149761506d5c124f5c70",
+  "validated_source_bag_options": [
+    false,
+    true
+  ]
+}

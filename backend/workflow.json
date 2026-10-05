@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "graph": "workflows/qwen_tryon_upper_candidate_gguf.api.json",
+  "graph_sha256": "13fff76af45b4b336476ceac019f6b9c276d45b368e3c43ba490340689a46fd5",
+  "person_node": "470",
+  "garment_node": "475",
+  "prompt_node": "459:474",
+  "sampler_node": "459:458",
+  "output_node": "461",
+  "prompts": {
+    "upper_body": "evaluation/prompts/upper_body_reference_v2.txt",
+    "outerwear": "evaluation/prompts/outerwear_reference_v3.txt",
+    "jacket": "evaluation/prompts/outerwear_reference_v2.txt"
+  }
+}

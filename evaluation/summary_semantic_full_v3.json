@@ -1,0 +1,70 @@
+{
+  "experiment": "semantic_full_v3",
+  "expected": 40,
+  "reviewed": 40,
+  "passing": 23,
+  "categories": {
+    "shirt": 8,
+    "hoodie": 8,
+    "jacket": 7,
+    "coat": 0
+  },
+  "raw_passing": 31,
+  "fallback_outputs": 8,
+  "exact_source_pixel_protection_verified": true,
+  "decision": "rejected",
+  "matched_score_changes": {
+    "identity": {
+      "improved": 2,
+      "unchanged": 38,
+      "regressed": 0,
+      "total": 2
+    },
+    "body_pose": {
+      "improved": 0,
+      "unchanged": 40,
+      "regressed": 0,
+      "total": 0
+    },
+    "garment_transfer": {
+      "improved": 0,
+      "unchanged": 30,
+      "regressed": 10,
+      "total": -10
+    },
+    "background_lighting": {
+      "improved": 0,
+      "unchanged": 40,
+      "regressed": 0,
+      "total": 0
+    },
+    "artifacts": {
+      "improved": 0,
+      "unchanged": 24,
+      "regressed": 16,
+      "total": -16
+    }
+  },
+  "cpu_parser_and_compositing_seconds": {
+    "count": 40,
+    "minimum": 5.485461,
+    "median": 5.993148,
+    "maximum": 8.483856
+  },
+  "revised_compositing_seconds": {
+    "count": 0,
+    "minimum": null,
+    "median": null,
+    "maximum": null
+  },
+  "cold_parser_load_seconds": {
+    "count": 20,
+    "minimum": 0.16673,
+    "median": 0.1740255,
+    "maximum": 0.19495
+  },
+  "cpu_process_peak_mib": 1316.145,
+  "parser_manifest_sha256": "c2ffe502f0674d73bfd1f886146c515f791ace884e2f2068b718ac9b4683cc05",
+  "model_revision": "584abc1e1d260e23c0fc627c5217a09b2b461046",
+  "gpu_regeneration_required": false
+}

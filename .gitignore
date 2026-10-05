@@ -1,0 +1,27 @@
+# Private evaluation data and local inference artifacts
+.local/
+.test-*/
+evaluation/assets/
+evaluation/results/
+evaluation/benchmarks/
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.safetensors
+*.gguf
+*.sqlite
+*.sqlite3
+.env
+.env.*
+!.env.example
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+node_modules/
+frontend/dist/
+frontend/test-results/
+frontend/playwright-report/
+deployment/tls/
+deployment/secrets/

@@ -1,0 +1,123 @@
+{
+  "status": "failed",
+  "expected": 40,
+  "recorded": 40,
+  "scored": 40,
+  "inference_failures": 0,
+  "passed": 26,
+  "categories": {
+    "shirt": {
+      "expected": 10,
+      "recorded": 10,
+      "scored": 10,
+      "failed": 0,
+      "passed": 8
+    },
+    "hoodie": {
+      "expected": 10,
+      "recorded": 10,
+      "scored": 10,
+      "failed": 0,
+      "passed": 4
+    },
+    "jacket": {
+      "expected": 10,
+      "recorded": 10,
+      "scored": 10,
+      "failed": 0,
+      "passed": 6
+    },
+    "coat": {
+      "expected": 10,
+      "recorded": 10,
+      "scored": 10,
+      "failed": 0,
+      "passed": 8
+    }
+  },
+  "problems": [],
+  "quality_gate_passed": false,
+  "published_at": "2026-10-02T08:45:28.096036+00:00",
+  "reviewer": "Codex visual review (single AI reviewer)",
+  "categories_meeting_threshold": [
+    "shirt",
+    "coat"
+  ],
+  "validated_categories": [],
+  "execution_seconds": {
+    "count": 39,
+    "min": 170.898,
+    "median": 190.177,
+    "max": 223.574
+  },
+  "warm_execution_seconds": {
+    "count": 19,
+    "min": 170.898,
+    "median": 180.4,
+    "max": 198.497
+  },
+  "cold_model_residency_runs": [
+    {
+      "case_id": "shirt_01",
+      "seed": 2026093001,
+      "cache_state": "models_unloaded_first_seed; OS_disk_cache_not_cleared",
+      "execution_seconds": 195.276,
+      "wall_seconds": 198.793
+    },
+    {
+      "case_id": "jacket_02",
+      "seed": 2026093001,
+      "cache_state": "models_unloaded_first_seed; OS_disk_cache_not_cleared",
+      "execution_seconds": 219.392,
+      "wall_seconds": 223.364
+    }
+  ],
+  "sampled_device_peak_mib": 7683,
+  "recovered_outputs": [
+    {
+      "case_id": "jacket_01",
+      "seed": 2026093001,
+      "evidence": {
+        "kind": "png_embedded_graph",
+        "source": ".local/output/jacket_01_gguf_cff6d39b9291_2026093001_00001.png",
+        "note": "Server history lost after restart. Embedded graph matches; original timing and VRAM unavailable."
+      }
+    }
+  ],
+  "output_sizes": [
+    [
+      768,
+      1376
+    ],
+    [
+      832,
+      1248
+    ],
+    [
+      896,
+      1152
+    ],
+    [
+      1024,
+      1024
+    ],
+    [
+      1216,
+      864
+    ]
+  ],
+  "failed_dimensions": {
+    "identity": 11,
+    "body_pose": 0,
+    "garment_transfer": 5,
+    "background_lighting": 0,
+    "artifacts": 0
+  },
+  "environment_sha256": "26263f9f5dac38179ce97936ac2912faa4b0b88aeeef566da05f2d73f9b6a98a",
+  "cases_sha256": "455e6af7fee339dae5809beb9944df75a81a2cef3a3afa84992a15d602be1793",
+  "experiment": null,
+  "prompt_hashes": {
+    "upper_body": "7319c157064c9ad63326f3255cf0a894791a23c2e0983e454ad271bf65b533ab",
+    "outerwear": "a2c169f64c7abbbf87e71fc73009cd49d8521b95bacf98b9ba93d5ae754f627c"
+  }
+}

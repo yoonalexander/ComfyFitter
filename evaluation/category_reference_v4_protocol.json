@@ -1,0 +1,23 @@
+{
+  "experiment": "category_reference_v4",
+  "defined_date": "2026-10-03",
+  "status": "defined_before_execution",
+  "seeds": [
+    2026093001,
+    2026093002
+  ],
+  "cases_sha256": "455e6af7fee339dae5809beb9944df75a81a2cef3a3afa84992a15d602be1793",
+  "workflow_sha256": "13fff76af45b4b336476ceac019f6b9c276d45b368e3c43ba490340689a46fd5",
+  "prompts": {
+    "upper_body": "1f16a1a2d2b3b5e207bb9b81487e698818adcdcc8c6fb737ae9d47f4306a9df3",
+    "outerwear": "b6c58b86f7a756101219b9e1a695ee4e1978dc5d711bae0151e9956950f8194d",
+    "jacket": "bace9a08a387cf848f5ddf001ea49dfb7aabeac5f097d7ab930273577414c0a3"
+  },
+  "gate": {
+    "global_passes": 32,
+    "outputs": 40,
+    "per_category_passes": 8,
+    "per_category_outputs": 10
+  },
+  "rationale": "Fixed category mapping: preserve the independently tested upright-collar jacket template; apply the long-coat template only to coats. All 40 outputs rerun with unchanged cases/seeds/rubric; no output selection."
+}

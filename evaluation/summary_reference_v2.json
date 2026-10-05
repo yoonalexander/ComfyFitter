@@ -1,0 +1,107 @@
+{
+  "status": "failed",
+  "expected": 40,
+  "recorded": 40,
+  "scored": 40,
+  "inference_failures": 0,
+  "passed": 31,
+  "categories": {
+    "shirt": {
+      "expected": 10,
+      "recorded": 10,
+      "scored": 10,
+      "failed": 0,
+      "passed": 9
+    },
+    "hoodie": {
+      "expected": 10,
+      "recorded": 10,
+      "scored": 10,
+      "failed": 0,
+      "passed": 9
+    },
+    "jacket": {
+      "expected": 10,
+      "recorded": 10,
+      "scored": 10,
+      "failed": 0,
+      "passed": 9
+    },
+    "coat": {
+      "expected": 10,
+      "recorded": 10,
+      "scored": 10,
+      "failed": 0,
+      "passed": 4
+    }
+  },
+  "problems": [],
+  "quality_gate_passed": false,
+  "published_at": "2026-10-03T04:55:55.847443+00:00",
+  "reviewer": "Codex visual review (single AI reviewer)",
+  "categories_meeting_threshold": [
+    "shirt",
+    "hoodie",
+    "jacket"
+  ],
+  "validated_categories": [],
+  "execution_seconds": {
+    "count": 40,
+    "min": 179.101,
+    "median": 192.7765,
+    "max": 210.228
+  },
+  "warm_execution_seconds": {
+    "count": 20,
+    "min": 179.101,
+    "median": 182.433,
+    "max": 186.795
+  },
+  "cold_model_residency_runs": [
+    {
+      "case_id": "shirt_01",
+      "seed": 2026093001,
+      "cache_state": "models_unloaded_first_seed; OS_disk_cache_not_cleared",
+      "execution_seconds": 205.407,
+      "wall_seconds": 208.074
+    }
+  ],
+  "sampled_device_peak_mib": 7534,
+  "recovered_outputs": [],
+  "output_sizes": [
+    [
+      768,
+      1376
+    ],
+    [
+      832,
+      1248
+    ],
+    [
+      896,
+      1152
+    ],
+    [
+      1024,
+      1024
+    ],
+    [
+      1216,
+      864
+    ]
+  ],
+  "failed_dimensions": {
+    "identity": 2,
+    "body_pose": 1,
+    "garment_transfer": 6,
+    "background_lighting": 0,
+    "artifacts": 0
+  },
+  "environment_sha256": "26263f9f5dac38179ce97936ac2912faa4b0b88aeeef566da05f2d73f9b6a98a",
+  "cases_sha256": "455e6af7fee339dae5809beb9944df75a81a2cef3a3afa84992a15d602be1793",
+  "experiment": "reference_v2",
+  "prompt_hashes": {
+    "upper_body": "1f16a1a2d2b3b5e207bb9b81487e698818adcdcc8c6fb737ae9d47f4306a9df3",
+    "outerwear": "bace9a08a387cf848f5ddf001ea49dfb7aabeac5f097d7ab930273577414c0a3"
+  }
+}

@@ -1,0 +1,5 @@
+# Quality admission and retained study evidence bind exact source bytes.
+# Preserve these bytes across Windows/Linux checkouts; do not normalize newlines.
+backend/** -text whitespace=cr-at-eol
+evaluation/** -text whitespace=cr-at-eol
+workflows/** -text whitespace=cr-at-eol

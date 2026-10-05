@@ -1,0 +1,28 @@
+{
+  "status": "rejected",
+  "reviewed": 16,
+  "counts": {
+    "shirt+jacket": {
+      "expected": 8,
+      "passed": 5
+    },
+    "shirt+coat": {
+      "expected": 8,
+      "passed": 5
+    }
+  },
+  "combinations": [],
+  "all_combinations_passed": false,
+  "preservation_noninferior": false,
+  "verified_total_inputs": 3,
+  "experiment": "two_garment_v2",
+  "protocol_sha256": "b61f28fa8606f6fae43f2f0b47db09fb4bc0224013443edc74a9ca4e581ba908",
+  "execution_seconds": {
+    "count": 16,
+    "minimum": 276.195,
+    "median": 277.812,
+    "maximum": 281.282
+  },
+  "sampled_device_peak_mib": 7542,
+  "outfit_implementation_sha256": "28501c0284ef5bdb39659cef938167a7172476c0b323596095534a4f54686e2b"
+}

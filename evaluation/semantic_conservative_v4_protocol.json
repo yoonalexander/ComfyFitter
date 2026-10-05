@@ -1,0 +1,18 @@
+{
+  "experiment": "semantic_conservative_v4",
+  "defined_date": "2026-10-03",
+  "status": "defined_before_execution",
+  "baseline_experiment": "category_reference_v4",
+  "mask_policy": "occlusion_v3",
+  "implementation_sha256": "df17d7a7643bcee426e204f2880b7c38f8bc045a00e37acb5780ac5d3a957a5a",
+  "baseline_protocol_sha256": "b9a94ef6beecd75a206efabb86cd5a4b84ec489e9135901a9aa7a93058d13b99",
+  "cases_sha256": "455e6af7fee339dae5809beb9944df75a81a2cef3a3afa84992a15d602be1793",
+  "parser_manifest_sha256": "c2ffe502f0674d73bfd1f886146c515f791ace884e2f2068b718ac9b4683cc05",
+  "expected": 40,
+  "seeds": [
+    2026093001,
+    2026093002
+  ],
+  "rationale": "Previous full studies restored old blouse pixels because coarse source hair overlapped the editable garment. Lower ambiguous-hair fallback threshold from 25 to 10 percent; retain raw when ambiguous. Keep new coat dress-class silhouette and legitimate arm occlusion.",
+  "gate": "All 40 matched fixed outputs independently reviewed; exact-source pixel protection reduces changed pixels outside accepted editable regions. No identity/body/background or garment/edge score regressions versus validated raw baseline; at least32/40 and8/10 each category. Raw fallback remains for ambiguous/absent regions. Pixel metrics alone do not establish quality."
+}

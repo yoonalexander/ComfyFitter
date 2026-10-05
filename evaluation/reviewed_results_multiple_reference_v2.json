@@ -1,0 +1,554 @@
+[
+  {
+    "experiment": "multiple_reference_v2",
+    "sample_id": "hoodie_01",
+    "seed": 2026093001,
+    "status": "complete",
+    "graph_sha256": "7ebc8a6a9cd6a53dc7cf36454a88e4525357c7838697390b16a08a65514c44bb",
+    "protocol_sha256": "e9d3fa0d8894852e1c170b9345d379200eba3d93a4c9b94e577fe7e220a211f6",
+    "inputs": {
+      "person": {
+        "path": "evaluation/assets/upstream/casual_male_portrait.png",
+        "sha256": "f750ded4fa7d359510b86d2973c33091238c01f089f2d67f619838b1051a02d0"
+      },
+      "garment": {
+        "path": "evaluation/assets/commons/hoodie_m7agar.jpg",
+        "sha256": "9caf8b20c8a567c2ee3e7b56b1556942eed6eefa993f65b4d07d2f87bcafd2ad"
+      },
+      "detail": {
+        "path": "evaluation/assets/met/hoodie_detail.png",
+        "sha256": "8909d327f4d62ad94e3a7120993da11adbea193fafb219160c9b64a070c05585"
+      }
+    },
+    "uploaded": {
+      "person": "cf_study_45ea08d7583549e3be8a09c8a7646ad6_person.png",
+      "garment": "cf_study_45ea08d7583549e3be8a09c8a7646ad6_garment.jpg",
+      "detail": "cf_study_45ea08d7583549e3be8a09c8a7646ad6_detail.png"
+    },
+    "image_order": [
+      "person",
+      "garment",
+      "detail"
+    ],
+    "prompt": "Use <image1> as the edit target and <image2> only as the garment reference.\nReplace the foreground person's main upper-body garment in <image1> with the actual hoodie shown in <image2>. Transfer the reference design rather than making a generic garment of that category.\nMatch the visible reference silhouette, neckline or collar shape, sleeves, closures, pockets, fabric, color, pattern and printed graphics. Do not invent garment details absent from <image2>, including drawstrings, extra pockets, buttons or belts. When the reference hood has no drawstrings, keep it without drawstrings. Preserve visible text and graphics as accurately as possible.\nPreserve the foreground person's facial identity, hairstyle and hair length, skin tone, body proportions, pose, hands and camera angle from <image1>. Preserve the source's existing accessories exactly. If there is no eyewear on the source face, keep the face without eyewear. Do not add or remove personal accessories.\nPreserve the background, background people, lighting, lower-body clothing and unrelated garments. Adapt only the replacement garment to the existing pose with coherent folds, shadows and natural occlusion by hair, hands and foreground objects. Do not shorten hair to reveal the garment.\nMake only the changes required for this garment transfer. A recolor of the original clothing is insufficient.\n\n<image2> is the front view of the SAME garment, not an additional garment. <image3> is the detail view of the SAME garment, not an additional garment. Use the front view to determine the visible silhouette; use other views only to clarify corresponding construction, pattern and details. Do not paste a back design onto the front.",
+    "client_id": "cf_study_45ea08d7583549e3be8a09c8a7646ad6",
+    "scores": {
+      "identity": 2,
+      "body_pose": 2,
+      "garment_transfer": 2,
+      "background_lighting": 2,
+      "artifacts": 2,
+      "detailed_fidelity": 4
+    },
+    "reviewer": "Codex visual review, 2026-10-03",
+    "notes": "Viewed source, full hoodie, detail crop and matched output. Hood, pocket, distressed dark fabric, yellow flames and SUPERIOR chest outline visible; sleeve stars/text approximate. Face, glasses, backpack, hands, pants, shoes and grey studio retained. No measurable fine-detail score gain over the already strong matched output.",
+    "prompt_id": "083bf9db-1dad-481e-a9ea-d94f0d27a3a0",
+    "execution_seconds": 279.249,
+    "wall_seconds": 284.679,
+    "sampled_device_peak_mib": 7455,
+    "output": "evaluation/benchmarks/multiple_reference_v2/hoodie_01/2026093001/output.png",
+    "output_sha256": "ce46b6d5adb4ce6c197c29c94972011dbed68f7887f8d1e6cddef2e2d4508099",
+    "output_size": [
+      832,
+      1248
+    ],
+    "matched_review": {
+      "output_sha256": "88fb87f4a0b6c36bad63dfc51835f7419033eef028fde92f2c69c3a856b660ce",
+      "scores": {
+        "identity": 2,
+        "body_pose": 2,
+        "garment_transfer": 2,
+        "background_lighting": 2,
+        "artifacts": 1,
+        "detailed_fidelity": 4
+      },
+      "notes": "Matched baseline independently viewed: readable chest outline and yellow flame construction already present, with hood/pocket and sleeve graphics. Published five scores preserved."
+    },
+    "category": "hoodie",
+    "outer_category": null,
+    "mode": "multi_reference"
+  },
+  {
+    "experiment": "multiple_reference_v2",
+    "sample_id": "hoodie_01",
+    "seed": 2026093002,
+    "status": "complete",
+    "graph_sha256": "f5e284163b5aadbebca25ddb4e30fe2314bd0735674ad5f88f6de08e3f1e9255",
+    "protocol_sha256": "e9d3fa0d8894852e1c170b9345d379200eba3d93a4c9b94e577fe7e220a211f6",
+    "inputs": {
+      "person": {
+        "path": "evaluation/assets/upstream/casual_male_portrait.png",
+        "sha256": "f750ded4fa7d359510b86d2973c33091238c01f089f2d67f619838b1051a02d0"
+      },
+      "garment": {
+        "path": "evaluation/assets/commons/hoodie_m7agar.jpg",
+        "sha256": "9caf8b20c8a567c2ee3e7b56b1556942eed6eefa993f65b4d07d2f87bcafd2ad"
+      },
+      "detail": {
+        "path": "evaluation/assets/met/hoodie_detail.png",
+        "sha256": "8909d327f4d62ad94e3a7120993da11adbea193fafb219160c9b64a070c05585"
+      }
+    },
+    "uploaded": {
+      "person": "cf_study_ada5c0f6b4c7487c9fa143ad33f84a90_person.png",
+      "garment": "cf_study_ada5c0f6b4c7487c9fa143ad33f84a90_garment.jpg",
+      "detail": "cf_study_ada5c0f6b4c7487c9fa143ad33f84a90_detail.png"
+    },
+    "image_order": [
+      "person",
+      "garment",
+      "detail"
+    ],
+    "prompt": "Use <image1> as the edit target and <image2> only as the garment reference.\nReplace the foreground person's main upper-body garment in <image1> with the actual hoodie shown in <image2>. Transfer the reference design rather than making a generic garment of that category.\nMatch the visible reference silhouette, neckline or collar shape, sleeves, closures, pockets, fabric, color, pattern and printed graphics. Do not invent garment details absent from <image2>, including drawstrings, extra pockets, buttons or belts. When the reference hood has no drawstrings, keep it without drawstrings. Preserve visible text and graphics as accurately as possible.\nPreserve the foreground person's facial identity, hairstyle and hair length, skin tone, body proportions, pose, hands and camera angle from <image1>. Preserve the source's existing accessories exactly. If there is no eyewear on the source face, keep the face without eyewear. Do not add or remove personal accessories.\nPreserve the background, background people, lighting, lower-body clothing and unrelated garments. Adapt only the replacement garment to the existing pose with coherent folds, shadows and natural occlusion by hair, hands and foreground objects. Do not shorten hair to reveal the garment.\nMake only the changes required for this garment transfer. A recolor of the original clothing is insufficient.\n\n<image2> is the front view of the SAME garment, not an additional garment. <image3> is the detail view of the SAME garment, not an additional garment. Use the front view to determine the visible silhouette; use other views only to clarify corresponding construction, pattern and details. Do not paste a back design onto the front.",
+    "client_id": "cf_study_ada5c0f6b4c7487c9fa143ad33f84a90",
+    "scores": {
+      "identity": 2,
+      "body_pose": 2,
+      "garment_transfer": 2,
+      "background_lighting": 2,
+      "artifacts": 2,
+      "detailed_fidelity": 4
+    },
+    "reviewer": "Codex visual review, 2026-10-03",
+    "notes": "Second seed viewed alongside source/front/detail and its own matched baseline. Same recognizable dark hoodie, hood, pocket, outlined chest word and flame/star graphics. Both preserve glasses, face, hair, backpack, hands, pants, shoes and studio. Fine sleeve lettering remains approximate; added crop produces no additional scoring improvement at this scale.",
+    "prompt_id": "979d290f-9dde-44d2-962b-c2b086d38260",
+    "execution_seconds": 279.033,
+    "wall_seconds": 281.879,
+    "sampled_device_peak_mib": 7159,
+    "output": "evaluation/benchmarks/multiple_reference_v2/hoodie_01/2026093002/output.png",
+    "output_sha256": "34a4d17d96692b7b4a75689e39fb767fd0107a6fb70de929110d55d3ac3b3276",
+    "output_size": [
+      832,
+      1248
+    ],
+    "matched_review": {
+      "output_sha256": "786d43fe29bbd4b7962e7c965370d90befcd9e0885a272eabdb4d13fdf54cf50",
+      "scores": {
+        "identity": 2,
+        "body_pose": 2,
+        "garment_transfer": 2,
+        "background_lighting": 2,
+        "artifacts": 1,
+        "detailed_fidelity": 4
+      },
+      "notes": "Second matched baseline independently viewed. Strong chest outline/flame and hood/pocket construction already visible; sleeve fine glyphs approximate. Original five published scores unchanged."
+    },
+    "category": "hoodie",
+    "outer_category": null,
+    "mode": "multi_reference"
+  },
+  {
+    "experiment": "multiple_reference_v2",
+    "sample_id": "hoodie_02",
+    "seed": 2026093001,
+    "status": "complete",
+    "graph_sha256": "4ba8dea3d2dcf8b6a3a9049ccc92940e4b00fb1adc494335f9e18eb7f0058667",
+    "protocol_sha256": "e9d3fa0d8894852e1c170b9345d379200eba3d93a4c9b94e577fe7e220a211f6",
+    "inputs": {
+      "person": {
+        "path": "evaluation/assets/upstream/portrait_model_denim.png",
+        "sha256": "d888e9396587a3fd4ad500bbf5988fed0f7ba60ffa71628c29fced78bece3ac6"
+      },
+      "garment": {
+        "path": "evaluation/assets/commons/hoodie_m7agar.jpg",
+        "sha256": "9caf8b20c8a567c2ee3e7b56b1556942eed6eefa993f65b4d07d2f87bcafd2ad"
+      },
+      "detail": {
+        "path": "evaluation/assets/met/hoodie_detail.png",
+        "sha256": "8909d327f4d62ad94e3a7120993da11adbea193fafb219160c9b64a070c05585"
+      }
+    },
+    "uploaded": {
+      "person": "cf_study_87359481bd164b798713d08dc16ec86c_person.png",
+      "garment": "cf_study_87359481bd164b798713d08dc16ec86c_garment.jpg",
+      "detail": "cf_study_87359481bd164b798713d08dc16ec86c_detail.png"
+    },
+    "image_order": [
+      "person",
+      "garment",
+      "detail"
+    ],
+    "prompt": "Use <image1> as the edit target and <image2> only as the garment reference.\nReplace the foreground person's main upper-body garment in <image1> with the actual hoodie shown in <image2>. Transfer the reference design rather than making a generic garment of that category.\nMatch the visible reference silhouette, neckline or collar shape, sleeves, closures, pockets, fabric, color, pattern and printed graphics. Do not invent garment details absent from <image2>, including drawstrings, extra pockets, buttons or belts. When the reference hood has no drawstrings, keep it without drawstrings. Preserve visible text and graphics as accurately as possible.\nPreserve the foreground person's facial identity, hairstyle and hair length, skin tone, body proportions, pose, hands and camera angle from <image1>. Preserve the source's existing accessories exactly. If there is no eyewear on the source face, keep the face without eyewear. Do not add or remove personal accessories.\nPreserve the background, background people, lighting, lower-body clothing and unrelated garments. Adapt only the replacement garment to the existing pose with coherent folds, shadows and natural occlusion by hair, hands and foreground objects. Do not shorten hair to reveal the garment.\nMake only the changes required for this garment transfer. A recolor of the original clothing is insufficient.\n\n<image2> is the front view of the SAME garment, not an additional garment. <image3> is the detail view of the SAME garment, not an additional garment. Use the front view to determine the visible silhouette; use other views only to clarify corresponding construction, pattern and details. Do not paste a back design onto the front.",
+    "client_id": "cf_study_87359481bd164b798713d08dc16ec86c",
+    "scores": {
+      "identity": 2,
+      "body_pose": 2,
+      "garment_transfer": 2,
+      "background_lighting": 2,
+      "artifacts": 2,
+      "detailed_fidelity": 4
+    },
+    "reviewer": "Codex visual review, 2026-10-03",
+    "notes": "Fresh output viewed with all declared inputs and its own matched fixed-seed baseline. Fine yellow secondary chest line and large flame/outlined word construction are clearer than matched baseline; hood, sleeve star and pocket retained. Face, hair, downward pose, body and studio unchanged. Sleeve glyphs approximate.",
+    "prompt_id": "00b3b66e-a472-46a4-8502-9e654633ccb5",
+    "execution_seconds": 274.468,
+    "wall_seconds": 276.485,
+    "sampled_device_peak_mib": 7251,
+    "output": "evaluation/benchmarks/multiple_reference_v2/hoodie_02/2026093001/output.png",
+    "output_sha256": "3613b4427a0db5b1df35cab2d14551d3a35f326f93a3ae758ab100812a71158d",
+    "output_size": [
+      896,
+      1152
+    ],
+    "matched_review": {
+      "output_sha256": "d10b81c739827bc55d5a2e3fa7520ebe9f1d24cabbb7cd307d755e822e7c8c26",
+      "scores": {
+        "identity": 2,
+        "body_pose": 2,
+        "garment_transfer": 2,
+        "background_lighting": 2,
+        "artifacts": 1,
+        "detailed_fidelity": 3
+      },
+      "notes": "Matched baseline independently viewed on the same source/reference/detail comparison sheet; original published five scores retained. Fine yellow secondary chest line and large flame/outlined word construction are clearer than matched baseline; hood, sleeve star and pocket retained. Face, hair, downward pose, body and studio unchanged. Sleeve glyphs approximate."
+    },
+    "category": "hoodie",
+    "outer_category": null,
+    "mode": "multi_reference"
+  },
+  {
+    "experiment": "multiple_reference_v2",
+    "sample_id": "hoodie_02",
+    "seed": 2026093002,
+    "status": "complete",
+    "graph_sha256": "c267e2ceaf59f316f0bd46102d45da8676a1785d9b0a5b34a84dc8d44e2728f7",
+    "protocol_sha256": "e9d3fa0d8894852e1c170b9345d379200eba3d93a4c9b94e577fe7e220a211f6",
+    "inputs": {
+      "person": {
+        "path": "evaluation/assets/upstream/portrait_model_denim.png",
+        "sha256": "d888e9396587a3fd4ad500bbf5988fed0f7ba60ffa71628c29fced78bece3ac6"
+      },
+      "garment": {
+        "path": "evaluation/assets/commons/hoodie_m7agar.jpg",
+        "sha256": "9caf8b20c8a567c2ee3e7b56b1556942eed6eefa993f65b4d07d2f87bcafd2ad"
+      },
+      "detail": {
+        "path": "evaluation/assets/met/hoodie_detail.png",
+        "sha256": "8909d327f4d62ad94e3a7120993da11adbea193fafb219160c9b64a070c05585"
+      }
+    },
+    "uploaded": {
+      "person": "cf_study_d92470f7e8c34ab2aa6e52a3542fe317_person.png",
+      "garment": "cf_study_d92470f7e8c34ab2aa6e52a3542fe317_garment.jpg",
+      "detail": "cf_study_d92470f7e8c34ab2aa6e52a3542fe317_detail.png"
+    },
+    "image_order": [
+      "person",
+      "garment",
+      "detail"
+    ],
+    "prompt": "Use <image1> as the edit target and <image2> only as the garment reference.\nReplace the foreground person's main upper-body garment in <image1> with the actual hoodie shown in <image2>. Transfer the reference design rather than making a generic garment of that category.\nMatch the visible reference silhouette, neckline or collar shape, sleeves, closures, pockets, fabric, color, pattern and printed graphics. Do not invent garment details absent from <image2>, including drawstrings, extra pockets, buttons or belts. When the reference hood has no drawstrings, keep it without drawstrings. Preserve visible text and graphics as accurately as possible.\nPreserve the foreground person's facial identity, hairstyle and hair length, skin tone, body proportions, pose, hands and camera angle from <image1>. Preserve the source's existing accessories exactly. If there is no eyewear on the source face, keep the face without eyewear. Do not add or remove personal accessories.\nPreserve the background, background people, lighting, lower-body clothing and unrelated garments. Adapt only the replacement garment to the existing pose with coherent folds, shadows and natural occlusion by hair, hands and foreground objects. Do not shorten hair to reveal the garment.\nMake only the changes required for this garment transfer. A recolor of the original clothing is insufficient.\n\n<image2> is the front view of the SAME garment, not an additional garment. <image3> is the detail view of the SAME garment, not an additional garment. Use the front view to determine the visible silhouette; use other views only to clarify corresponding construction, pattern and details. Do not paste a back design onto the front.",
+    "client_id": "cf_study_d92470f7e8c34ab2aa6e52a3542fe317",
+    "scores": {
+      "identity": 2,
+      "body_pose": 2,
+      "garment_transfer": 2,
+      "background_lighting": 2,
+      "artifacts": 2,
+      "detailed_fidelity": 4
+    },
+    "reviewer": "Codex visual review, 2026-10-03",
+    "notes": "Fresh output viewed with all declared inputs and its own matched fixed-seed baseline. Chest flame/word construction already strong in matched baseline; no added fine-score gain. Same hood/pocket/star details and source profile, hair, body and studio retained. Sleeve text approximate.",
+    "prompt_id": "bbc67abe-774a-4e84-a51a-9326640289b4",
+    "execution_seconds": 274.364,
+    "wall_seconds": 276.451,
+    "sampled_device_peak_mib": 7226,
+    "output": "evaluation/benchmarks/multiple_reference_v2/hoodie_02/2026093002/output.png",
+    "output_sha256": "7c0025b3c3c81733d0225a60827b45b4392cb768e03de8b6027807e691684e3e",
+    "output_size": [
+      896,
+      1152
+    ],
+    "matched_review": {
+      "output_sha256": "5c54b9721c12c6fb631981ff48127da35d7f73f6229189419ae3fc3c1f847a1f",
+      "scores": {
+        "identity": 2,
+        "body_pose": 2,
+        "garment_transfer": 2,
+        "background_lighting": 2,
+        "artifacts": 1,
+        "detailed_fidelity": 4
+      },
+      "notes": "Matched baseline independently viewed on the same source/reference/detail comparison sheet; original published five scores retained. Chest flame/word construction already strong in matched baseline; no added fine-score gain. Same hood/pocket/star details and source profile, hair, body and studio retained. Sleeve text approximate."
+    },
+    "category": "hoodie",
+    "outer_category": null,
+    "mode": "multi_reference"
+  },
+  {
+    "experiment": "multiple_reference_v2",
+    "sample_id": "hoodie_03",
+    "seed": 2026093001,
+    "status": "complete",
+    "graph_sha256": "830816211a15d11c738c4d12ef051f5e36f8cba6bd935b30f8a7be831eeb7dd7",
+    "protocol_sha256": "e9d3fa0d8894852e1c170b9345d379200eba3d93a4c9b94e577fe7e220a211f6",
+    "inputs": {
+      "person": {
+        "path": "evaluation/assets/upstream/urban_man.png",
+        "sha256": "8886ff6ccd369739e227274af8ad42d0f8627129d83c1643c84e3da1348ca986"
+      },
+      "garment": {
+        "path": "evaluation/assets/commons/hoodie_m7agar.jpg",
+        "sha256": "9caf8b20c8a567c2ee3e7b56b1556942eed6eefa993f65b4d07d2f87bcafd2ad"
+      },
+      "detail": {
+        "path": "evaluation/assets/met/hoodie_detail.png",
+        "sha256": "8909d327f4d62ad94e3a7120993da11adbea193fafb219160c9b64a070c05585"
+      }
+    },
+    "uploaded": {
+      "person": "cf_study_41907b01f58c456bbd85aa3ac032161d_person.png",
+      "garment": "cf_study_41907b01f58c456bbd85aa3ac032161d_garment.jpg",
+      "detail": "cf_study_41907b01f58c456bbd85aa3ac032161d_detail.png"
+    },
+    "image_order": [
+      "person",
+      "garment",
+      "detail"
+    ],
+    "prompt": "Use <image1> as the edit target and <image2> only as the garment reference.\nReplace the foreground person's main upper-body garment in <image1> with the actual hoodie shown in <image2>. Transfer the reference design rather than making a generic garment of that category.\nMatch the visible reference silhouette, neckline or collar shape, sleeves, closures, pockets, fabric, color, pattern and printed graphics. Do not invent garment details absent from <image2>, including drawstrings, extra pockets, buttons or belts. When the reference hood has no drawstrings, keep it without drawstrings. Preserve visible text and graphics as accurately as possible.\nPreserve the foreground person's facial identity, hairstyle and hair length, skin tone, body proportions, pose, hands and camera angle from <image1>. Preserve the source's existing accessories exactly. If there is no eyewear on the source face, keep the face without eyewear. Do not add or remove personal accessories.\nPreserve the background, background people, lighting, lower-body clothing and unrelated garments. Adapt only the replacement garment to the existing pose with coherent folds, shadows and natural occlusion by hair, hands and foreground objects. Do not shorten hair to reveal the garment.\nMake only the changes required for this garment transfer. A recolor of the original clothing is insufficient.\n\n<image2> is the front view of the SAME garment, not an additional garment. <image3> is the detail view of the SAME garment, not an additional garment. Use the front view to determine the visible silhouette; use other views only to clarify corresponding construction, pattern and details. Do not paste a back design onto the front.",
+    "client_id": "cf_study_41907b01f58c456bbd85aa3ac032161d",
+    "scores": {
+      "identity": 2,
+      "body_pose": 2,
+      "garment_transfer": 2,
+      "background_lighting": 2,
+      "artifacts": 1,
+      "detailed_fidelity": 3
+    },
+    "reviewer": "Codex visual review, 2026-10-03",
+    "notes": "Fresh output viewed with all declared inputs and its own matched fixed-seed baseline. Visible hoodie identity, flame chest motif, sleeve stars and text transfer in both. Fine chest glyphs remain distorted and crossed-arm cuffs have mild artifacts. Source face, hairstyle, crossed arms, lower patterned garment and blurred background retained; no detail-score gain.",
+    "prompt_id": "1e421765-18c0-487c-80e9-b3af55d18712",
+    "execution_seconds": 277.658,
+    "wall_seconds": 279.247,
+    "sampled_device_peak_mib": 7322,
+    "output": "evaluation/benchmarks/multiple_reference_v2/hoodie_03/2026093001/output.png",
+    "output_sha256": "ce079a6315bf38df402552b8a2b266fc2b44f9a6f3a54f1e12d6ded81a9189ac",
+    "output_size": [
+      768,
+      1376
+    ],
+    "matched_review": {
+      "output_sha256": "75fdac0e5fc47b380b5f54851be464eb2f7c5b1ce7f3dfaefb51b73c512c2f17",
+      "scores": {
+        "identity": 2,
+        "body_pose": 2,
+        "garment_transfer": 2,
+        "background_lighting": 2,
+        "artifacts": 1,
+        "detailed_fidelity": 3
+      },
+      "notes": "Matched baseline independently viewed on the same source/reference/detail comparison sheet; original published five scores retained. Visible hoodie identity, flame chest motif, sleeve stars and text transfer in both. Fine chest glyphs remain distorted and crossed-arm cuffs have mild artifacts. Source face, hairstyle, crossed arms, lower patterned garment and blurred background retained; no detail-score gain."
+    },
+    "category": "hoodie",
+    "outer_category": null,
+    "mode": "multi_reference"
+  },
+  {
+    "experiment": "multiple_reference_v2",
+    "sample_id": "hoodie_03",
+    "seed": 2026093002,
+    "status": "complete",
+    "graph_sha256": "2968fb6f4d082ef4ae7b1b5f326d8060a20b1d49e96de37e98443a748e99c585",
+    "protocol_sha256": "e9d3fa0d8894852e1c170b9345d379200eba3d93a4c9b94e577fe7e220a211f6",
+    "inputs": {
+      "person": {
+        "path": "evaluation/assets/upstream/urban_man.png",
+        "sha256": "8886ff6ccd369739e227274af8ad42d0f8627129d83c1643c84e3da1348ca986"
+      },
+      "garment": {
+        "path": "evaluation/assets/commons/hoodie_m7agar.jpg",
+        "sha256": "9caf8b20c8a567c2ee3e7b56b1556942eed6eefa993f65b4d07d2f87bcafd2ad"
+      },
+      "detail": {
+        "path": "evaluation/assets/met/hoodie_detail.png",
+        "sha256": "8909d327f4d62ad94e3a7120993da11adbea193fafb219160c9b64a070c05585"
+      }
+    },
+    "uploaded": {
+      "person": "cf_study_312d3a9ae637482695146992d2f677ce_person.png",
+      "garment": "cf_study_312d3a9ae637482695146992d2f677ce_garment.jpg",
+      "detail": "cf_study_312d3a9ae637482695146992d2f677ce_detail.png"
+    },
+    "image_order": [
+      "person",
+      "garment",
+      "detail"
+    ],
+    "prompt": "Use <image1> as the edit target and <image2> only as the garment reference.\nReplace the foreground person's main upper-body garment in <image1> with the actual hoodie shown in <image2>. Transfer the reference design rather than making a generic garment of that category.\nMatch the visible reference silhouette, neckline or collar shape, sleeves, closures, pockets, fabric, color, pattern and printed graphics. Do not invent garment details absent from <image2>, including drawstrings, extra pockets, buttons or belts. When the reference hood has no drawstrings, keep it without drawstrings. Preserve visible text and graphics as accurately as possible.\nPreserve the foreground person's facial identity, hairstyle and hair length, skin tone, body proportions, pose, hands and camera angle from <image1>. Preserve the source's existing accessories exactly. If there is no eyewear on the source face, keep the face without eyewear. Do not add or remove personal accessories.\nPreserve the background, background people, lighting, lower-body clothing and unrelated garments. Adapt only the replacement garment to the existing pose with coherent folds, shadows and natural occlusion by hair, hands and foreground objects. Do not shorten hair to reveal the garment.\nMake only the changes required for this garment transfer. A recolor of the original clothing is insufficient.\n\n<image2> is the front view of the SAME garment, not an additional garment. <image3> is the detail view of the SAME garment, not an additional garment. Use the front view to determine the visible silhouette; use other views only to clarify corresponding construction, pattern and details. Do not paste a back design onto the front.",
+    "client_id": "cf_study_312d3a9ae637482695146992d2f677ce",
+    "scores": {
+      "identity": 2,
+      "body_pose": 2,
+      "garment_transfer": 2,
+      "background_lighting": 2,
+      "artifacts": 1,
+      "detailed_fidelity": 3
+    },
+    "reviewer": "Codex visual review, 2026-10-03",
+    "notes": "Fresh output viewed with all declared inputs and its own matched fixed-seed baseline. Second seed retains dark hoodie, flame chest motif and stars, but fine glyphs remain approximate. Face, hair, crossed-arm pose, wrists, lower patterned clothing and background retained; no detail-score gain.",
+    "prompt_id": "cc7a4ade-1646-4e57-9a9d-b3b0bbed66be",
+    "execution_seconds": 277.963,
+    "wall_seconds": 278.399,
+    "sampled_device_peak_mib": 7230,
+    "output": "evaluation/benchmarks/multiple_reference_v2/hoodie_03/2026093002/output.png",
+    "output_sha256": "3e5e8c74c57a43c51a9fca88d70172baa69c3b3877fd93a33278bb338e6e5a4a",
+    "output_size": [
+      768,
+      1376
+    ],
+    "matched_review": {
+      "output_sha256": "3cede03765643461815ab99d132a5b8db26291617b508ac8d5b57fbb720d2eba",
+      "scores": {
+        "identity": 2,
+        "body_pose": 2,
+        "garment_transfer": 2,
+        "background_lighting": 2,
+        "artifacts": 1,
+        "detailed_fidelity": 3
+      },
+      "notes": "Matched baseline independently viewed on the same source/reference/detail comparison sheet; original published five scores retained. Second seed retains dark hoodie, flame chest motif and stars, but fine glyphs remain approximate. Face, hair, crossed-arm pose, wrists, lower patterned clothing and background retained; no detail-score gain."
+    },
+    "category": "hoodie",
+    "outer_category": null,
+    "mode": "multi_reference"
+  },
+  {
+    "experiment": "multiple_reference_v2",
+    "sample_id": "hoodie_04",
+    "seed": 2026093001,
+    "status": "complete",
+    "graph_sha256": "4d1d10e93889f3b7f1dbe520232ba1e04a8cdab97ad814657eb7f5698984f01e",
+    "protocol_sha256": "e9d3fa0d8894852e1c170b9345d379200eba3d93a4c9b94e577fe7e220a211f6",
+    "inputs": {
+      "person": {
+        "path": "evaluation/assets/upstream/coastal_smiling_woman.png",
+        "sha256": "d78bb2fe877531938e596026cb3c577ff7af7188cb911ea2c6f49c1daf62d174"
+      },
+      "garment": {
+        "path": "evaluation/assets/commons/hoodie_m7agar.jpg",
+        "sha256": "9caf8b20c8a567c2ee3e7b56b1556942eed6eefa993f65b4d07d2f87bcafd2ad"
+      },
+      "detail": {
+        "path": "evaluation/assets/met/hoodie_detail.png",
+        "sha256": "8909d327f4d62ad94e3a7120993da11adbea193fafb219160c9b64a070c05585"
+      }
+    },
+    "uploaded": {
+      "person": "cf_study_8f6fbe04f43b4cc8941c8426dd74e49f_person.png",
+      "garment": "cf_study_8f6fbe04f43b4cc8941c8426dd74e49f_garment.jpg",
+      "detail": "cf_study_8f6fbe04f43b4cc8941c8426dd74e49f_detail.png"
+    },
+    "image_order": [
+      "person",
+      "garment",
+      "detail"
+    ],
+    "prompt": "Use <image1> as the edit target and <image2> only as the garment reference.\nReplace the foreground person's main upper-body garment in <image1> with the actual hoodie shown in <image2>. Transfer the reference design rather than making a generic garment of that category.\nMatch the visible reference silhouette, neckline or collar shape, sleeves, closures, pockets, fabric, color, pattern and printed graphics. Do not invent garment details absent from <image2>, including drawstrings, extra pockets, buttons or belts. When the reference hood has no drawstrings, keep it without drawstrings. Preserve visible text and graphics as accurately as possible.\nPreserve the foreground person's facial identity, hairstyle and hair length, skin tone, body proportions, pose, hands and camera angle from <image1>. Preserve the source's existing accessories exactly. If there is no eyewear on the source face, keep the face without eyewear. Do not add or remove personal accessories.\nPreserve the background, background people, lighting, lower-body clothing and unrelated garments. Adapt only the replacement garment to the existing pose with coherent folds, shadows and natural occlusion by hair, hands and foreground objects. Do not shorten hair to reveal the garment.\nMake only the changes required for this garment transfer. A recolor of the original clothing is insufficient.\n\n<image2> is the front view of the SAME garment, not an additional garment. <image3> is the detail view of the SAME garment, not an additional garment. Use the front view to determine the visible silhouette; use other views only to clarify corresponding construction, pattern and details. Do not paste a back design onto the front.",
+    "client_id": "cf_study_8f6fbe04f43b4cc8941c8426dd74e49f",
+    "scores": {
+      "identity": 2,
+      "body_pose": 2,
+      "garment_transfer": 2,
+      "background_lighting": 2,
+      "artifacts": 1,
+      "detailed_fidelity": 3
+    },
+    "reviewer": "Codex visual review, 2026-10-03",
+    "notes": "Fresh output viewed with all declared inputs and its own matched fixed-seed baseline. Hoodie silhouette, angled chest flame/word and near-sleeve star transfer. Source curls, smiling face, sideways pose, rocks, ship and warm sea lighting retained. Visible lower skirt remains pale, improving on dark skirt in matched baseline; fine lettering stays approximate.",
+    "prompt_id": "9f496b00-24e8-4634-bab2-a5362960f025",
+    "execution_seconds": 275.574,
+    "wall_seconds": 280.573,
+    "sampled_device_peak_mib": 7322,
+    "output": "evaluation/benchmarks/multiple_reference_v2/hoodie_04/2026093001/output.png",
+    "output_sha256": "e822c7c79dbd3b002138268e603389e388a856a0f7efe015ca9f19b02b237643",
+    "output_size": [
+      1024,
+      1024
+    ],
+    "matched_review": {
+      "output_sha256": "bba24396b5784e327f76f89083a25e1db2dac3d8adc3fde4ac784ec26c28497d",
+      "scores": {
+        "identity": 2,
+        "body_pose": 2,
+        "garment_transfer": 2,
+        "background_lighting": 2,
+        "artifacts": 1,
+        "detailed_fidelity": 3
+      },
+      "notes": "Matched baseline independently viewed on the same source/reference/detail comparison sheet; original published five scores retained. Hoodie silhouette, angled chest flame/word and near-sleeve star transfer. Source curls, smiling face, sideways pose, rocks, ship and warm sea lighting retained. Visible lower skirt remains pale, improving on dark skirt in matched baseline; fine lettering stays approximate."
+    },
+    "category": "hoodie",
+    "outer_category": null,
+    "mode": "multi_reference"
+  },
+  {
+    "experiment": "multiple_reference_v2",
+    "sample_id": "hoodie_04",
+    "seed": 2026093002,
+    "status": "complete",
+    "graph_sha256": "ac9556a54d9bf95f59a906b143c63724c10a589bf02370257dcdfc79bce03259",
+    "protocol_sha256": "e9d3fa0d8894852e1c170b9345d379200eba3d93a4c9b94e577fe7e220a211f6",
+    "inputs": {
+      "person": {
+        "path": "evaluation/assets/upstream/coastal_smiling_woman.png",
+        "sha256": "d78bb2fe877531938e596026cb3c577ff7af7188cb911ea2c6f49c1daf62d174"
+      },
+      "garment": {
+        "path": "evaluation/assets/commons/hoodie_m7agar.jpg",
+        "sha256": "9caf8b20c8a567c2ee3e7b56b1556942eed6eefa993f65b4d07d2f87bcafd2ad"
+      },
+      "detail": {
+        "path": "evaluation/assets/met/hoodie_detail.png",
+        "sha256": "8909d327f4d62ad94e3a7120993da11adbea193fafb219160c9b64a070c05585"
+      }
+    },
+    "uploaded": {
+      "person": "cf_study_066db23061ee4d35b50f842af2985329_person.png",
+      "garment": "cf_study_066db23061ee4d35b50f842af2985329_garment.jpg",
+      "detail": "cf_study_066db23061ee4d35b50f842af2985329_detail.png"
+    },
+    "image_order": [
+      "person",
+      "garment",
+      "detail"
+    ],
+    "prompt": "Use <image1> as the edit target and <image2> only as the garment reference.\nReplace the foreground person's main upper-body garment in <image1> with the actual hoodie shown in <image2>. Transfer the reference design rather than making a generic garment of that category.\nMatch the visible reference silhouette, neckline or collar shape, sleeves, closures, pockets, fabric, color, pattern and printed graphics. Do not invent garment details absent from <image2>, including drawstrings, extra pockets, buttons or belts. When the reference hood has no drawstrings, keep it without drawstrings. Preserve visible text and graphics as accurately as possible.\nPreserve the foreground person's facial identity, hairstyle and hair length, skin tone, body proportions, pose, hands and camera angle from <image1>. Preserve the source's existing accessories exactly. If there is no eyewear on the source face, keep the face without eyewear. Do not add or remove personal accessories.\nPreserve the background, background people, lighting, lower-body clothing and unrelated garments. Adapt only the replacement garment to the existing pose with coherent folds, shadows and natural occlusion by hair, hands and foreground objects. Do not shorten hair to reveal the garment.\nMake only the changes required for this garment transfer. A recolor of the original clothing is insufficient.\n\n<image2> is the front view of the SAME garment, not an additional garment. <image3> is the detail view of the SAME garment, not an additional garment. Use the front view to determine the visible silhouette; use other views only to clarify corresponding construction, pattern and details. Do not paste a back design onto the front.",
+    "client_id": "cf_study_066db23061ee4d35b50f842af2985329",
+    "scores": {
+      "identity": 2,
+      "body_pose": 2,
+      "garment_transfer": 2,
+      "background_lighting": 2,
+      "artifacts": 1,
+      "detailed_fidelity": 3
+    },
+    "reviewer": "Codex visual review, 2026-10-03",
+    "notes": "Fresh output viewed with all declared inputs and its own matched fixed-seed baseline. Second seed retains smiling source, curls, sideways pose, pale lower skirt, rock coast and ship. Near-sleeve star/text and angled chest motif visible, with fine glyphs approximate; no fine-detail score gain over matched reference.",
+    "prompt_id": "53438b66-8d23-4b8b-818a-dadb11f9e26c",
+    "execution_seconds": 275.593,
+    "wall_seconds": 278.082,
+    "sampled_device_peak_mib": 7259,
+    "output": "evaluation/benchmarks/multiple_reference_v2/hoodie_04/2026093002/output.png",
+    "output_sha256": "99da8d0ec8b7bb310be6bb04c0e6d21a799edba9850809a2355b304ba9f3d162",
+    "output_size": [
+      1024,
+      1024
+    ],
+    "matched_review": {
+      "output_sha256": "62758768d4662ace90e86208d263d56d292cc873417794b71b7de52ba75d0ddc",
+      "scores": {
+        "identity": 2,
+        "body_pose": 2,
+        "garment_transfer": 2,
+        "background_lighting": 2,
+        "artifacts": 1,
+        "detailed_fidelity": 3
+      },
+      "notes": "Matched baseline independently viewed on the same source/reference/detail comparison sheet; original published five scores retained. Second seed retains smiling source, curls, sideways pose, pale lower skirt, rock coast and ship. Near-sleeve star/text and angled chest motif visible, with fine glyphs approximate; no fine-detail score gain over matched reference."
+    },
+    "category": "hoodie",
+    "outer_category": null,
+    "mode": "multi_reference"
+  }
+]

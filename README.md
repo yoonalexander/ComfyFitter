@@ -8,9 +8,9 @@ AI-powered virtual clothing try-on using **ComfyUI** and **Qwen Image 2.1 Image 
 [![ComfyUI][comfyui-shield]][comfyui-url]
 [![Qwen Image 2.1][qwen-shield]][qwen-url]
 [![Project Status][status-shield]][repo-url]
+[![Application License][license-shield]](LICENSE)
 [![GitHub Stars][stars-shield]][stars-url]
 [![GitHub Issues][issues-shield]][issues-url]
-[![GitHub License][license-shield]][license-url]
 
 </div>
 
@@ -22,18 +22,42 @@ The goal of this project is to let a user upload a photo of themselves, provide 
 
 ## Current Status
 
-The project is currently in the proof-of-concept and workflow validation stage.
+The local application is implemented, its single-garment workflow is validated,
+and its live backend/browser acceptance checks have passed.
 
-The current setup includes:
+The local ComfyUI installation, model hashes, and saved workflow have been captured and reproduced on an RTX 5060. Inspection of the original saved output shows a **single-image coat recolor using int8**, rather than garment-reference transfer. The saved editable graph selects GGUF.
 
-- ComfyUI installed locally
-- Qwen Image 2.1 running through a GGUF model
-- the Qwen Image 2.1 Image Edit ComfyUI template
-- successful reference-based clothing edits
-- support for up to 10 image inputs
-- prompt-level image references using `<image1>` through `<image10>`
+The fresh [category-specific workflow](docs/EVALUATION_category_reference_v4.md)
+passed **36/40**, with **9/10 in each of shirts, hoodies, jackets and coats**.
+Those four categories are enabled locally. Earlier rejected benchmarks remain
+published at [26/40](docs/EVALUATION.md), [31/40](docs/EVALUATION_reference_v2.md)
+and [29/40](docs/EVALUATION_reference_v3.md). The optional
+[guarded source-protection mode](docs/SPATIAL_semantic_guarded_v5.md) also passed:
+it preserves raw preview quality and falls back for uncertain boundaries
+(31 of 40 study outputs). All forty actual CPU-engine outputs and masks match
+the study. These are small engineering evaluations by one AI visual reviewer,
+not population accuracy or physical fit measurements.
 
-A basic test has already successfully changed the color of a coat in a user image using a reference image.
+The [FastAPI backend](docs/BACKEND.md) implements durable jobs, image validation,
+recovery, retrieval, saved looks, ownership and bounded quotas. **91 controlled
+backend checks and 38 evaluation checks pass.** [Three actual application jobs](docs/LIVE_ACCEPTANCE.md)
+also passed, including restart during native GPU execution without resubmission.
+The [browser app](docs/BROWSER.md) has real upload/generation, refresh,
+comparison/download, retry, offline recovery and saved-look restart/deletion
+verification. [Hoodie front/detail references](docs/REFERENCE_STUDIES.md) passed
+their fresh matched study and are enabled; their measured gain is modest, with
+longer generation time. Jacket/back/side views remain unqualified. The original and three refined outfit studies remain rejected in the report.
+The complete fresh conditional-bag study passed **7/8**, enabling **shirt + coat**
+with an explicit source-photo bag choice. The failed field result retains its
+inner-shirt neckline defect; jacket combinations remain unqualified. Median
+local execution was 282.15 seconds, with a sampled device peak of 7,680 MiB.
+The real outfit browser preview completed in **283.58 seconds**; active refresh,
+all input/result/download hashes, one native submission and responsive layouts passed.
+[Deployment files](docs/DEPLOYMENT.md) and local images are
+prepared; no paid service is provisioned. See [setup](docs/SETUP.md),
+[free private web access using the GPU PC](docs/WEB_GPU_PC.md),
+[evaluation instructions](evaluation/README.md), the [roadmap](docs/ROADMAP.md)
+and [implementation evidence](docs/IMPLEMENTATION_STATUS.md).
 
 ---
 
@@ -114,7 +138,6 @@ The MVP will support:
 
 - one user image
 - one primary clothing reference
-- optional extra garment reference images
 - garment type selection
 - AI generation
 - before / after comparison
@@ -122,9 +145,13 @@ The MVP will support:
 
 The MVP will not attempt to provide exact sizing recommendations.
 
+Multiple reference images are a Phase 4 extension. The initial category selector will offer only categories that pass the evaluation gate.
+
 ---
 
 ## Architecture
+
+The first release will be a full stack web app running locally: a browser UI connects to a local FastAPI backend, which connects to the existing local ComfyUI service. A desktop installer is optional packaging after the MVP; a hosted release will connect to private GPU inference rather than the user's localhost. See the [architecture decision](docs/ROADMAP.md#product-and-architecture-decision).
 
 ```text
 +-------------------------+
@@ -166,7 +193,7 @@ The MVP will not attempt to provide exact sizing recommendations.
 
 ### Frontend
 
-- React or Next.js
+- React with Vite
 - TypeScript
 - Tailwind CSS
 
@@ -175,7 +202,8 @@ The MVP will not attempt to provide exact sizing recommendations.
 - FastAPI
 - Python
 - Pydantic
-- Pillow or OpenCV for preprocessing where needed
+- Pillow for image validation and orientation normalization
+- SQLite for durable local job records
 
 ### AI / Inference
 
@@ -484,60 +512,35 @@ High-resolution image editing can be slow and VRAM intensive.
 
 ## Roadmap
 
-### Phase 0
-- [x] Install ComfyUI
-- [x] Install Qwen Image 2.1 GGUF
-- [x] Run Image Edit template
-- [x] Validate basic clothing edit
+The [implementation roadmap](docs/ROADMAP.md) defines deliverables, dependencies, verification, and completion criteria for each phase.
 
-### Phase 1
-- [ ] Test full garment replacement
-- [ ] Test multiple garment categories
-- [ ] Test multiple reference images
-- [ ] Establish prompt baseline
-- [ ] Build evaluation set
+| Phase | Outcome |
+|---|---|
+| 0 | Capture and reproduce the reported ComfyUI baseline |
+| 1 | Validate complete single-garment replacement |
+| 2 | Build reliable backend and ComfyUI integration |
+| 3 | Deliver the local browser MVP |
+| 4 | Add multiple references for one garment |
+| 5 | Reduce unintended edits with segmentation or masks |
+| 6 | Add multiple garments and optional saved looks |
+| 7 | Deliver a hosted web service |
 
-### Phase 2
-- [ ] Export stable ComfyUI API workflow
-- [ ] Build ComfyUI Python client
-- [ ] Inject dynamic images and prompts
-- [ ] Queue workflows programmatically
-- [ ] Retrieve generated output
-
-### Phase 3
-- [ ] Build local web UI
-- [ ] Add image upload
-- [ ] Add garment category selector
-- [ ] Add before / after comparison
-- [ ] Add retry generation
-
-### Phase 4
-- [ ] Add multi-reference garment support
-- [ ] Add reference-role selection
-- [ ] Benchmark multi-image fidelity
-
-### Phase 5
-- [ ] Add human parsing / segmentation
-- [ ] Add category-aware masks
-- [ ] Improve identity preservation
-
-### Phase 6
-- [ ] Add full outfit generation
-- [ ] Add multiple garment references
-- [ ] Add saved looks and history
-
-### Phase 7
-- [ ] Add hosted GPU inference
-- [ ] Add authentication
-- [ ] Add storage lifecycle
-- [ ] Add rate limiting
-- [ ] Add privacy protections
+Phases 0-6 are verified locally for the offered categories, hoodie detail and
+shirt+coat combination, including saved-look restart and deletion. Evidence and
+known limitations are in [the current ledger](docs/IMPLEMENTATION_STATUS.md).
+Desktop packaging is optional.
+Hosted work is limited to deployment files by the owner's no-paid-services decision.
 
 ---
 
 ## Privacy
 
 User photos should be treated as sensitive data.
+
+Original application code is [MIT licensed](LICENSE). Model and benchmark input
+licenses are separate; the current Qwen Image 2.1 weights are restricted to
+research/evaluation. See [third-party notices](THIRD_PARTY_NOTICES.md). Hosted
+deployment preparation will use no paid services, as requested by the owner.
 
 For the local version:
 
@@ -580,11 +583,7 @@ A generated result should therefore not be treated as proof that a specific size
 
 ## Design Document
 
-A more detailed technical design is available in:
-
-```text
-docs/DESIGN.md
-```
+A more detailed technical design is available in [comfyfitter_design_doc.md](comfyfitter_design_doc.md).
 
 It covers:
 
@@ -632,7 +631,8 @@ The core architecture should remain modular so that Qwen Image 2.1, ComfyUI work
 [qwen-shield]: https://img.shields.io/badge/Qwen-Image%202.1-6C5CE7?style=flat
 [qwen-url]: https://huggingface.co/Qwen
 
-[status-shield]: https://img.shields.io/badge/status-in%20development-orange?style=flat
+[status-shield]: https://img.shields.io/badge/status-local%20gates%20passed-green?style=flat
+[license-shield]: https://img.shields.io/badge/application%20license-MIT-blue?style=flat
 [repo-url]: https://github.com/yoonalexander/ComfyFitter
 
 [stars-shield]: https://img.shields.io/github/stars/yoonalexander/ComfyFitter?style=flat&logo=github
@@ -640,6 +640,3 @@ The core architecture should remain modular so that Qwen Image 2.1, ComfyUI work
 
 [issues-shield]: https://img.shields.io/github/issues/yoonalexander/ComfyFitter?style=flat&logo=github
 [issues-url]: https://github.com/yoonalexander/ComfyFitter/issues
-
-[license-shield]: https://img.shields.io/github/license/yoonalexander/ComfyFitter?style=flat
-[license-url]: https://github.com/yoonalexander/ComfyFitter/blob/main/LICENSE

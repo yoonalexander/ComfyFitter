@@ -1,0 +1,24 @@
+{
+  "status": "rejected",
+  "reviewed": 8,
+  "preservation_noninferior": false,
+  "fidelity_improved": true,
+  "detailed_fidelity_change": {
+    "hoodie": 1,
+    "jacket": 0
+  },
+  "categories": [],
+  "reference_roles": {},
+  "verified_total_inputs": 5,
+  "capacity_outputs": 2,
+  "capacity_succeeded": true,
+  "experiment": "multiple_reference_v1",
+  "protocol_sha256": "a4fd6253087d54cf0b5e71ad12fcb33c3431fcec4a4b7d641c90dd1316507144",
+  "execution_seconds": {
+    "count": 10,
+    "minimum": 277.394,
+    "median": 365.2045,
+    "maximum": 446.067
+  },
+  "sampled_device_peak_mib": 7694
+}

@@ -1,0 +1,40 @@
+{
+  "additional_assets": [
+    {
+      "path": "evaluation/assets/met/jacket_159165_back.jpg",
+      "sha256": "0dad675e723f4b7733a0a1cb48193705379475f983acb2bdbd5b1e2ca8398cac",
+      "source": "https://collectionapi.metmuseum.org/public/collection/v1/objects/159165",
+      "download_url": "https://images.metmuseum.org/CRDImages/es/original/23.225_back_CP4.jpg",
+      "rights": "Metropolitan Museum of Art Open Access CC0; API isPublicDomain=true",
+      "title": "Jacket 23.225, genuine back view"
+    }
+  ],
+  "derivatives": [
+    {
+      "path": "evaluation/assets/met/hoodie_detail.png",
+      "source": "evaluation/assets/commons/hoodie_m7agar.jpg",
+      "source_sha256": "9caf8b20c8a567c2ee3e7b56b1556942eed6eefa993f65b4d07d2f87bcafd2ad",
+      "crop_pixels": [
+        260,
+        500,
+        940,
+        1020
+      ],
+      "sha256": "8909d327f4d62ad94e3a7120993da11adbea193fafb219160c9b64a070c05585",
+      "rights": "CC0; source asset attribution retained"
+    },
+    {
+      "path": "evaluation/assets/met/jacket_detail.png",
+      "source": "evaluation/assets/met/jacket_159165.jpg",
+      "source_sha256": "121f658b5f3ed6c683fa5dee12bb8b23d1190c54852cbfdf28aff53327e8ad63",
+      "crop_pixels": [
+        600,
+        400,
+        2850,
+        1900
+      ],
+      "sha256": "12b6288ef235d4faddbbc77a84f49b066a6647380364a85776a9ae629a6061b1",
+      "rights": "CC0; source asset attribution retained"
+    }
+  ]
+}

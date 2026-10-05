@@ -1,0 +1,20 @@
+FROM python:3.13.12-slim-trixie
+ENV PYTHONDONTWRITEBYTECODE=1 PYTHONUNBUFFERED=1
+RUN apt-get update && apt-get install -y --no-install-recommends git ca-certificates libgl1 libglib2.0-0 && rm -rf /var/lib/apt/lists/*
+WORKDIR /opt/ComfyUI
+RUN git init && git remote add origin https://github.com/Comfy-Org/ComfyUI.git && git fetch --depth 1 origin 830232b856045ca2892833212d7771078a13edd5 && git checkout --detach FETCH_HEAD
+COPY deployment/install_gguf.py /tmp/install_gguf.py
+RUN python /tmp/install_gguf.py
+COPY deployment/worker-constraints.txt /tmp/worker-constraints.txt
+RUN pip install --no-cache-dir torch==2.12.1+cu130 torchvision==0.27.1+cu130 --index-url https://download.pytorch.org/whl/cu130
+# Audio nodes are outside this image-only evaluated graph. Preserve the exact
+# evaluated Torch version rather than installing the mismatched local audio wheel.
+RUN python -c "from pathlib import Path; p=Path('requirements.txt'); p.write_text('\n'.join(line for line in p.read_text().splitlines() if line.strip() != 'torchaudio')+'\n')" && pip install --no-cache-dir -r requirements.txt -r custom_nodes/ComfyUI-GGUF/requirements.txt -c /tmp/worker-constraints.txt
+COPY deployment/worker_start.py /opt/worker_start.py
+RUN pip check
+COPY evaluation/environment.json /opt/environment.json
+COPY deployment/extra_model_paths.yaml /opt/extra_model_paths.yaml
+RUN useradd --uid 1000 --create-home worker && mkdir -p /srv/comfy/input /srv/comfy/output /srv/comfy/user && chown -R 1000:1000 /srv/comfy
+USER 1000:1000
+EXPOSE 8188
+CMD ["python","/opt/worker_start.py"]

@@ -1,0 +1,930 @@
+[
+  {
+    "experiment": "two_garment_v1",
+    "sample_id": "shirt_jacket_01",
+    "seed": 2026093001,
+    "status": "complete",
+    "graph_sha256": "a3d69b711913495e21d529d6a38a757c3278c7977ce017659a11f930bb649911",
+    "protocol_sha256": "01cfc63b77b9f07b65b308e2d95dfe7456468cc2aa0d7bc4b45f2c14efad405d",
+    "inputs": {
+      "person": {
+        "path": "evaluation/assets/upstream/casual_male_portrait.png",
+        "sha256": "f750ded4fa7d359510b86d2973c33091238c01f089f2d67f619838b1051a02d0"
+      },
+      "garment": {
+        "path": "evaluation/assets/upstream/clothing_light_blue_denim_shirt.png",
+        "sha256": "5f8d348aa0079922743e53ab687ba5661c57696d373a0113cc61dae9a36761a3"
+      },
+      "outer": {
+        "path": "evaluation/assets/commons/tender_denim_jacket.jpg",
+        "sha256": "c8f8d0f361dfe062818ef401db5cd0fbe586bd61d8c62c97c460b26c016e2f36"
+      }
+    },
+    "uploaded": {
+      "person": "cf_study_df08049e465b44cba85b3b581842f957_person.png",
+      "garment": "cf_study_df08049e465b44cba85b3b581842f957_garment.png",
+      "outer": "cf_study_df08049e465b44cba85b3b581842f957_outer.jpg"
+    },
+    "image_order": [
+      "person",
+      "garment",
+      "outer"
+    ],
+    "prompt": "Use <image1> as the edit target. Dress the foreground person in the exact shirt from <image2>, with the exact jacket from <image3> worn OPEN over it. The inner garment is a separate garment, not a texture for the outer layer. Keep both reference identities distinct: copy each collar, sleeves, seams, closures, material, color and visible detail from its own image. Show the inner garment naturally through the outer opening. Match the outer reference length. Preserve the original face, full hairstyle, pose, hands, body proportions, accessories, lighting, background and unrelated lower clothing. Respect layering and natural hair/hand occlusion; add no absent garment details or accessories.",
+    "client_id": "cf_study_df08049e465b44cba85b3b581842f957",
+    "scores": {
+      "identity": 2,
+      "body_pose": 2,
+      "inner_transfer": 2,
+      "outer_transfer": 1,
+      "background_lighting": 2,
+      "artifacts": 1,
+      "layering_occlusion": 2
+    },
+    "reviewer": "Codex visual review, 2026-10-03",
+    "notes": "Source, inner, outer and both fixed-seed outputs visually inspected together. Light denim shirt remains distinct under open dark denim outer layer. Face, glasses, backpack, hands, pants and studio retained. Outer reference narrow stand collar becomes pointed folded collar; outer design fidelity fails.",
+    "prompt_id": "3114bde7-dd96-4f2a-b401-d323bb71ed8b",
+    "execution_seconds": 269.105,
+    "wall_seconds": 273.127,
+    "sampled_device_peak_mib": 7225,
+    "output": "evaluation/benchmarks/two_garment_v1/shirt_jacket_01/2026093001/output.png",
+    "output_sha256": "5fc97994a589b99009fc0011b5a58b1bd769eccd342371dab3373b1491099dc0",
+    "output_size": [
+      832,
+      1248
+    ],
+    "category": "shirt",
+    "outer_category": "jacket",
+    "mode": "two_garment"
+  },
+  {
+    "experiment": "two_garment_v1",
+    "sample_id": "shirt_jacket_01",
+    "seed": 2026093002,
+    "status": "complete",
+    "graph_sha256": "8b4ac0cf9f9266e58ec9988ba2d2bef8f8dc605d83c805c627b5c23d6971bd60",
+    "protocol_sha256": "01cfc63b77b9f07b65b308e2d95dfe7456468cc2aa0d7bc4b45f2c14efad405d",
+    "inputs": {
+      "person": {
+        "path": "evaluation/assets/upstream/casual_male_portrait.png",
+        "sha256": "f750ded4fa7d359510b86d2973c33091238c01f089f2d67f619838b1051a02d0"
+      },
+      "garment": {
+        "path": "evaluation/assets/upstream/clothing_light_blue_denim_shirt.png",
+        "sha256": "5f8d348aa0079922743e53ab687ba5661c57696d373a0113cc61dae9a36761a3"
+      },
+      "outer": {
+        "path": "evaluation/assets/commons/tender_denim_jacket.jpg",
+        "sha256": "c8f8d0f361dfe062818ef401db5cd0fbe586bd61d8c62c97c460b26c016e2f36"
+      }
+    },
+    "uploaded": {
+      "person": "cf_study_014d7c56db2243fa998ad483158d197b_person.png",
+      "garment": "cf_study_014d7c56db2243fa998ad483158d197b_garment.png",
+      "outer": "cf_study_014d7c56db2243fa998ad483158d197b_outer.jpg"
+    },
+    "image_order": [
+      "person",
+      "garment",
+      "outer"
+    ],
+    "prompt": "Use <image1> as the edit target. Dress the foreground person in the exact shirt from <image2>, with the exact jacket from <image3> worn OPEN over it. The inner garment is a separate garment, not a texture for the outer layer. Keep both reference identities distinct: copy each collar, sleeves, seams, closures, material, color and visible detail from its own image. Show the inner garment naturally through the outer opening. Match the outer reference length. Preserve the original face, full hairstyle, pose, hands, body proportions, accessories, lighting, background and unrelated lower clothing. Respect layering and natural hair/hand occlusion; add no absent garment details or accessories.",
+    "client_id": "cf_study_014d7c56db2243fa998ad483158d197b",
+    "scores": {
+      "identity": 2,
+      "body_pose": 2,
+      "inner_transfer": 2,
+      "outer_transfer": 1,
+      "background_lighting": 2,
+      "artifacts": 1,
+      "layering_occlusion": 2
+    },
+    "reviewer": "Codex visual review, 2026-10-03",
+    "notes": "Source, inner, outer and both fixed-seed outputs visually inspected together. Separate light shirt and dark outer jacket visible with preserved person, backpack and studio. Outer stand collar is replaced by wide points, so outer design fails despite coherent layering.",
+    "prompt_id": "6d7f1332-86ad-4458-9336-bb08b87a9b4c",
+    "execution_seconds": 269.208,
+    "wall_seconds": 273.698,
+    "sampled_device_peak_mib": 7195,
+    "output": "evaluation/benchmarks/two_garment_v1/shirt_jacket_01/2026093002/output.png",
+    "output_sha256": "88899eb7d5824193f2eee6c48871ab92649707d8944dd7d2e2b3d9fd4ab8de69",
+    "output_size": [
+      832,
+      1248
+    ],
+    "category": "shirt",
+    "outer_category": "jacket",
+    "mode": "two_garment"
+  },
+  {
+    "experiment": "two_garment_v1",
+    "sample_id": "shirt_jacket_02",
+    "seed": 2026093001,
+    "status": "complete",
+    "graph_sha256": "125a522de5aa4b73d767a97a2f5ca84bb6336223aca4838580f2467fb6b37004",
+    "protocol_sha256": "01cfc63b77b9f07b65b308e2d95dfe7456468cc2aa0d7bc4b45f2c14efad405d",
+    "inputs": {
+      "person": {
+        "path": "evaluation/assets/upstream/portrait_model_denim.png",
+        "sha256": "d888e9396587a3fd4ad500bbf5988fed0f7ba60ffa71628c29fced78bece3ac6"
+      },
+      "garment": {
+        "path": "evaluation/assets/upstream/clothing_light_blue_denim_shirt.png",
+        "sha256": "5f8d348aa0079922743e53ab687ba5661c57696d373a0113cc61dae9a36761a3"
+      },
+      "outer": {
+        "path": "evaluation/assets/commons/tender_denim_jacket.jpg",
+        "sha256": "c8f8d0f361dfe062818ef401db5cd0fbe586bd61d8c62c97c460b26c016e2f36"
+      }
+    },
+    "uploaded": {
+      "person": "cf_study_f9a2deb43162400ea8cb7f34a5aaed81_person.png",
+      "garment": "cf_study_f9a2deb43162400ea8cb7f34a5aaed81_garment.png",
+      "outer": "cf_study_f9a2deb43162400ea8cb7f34a5aaed81_outer.jpg"
+    },
+    "image_order": [
+      "person",
+      "garment",
+      "outer"
+    ],
+    "prompt": "Use <image1> as the edit target. Dress the foreground person in the exact shirt from <image2>, with the exact jacket from <image3> worn OPEN over it. The inner garment is a separate garment, not a texture for the outer layer. Keep both reference identities distinct: copy each collar, sleeves, seams, closures, material, color and visible detail from its own image. Show the inner garment naturally through the outer opening. Match the outer reference length. Preserve the original face, full hairstyle, pose, hands, body proportions, accessories, lighting, background and unrelated lower clothing. Respect layering and natural hair/hand occlusion; add no absent garment details or accessories.",
+    "client_id": "cf_study_f9a2deb43162400ea8cb7f34a5aaed81",
+    "scores": {
+      "identity": 2,
+      "body_pose": 2,
+      "inner_transfer": 2,
+      "outer_transfer": 1,
+      "background_lighting": 2,
+      "artifacts": 2,
+      "layering_occlusion": 2
+    },
+    "reviewer": "Codex visual review, 2026-10-03",
+    "notes": "Source, inner, outer and both fixed-seed outputs visually inspected together. Profile, hair, downward pose and studio retained. Light shirt front and dark outer material remain distinct, but outer narrow stand collar becomes folded pointed collar.",
+    "prompt_id": "29c646f4-db38-4724-a0ad-aa0735b76b47",
+    "execution_seconds": 267.83,
+    "wall_seconds": 273.144,
+    "sampled_device_peak_mib": 7195,
+    "output": "evaluation/benchmarks/two_garment_v1/shirt_jacket_02/2026093001/output.png",
+    "output_sha256": "35745db8a9c952b2a8009a09c46cfc8c6c3864a5cc41869d8b0bf73312d98ccb",
+    "output_size": [
+      896,
+      1152
+    ],
+    "category": "shirt",
+    "outer_category": "jacket",
+    "mode": "two_garment"
+  },
+  {
+    "experiment": "two_garment_v1",
+    "sample_id": "shirt_jacket_02",
+    "seed": 2026093002,
+    "status": "complete",
+    "graph_sha256": "57be1fe79a548416dbc925e29bc634d54ebabcb334ef37dcbc828d60d8c278e5",
+    "protocol_sha256": "01cfc63b77b9f07b65b308e2d95dfe7456468cc2aa0d7bc4b45f2c14efad405d",
+    "inputs": {
+      "person": {
+        "path": "evaluation/assets/upstream/portrait_model_denim.png",
+        "sha256": "d888e9396587a3fd4ad500bbf5988fed0f7ba60ffa71628c29fced78bece3ac6"
+      },
+      "garment": {
+        "path": "evaluation/assets/upstream/clothing_light_blue_denim_shirt.png",
+        "sha256": "5f8d348aa0079922743e53ab687ba5661c57696d373a0113cc61dae9a36761a3"
+      },
+      "outer": {
+        "path": "evaluation/assets/commons/tender_denim_jacket.jpg",
+        "sha256": "c8f8d0f361dfe062818ef401db5cd0fbe586bd61d8c62c97c460b26c016e2f36"
+      }
+    },
+    "uploaded": {
+      "person": "cf_study_21fe4760562c4074a2835aea795e3bbd_person.png",
+      "garment": "cf_study_21fe4760562c4074a2835aea795e3bbd_garment.png",
+      "outer": "cf_study_21fe4760562c4074a2835aea795e3bbd_outer.jpg"
+    },
+    "image_order": [
+      "person",
+      "garment",
+      "outer"
+    ],
+    "prompt": "Use <image1> as the edit target. Dress the foreground person in the exact shirt from <image2>, with the exact jacket from <image3> worn OPEN over it. The inner garment is a separate garment, not a texture for the outer layer. Keep both reference identities distinct: copy each collar, sleeves, seams, closures, material, color and visible detail from its own image. Show the inner garment naturally through the outer opening. Match the outer reference length. Preserve the original face, full hairstyle, pose, hands, body proportions, accessories, lighting, background and unrelated lower clothing. Respect layering and natural hair/hand occlusion; add no absent garment details or accessories.",
+    "client_id": "cf_study_21fe4760562c4074a2835aea795e3bbd",
+    "scores": {
+      "identity": 2,
+      "body_pose": 2,
+      "inner_transfer": 2,
+      "outer_transfer": 1,
+      "background_lighting": 2,
+      "artifacts": 2,
+      "layering_occlusion": 2
+    },
+    "reviewer": "Codex visual review, 2026-10-03",
+    "notes": "Source, inner, outer and both fixed-seed outputs visually inspected together. Second seed retains profile and body, separate shirt button front and dark outer jacket. Same outer collar architecture mismatch; reject outer fidelity.",
+    "prompt_id": "9e25e76d-cfc4-4e5e-b732-24be74630937",
+    "execution_seconds": 267.871,
+    "wall_seconds": 269.205,
+    "sampled_device_peak_mib": 7233,
+    "output": "evaluation/benchmarks/two_garment_v1/shirt_jacket_02/2026093002/output.png",
+    "output_sha256": "f676acbec29e28acd90ce7cee466b98e045e8abf4aeaf3135d2598a0ba4587c7",
+    "output_size": [
+      896,
+      1152
+    ],
+    "category": "shirt",
+    "outer_category": "jacket",
+    "mode": "two_garment"
+  },
+  {
+    "experiment": "two_garment_v1",
+    "sample_id": "shirt_jacket_03",
+    "seed": 2026093001,
+    "status": "complete",
+    "graph_sha256": "028880b28840e7f3375cb8b4276fd6e096ed0865c87ce20392824b952daeed48",
+    "protocol_sha256": "01cfc63b77b9f07b65b308e2d95dfe7456468cc2aa0d7bc4b45f2c14efad405d",
+    "inputs": {
+      "person": {
+        "path": "evaluation/assets/upstream/urban_man.png",
+        "sha256": "8886ff6ccd369739e227274af8ad42d0f8627129d83c1643c84e3da1348ca986"
+      },
+      "garment": {
+        "path": "evaluation/assets/upstream/clothing_light_blue_denim_shirt.png",
+        "sha256": "5f8d348aa0079922743e53ab687ba5661c57696d373a0113cc61dae9a36761a3"
+      },
+      "outer": {
+        "path": "evaluation/assets/commons/tender_denim_jacket.jpg",
+        "sha256": "c8f8d0f361dfe062818ef401db5cd0fbe586bd61d8c62c97c460b26c016e2f36"
+      }
+    },
+    "uploaded": {
+      "person": "cf_study_610afc287c7545cbafd905950e9576a3_person.png",
+      "garment": "cf_study_610afc287c7545cbafd905950e9576a3_garment.png",
+      "outer": "cf_study_610afc287c7545cbafd905950e9576a3_outer.jpg"
+    },
+    "image_order": [
+      "person",
+      "garment",
+      "outer"
+    ],
+    "prompt": "Use <image1> as the edit target. Dress the foreground person in the exact shirt from <image2>, with the exact jacket from <image3> worn OPEN over it. The inner garment is a separate garment, not a texture for the outer layer. Keep both reference identities distinct: copy each collar, sleeves, seams, closures, material, color and visible detail from its own image. Show the inner garment naturally through the outer opening. Match the outer reference length. Preserve the original face, full hairstyle, pose, hands, body proportions, accessories, lighting, background and unrelated lower clothing. Respect layering and natural hair/hand occlusion; add no absent garment details or accessories.",
+    "client_id": "cf_study_610afc287c7545cbafd905950e9576a3",
+    "scores": {
+      "identity": 2,
+      "body_pose": 2,
+      "inner_transfer": 2,
+      "outer_transfer": 1,
+      "background_lighting": 2,
+      "artifacts": 1,
+      "layering_occlusion": 2
+    },
+    "reviewer": "Codex visual review, 2026-10-03",
+    "notes": "Source, inner, outer and both fixed-seed outputs visually inspected together. Face, hair, crossed arms and blurred background retained. Light shirt under dark outer jacket coherent; outer reference stand collar becomes folded pointed collar. Mild cuff/hand artifacts.",
+    "prompt_id": "ec58e20c-db17-4dce-8cb0-458d3d5fc4ff",
+    "execution_seconds": 271.76,
+    "wall_seconds": 276.729,
+    "sampled_device_peak_mib": 7323,
+    "output": "evaluation/benchmarks/two_garment_v1/shirt_jacket_03/2026093001/output.png",
+    "output_sha256": "ada463327a20bb9fce204fbb41d7c406dfcf99e8854a409e9cf76fdff6630867",
+    "output_size": [
+      768,
+      1376
+    ],
+    "category": "shirt",
+    "outer_category": "jacket",
+    "mode": "two_garment"
+  },
+  {
+    "experiment": "two_garment_v1",
+    "sample_id": "shirt_jacket_03",
+    "seed": 2026093002,
+    "status": "complete",
+    "graph_sha256": "d13499fcf5010c465171957acf57158a064063b5c2c06d8c41dbc20cd73e40d6",
+    "protocol_sha256": "01cfc63b77b9f07b65b308e2d95dfe7456468cc2aa0d7bc4b45f2c14efad405d",
+    "inputs": {
+      "person": {
+        "path": "evaluation/assets/upstream/urban_man.png",
+        "sha256": "8886ff6ccd369739e227274af8ad42d0f8627129d83c1643c84e3da1348ca986"
+      },
+      "garment": {
+        "path": "evaluation/assets/upstream/clothing_light_blue_denim_shirt.png",
+        "sha256": "5f8d348aa0079922743e53ab687ba5661c57696d373a0113cc61dae9a36761a3"
+      },
+      "outer": {
+        "path": "evaluation/assets/commons/tender_denim_jacket.jpg",
+        "sha256": "c8f8d0f361dfe062818ef401db5cd0fbe586bd61d8c62c97c460b26c016e2f36"
+      }
+    },
+    "uploaded": {
+      "person": "cf_study_53a6219ec8e04d0bab31f932403fa95f_person.png",
+      "garment": "cf_study_53a6219ec8e04d0bab31f932403fa95f_garment.png",
+      "outer": "cf_study_53a6219ec8e04d0bab31f932403fa95f_outer.jpg"
+    },
+    "image_order": [
+      "person",
+      "garment",
+      "outer"
+    ],
+    "prompt": "Use <image1> as the edit target. Dress the foreground person in the exact shirt from <image2>, with the exact jacket from <image3> worn OPEN over it. The inner garment is a separate garment, not a texture for the outer layer. Keep both reference identities distinct: copy each collar, sleeves, seams, closures, material, color and visible detail from its own image. Show the inner garment naturally through the outer opening. Match the outer reference length. Preserve the original face, full hairstyle, pose, hands, body proportions, accessories, lighting, background and unrelated lower clothing. Respect layering and natural hair/hand occlusion; add no absent garment details or accessories.",
+    "client_id": "cf_study_53a6219ec8e04d0bab31f932403fa95f",
+    "scores": {
+      "identity": 2,
+      "body_pose": 2,
+      "inner_transfer": 2,
+      "outer_transfer": 1,
+      "background_lighting": 2,
+      "artifacts": 1,
+      "layering_occlusion": 2
+    },
+    "reviewer": "Codex visual review, 2026-10-03",
+    "notes": "Source, inner, outer and both fixed-seed outputs visually inspected together. Second seed retains source crossed-arm pose and person; two material/color identities distinct. Outer stand collar replaced with wide points; cuff junction mildly imperfect.",
+    "prompt_id": "c47a1fcf-7c4c-4a46-8501-9f96a48b60bc",
+    "execution_seconds": 271.853,
+    "wall_seconds": 274.373,
+    "sampled_device_peak_mib": 7229,
+    "output": "evaluation/benchmarks/two_garment_v1/shirt_jacket_03/2026093002/output.png",
+    "output_sha256": "8382178a8c4ab4e10139a5d2aa1f47c1172dc32baed24819953f6f76323e90bb",
+    "output_size": [
+      768,
+      1376
+    ],
+    "category": "shirt",
+    "outer_category": "jacket",
+    "mode": "two_garment"
+  },
+  {
+    "experiment": "two_garment_v1",
+    "sample_id": "shirt_jacket_05",
+    "seed": 2026093001,
+    "status": "complete",
+    "graph_sha256": "53db9672f833f5e5fabeba0636cb996a0a4bc47c4749023b570b2b754911f20e",
+    "protocol_sha256": "01cfc63b77b9f07b65b308e2d95dfe7456468cc2aa0d7bc4b45f2c14efad405d",
+    "inputs": {
+      "person": {
+        "path": "evaluation/assets/commons/plus_size_model.jpg",
+        "sha256": "51a0ddb8e992fb7d005715ae32fa43f3cdbfd3229e67e5f84448ca0ccb8dae35"
+      },
+      "garment": {
+        "path": "evaluation/assets/upstream/clothing_light_blue_denim_shirt.png",
+        "sha256": "5f8d348aa0079922743e53ab687ba5661c57696d373a0113cc61dae9a36761a3"
+      },
+      "outer": {
+        "path": "evaluation/assets/met/jacket_159165.jpg",
+        "sha256": "121f658b5f3ed6c683fa5dee12bb8b23d1190c54852cbfdf28aff53327e8ad63"
+      }
+    },
+    "uploaded": {
+      "person": "cf_study_3d91ee3c0ff84803a092eabc57836c60_person.jpg",
+      "garment": "cf_study_3d91ee3c0ff84803a092eabc57836c60_garment.png",
+      "outer": "cf_study_3d91ee3c0ff84803a092eabc57836c60_outer.jpg"
+    },
+    "image_order": [
+      "person",
+      "garment",
+      "outer"
+    ],
+    "prompt": "Use <image1> as the edit target. Dress the foreground person in the exact shirt from <image2>, with the exact jacket from <image3> worn OPEN over it. The inner garment is a separate garment, not a texture for the outer layer. Keep both reference identities distinct: copy each collar, sleeves, seams, closures, material, color and visible detail from its own image. Show the inner garment naturally through the outer opening. Match the outer reference length. Preserve the original face, full hairstyle, pose, hands, body proportions, accessories, lighting, background and unrelated lower clothing. Respect layering and natural hair/hand occlusion; add no absent garment details or accessories.",
+    "client_id": "cf_study_3d91ee3c0ff84803a092eabc57836c60",
+    "scores": {
+      "identity": 2,
+      "body_pose": 2,
+      "inner_transfer": 2,
+      "outer_transfer": 2,
+      "background_lighting": 2,
+      "artifacts": 1,
+      "layering_occlusion": 2
+    },
+    "reviewer": "Codex visual review, 2026-10-03",
+    "notes": "Source, inner, outer and both fixed-seed outputs visually inspected together. Cropped burgundy velvet jacket, broad embroidered collar and fringed cuffs/hem around wheat over separate light denim shirt. Face, long hair, hands, stance, white skirt and field retained; small embroidery approximate.",
+    "prompt_id": "8833b7a4-e7de-421d-82a9-d64b2dc48c62",
+    "execution_seconds": 269.812,
+    "wall_seconds": 273.849,
+    "sampled_device_peak_mib": 7262,
+    "output": "evaluation/benchmarks/two_garment_v1/shirt_jacket_05/2026093001/output.png",
+    "output_sha256": "07e00f96f2075cb8a01edfe4b94f48efaa71fae9e17a853408791f42b4ed73cd",
+    "output_size": [
+      1216,
+      864
+    ],
+    "category": "shirt",
+    "outer_category": "jacket",
+    "mode": "two_garment"
+  },
+  {
+    "experiment": "two_garment_v1",
+    "sample_id": "shirt_jacket_05",
+    "seed": 2026093002,
+    "status": "complete",
+    "graph_sha256": "4d3cf0d3bcb82ff386a01d3d7d240b5cd508841f4b08cbd3195b53caf4a912ae",
+    "protocol_sha256": "01cfc63b77b9f07b65b308e2d95dfe7456468cc2aa0d7bc4b45f2c14efad405d",
+    "inputs": {
+      "person": {
+        "path": "evaluation/assets/commons/plus_size_model.jpg",
+        "sha256": "51a0ddb8e992fb7d005715ae32fa43f3cdbfd3229e67e5f84448ca0ccb8dae35"
+      },
+      "garment": {
+        "path": "evaluation/assets/upstream/clothing_light_blue_denim_shirt.png",
+        "sha256": "5f8d348aa0079922743e53ab687ba5661c57696d373a0113cc61dae9a36761a3"
+      },
+      "outer": {
+        "path": "evaluation/assets/met/jacket_159165.jpg",
+        "sha256": "121f658b5f3ed6c683fa5dee12bb8b23d1190c54852cbfdf28aff53327e8ad63"
+      }
+    },
+    "uploaded": {
+      "person": "cf_study_cc84f1dbf4334fcc8d8358e2bf4678c2_person.jpg",
+      "garment": "cf_study_cc84f1dbf4334fcc8d8358e2bf4678c2_garment.png",
+      "outer": "cf_study_cc84f1dbf4334fcc8d8358e2bf4678c2_outer.jpg"
+    },
+    "image_order": [
+      "person",
+      "garment",
+      "outer"
+    ],
+    "prompt": "Use <image1> as the edit target. Dress the foreground person in the exact shirt from <image2>, with the exact jacket from <image3> worn OPEN over it. The inner garment is a separate garment, not a texture for the outer layer. Keep both reference identities distinct: copy each collar, sleeves, seams, closures, material, color and visible detail from its own image. Show the inner garment naturally through the outer opening. Match the outer reference length. Preserve the original face, full hairstyle, pose, hands, body proportions, accessories, lighting, background and unrelated lower clothing. Respect layering and natural hair/hand occlusion; add no absent garment details or accessories.",
+    "client_id": "cf_study_cc84f1dbf4334fcc8d8358e2bf4678c2",
+    "scores": {
+      "identity": 2,
+      "body_pose": 2,
+      "inner_transfer": 2,
+      "outer_transfer": 2,
+      "background_lighting": 2,
+      "artifacts": 1,
+      "layering_occlusion": 2
+    },
+    "reviewer": "Codex visual review, 2026-10-03",
+    "notes": "Source, inner, outer and both fixed-seed outputs visually inspected together. Second seed keeps separate button-front blue shirt and cropped burgundy embroidered/fringed jacket. Wheat/hands, hair, face, white skirt, body and field retained; fine motif remains approximate.",
+    "prompt_id": "ea3463ee-ec12-47d0-81a5-e9c89337920f",
+    "execution_seconds": 269.761,
+    "wall_seconds": 274.045,
+    "sampled_device_peak_mib": 7200,
+    "output": "evaluation/benchmarks/two_garment_v1/shirt_jacket_05/2026093002/output.png",
+    "output_sha256": "5694bd66e5d7a80f07b60c8d3fb1d35b88d642326b8e6477fb394a4d6339f128",
+    "output_size": [
+      1216,
+      864
+    ],
+    "category": "shirt",
+    "outer_category": "jacket",
+    "mode": "two_garment"
+  },
+  {
+    "experiment": "two_garment_v1",
+    "sample_id": "shirt_coat_01",
+    "seed": 2026093001,
+    "status": "complete",
+    "graph_sha256": "e873a1244d7a289bc418faa0939f71dc2d1f369ded742d6d2a1ce4b59e27b865",
+    "protocol_sha256": "01cfc63b77b9f07b65b308e2d95dfe7456468cc2aa0d7bc4b45f2c14efad405d",
+    "inputs": {
+      "person": {
+        "path": "evaluation/assets/upstream/casual_male_portrait.png",
+        "sha256": "f750ded4fa7d359510b86d2973c33091238c01f089f2d67f619838b1051a02d0"
+      },
+      "garment": {
+        "path": "evaluation/assets/upstream/clothing_light_blue_denim_shirt.png",
+        "sha256": "5f8d348aa0079922743e53ab687ba5661c57696d373a0113cc61dae9a36761a3"
+      },
+      "outer": {
+        "path": "evaluation/assets/commons/ford_trenchcoat.jpg",
+        "sha256": "d92ad38cd74e71bd566e9bf94eb445490b08049469f26d3eb15b14b562f5d26a"
+      }
+    },
+    "uploaded": {
+      "person": "cf_study_369a5e097d564f9ba7ebb9ef53c8f133_person.png",
+      "garment": "cf_study_369a5e097d564f9ba7ebb9ef53c8f133_garment.png",
+      "outer": "cf_study_369a5e097d564f9ba7ebb9ef53c8f133_outer.jpg"
+    },
+    "image_order": [
+      "person",
+      "garment",
+      "outer"
+    ],
+    "prompt": "Use <image1> as the edit target. Dress the foreground person in the exact shirt from <image2>, with the exact coat from <image3> worn OPEN over it. The inner garment is a separate garment, not a texture for the outer layer. Keep both reference identities distinct: copy each collar, sleeves, seams, closures, material, color and visible detail from its own image. Show the inner garment naturally through the outer opening. Match the outer reference length. Preserve the original face, full hairstyle, pose, hands, body proportions, accessories, lighting, background and unrelated lower clothing. Respect layering and natural hair/hand occlusion; add no absent garment details or accessories.",
+    "client_id": "cf_study_369a5e097d564f9ba7ebb9ef53c8f133",
+    "scores": {
+      "identity": 2,
+      "body_pose": 2,
+      "inner_transfer": 2,
+      "outer_transfer": 2,
+      "background_lighting": 2,
+      "artifacts": 1,
+      "layering_occlusion": 2
+    },
+    "reviewer": "Codex visual review, 2026-10-03",
+    "notes": "Source, inner, outer and both fixed-seed outputs visually inspected together. Distinct light denim shirt under open long tan coat; simple collar, buttons and straight silhouette match references. Person, glasses, pose, pants, shoes and studio retained. One backpack strap is occluded/less distinct; pouch remains, minor accessory boundary defect.",
+    "prompt_id": "cde588ff-1ada-40c0-8a66-0750ed979997",
+    "execution_seconds": 269.763,
+    "wall_seconds": 275.138,
+    "sampled_device_peak_mib": 7260,
+    "output": "evaluation/benchmarks/two_garment_v1/shirt_coat_01/2026093001/output.png",
+    "output_sha256": "63e7e223a7a26695bf7b939f5f3230e5fe9eda44e1d62e70e5f78ec06c3589af",
+    "output_size": [
+      832,
+      1248
+    ],
+    "category": "shirt",
+    "outer_category": "coat",
+    "mode": "two_garment"
+  },
+  {
+    "experiment": "two_garment_v1",
+    "sample_id": "shirt_coat_01",
+    "seed": 2026093002,
+    "status": "complete",
+    "graph_sha256": "4d1259039f1a0ccf11a5a3742a09ccb29b8c5f9af59c76bb7bc638f1ac514a78",
+    "protocol_sha256": "01cfc63b77b9f07b65b308e2d95dfe7456468cc2aa0d7bc4b45f2c14efad405d",
+    "inputs": {
+      "person": {
+        "path": "evaluation/assets/upstream/casual_male_portrait.png",
+        "sha256": "f750ded4fa7d359510b86d2973c33091238c01f089f2d67f619838b1051a02d0"
+      },
+      "garment": {
+        "path": "evaluation/assets/upstream/clothing_light_blue_denim_shirt.png",
+        "sha256": "5f8d348aa0079922743e53ab687ba5661c57696d373a0113cc61dae9a36761a3"
+      },
+      "outer": {
+        "path": "evaluation/assets/commons/ford_trenchcoat.jpg",
+        "sha256": "d92ad38cd74e71bd566e9bf94eb445490b08049469f26d3eb15b14b562f5d26a"
+      }
+    },
+    "uploaded": {
+      "person": "cf_study_bd6a5f98f972452da4f9c58f8c1cdef5_person.png",
+      "garment": "cf_study_bd6a5f98f972452da4f9c58f8c1cdef5_garment.png",
+      "outer": "cf_study_bd6a5f98f972452da4f9c58f8c1cdef5_outer.jpg"
+    },
+    "image_order": [
+      "person",
+      "garment",
+      "outer"
+    ],
+    "prompt": "Use <image1> as the edit target. Dress the foreground person in the exact shirt from <image2>, with the exact coat from <image3> worn OPEN over it. The inner garment is a separate garment, not a texture for the outer layer. Keep both reference identities distinct: copy each collar, sleeves, seams, closures, material, color and visible detail from its own image. Show the inner garment naturally through the outer opening. Match the outer reference length. Preserve the original face, full hairstyle, pose, hands, body proportions, accessories, lighting, background and unrelated lower clothing. Respect layering and natural hair/hand occlusion; add no absent garment details or accessories.",
+    "client_id": "cf_study_bd6a5f98f972452da4f9c58f8c1cdef5",
+    "scores": {
+      "identity": 2,
+      "body_pose": 2,
+      "inner_transfer": 2,
+      "outer_transfer": 2,
+      "background_lighting": 2,
+      "artifacts": 2,
+      "layering_occlusion": 2
+    },
+    "reviewer": "Codex visual review, 2026-10-03",
+    "notes": "Source, inner, outer and both fixed-seed outputs visually inspected together. Second seed preserves glasses, person, backpack straps/pouch, hands, pants, shoes and studio. Long straight tan coat and separate blue button-front shirt transfer with coherent open layering.",
+    "prompt_id": "dd489e2d-b09b-45c7-ba1f-1b69e8328a99",
+    "execution_seconds": 269.245,
+    "wall_seconds": 269.804,
+    "sampled_device_peak_mib": 7228,
+    "output": "evaluation/benchmarks/two_garment_v1/shirt_coat_01/2026093002/output.png",
+    "output_sha256": "23de6c544821ecb7274c6d9851efb45749dbd43d80aaca06f7a5dcc79e0fcf05",
+    "output_size": [
+      832,
+      1248
+    ],
+    "category": "shirt",
+    "outer_category": "coat",
+    "mode": "two_garment"
+  },
+  {
+    "experiment": "two_garment_v1",
+    "sample_id": "shirt_coat_02",
+    "seed": 2026093001,
+    "status": "complete",
+    "graph_sha256": "e08c07a6f1e4a4f09002ac5d0a1fde5510ebf39e0b6af3000f644498d5fa4d05",
+    "protocol_sha256": "01cfc63b77b9f07b65b308e2d95dfe7456468cc2aa0d7bc4b45f2c14efad405d",
+    "inputs": {
+      "person": {
+        "path": "evaluation/assets/upstream/portrait_model_denim.png",
+        "sha256": "d888e9396587a3fd4ad500bbf5988fed0f7ba60ffa71628c29fced78bece3ac6"
+      },
+      "garment": {
+        "path": "evaluation/assets/upstream/clothing_light_blue_denim_shirt.png",
+        "sha256": "5f8d348aa0079922743e53ab687ba5661c57696d373a0113cc61dae9a36761a3"
+      },
+      "outer": {
+        "path": "evaluation/assets/commons/ford_trenchcoat.jpg",
+        "sha256": "d92ad38cd74e71bd566e9bf94eb445490b08049469f26d3eb15b14b562f5d26a"
+      }
+    },
+    "uploaded": {
+      "person": "cf_study_c41e32171ea64f7a8d49384ce96a51b9_person.png",
+      "garment": "cf_study_c41e32171ea64f7a8d49384ce96a51b9_garment.png",
+      "outer": "cf_study_c41e32171ea64f7a8d49384ce96a51b9_outer.jpg"
+    },
+    "image_order": [
+      "person",
+      "garment",
+      "outer"
+    ],
+    "prompt": "Use <image1> as the edit target. Dress the foreground person in the exact shirt from <image2>, with the exact coat from <image3> worn OPEN over it. The inner garment is a separate garment, not a texture for the outer layer. Keep both reference identities distinct: copy each collar, sleeves, seams, closures, material, color and visible detail from its own image. Show the inner garment naturally through the outer opening. Match the outer reference length. Preserve the original face, full hairstyle, pose, hands, body proportions, accessories, lighting, background and unrelated lower clothing. Respect layering and natural hair/hand occlusion; add no absent garment details or accessories.",
+    "client_id": "cf_study_c41e32171ea64f7a8d49384ce96a51b9",
+    "scores": {
+      "identity": 2,
+      "body_pose": 2,
+      "inner_transfer": 2,
+      "outer_transfer": 2,
+      "background_lighting": 2,
+      "artifacts": 2,
+      "layering_occlusion": 2
+    },
+    "reviewer": "Codex visual review, 2026-10-03",
+    "notes": "Source, inner, outer and both fixed-seed outputs visually inspected together. Source profile, hair, downward pose and grey lighting retained. Tan coat collar/button/material identity and distinct blue shirt collar/front visible in natural open layering.",
+    "prompt_id": "f35d159b-a976-4634-8e26-bd4c1ef4cda7",
+    "execution_seconds": 268.674,
+    "wall_seconds": 269.365,
+    "sampled_device_peak_mib": 7168,
+    "output": "evaluation/benchmarks/two_garment_v1/shirt_coat_02/2026093001/output.png",
+    "output_sha256": "02a4da1db246ae9893cf72afc268814f478ae034fd7555f8f6d90b440b04e398",
+    "output_size": [
+      896,
+      1152
+    ],
+    "category": "shirt",
+    "outer_category": "coat",
+    "mode": "two_garment"
+  },
+  {
+    "experiment": "two_garment_v1",
+    "sample_id": "shirt_coat_02",
+    "seed": 2026093002,
+    "status": "complete",
+    "graph_sha256": "b4a5c97bc848b8d94cdb6dec1757608b735adb90108bc5f921e2a69dc63a777c",
+    "protocol_sha256": "01cfc63b77b9f07b65b308e2d95dfe7456468cc2aa0d7bc4b45f2c14efad405d",
+    "inputs": {
+      "person": {
+        "path": "evaluation/assets/upstream/portrait_model_denim.png",
+        "sha256": "d888e9396587a3fd4ad500bbf5988fed0f7ba60ffa71628c29fced78bece3ac6"
+      },
+      "garment": {
+        "path": "evaluation/assets/upstream/clothing_light_blue_denim_shirt.png",
+        "sha256": "5f8d348aa0079922743e53ab687ba5661c57696d373a0113cc61dae9a36761a3"
+      },
+      "outer": {
+        "path": "evaluation/assets/commons/ford_trenchcoat.jpg",
+        "sha256": "d92ad38cd74e71bd566e9bf94eb445490b08049469f26d3eb15b14b562f5d26a"
+      }
+    },
+    "uploaded": {
+      "person": "cf_study_2eae5fd2bde94666b3e900a8c66bb540_person.png",
+      "garment": "cf_study_2eae5fd2bde94666b3e900a8c66bb540_garment.png",
+      "outer": "cf_study_2eae5fd2bde94666b3e900a8c66bb540_outer.jpg"
+    },
+    "image_order": [
+      "person",
+      "garment",
+      "outer"
+    ],
+    "prompt": "Use <image1> as the edit target. Dress the foreground person in the exact shirt from <image2>, with the exact coat from <image3> worn OPEN over it. The inner garment is a separate garment, not a texture for the outer layer. Keep both reference identities distinct: copy each collar, sleeves, seams, closures, material, color and visible detail from its own image. Show the inner garment naturally through the outer opening. Match the outer reference length. Preserve the original face, full hairstyle, pose, hands, body proportions, accessories, lighting, background and unrelated lower clothing. Respect layering and natural hair/hand occlusion; add no absent garment details or accessories.",
+    "client_id": "cf_study_2eae5fd2bde94666b3e900a8c66bb540",
+    "scores": {
+      "identity": 2,
+      "body_pose": 2,
+      "inner_transfer": 2,
+      "outer_transfer": 2,
+      "background_lighting": 2,
+      "artifacts": 2,
+      "layering_occlusion": 2
+    },
+    "reviewer": "Codex visual review, 2026-10-03",
+    "notes": "Source, inner, outer and both fixed-seed outputs visually inspected together. Second seed preserves source profile/pose and scene. Separate light denim shirt and tan straight coat with folded collar/buttons retain both reference identities.",
+    "prompt_id": "c1a5aa70-3e8d-435f-aaa2-533bd4edd98c",
+    "execution_seconds": 268.216,
+    "wall_seconds": 269.537,
+    "sampled_device_peak_mib": 7168,
+    "output": "evaluation/benchmarks/two_garment_v1/shirt_coat_02/2026093002/output.png",
+    "output_sha256": "77a10344770554f3e9bdeba0ec4949dacda8521bfa8146897daa07be8779a679",
+    "output_size": [
+      896,
+      1152
+    ],
+    "category": "shirt",
+    "outer_category": "coat",
+    "mode": "two_garment"
+  },
+  {
+    "experiment": "two_garment_v1",
+    "sample_id": "shirt_coat_03",
+    "seed": 2026093001,
+    "status": "complete",
+    "graph_sha256": "6fc7758b14365cc528caf3e139667759185a84f928973670967e2fc470c2d45a",
+    "protocol_sha256": "01cfc63b77b9f07b65b308e2d95dfe7456468cc2aa0d7bc4b45f2c14efad405d",
+    "inputs": {
+      "person": {
+        "path": "evaluation/assets/upstream/urban_man.png",
+        "sha256": "8886ff6ccd369739e227274af8ad42d0f8627129d83c1643c84e3da1348ca986"
+      },
+      "garment": {
+        "path": "evaluation/assets/upstream/clothing_light_blue_denim_shirt.png",
+        "sha256": "5f8d348aa0079922743e53ab687ba5661c57696d373a0113cc61dae9a36761a3"
+      },
+      "outer": {
+        "path": "evaluation/assets/commons/ford_trenchcoat.jpg",
+        "sha256": "d92ad38cd74e71bd566e9bf94eb445490b08049469f26d3eb15b14b562f5d26a"
+      }
+    },
+    "uploaded": {
+      "person": "cf_study_b37aad7355684e7aa666eda6a5f2e426_person.png",
+      "garment": "cf_study_b37aad7355684e7aa666eda6a5f2e426_garment.png",
+      "outer": "cf_study_b37aad7355684e7aa666eda6a5f2e426_outer.jpg"
+    },
+    "image_order": [
+      "person",
+      "garment",
+      "outer"
+    ],
+    "prompt": "Use <image1> as the edit target. Dress the foreground person in the exact shirt from <image2>, with the exact coat from <image3> worn OPEN over it. The inner garment is a separate garment, not a texture for the outer layer. Keep both reference identities distinct: copy each collar, sleeves, seams, closures, material, color and visible detail from its own image. Show the inner garment naturally through the outer opening. Match the outer reference length. Preserve the original face, full hairstyle, pose, hands, body proportions, accessories, lighting, background and unrelated lower clothing. Respect layering and natural hair/hand occlusion; add no absent garment details or accessories.",
+    "client_id": "cf_study_b37aad7355684e7aa666eda6a5f2e426",
+    "scores": {
+      "identity": 2,
+      "body_pose": 2,
+      "inner_transfer": 2,
+      "outer_transfer": 2,
+      "background_lighting": 2,
+      "artifacts": 1,
+      "layering_occlusion": 2
+    },
+    "reviewer": "Codex visual review, 2026-10-03",
+    "notes": "Source, inner, outer and both fixed-seed outputs visually inspected together. Crossed-arm source face/hair/body and lower patterned clothing retained. Open tan coat over distinct blue shirt with natural wrist/cuff layering; mild hand boundary approximation.",
+    "prompt_id": "99783829-1485-4a0a-9f31-e83844c3472f",
+    "execution_seconds": 272.343,
+    "wall_seconds": 274.705,
+    "sampled_device_peak_mib": 7362,
+    "output": "evaluation/benchmarks/two_garment_v1/shirt_coat_03/2026093001/output.png",
+    "output_sha256": "25817c93cfd582cdbe565e12bc5e2759ba8a853b5fdbd1b94bc30c86827bb327",
+    "output_size": [
+      768,
+      1376
+    ],
+    "category": "shirt",
+    "outer_category": "coat",
+    "mode": "two_garment"
+  },
+  {
+    "experiment": "two_garment_v1",
+    "sample_id": "shirt_coat_03",
+    "seed": 2026093002,
+    "status": "complete",
+    "graph_sha256": "6d45e7af0c3807bdc440e0b50672d74f998f4ec5576422094edee87d09c1539b",
+    "protocol_sha256": "01cfc63b77b9f07b65b308e2d95dfe7456468cc2aa0d7bc4b45f2c14efad405d",
+    "inputs": {
+      "person": {
+        "path": "evaluation/assets/upstream/urban_man.png",
+        "sha256": "8886ff6ccd369739e227274af8ad42d0f8627129d83c1643c84e3da1348ca986"
+      },
+      "garment": {
+        "path": "evaluation/assets/upstream/clothing_light_blue_denim_shirt.png",
+        "sha256": "5f8d348aa0079922743e53ab687ba5661c57696d373a0113cc61dae9a36761a3"
+      },
+      "outer": {
+        "path": "evaluation/assets/commons/ford_trenchcoat.jpg",
+        "sha256": "d92ad38cd74e71bd566e9bf94eb445490b08049469f26d3eb15b14b562f5d26a"
+      }
+    },
+    "uploaded": {
+      "person": "cf_study_a0f1f5a9ad714441a258b69db7322779_person.png",
+      "garment": "cf_study_a0f1f5a9ad714441a258b69db7322779_garment.png",
+      "outer": "cf_study_a0f1f5a9ad714441a258b69db7322779_outer.jpg"
+    },
+    "image_order": [
+      "person",
+      "garment",
+      "outer"
+    ],
+    "prompt": "Use <image1> as the edit target. Dress the foreground person in the exact shirt from <image2>, with the exact coat from <image3> worn OPEN over it. The inner garment is a separate garment, not a texture for the outer layer. Keep both reference identities distinct: copy each collar, sleeves, seams, closures, material, color and visible detail from its own image. Show the inner garment naturally through the outer opening. Match the outer reference length. Preserve the original face, full hairstyle, pose, hands, body proportions, accessories, lighting, background and unrelated lower clothing. Respect layering and natural hair/hand occlusion; add no absent garment details or accessories.",
+    "client_id": "cf_study_a0f1f5a9ad714441a258b69db7322779",
+    "scores": {
+      "identity": 2,
+      "body_pose": 2,
+      "inner_transfer": 2,
+      "outer_transfer": 2,
+      "background_lighting": 2,
+      "artifacts": 1,
+      "layering_occlusion": 2
+    },
+    "reviewer": "Codex visual review, 2026-10-03",
+    "notes": "Source, inner, outer and both fixed-seed outputs visually inspected together. Second seed retains crossed-arm pose, face, hair, lower patterned garment and background. Separate blue button shirt and tan coat identity visible; small cuff junction artifact.",
+    "prompt_id": "42c8e0c7-6944-4085-b8ae-782c5f770c4e",
+    "execution_seconds": 272.244,
+    "wall_seconds": 273.911,
+    "sampled_device_peak_mib": 7261,
+    "output": "evaluation/benchmarks/two_garment_v1/shirt_coat_03/2026093002/output.png",
+    "output_sha256": "978f1a2f57f3e612b19a1907b3e1438724baf3a7c5c11ab0b800745e6bc1fe23",
+    "output_size": [
+      768,
+      1376
+    ],
+    "category": "shirt",
+    "outer_category": "coat",
+    "mode": "two_garment"
+  },
+  {
+    "experiment": "two_garment_v1",
+    "sample_id": "shirt_coat_05",
+    "seed": 2026093001,
+    "status": "complete",
+    "graph_sha256": "8a712fdcc87c33c73d6aa5916ad0848ba8a85841c678aa250defe6eae9b4d37a",
+    "protocol_sha256": "01cfc63b77b9f07b65b308e2d95dfe7456468cc2aa0d7bc4b45f2c14efad405d",
+    "inputs": {
+      "person": {
+        "path": "evaluation/assets/commons/plus_size_model.jpg",
+        "sha256": "51a0ddb8e992fb7d005715ae32fa43f3cdbfd3229e67e5f84448ca0ccb8dae35"
+      },
+      "garment": {
+        "path": "evaluation/assets/upstream/clothing_light_blue_denim_shirt.png",
+        "sha256": "5f8d348aa0079922743e53ab687ba5661c57696d373a0113cc61dae9a36761a3"
+      },
+      "outer": {
+        "path": "evaluation/assets/commons/ford_trenchcoat.jpg",
+        "sha256": "d92ad38cd74e71bd566e9bf94eb445490b08049469f26d3eb15b14b562f5d26a"
+      }
+    },
+    "uploaded": {
+      "person": "cf_study_e3d08370be5d40e984ccae218e7f4843_person.jpg",
+      "garment": "cf_study_e3d08370be5d40e984ccae218e7f4843_garment.png",
+      "outer": "cf_study_e3d08370be5d40e984ccae218e7f4843_outer.jpg"
+    },
+    "image_order": [
+      "person",
+      "garment",
+      "outer"
+    ],
+    "prompt": "Use <image1> as the edit target. Dress the foreground person in the exact shirt from <image2>, with the exact coat from <image3> worn OPEN over it. The inner garment is a separate garment, not a texture for the outer layer. Keep both reference identities distinct: copy each collar, sleeves, seams, closures, material, color and visible detail from its own image. Show the inner garment naturally through the outer opening. Match the outer reference length. Preserve the original face, full hairstyle, pose, hands, body proportions, accessories, lighting, background and unrelated lower clothing. Respect layering and natural hair/hand occlusion; add no absent garment details or accessories.",
+    "client_id": "cf_study_e3d08370be5d40e984ccae218e7f4843",
+    "scores": {
+      "identity": 2,
+      "body_pose": 1,
+      "inner_transfer": 2,
+      "outer_transfer": 2,
+      "background_lighting": 2,
+      "artifacts": 0,
+      "layering_occlusion": 1
+    },
+    "reviewer": "Codex visual review, 2026-10-03",
+    "notes": "Source, inner, outer and both fixed-seed outputs visually inspected together. Both reference garments appear, but arms drop instead of retaining hands holding wheat at the waist. Wheat floats across coat with lost hand contact. White skirt remains. Pose and artifact floors fail.",
+    "prompt_id": "0889d47a-7b87-43ed-8ff7-4f63cebae0b5",
+    "execution_seconds": 272.18,
+    "wall_seconds": 276.078,
+    "sampled_device_peak_mib": 7229,
+    "output": "evaluation/benchmarks/two_garment_v1/shirt_coat_05/2026093001/output.png",
+    "output_sha256": "5461e40ecb1afeb38bdba8e3496772cdc257fb453b131a27282e34356257951c",
+    "output_size": [
+      1216,
+      864
+    ],
+    "category": "shirt",
+    "outer_category": "coat",
+    "mode": "two_garment"
+  },
+  {
+    "experiment": "two_garment_v1",
+    "sample_id": "shirt_coat_05",
+    "seed": 2026093002,
+    "status": "complete",
+    "graph_sha256": "b7ca09bb41800517961304b133c04155f786595f4bdafac2461faed3ff7bfe1f",
+    "protocol_sha256": "01cfc63b77b9f07b65b308e2d95dfe7456468cc2aa0d7bc4b45f2c14efad405d",
+    "inputs": {
+      "person": {
+        "path": "evaluation/assets/commons/plus_size_model.jpg",
+        "sha256": "51a0ddb8e992fb7d005715ae32fa43f3cdbfd3229e67e5f84448ca0ccb8dae35"
+      },
+      "garment": {
+        "path": "evaluation/assets/upstream/clothing_light_blue_denim_shirt.png",
+        "sha256": "5f8d348aa0079922743e53ab687ba5661c57696d373a0113cc61dae9a36761a3"
+      },
+      "outer": {
+        "path": "evaluation/assets/commons/ford_trenchcoat.jpg",
+        "sha256": "d92ad38cd74e71bd566e9bf94eb445490b08049469f26d3eb15b14b562f5d26a"
+      }
+    },
+    "uploaded": {
+      "person": "cf_study_ce738c23e5da420fb8a4914bd8d0ef02_person.jpg",
+      "garment": "cf_study_ce738c23e5da420fb8a4914bd8d0ef02_garment.png",
+      "outer": "cf_study_ce738c23e5da420fb8a4914bd8d0ef02_outer.jpg"
+    },
+    "image_order": [
+      "person",
+      "garment",
+      "outer"
+    ],
+    "prompt": "Use <image1> as the edit target. Dress the foreground person in the exact shirt from <image2>, with the exact coat from <image3> worn OPEN over it. The inner garment is a separate garment, not a texture for the outer layer. Keep both reference identities distinct: copy each collar, sleeves, seams, closures, material, color and visible detail from its own image. Show the inner garment naturally through the outer opening. Match the outer reference length. Preserve the original face, full hairstyle, pose, hands, body proportions, accessories, lighting, background and unrelated lower clothing. Respect layering and natural hair/hand occlusion; add no absent garment details or accessories.",
+    "client_id": "cf_study_ce738c23e5da420fb8a4914bd8d0ef02",
+    "scores": {
+      "identity": 2,
+      "body_pose": 1,
+      "inner_transfer": 2,
+      "outer_transfer": 2,
+      "background_lighting": 2,
+      "artifacts": 1,
+      "layering_occlusion": 2
+    },
+    "reviewer": "Codex visual review, 2026-10-03",
+    "notes": "Source, inner, outer and both fixed-seed outputs visually inspected together. Second seed retains wheat/hand contact and both separate garments, but removes visible original white skirt below shirt. Unrelated lower-clothing preservation fails; reject body/pose score.",
+    "prompt_id": "4e81dfc3-bae0-438d-884d-16f92ad8d3dc",
+    "execution_seconds": 271.677,
+    "wall_seconds": 274.799,
+    "sampled_device_peak_mib": 7293,
+    "output": "evaluation/benchmarks/two_garment_v1/shirt_coat_05/2026093002/output.png",
+    "output_sha256": "179bd71627a5439e06b3dad6f9ee77c60751294f2b466d71594c8531d28fe288",
+    "output_size": [
+      1216,
+      864
+    ],
+    "category": "shirt",
+    "outer_category": "coat",
+    "mode": "two_garment"
+  }
+]

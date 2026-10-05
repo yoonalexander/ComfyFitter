@@ -1,0 +1,6 @@
+Use <image1> as the edit target and <image2> only as the garment reference.
+Replace the main upper-body garment worn by the foreground person in <image1> with the {garment_type} shown in <image2>.
+Transfer the actual garment design, including its silhouette, collar or neckline, sleeve length, closures, pockets, color, pattern, and visible material details. A color change to the existing garment is not sufficient.
+Preserve the foreground person's facial identity, hair, glasses, skin tone, body proportions, pose, hands, and camera angle. Preserve the background, background people, lighting, lower-body clothing, and unrelated accessories.
+Adapt the reference garment to the existing body and pose with coherent folds, shadows, and occlusion by hands, hair, and foreground objects. Preserve visible text and graphics as accurately as possible without adding new details.
+Make only the changes required for the garment replacement.

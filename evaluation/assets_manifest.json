@@ -1,0 +1,151 @@
+{
+  "captured_date": "2026-09-30",
+  "upstream_commit": "0bfbbbfa260e76f69137f5aa37b7553199c73bc0",
+  "assets": [
+    {
+      "path": "assets/commons/ford_trenchcoat.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Trenchcoat_worn_by_President_Gerald_R._Ford.jpg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Trenchcoat_worn_by_President_Gerald_R._Ford.jpg",
+      "author": "Gerald R. Ford Presidential Museum; photographer unspecified",
+      "license": "Public domain (US federal work)",
+      "license_url": null,
+      "sha256": "d92ad38cd74e71bd566e9bf94eb445490b08049469f26d3eb15b14b562f5d26a",
+      "dimensions": [
+        3200,
+        4000
+      ],
+      "changes": "Input unchanged. Outputs modify clothing using local generative AI; no endorsement implied."
+    },
+    {
+      "path": "assets/commons/hoodie_m7agar.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Hoodie_m7agar.jpg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Hoodie_m7agar.jpg",
+      "author": "YoussefTahoun",
+      "license": "CC0 1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "sha256": "9caf8b20c8a567c2ee3e7b56b1556942eed6eefa993f65b4d07d2f87bcafd2ad",
+      "dimensions": [
+        1200,
+        1600
+      ],
+      "changes": "Input unchanged. Outputs modify clothing using local generative AI; no endorsement implied."
+    },
+    {
+      "path": "assets/commons/plus_size_model.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Plus_Size_Model_1.jpg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Plus_Size_Model_1.jpg",
+      "author": "Reba Spike",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0/",
+      "sha256": "51a0ddb8e992fb7d005715ae32fa43f3cdbfd3229e67e5f84448ca0ccb8dae35",
+      "dimensions": [
+        2000,
+        1382
+      ],
+      "changes": "Input unchanged. Outputs modify clothing using local generative AI; no endorsement implied."
+    },
+    {
+      "path": "assets/commons/tender_denim_jacket.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Worn_Tender_Co._denim_jacket.jpg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/5/51/Worn_Tender_Co._denim_jacket.jpg",
+      "author": "Dma132",
+      "license": "CC0 1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "sha256": "c8f8d0f361dfe062818ef401db5cd0fbe586bd61d8c62c97c460b26c016e2f36",
+      "dimensions": [
+        1280,
+        956
+      ],
+      "changes": "Input unchanged. Outputs modify clothing using local generative AI; no endorsement implied."
+    },
+    {
+      "path": "assets/met/jacket_159165.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Jacket_MET_23.225_front_CP4.jpg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Jacket_MET_23.225_front_CP4.jpg",
+      "author": "The Metropolitan Museum of Art",
+      "license": "CC0 1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "sha256": "121f658b5f3ed6c683fa5dee12bb8b23d1190c54852cbfdf28aff53327e8ad63",
+      "dimensions": [
+        3335,
+        4000
+      ],
+      "changes": "Input unchanged. Outputs modify clothing using local generative AI; no endorsement implied."
+    },
+    {
+      "path": "assets/upstream/casual_male_portrait.png",
+      "source_url": "https://github.com/Comfy-Org/workflow_templates/blob/0bfbbbfa260e76f69137f5aa37b7553199c73bc0/input/casual_male_portrait.png",
+      "download_url": "https://raw.githubusercontent.com/Comfy-Org/workflow_templates/0bfbbbfa260e76f69137f5aa37b7553199c73bc0/input/casual_male_portrait.png",
+      "author": "Comfy-Org/workflow_templates contributors",
+      "license": "MIT repository license",
+      "license_url": "https://github.com/Comfy-Org/workflow_templates/blob/0bfbbbfa260e76f69137f5aa37b7553199c73bc0/LICENSE",
+      "sha256": "f750ded4fa7d359510b86d2973c33091238c01f089f2d67f619838b1051a02d0",
+      "dimensions": [
+        1672,
+        2504
+      ],
+      "changes": "Input unchanged. Outputs modify clothing using local generative AI; no endorsement implied.",
+      "upstream_git_blob_sha1": "51bc5188ac47c577ef4e0ef5c60ee97d2a14df5b"
+    },
+    {
+      "path": "assets/upstream/clothing_light_blue_denim_shirt.png",
+      "source_url": "https://github.com/Comfy-Org/workflow_templates/blob/0bfbbbfa260e76f69137f5aa37b7553199c73bc0/input/clothing_light_blue_denim_shirt.png",
+      "download_url": "https://raw.githubusercontent.com/Comfy-Org/workflow_templates/0bfbbbfa260e76f69137f5aa37b7553199c73bc0/input/clothing_light_blue_denim_shirt.png",
+      "author": "Comfy-Org/workflow_templates contributors",
+      "license": "MIT repository license",
+      "license_url": "https://github.com/Comfy-Org/workflow_templates/blob/0bfbbbfa260e76f69137f5aa37b7553199c73bc0/LICENSE",
+      "sha256": "5f8d348aa0079922743e53ab687ba5661c57696d373a0113cc61dae9a36761a3",
+      "dimensions": [
+        896,
+        1152
+      ],
+      "changes": "Input unchanged. Outputs modify clothing using local generative AI; no endorsement implied.",
+      "upstream_git_blob_sha1": "ef38e7511531c389237433b4f26e8688e81e2be6"
+    },
+    {
+      "path": "assets/upstream/coastal_smiling_woman.png",
+      "source_url": "https://github.com/Comfy-Org/workflow_templates/blob/0bfbbbfa260e76f69137f5aa37b7553199c73bc0/input/coastal_smiling_woman.png",
+      "download_url": "https://raw.githubusercontent.com/Comfy-Org/workflow_templates/0bfbbbfa260e76f69137f5aa37b7553199c73bc0/input/coastal_smiling_woman.png",
+      "author": "Comfy-Org/workflow_templates contributors",
+      "license": "MIT repository license",
+      "license_url": "https://github.com/Comfy-Org/workflow_templates/blob/0bfbbbfa260e76f69137f5aa37b7553199c73bc0/LICENSE",
+      "sha256": "d78bb2fe877531938e596026cb3c577ff7af7188cb911ea2c6f49c1daf62d174",
+      "dimensions": [
+        1024,
+        1024
+      ],
+      "changes": "Input unchanged. Outputs modify clothing using local generative AI; no endorsement implied.",
+      "upstream_git_blob_sha1": "c62e4738a63693488d9c9c89b19a0029ebfe3bd4"
+    },
+    {
+      "path": "assets/upstream/portrait_model_denim.png",
+      "source_url": "https://github.com/Comfy-Org/workflow_templates/blob/0bfbbbfa260e76f69137f5aa37b7553199c73bc0/input/portrait_model_denim.png",
+      "download_url": "https://raw.githubusercontent.com/Comfy-Org/workflow_templates/0bfbbbfa260e76f69137f5aa37b7553199c73bc0/input/portrait_model_denim.png",
+      "author": "Comfy-Org/workflow_templates contributors",
+      "license": "MIT repository license",
+      "license_url": "https://github.com/Comfy-Org/workflow_templates/blob/0bfbbbfa260e76f69137f5aa37b7553199c73bc0/LICENSE",
+      "sha256": "d888e9396587a3fd4ad500bbf5988fed0f7ba60ffa71628c29fced78bece3ac6",
+      "dimensions": [
+        896,
+        1152
+      ],
+      "changes": "Input unchanged. Outputs modify clothing using local generative AI; no endorsement implied.",
+      "upstream_git_blob_sha1": "fc131ce8984b975541af7948e172df0b874883f4"
+    },
+    {
+      "path": "assets/upstream/urban_man.png",
+      "source_url": "https://github.com/Comfy-Org/workflow_templates/blob/0bfbbbfa260e76f69137f5aa37b7553199c73bc0/input/urban_man.png",
+      "download_url": "https://raw.githubusercontent.com/Comfy-Org/workflow_templates/0bfbbbfa260e76f69137f5aa37b7553199c73bc0/input/urban_man.png",
+      "author": "Comfy-Org/workflow_templates contributors",
+      "license": "MIT repository license",
+      "license_url": "https://github.com/Comfy-Org/workflow_templates/blob/0bfbbbfa260e76f69137f5aa37b7553199c73bc0/LICENSE",
+      "sha256": "8886ff6ccd369739e227274af8ad42d0f8627129d83c1643c84e3da1348ca986",
+      "dimensions": [
+        1528,
+        2736
+      ],
+      "changes": "Input unchanged. Outputs modify clothing using local generative AI; no endorsement implied.",
+      "upstream_git_blob_sha1": "440da8a1db730b1fa2024764fdda84bf1d018867"
+    }
+  ]
+}

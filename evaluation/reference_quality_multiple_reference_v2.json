@@ -1,0 +1,41 @@
+{
+  "status": "passed",
+  "reviewed": 8,
+  "preservation_noninferior": true,
+  "fidelity_improved": true,
+  "detailed_fidelity_change": {
+    "hoodie": 1
+  },
+  "categories": [
+    "hoodie"
+  ],
+  "reference_roles": {
+    "hoodie": [
+      "detail"
+    ]
+  },
+  "verified_total_inputs": 5,
+  "capacity_outputs": 2,
+  "capacity_succeeded": true,
+  "experiment": "multiple_reference_v2",
+  "protocol_sha256": "e9d3fa0d8894852e1c170b9345d379200eba3d93a4c9b94e577fe7e220a211f6",
+  "execution_seconds": {
+    "count": 8,
+    "minimum": 274.364,
+    "median": 276.6255,
+    "maximum": 279.249
+  },
+  "sampled_device_peak_mib": 7455,
+  "capacity_study": {
+    "experiment": "multiple_reference_v1",
+    "protocol_sha256": "a4fd6253087d54cf0b5e71ad12fcb33c3431fcec4a4b7d641c90dd1316507144",
+    "sample_id": "capacity_five_inputs"
+  },
+  "capacity_execution_seconds": {
+    "count": 2,
+    "minimum": 441.178,
+    "median": 443.6225,
+    "maximum": 446.067
+  },
+  "capacity_sampled_device_peak_mib": 7694
+}

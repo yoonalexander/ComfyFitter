@@ -1,0 +1,39 @@
+{
+  "repository": "mattmdjaga/segformer_b2_clothes",
+  "revision": "584abc1e1d260e23c0fc627c5217a09b2b461046",
+  "purpose": "Separate local protected-region research/evaluation; CPU only",
+  "files": [
+    {
+      "file": "config.json",
+      "sha256": "4b5127ca00fe61187b6cc6c232c9e19326ed228683f8f5c221790be9cc196a6e",
+      "bytes": 1727
+    },
+    {
+      "file": "preprocessor_config.json",
+      "sha256": "a608e3a47dcfba8dc052a766babb4b6c963285ab4f176bc6c1eb2b257fd3ad93",
+      "bytes": 271
+    },
+    {
+      "file": "model.safetensors",
+      "sha256": "8f86fd90c567afd4370b3cc3a7e81ed767a632b2832a738331af660acc0c4c68",
+      "bytes": 109493236
+    },
+    {
+      "file": "README.md",
+      "sha256": "fca39e62db301b5113f14ef71679da395d8c638a069176483373c74048563856",
+      "bytes": 4391
+    }
+  ],
+  "license_url": "https://github.com/NVlabs/SegFormer/blob/master/LICENSE",
+  "model_card_url": "https://huggingface.co/mattmdjaga/segformer_b2_clothes/tree/584abc1e1d260e23c0fc627c5217a09b2b461046",
+  "license_note": "Model card points to NVIDIA Source Code License for SegFormer; research/evaluation-only use limitation. No weights are distributed in Git.",
+  "packages": {
+    "torch": "2.12.1+cu130",
+    "transformers": "5.16.1",
+    "huggingface-hub": "1.30.0",
+    "safetensors": "0.8.0",
+    "numpy": "2.5.2",
+    "Pillow": "12.3.0",
+    "psutil": "7.2.2"
+  }
+}

@@ -1,0 +1,1602 @@
+[
+  {
+    "case_id": "shirt_01",
+    "category": "shirt",
+    "seed": 2026093001,
+    "model": "gguf",
+    "prompt": "Use <image1> as the edit target and <image2> only as the garment reference.\nReplace the foreground person's main upper-body garment in <image1> with the actual shirt shown in <image2>. Transfer the reference design rather than making a generic garment of that category.\nMatch the visible reference silhouette, neckline or collar shape, sleeves, closures, pockets, fabric, color, pattern and printed graphics. Do not invent garment details absent from <image2>, including drawstrings, extra pockets, buttons or belts. When the reference hood has no drawstrings, keep it without drawstrings. Preserve visible text and graphics as accurately as possible.\nPreserve the foreground person's facial identity, hairstyle and hair length, skin tone, body proportions, pose, hands and camera angle from <image1>. Preserve the source's existing accessories exactly. If there is no eyewear on the source face, keep the face without eyewear. Do not add or remove personal accessories.\nPreserve the background, background people, lighting, lower-body clothing and unrelated garments. Adapt only the replacement garment to the existing pose with coherent folds, shadows and natural occlusion by hair, hands and foreground objects. Do not shorten hair to reveal the garment.\nMake only the changes required for this garment transfer. A recolor of the original clothing is insufficient.\n",
+    "workflow_sha256": "fe9b58145fa88c62ca2a1d5c4b3eb6f0f9ff3e89faa5abd0ccd428142b5bbc19",
+    "input_hashes": {
+      "person": "f750ded4fa7d359510b86d2973c33091238c01f089f2d67f619838b1051a02d0",
+      "garment": "5f8d348aa0079922743e53ab687ba5661c57696d373a0113cc61dae9a36761a3"
+    },
+    "status": "complete",
+    "scores": {
+      "identity": 2,
+      "body_pose": 2,
+      "garment_transfer": 2,
+      "background_lighting": 2,
+      "artifacts": 2
+    },
+    "reviewer": "Codex visual review (single AI reviewer)",
+    "notes": "Fresh output verified exactly RGB pixel-identical to previously visually reviewed reference_v3, with unchanged source/reference/prompt. Source/reference/output compared: light-blue denim, pointed collar, pale buttons and single chest pocket retained with the source face, pose, visible lower clothing and scene.",
+    "output": "evaluation/benchmarks/category_reference_v4/shirt_01_gguf_5fce5a7b3c1e/2026093001.png",
+    "execution_seconds": 200.273,
+    "run_ordinal": 1,
+    "experiment": "category_reference_v4",
+    "environment_file": "environment.json",
+    "prompt_template_sha256": "1f16a1a2d2b3b5e207bb9b81487e698818adcdcc8c6fb737ae9d47f4306a9df3",
+    "prompt_id": "098b9c45-bc28-4f41-8fc4-523c458f72e3",
+    "node_errors": {},
+    "wall_seconds": 202.838,
+    "sampled_device_peak_mib": 7193,
+    "output_size": [
+      832,
+      1248
+    ],
+    "output_sha256": "eaa67039020cbeaea859cd4e01a48e2b630fbd07e7f83dacca9abff7159dc6c3",
+    "cache_state": "models_unloaded_first_seed; OS_disk_cache_not_cleared",
+    "history": "evaluation/benchmarks/category_reference_v4/shirt_01_gguf_5fce5a7b3c1e/2026093001.history.json",
+    "graph": "evaluation/benchmarks/category_reference_v4/shirt_01_gguf_5fce5a7b3c1e/2026093001.api.json"
+  },
+  {
+    "case_id": "shirt_01",
+    "category": "shirt",
+    "seed": 2026093002,
+    "model": "gguf",
+    "prompt": "Use <image1> as the edit target and <image2> only as the garment reference.\nReplace the foreground person's main upper-body garment in <image1> with the actual shirt shown in <image2>. Transfer the reference design rather than making a generic garment of that category.\nMatch the visible reference silhouette, neckline or collar shape, sleeves, closures, pockets, fabric, color, pattern and printed graphics. Do not invent garment details absent from <image2>, including drawstrings, extra pockets, buttons or belts. When the reference hood has no drawstrings, keep it without drawstrings. Preserve visible text and graphics as accurately as possible.\nPreserve the foreground person's facial identity, hairstyle and hair length, skin tone, body proportions, pose, hands and camera angle from <image1>. Preserve the source's existing accessories exactly. If there is no eyewear on the source face, keep the face without eyewear. Do not add or remove personal accessories.\nPreserve the background, background people, lighting, lower-body clothing and unrelated garments. Adapt only the replacement garment to the existing pose with coherent folds, shadows and natural occlusion by hair, hands and foreground objects. Do not shorten hair to reveal the garment.\nMake only the changes required for this garment transfer. A recolor of the original clothing is insufficient.\n",
+    "workflow_sha256": "2e4ce1e23967bdb096cdafae9cfbe7c7caaedfcd5835d0af0c62ad16a061dfeb",
+    "input_hashes": {
+      "person": "f750ded4fa7d359510b86d2973c33091238c01f089f2d67f619838b1051a02d0",
+      "garment": "5f8d348aa0079922743e53ab687ba5661c57696d373a0113cc61dae9a36761a3"
+    },
+    "status": "complete",
+    "scores": {
+      "identity": 2,
+      "body_pose": 2,
+      "garment_transfer": 2,
+      "background_lighting": 2,
+      "artifacts": 2
+    },
+    "reviewer": "Codex visual review (single AI reviewer)",
+    "notes": "Fresh output verified exactly RGB pixel-identical to previously visually reviewed reference_v3, with unchanged source/reference/prompt. Source/reference/output compared: light-blue denim, pointed collar, pale buttons and single chest pocket retained with the source face, pose, visible lower clothing and scene.",
+    "output": "evaluation/benchmarks/category_reference_v4/shirt_01_gguf_5fce5a7b3c1e/2026093002.png",
+    "execution_seconds": 178.644,
+    "run_ordinal": 2,
+    "experiment": "category_reference_v4",
+    "environment_file": "environment.json",
+    "prompt_template_sha256": "1f16a1a2d2b3b5e207bb9b81487e698818adcdcc8c6fb737ae9d47f4306a9df3",
+    "prompt_id": "b71a368d-e4b1-40b6-b2f2-a14b8867448b",
+    "node_errors": {},
+    "wall_seconds": 182.435,
+    "sampled_device_peak_mib": 6714,
+    "output_size": [
+      832,
+      1248
+    ],
+    "output_sha256": "312d7c20ecfac2640e0ab34079d6ce580b76e806b7b3cfda9055f8b0629d6beb",
+    "cache_state": "same_case_second_seed_warm",
+    "history": "evaluation/benchmarks/category_reference_v4/shirt_01_gguf_5fce5a7b3c1e/2026093002.history.json",
+    "graph": "evaluation/benchmarks/category_reference_v4/shirt_01_gguf_5fce5a7b3c1e/2026093002.api.json"
+  },
+  {
+    "case_id": "shirt_02",
+    "category": "shirt",
+    "seed": 2026093001,
+    "model": "gguf",
+    "prompt": "Use <image1> as the edit target and <image2> only as the garment reference.\nReplace the foreground person's main upper-body garment in <image1> with the actual shirt shown in <image2>. Transfer the reference design rather than making a generic garment of that category.\nMatch the visible reference silhouette, neckline or collar shape, sleeves, closures, pockets, fabric, color, pattern and printed graphics. Do not invent garment details absent from <image2>, including drawstrings, extra pockets, buttons or belts. When the reference hood has no drawstrings, keep it without drawstrings. Preserve visible text and graphics as accurately as possible.\nPreserve the foreground person's facial identity, hairstyle and hair length, skin tone, body proportions, pose, hands and camera angle from <image1>. Preserve the source's existing accessories exactly. If there is no eyewear on the source face, keep the face without eyewear. Do not add or remove personal accessories.\nPreserve the background, background people, lighting, lower-body clothing and unrelated garments. Adapt only the replacement garment to the existing pose with coherent folds, shadows and natural occlusion by hair, hands and foreground objects. Do not shorten hair to reveal the garment.\nMake only the changes required for this garment transfer. A recolor of the original clothing is insufficient.\n",
+    "workflow_sha256": "0c514d6de2ed2e0ca177968d1c051ea724175304a7eb9de994b3e7d5aebe30c5",
+    "input_hashes": {
+      "person": "d888e9396587a3fd4ad500bbf5988fed0f7ba60ffa71628c29fced78bece3ac6",
+      "garment": "5f8d348aa0079922743e53ab687ba5661c57696d373a0113cc61dae9a36761a3"
+    },
+    "status": "complete",
+    "scores": {
+      "identity": 2,
+      "body_pose": 2,
+      "garment_transfer": 2,
+      "background_lighting": 2,
+      "artifacts": 2
+    },
+    "reviewer": "Codex visual review (single AI reviewer)",
+    "notes": "Fresh output verified exactly RGB pixel-identical to previously visually reviewed reference_v3, with unchanged source/reference/prompt. Source/reference/output compared: light-blue denim, pointed collar, pale buttons and single chest pocket retained with the source face, pose, visible lower clothing and scene.",
+    "output": "evaluation/benchmarks/category_reference_v4/shirt_02_gguf_cb1b76ebec7e/2026093001.png",
+    "execution_seconds": 196.869,
+    "run_ordinal": 1,
+    "experiment": "category_reference_v4",
+    "environment_file": "environment.json",
+    "prompt_template_sha256": "1f16a1a2d2b3b5e207bb9b81487e698818adcdcc8c6fb737ae9d47f4306a9df3",
+    "prompt_id": "ae4f35d3-0471-404b-addf-5df973935fd2",
+    "node_errors": {},
+    "wall_seconds": 197.691,
+    "sampled_device_peak_mib": 6938,
+    "output_size": [
+      896,
+      1152
+    ],
+    "output_sha256": "687f023dc4f583200900fa3fadd7c0df24ea16d46bd2f63cf37d03f5375f1930",
+    "cache_state": "session_warm",
+    "history": "evaluation/benchmarks/category_reference_v4/shirt_02_gguf_cb1b76ebec7e/2026093001.history.json",
+    "graph": "evaluation/benchmarks/category_reference_v4/shirt_02_gguf_cb1b76ebec7e/2026093001.api.json"
+  },
+  {
+    "case_id": "shirt_02",
+    "category": "shirt",
+    "seed": 2026093002,
+    "model": "gguf",
+    "prompt": "Use <image1> as the edit target and <image2> only as the garment reference.\nReplace the foreground person's main upper-body garment in <image1> with the actual shirt shown in <image2>. Transfer the reference design rather than making a generic garment of that category.\nMatch the visible reference silhouette, neckline or collar shape, sleeves, closures, pockets, fabric, color, pattern and printed graphics. Do not invent garment details absent from <image2>, including drawstrings, extra pockets, buttons or belts. When the reference hood has no drawstrings, keep it without drawstrings. Preserve visible text and graphics as accurately as possible.\nPreserve the foreground person's facial identity, hairstyle and hair length, skin tone, body proportions, pose, hands and camera angle from <image1>. Preserve the source's existing accessories exactly. If there is no eyewear on the source face, keep the face without eyewear. Do not add or remove personal accessories.\nPreserve the background, background people, lighting, lower-body clothing and unrelated garments. Adapt only the replacement garment to the existing pose with coherent folds, shadows and natural occlusion by hair, hands and foreground objects. Do not shorten hair to reveal the garment.\nMake only the changes required for this garment transfer. A recolor of the original clothing is insufficient.\n",
+    "workflow_sha256": "0df209503fabd0e37c0abc488219251d42e3279b9e8d283fd077625dc208c122",
+    "input_hashes": {
+      "person": "d888e9396587a3fd4ad500bbf5988fed0f7ba60ffa71628c29fced78bece3ac6",
+      "garment": "5f8d348aa0079922743e53ab687ba5661c57696d373a0113cc61dae9a36761a3"
+    },
+    "status": "complete",
+    "scores": {
+      "identity": 2,
+      "body_pose": 2,
+      "garment_transfer": 2,
+      "background_lighting": 2,
+      "artifacts": 2
+    },
+    "reviewer": "Codex visual review (single AI reviewer)",
+    "notes": "Fresh output verified exactly RGB pixel-identical to previously visually reviewed reference_v3, with unchanged source/reference/prompt. Source/reference/output compared: light-blue denim, pointed collar, pale buttons and single chest pocket retained with the source face, pose, visible lower clothing and scene.",
+    "output": "evaluation/benchmarks/category_reference_v4/shirt_02_gguf_cb1b76ebec7e/2026093002.png",
+    "execution_seconds": 178.056,
+    "run_ordinal": 2,
+    "experiment": "category_reference_v4",
+    "environment_file": "environment.json",
+    "prompt_template_sha256": "1f16a1a2d2b3b5e207bb9b81487e698818adcdcc8c6fb737ae9d47f4306a9df3",
+    "prompt_id": "63a7b4e5-7ddd-48f1-8c54-00b419dc367a",
+    "node_errors": {},
+    "wall_seconds": 182.423,
+    "sampled_device_peak_mib": 6587,
+    "output_size": [
+      896,
+      1152
+    ],
+    "output_sha256": "42c15361d47105287e4f2468097382383b01d72f4390b65d1ce6bcb34962df41",
+    "cache_state": "same_case_second_seed_warm",
+    "history": "evaluation/benchmarks/category_reference_v4/shirt_02_gguf_cb1b76ebec7e/2026093002.history.json",
+    "graph": "evaluation/benchmarks/category_reference_v4/shirt_02_gguf_cb1b76ebec7e/2026093002.api.json"
+  },
+  {
+    "case_id": "shirt_03",
+    "category": "shirt",
+    "seed": 2026093001,
+    "model": "gguf",
+    "prompt": "Use <image1> as the edit target and <image2> only as the garment reference.\nReplace the foreground person's main upper-body garment in <image1> with the actual shirt shown in <image2>. Transfer the reference design rather than making a generic garment of that category.\nMatch the visible reference silhouette, neckline or collar shape, sleeves, closures, pockets, fabric, color, pattern and printed graphics. Do not invent garment details absent from <image2>, including drawstrings, extra pockets, buttons or belts. When the reference hood has no drawstrings, keep it without drawstrings. Preserve visible text and graphics as accurately as possible.\nPreserve the foreground person's facial identity, hairstyle and hair length, skin tone, body proportions, pose, hands and camera angle from <image1>. Preserve the source's existing accessories exactly. If there is no eyewear on the source face, keep the face without eyewear. Do not add or remove personal accessories.\nPreserve the background, background people, lighting, lower-body clothing and unrelated garments. Adapt only the replacement garment to the existing pose with coherent folds, shadows and natural occlusion by hair, hands and foreground objects. Do not shorten hair to reveal the garment.\nMake only the changes required for this garment transfer. A recolor of the original clothing is insufficient.\n",
+    "workflow_sha256": "1056abf8ffb4e36b0b614a25d7165d389596eafa308e159424fbeb51fdaeee7b",
+    "input_hashes": {
+      "person": "8886ff6ccd369739e227274af8ad42d0f8627129d83c1643c84e3da1348ca986",
+      "garment": "5f8d348aa0079922743e53ab687ba5661c57696d373a0113cc61dae9a36761a3"
+    },
+    "status": "complete",
+    "scores": {
+      "identity": 2,
+      "body_pose": 2,
+      "garment_transfer": 2,
+      "background_lighting": 2,
+      "artifacts": 2
+    },
+    "reviewer": "Codex visual review (single AI reviewer)",
+    "notes": "Fresh output verified exactly RGB pixel-identical to previously visually reviewed reference_v3, with unchanged source/reference/prompt. Source/reference/output compared: light-blue denim, pointed collar, pale buttons and single chest pocket retained with the source face, pose, visible lower clothing and scene.",
+    "output": "evaluation/benchmarks/category_reference_v4/shirt_03_gguf_19469addeb86/2026093001.png",
+    "execution_seconds": 200.189,
+    "run_ordinal": 1,
+    "experiment": "category_reference_v4",
+    "environment_file": "environment.json",
+    "prompt_template_sha256": "1f16a1a2d2b3b5e207bb9b81487e698818adcdcc8c6fb737ae9d47f4306a9df3",
+    "prompt_id": "2c97e1c8-e514-4d69-93f9-6107ad353fdd",
+    "node_errors": {},
+    "wall_seconds": 202.827,
+    "sampled_device_peak_mib": 6847,
+    "output_size": [
+      768,
+      1376
+    ],
+    "output_sha256": "6a5cdd8c1139a02a714bef3ea0c0d1fd594e97251771e82216a5163f379486e1",
+    "cache_state": "session_warm",
+    "history": "evaluation/benchmarks/category_reference_v4/shirt_03_gguf_19469addeb86/2026093001.history.json",
+    "graph": "evaluation/benchmarks/category_reference_v4/shirt_03_gguf_19469addeb86/2026093001.api.json"
+  },
+  {
+    "case_id": "shirt_03",
+    "category": "shirt",
+    "seed": 2026093002,
+    "model": "gguf",
+    "prompt": "Use <image1> as the edit target and <image2> only as the garment reference.\nReplace the foreground person's main upper-body garment in <image1> with the actual shirt shown in <image2>. Transfer the reference design rather than making a generic garment of that category.\nMatch the visible reference silhouette, neckline or collar shape, sleeves, closures, pockets, fabric, color, pattern and printed graphics. Do not invent garment details absent from <image2>, including drawstrings, extra pockets, buttons or belts. When the reference hood has no drawstrings, keep it without drawstrings. Preserve visible text and graphics as accurately as possible.\nPreserve the foreground person's facial identity, hairstyle and hair length, skin tone, body proportions, pose, hands and camera angle from <image1>. Preserve the source's existing accessories exactly. If there is no eyewear on the source face, keep the face without eyewear. Do not add or remove personal accessories.\nPreserve the background, background people, lighting, lower-body clothing and unrelated garments. Adapt only the replacement garment to the existing pose with coherent folds, shadows and natural occlusion by hair, hands and foreground objects. Do not shorten hair to reveal the garment.\nMake only the changes required for this garment transfer. A recolor of the original clothing is insufficient.\n",
+    "workflow_sha256": "7a580f974e6eafa9e1b62caf55f570b56dbb03b619e9e014bd5a52a6f766adba",
+    "input_hashes": {
+      "person": "8886ff6ccd369739e227274af8ad42d0f8627129d83c1643c84e3da1348ca986",
+      "garment": "5f8d348aa0079922743e53ab687ba5661c57696d373a0113cc61dae9a36761a3"
+    },
+    "status": "complete",
+    "scores": {
+      "identity": 2,
+      "body_pose": 2,
+      "garment_transfer": 2,
+      "background_lighting": 2,
+      "artifacts": 2
+    },
+    "reviewer": "Codex visual review (single AI reviewer)",
+    "notes": "Fresh output verified exactly RGB pixel-identical to previously visually reviewed reference_v3, with unchanged source/reference/prompt. Source/reference/output compared: light-blue denim, pointed collar, pale buttons and single chest pocket retained with the source face, pose, visible lower clothing and scene.",
+    "output": "evaluation/benchmarks/category_reference_v4/shirt_03_gguf_19469addeb86/2026093002.png",
+    "execution_seconds": 181.245,
+    "run_ordinal": 2,
+    "experiment": "category_reference_v4",
+    "environment_file": "environment.json",
+    "prompt_template_sha256": "1f16a1a2d2b3b5e207bb9b81487e698818adcdcc8c6fb737ae9d47f4306a9df3",
+    "prompt_id": "7b6526bf-31d2-4895-ba4c-dbc9b9065d86",
+    "node_errors": {},
+    "wall_seconds": 182.397,
+    "sampled_device_peak_mib": 6845,
+    "output_size": [
+      768,
+      1376
+    ],
+    "output_sha256": "a52dee7338e30799250ff354e5ca316991334b343e63e5b2c74ff475085d4889",
+    "cache_state": "same_case_second_seed_warm",
+    "history": "evaluation/benchmarks/category_reference_v4/shirt_03_gguf_19469addeb86/2026093002.history.json",
+    "graph": "evaluation/benchmarks/category_reference_v4/shirt_03_gguf_19469addeb86/2026093002.api.json"
+  },
+  {
+    "case_id": "shirt_04",
+    "category": "shirt",
+    "seed": 2026093001,
+    "model": "gguf",
+    "prompt": "Use <image1> as the edit target and <image2> only as the garment reference.\nReplace the foreground person's main upper-body garment in <image1> with the actual shirt shown in <image2>. Transfer the reference design rather than making a generic garment of that category.\nMatch the visible reference silhouette, neckline or collar shape, sleeves, closures, pockets, fabric, color, pattern and printed graphics. Do not invent garment details absent from <image2>, including drawstrings, extra pockets, buttons or belts. When the reference hood has no drawstrings, keep it without drawstrings. Preserve visible text and graphics as accurately as possible.\nPreserve the foreground person's facial identity, hairstyle and hair length, skin tone, body proportions, pose, hands and camera angle from <image1>. Preserve the source's existing accessories exactly. If there is no eyewear on the source face, keep the face without eyewear. Do not add or remove personal accessories.\nPreserve the background, background people, lighting, lower-body clothing and unrelated garments. Adapt only the replacement garment to the existing pose with coherent folds, shadows and natural occlusion by hair, hands and foreground objects. Do not shorten hair to reveal the garment.\nMake only the changes required for this garment transfer. A recolor of the original clothing is insufficient.\n",
+    "workflow_sha256": "93f64af2aad0b6036b7f004dcbc3f0b6289921c235da78ad81582c71b2bd77cf",
+    "input_hashes": {
+      "person": "d78bb2fe877531938e596026cb3c577ff7af7188cb911ea2c6f49c1daf62d174",
+      "garment": "5f8d348aa0079922743e53ab687ba5661c57696d373a0113cc61dae9a36761a3"
+    },
+    "status": "complete",
+    "scores": {
+      "identity": 2,
+      "body_pose": 2,
+      "garment_transfer": 2,
+      "background_lighting": 2,
+      "artifacts": 2
+    },
+    "reviewer": "Codex visual review (single AI reviewer)",
+    "notes": "Fresh output verified exactly RGB pixel-identical to previously visually reviewed reference_v3, with unchanged source/reference/prompt. Source/reference/output compared: light-blue denim, pointed collar, pale buttons and single chest pocket retained with the source face, pose, visible lower clothing and scene.",
+    "output": "evaluation/benchmarks/category_reference_v4/shirt_04_gguf_b15195adcb28/2026093001.png",
+    "execution_seconds": 198.268,
+    "run_ordinal": 1,
+    "experiment": "category_reference_v4",
+    "environment_file": "environment.json",
+    "prompt_template_sha256": "1f16a1a2d2b3b5e207bb9b81487e698818adcdcc8c6fb737ae9d47f4306a9df3",
+    "prompt_id": "82f865f2-f925-419d-acce-5108894a4c16",
+    "node_errors": {},
+    "wall_seconds": 202.849,
+    "sampled_device_peak_mib": 6813,
+    "output_size": [
+      1024,
+      1024
+    ],
+    "output_sha256": "11809808b5a4198e95398f18ca9668f59406b111afe343c1fe71674b06fad94c",
+    "cache_state": "session_warm",
+    "history": "evaluation/benchmarks/category_reference_v4/shirt_04_gguf_b15195adcb28/2026093001.history.json",
+    "graph": "evaluation/benchmarks/category_reference_v4/shirt_04_gguf_b15195adcb28/2026093001.api.json"
+  },
+  {
+    "case_id": "shirt_04",
+    "category": "shirt",
+    "seed": 2026093002,
+    "model": "gguf",
+    "prompt": "Use <image1> as the edit target and <image2> only as the garment reference.\nReplace the foreground person's main upper-body garment in <image1> with the actual shirt shown in <image2>. Transfer the reference design rather than making a generic garment of that category.\nMatch the visible reference silhouette, neckline or collar shape, sleeves, closures, pockets, fabric, color, pattern and printed graphics. Do not invent garment details absent from <image2>, including drawstrings, extra pockets, buttons or belts. When the reference hood has no drawstrings, keep it without drawstrings. Preserve visible text and graphics as accurately as possible.\nPreserve the foreground person's facial identity, hairstyle and hair length, skin tone, body proportions, pose, hands and camera angle from <image1>. Preserve the source's existing accessories exactly. If there is no eyewear on the source face, keep the face without eyewear. Do not add or remove personal accessories.\nPreserve the background, background people, lighting, lower-body clothing and unrelated garments. Adapt only the replacement garment to the existing pose with coherent folds, shadows and natural occlusion by hair, hands and foreground objects. Do not shorten hair to reveal the garment.\nMake only the changes required for this garment transfer. A recolor of the original clothing is insufficient.\n",
+    "workflow_sha256": "553fc790783468169f556651604f441c51b308bc8defc52cf29c42c5b77c3cb1",
+    "input_hashes": {
+      "person": "d78bb2fe877531938e596026cb3c577ff7af7188cb911ea2c6f49c1daf62d174",
+      "garment": "5f8d348aa0079922743e53ab687ba5661c57696d373a0113cc61dae9a36761a3"
+    },
+    "status": "complete",
+    "scores": {
+      "identity": 2,
+      "body_pose": 2,
+      "garment_transfer": 2,
+      "background_lighting": 2,
+      "artifacts": 2
+    },
+    "reviewer": "Codex visual review (single AI reviewer)",
+    "notes": "Fresh output verified exactly RGB pixel-identical to previously visually reviewed reference_v3, with unchanged source/reference/prompt. Source/reference/output compared: light-blue denim, pointed collar, pale buttons and single chest pocket retained with the source face, pose, visible lower clothing and scene.",
+    "output": "evaluation/benchmarks/category_reference_v4/shirt_04_gguf_b15195adcb28/2026093002.png",
+    "execution_seconds": 179.974,
+    "run_ordinal": 2,
+    "experiment": "category_reference_v4",
+    "environment_file": "environment.json",
+    "prompt_template_sha256": "1f16a1a2d2b3b5e207bb9b81487e698818adcdcc8c6fb737ae9d47f4306a9df3",
+    "prompt_id": "c61a2a50-616b-4bb2-832b-bdb0628dd40e",
+    "node_errors": {},
+    "wall_seconds": 182.352,
+    "sampled_device_peak_mib": 6721,
+    "output_size": [
+      1024,
+      1024
+    ],
+    "output_sha256": "3cf898bd86c675dc509928a25ea455cb6eff57289e99a85c238d76bfdd405163",
+    "cache_state": "same_case_second_seed_warm",
+    "history": "evaluation/benchmarks/category_reference_v4/shirt_04_gguf_b15195adcb28/2026093002.history.json",
+    "graph": "evaluation/benchmarks/category_reference_v4/shirt_04_gguf_b15195adcb28/2026093002.api.json"
+  },
+  {
+    "case_id": "shirt_05",
+    "category": "shirt",
+    "seed": 2026093001,
+    "model": "gguf",
+    "prompt": "Use <image1> as the edit target and <image2> only as the garment reference.\nReplace the foreground person's main upper-body garment in <image1> with the actual shirt shown in <image2>. Transfer the reference design rather than making a generic garment of that category.\nMatch the visible reference silhouette, neckline or collar shape, sleeves, closures, pockets, fabric, color, pattern and printed graphics. Do not invent garment details absent from <image2>, including drawstrings, extra pockets, buttons or belts. When the reference hood has no drawstrings, keep it without drawstrings. Preserve visible text and graphics as accurately as possible.\nPreserve the foreground person's facial identity, hairstyle and hair length, skin tone, body proportions, pose, hands and camera angle from <image1>. Preserve the source's existing accessories exactly. If there is no eyewear on the source face, keep the face without eyewear. Do not add or remove personal accessories.\nPreserve the background, background people, lighting, lower-body clothing and unrelated garments. Adapt only the replacement garment to the existing pose with coherent folds, shadows and natural occlusion by hair, hands and foreground objects. Do not shorten hair to reveal the garment.\nMake only the changes required for this garment transfer. A recolor of the original clothing is insufficient.\n",
+    "workflow_sha256": "d4e334fa2e00393649af8e8bf217e6c034f5aeb02822706335f0279fc5055448",
+    "input_hashes": {
+      "person": "51a0ddb8e992fb7d005715ae32fa43f3cdbfd3229e67e5f84448ca0ccb8dae35",
+      "garment": "5f8d348aa0079922743e53ab687ba5661c57696d373a0113cc61dae9a36761a3"
+    },
+    "status": "complete",
+    "scores": {
+      "identity": 2,
+      "body_pose": 2,
+      "garment_transfer": 2,
+      "background_lighting": 2,
+      "artifacts": 2
+    },
+    "reviewer": "Codex visual review (single AI reviewer)",
+    "notes": "Fresh output verified exactly RGB pixel-identical to previously visually reviewed reference_v3, with unchanged source/reference/prompt. Source/reference/output compared: light-blue denim, pointed collar, pale buttons and single chest pocket retained with the source face, pose, visible lower clothing and scene.",
+    "output": "evaluation/benchmarks/category_reference_v4/shirt_05_gguf_545fb87c0280/2026093001.png",
+    "execution_seconds": 199.174,
+    "run_ordinal": 1,
+    "experiment": "category_reference_v4",
+    "environment_file": "environment.json",
+    "prompt_template_sha256": "1f16a1a2d2b3b5e207bb9b81487e698818adcdcc8c6fb737ae9d47f4306a9df3",
+    "prompt_id": "6b2e47d6-48a2-4ff0-829d-eba90724bd2b",
+    "node_errors": {},
+    "wall_seconds": 202.735,
+    "sampled_device_peak_mib": 7197,
+    "output_size": [
+      1216,
+      864
+    ],
+    "output_sha256": "614d0a6195b4c438cd8eea4824230d128a5e26b9a75a38f3a6b36a740dc278df",
+    "cache_state": "session_warm",
+    "history": "evaluation/benchmarks/category_reference_v4/shirt_05_gguf_545fb87c0280/2026093001.history.json",
+    "graph": "evaluation/benchmarks/category_reference_v4/shirt_05_gguf_545fb87c0280/2026093001.api.json"
+  },
+  {
+    "case_id": "shirt_05",
+    "category": "shirt",
+    "seed": 2026093002,
+    "model": "gguf",
+    "prompt": "Use <image1> as the edit target and <image2> only as the garment reference.\nReplace the foreground person's main upper-body garment in <image1> with the actual shirt shown in <image2>. Transfer the reference design rather than making a generic garment of that category.\nMatch the visible reference silhouette, neckline or collar shape, sleeves, closures, pockets, fabric, color, pattern and printed graphics. Do not invent garment details absent from <image2>, including drawstrings, extra pockets, buttons or belts. When the reference hood has no drawstrings, keep it without drawstrings. Preserve visible text and graphics as accurately as possible.\nPreserve the foreground person's facial identity, hairstyle and hair length, skin tone, body proportions, pose, hands and camera angle from <image1>. Preserve the source's existing accessories exactly. If there is no eyewear on the source face, keep the face without eyewear. Do not add or remove personal accessories.\nPreserve the background, background people, lighting, lower-body clothing and unrelated garments. Adapt only the replacement garment to the existing pose with coherent folds, shadows and natural occlusion by hair, hands and foreground objects. Do not shorten hair to reveal the garment.\nMake only the changes required for this garment transfer. A recolor of the original clothing is insufficient.\n",
+    "workflow_sha256": "1d3e77d441de1d8f46b55fd8638c2df049a9586f5c3dcbe7e1add73c182b5628",
+    "input_hashes": {
+      "person": "51a0ddb8e992fb7d005715ae32fa43f3cdbfd3229e67e5f84448ca0ccb8dae35",
+      "garment": "5f8d348aa0079922743e53ab687ba5661c57696d373a0113cc61dae9a36761a3"
+    },
+    "status": "complete",
+    "scores": {
+      "identity": 1,
+      "body_pose": 2,
+      "garment_transfer": 2,
+      "background_lighting": 2,
+      "artifacts": 2
+    },
+    "reviewer": "Codex visual review (single AI reviewer)",
+    "notes": "Fresh output verified exactly RGB pixel-identical to previously visually reviewed reference_v3, with unchanged source/reference/prompt. Garment features transfer, but long source hair is shortened around the chest; identity preservation fails.",
+    "output": "evaluation/benchmarks/category_reference_v4/shirt_05_gguf_545fb87c0280/2026093002.png",
+    "execution_seconds": 180.622,
+    "run_ordinal": 2,
+    "experiment": "category_reference_v4",
+    "environment_file": "environment.json",
+    "prompt_template_sha256": "1f16a1a2d2b3b5e207bb9b81487e698818adcdcc8c6fb737ae9d47f4306a9df3",
+    "prompt_id": "6e8dcdbc-bb49-4ba1-9d21-59501a7875c7",
+    "node_errors": {},
+    "wall_seconds": 182.446,
+    "sampled_device_peak_mib": 6685,
+    "output_size": [
+      1216,
+      864
+    ],
+    "output_sha256": "7324b70e82fb92ed789f831d84cad6129084b8f05d95ee931f8b9915c8854f80",
+    "cache_state": "same_case_second_seed_warm",
+    "history": "evaluation/benchmarks/category_reference_v4/shirt_05_gguf_545fb87c0280/2026093002.history.json",
+    "graph": "evaluation/benchmarks/category_reference_v4/shirt_05_gguf_545fb87c0280/2026093002.api.json"
+  },
+  {
+    "case_id": "hoodie_01",
+    "category": "hoodie",
+    "seed": 2026093001,
+    "model": "gguf",
+    "prompt": "Use <image1> as the edit target and <image2> only as the garment reference.\nReplace the foreground person's main upper-body garment in <image1> with the actual hoodie shown in <image2>. Transfer the reference design rather than making a generic garment of that category.\nMatch the visible reference silhouette, neckline or collar shape, sleeves, closures, pockets, fabric, color, pattern and printed graphics. Do not invent garment details absent from <image2>, including drawstrings, extra pockets, buttons or belts. When the reference hood has no drawstrings, keep it without drawstrings. Preserve visible text and graphics as accurately as possible.\nPreserve the foreground person's facial identity, hairstyle and hair length, skin tone, body proportions, pose, hands and camera angle from <image1>. Preserve the source's existing accessories exactly. If there is no eyewear on the source face, keep the face without eyewear. Do not add or remove personal accessories.\nPreserve the background, background people, lighting, lower-body clothing and unrelated garments. Adapt only the replacement garment to the existing pose with coherent folds, shadows and natural occlusion by hair, hands and foreground objects. Do not shorten hair to reveal the garment.\nMake only the changes required for this garment transfer. A recolor of the original clothing is insufficient.\n",
+    "workflow_sha256": "fb0b41dfb2292c4d8ba54565903f77995c58756b21ad326a2c41a2dd633b9703",
+    "input_hashes": {
+      "person": "f750ded4fa7d359510b86d2973c33091238c01f089f2d67f619838b1051a02d0",
+      "garment": "9caf8b20c8a567c2ee3e7b56b1556942eed6eefa993f65b4d07d2f87bcafd2ad"
+    },
+    "status": "complete",
+    "scores": {
+      "identity": 2,
+      "body_pose": 2,
+      "garment_transfer": 2,
+      "background_lighting": 2,
+      "artifacts": 1
+    },
+    "reviewer": "Codex visual review (single AI reviewer)",
+    "notes": "Fresh output verified exactly RGB pixel-identical to previously visually reviewed reference_v3, with unchanged source/reference/prompt. Exact RGB pixel equivalence to previously visually reviewed reference_v2 output verified. Face, curly hair, existing glasses, head angle, pocketed-hand stance, backpack/trousers/shoes and studio background retained. Charcoal pullover hood, kangaroo pocket, ribbed cuffs/hem, yellow outlined flame/SUPERIOR graphic and white sleeve star/lettering transfer. No invented drawstrings. Fine sleeve/small chest lettering is approximate, reflected in artifact score 1.",
+    "output": "evaluation/benchmarks/category_reference_v4/hoodie_01_gguf_25e04e74eb45/2026093001.png",
+    "execution_seconds": 199.951,
+    "run_ordinal": 1,
+    "experiment": "category_reference_v4",
+    "environment_file": "environment.json",
+    "prompt_template_sha256": "1f16a1a2d2b3b5e207bb9b81487e698818adcdcc8c6fb737ae9d47f4306a9df3",
+    "prompt_id": "27782a62-5979-4c92-9df2-b90aa210a4c6",
+    "node_errors": {},
+    "wall_seconds": 202.808,
+    "sampled_device_peak_mib": 7295,
+    "output_size": [
+      832,
+      1248
+    ],
+    "output_sha256": "88fb87f4a0b6c36bad63dfc51835f7419033eef028fde92f2c69c3a856b660ce",
+    "cache_state": "session_warm",
+    "history": "evaluation/benchmarks/category_reference_v4/hoodie_01_gguf_25e04e74eb45/2026093001.history.json",
+    "graph": "evaluation/benchmarks/category_reference_v4/hoodie_01_gguf_25e04e74eb45/2026093001.api.json"
+  },
+  {
+    "case_id": "hoodie_01",
+    "category": "hoodie",
+    "seed": 2026093002,
+    "model": "gguf",
+    "prompt": "Use <image1> as the edit target and <image2> only as the garment reference.\nReplace the foreground person's main upper-body garment in <image1> with the actual hoodie shown in <image2>. Transfer the reference design rather than making a generic garment of that category.\nMatch the visible reference silhouette, neckline or collar shape, sleeves, closures, pockets, fabric, color, pattern and printed graphics. Do not invent garment details absent from <image2>, including drawstrings, extra pockets, buttons or belts. When the reference hood has no drawstrings, keep it without drawstrings. Preserve visible text and graphics as accurately as possible.\nPreserve the foreground person's facial identity, hairstyle and hair length, skin tone, body proportions, pose, hands and camera angle from <image1>. Preserve the source's existing accessories exactly. If there is no eyewear on the source face, keep the face without eyewear. Do not add or remove personal accessories.\nPreserve the background, background people, lighting, lower-body clothing and unrelated garments. Adapt only the replacement garment to the existing pose with coherent folds, shadows and natural occlusion by hair, hands and foreground objects. Do not shorten hair to reveal the garment.\nMake only the changes required for this garment transfer. A recolor of the original clothing is insufficient.\n",
+    "workflow_sha256": "f151598670bf04d1caddb7b1f96594e1e7c9fae295f79713dafb58ae2cc786b4",
+    "input_hashes": {
+      "person": "f750ded4fa7d359510b86d2973c33091238c01f089f2d67f619838b1051a02d0",
+      "garment": "9caf8b20c8a567c2ee3e7b56b1556942eed6eefa993f65b4d07d2f87bcafd2ad"
+    },
+    "status": "complete",
+    "scores": {
+      "identity": 2,
+      "body_pose": 2,
+      "garment_transfer": 2,
+      "background_lighting": 2,
+      "artifacts": 1
+    },
+    "reviewer": "Codex visual review (single AI reviewer)",
+    "notes": "Fresh output verified exactly RGB pixel-identical to previously visually reviewed reference_v3, with unchanged source/reference/prompt. Exact RGB pixel equivalence to previously visually reviewed reference_v2 output verified. Face, curly hair, existing glasses, head angle, pocketed-hand stance, backpack/trousers/shoes and studio background retained. Charcoal pullover hood, kangaroo pocket, ribbed cuffs/hem, yellow outlined flame/SUPERIOR graphic and white sleeve star/lettering transfer. No invented drawstrings. Fine sleeve/small chest lettering is approximate, reflected in artifact score 1.",
+    "output": "evaluation/benchmarks/category_reference_v4/hoodie_01_gguf_25e04e74eb45/2026093002.png",
+    "execution_seconds": 179.894,
+    "run_ordinal": 2,
+    "experiment": "category_reference_v4",
+    "environment_file": "environment.json",
+    "prompt_template_sha256": "1f16a1a2d2b3b5e207bb9b81487e698818adcdcc8c6fb737ae9d47f4306a9df3",
+    "prompt_id": "bd668f58-2df8-484b-a5e9-76f70ef5e3bb",
+    "node_errors": {},
+    "wall_seconds": 182.589,
+    "sampled_device_peak_mib": 6624,
+    "output_size": [
+      832,
+      1248
+    ],
+    "output_sha256": "786d43fe29bbd4b7962e7c965370d90befcd9e0885a272eabdb4d13fdf54cf50",
+    "cache_state": "same_case_second_seed_warm",
+    "history": "evaluation/benchmarks/category_reference_v4/hoodie_01_gguf_25e04e74eb45/2026093002.history.json",
+    "graph": "evaluation/benchmarks/category_reference_v4/hoodie_01_gguf_25e04e74eb45/2026093002.api.json"
+  },
+  {
+    "case_id": "hoodie_02",
+    "category": "hoodie",
+    "seed": 2026093001,
+    "model": "gguf",
+    "prompt": "Use <image1> as the edit target and <image2> only as the garment reference.\nReplace the foreground person's main upper-body garment in <image1> with the actual hoodie shown in <image2>. Transfer the reference design rather than making a generic garment of that category.\nMatch the visible reference silhouette, neckline or collar shape, sleeves, closures, pockets, fabric, color, pattern and printed graphics. Do not invent garment details absent from <image2>, including drawstrings, extra pockets, buttons or belts. When the reference hood has no drawstrings, keep it without drawstrings. Preserve visible text and graphics as accurately as possible.\nPreserve the foreground person's facial identity, hairstyle and hair length, skin tone, body proportions, pose, hands and camera angle from <image1>. Preserve the source's existing accessories exactly. If there is no eyewear on the source face, keep the face without eyewear. Do not add or remove personal accessories.\nPreserve the background, background people, lighting, lower-body clothing and unrelated garments. Adapt only the replacement garment to the existing pose with coherent folds, shadows and natural occlusion by hair, hands and foreground objects. Do not shorten hair to reveal the garment.\nMake only the changes required for this garment transfer. A recolor of the original clothing is insufficient.\n",
+    "workflow_sha256": "31091e4706fcbe040afc27dd549935350834183e8b7c9f93ff7a36d16f02f4e8",
+    "input_hashes": {
+      "person": "d888e9396587a3fd4ad500bbf5988fed0f7ba60ffa71628c29fced78bece3ac6",
+      "garment": "9caf8b20c8a567c2ee3e7b56b1556942eed6eefa993f65b4d07d2f87bcafd2ad"
+    },
+    "status": "complete",
+    "scores": {
+      "identity": 2,
+      "body_pose": 2,
+      "garment_transfer": 2,
+      "background_lighting": 2,
+      "artifacts": 1
+    },
+    "reviewer": "Codex visual review (single AI reviewer)",
+    "notes": "Fresh output verified exactly RGB pixel-identical to previously visually reviewed reference_v3, with unchanged source/reference/prompt. Exact RGB pixel equivalence to previously visually reviewed reference_v2 output verified. Eyewear-free face, short hair, downward head angle/skin and bent-arm pose retained. Charcoal pullover hood, kangaroo pocket, flame/SUPERIOR chest graphic and white sleeve star/lettering transfer without invented drawstrings. Cropped hem/cuffs are not graded as missing; fine lettering remains approximate.",
+    "output": "evaluation/benchmarks/category_reference_v4/hoodie_02_gguf_8ec3332b0777/2026093001.png",
+    "execution_seconds": 198.787,
+    "run_ordinal": 1,
+    "experiment": "category_reference_v4",
+    "environment_file": "environment.json",
+    "prompt_template_sha256": "1f16a1a2d2b3b5e207bb9b81487e698818adcdcc8c6fb737ae9d47f4306a9df3",
+    "prompt_id": "aee7f2a7-d6a0-4551-9786-2720d9d61b4e",
+    "node_errors": {},
+    "wall_seconds": 202.768,
+    "sampled_device_peak_mib": 7388,
+    "output_size": [
+      896,
+      1152
+    ],
+    "output_sha256": "d10b81c739827bc55d5a2e3fa7520ebe9f1d24cabbb7cd307d755e822e7c8c26",
+    "cache_state": "session_warm",
+    "history": "evaluation/benchmarks/category_reference_v4/hoodie_02_gguf_8ec3332b0777/2026093001.history.json",
+    "graph": "evaluation/benchmarks/category_reference_v4/hoodie_02_gguf_8ec3332b0777/2026093001.api.json"
+  },
+  {
+    "case_id": "hoodie_02",
+    "category": "hoodie",
+    "seed": 2026093002,
+    "model": "gguf",
+    "prompt": "Use <image1> as the edit target and <image2> only as the garment reference.\nReplace the foreground person's main upper-body garment in <image1> with the actual hoodie shown in <image2>. Transfer the reference design rather than making a generic garment of that category.\nMatch the visible reference silhouette, neckline or collar shape, sleeves, closures, pockets, fabric, color, pattern and printed graphics. Do not invent garment details absent from <image2>, including drawstrings, extra pockets, buttons or belts. When the reference hood has no drawstrings, keep it without drawstrings. Preserve visible text and graphics as accurately as possible.\nPreserve the foreground person's facial identity, hairstyle and hair length, skin tone, body proportions, pose, hands and camera angle from <image1>. Preserve the source's existing accessories exactly. If there is no eyewear on the source face, keep the face without eyewear. Do not add or remove personal accessories.\nPreserve the background, background people, lighting, lower-body clothing and unrelated garments. Adapt only the replacement garment to the existing pose with coherent folds, shadows and natural occlusion by hair, hands and foreground objects. Do not shorten hair to reveal the garment.\nMake only the changes required for this garment transfer. A recolor of the original clothing is insufficient.\n",
+    "workflow_sha256": "9d115e8d0ea7c8552d33f6b400d125cd338944bb3544dfdd31fafc19cd2a5f49",
+    "input_hashes": {
+      "person": "d888e9396587a3fd4ad500bbf5988fed0f7ba60ffa71628c29fced78bece3ac6",
+      "garment": "9caf8b20c8a567c2ee3e7b56b1556942eed6eefa993f65b4d07d2f87bcafd2ad"
+    },
+    "status": "complete",
+    "scores": {
+      "identity": 2,
+      "body_pose": 2,
+      "garment_transfer": 2,
+      "background_lighting": 2,
+      "artifacts": 1
+    },
+    "reviewer": "Codex visual review (single AI reviewer)",
+    "notes": "Fresh output verified exactly RGB pixel-identical to previously visually reviewed reference_v3, with unchanged source/reference/prompt. Exact RGB pixel equivalence to previously visually reviewed reference_v2 output verified. Eyewear-free face, short hair, downward head angle/skin and bent-arm pose retained. Charcoal pullover hood, kangaroo pocket, flame/SUPERIOR chest graphic and white sleeve star/lettering transfer without invented drawstrings. Cropped hem/cuffs are not graded as missing; fine lettering remains approximate.",
+    "output": "evaluation/benchmarks/category_reference_v4/hoodie_02_gguf_8ec3332b0777/2026093002.png",
+    "execution_seconds": 182.075,
+    "run_ordinal": 2,
+    "experiment": "category_reference_v4",
+    "environment_file": "environment.json",
+    "prompt_template_sha256": "1f16a1a2d2b3b5e207bb9b81487e698818adcdcc8c6fb737ae9d47f4306a9df3",
+    "prompt_id": "8c05088e-84cd-4855-bb2b-fa7e6d1e65d5",
+    "node_errors": {},
+    "wall_seconds": 183.078,
+    "sampled_device_peak_mib": 6719,
+    "output_size": [
+      896,
+      1152
+    ],
+    "output_sha256": "5c54b9721c12c6fb631981ff48127da35d7f73f6229189419ae3fc3c1f847a1f",
+    "cache_state": "same_case_second_seed_warm",
+    "history": "evaluation/benchmarks/category_reference_v4/hoodie_02_gguf_8ec3332b0777/2026093002.history.json",
+    "graph": "evaluation/benchmarks/category_reference_v4/hoodie_02_gguf_8ec3332b0777/2026093002.api.json"
+  },
+  {
+    "case_id": "hoodie_03",
+    "category": "hoodie",
+    "seed": 2026093001,
+    "model": "gguf",
+    "prompt": "Use <image1> as the edit target and <image2> only as the garment reference.\nReplace the foreground person's main upper-body garment in <image1> with the actual hoodie shown in <image2>. Transfer the reference design rather than making a generic garment of that category.\nMatch the visible reference silhouette, neckline or collar shape, sleeves, closures, pockets, fabric, color, pattern and printed graphics. Do not invent garment details absent from <image2>, including drawstrings, extra pockets, buttons or belts. When the reference hood has no drawstrings, keep it without drawstrings. Preserve visible text and graphics as accurately as possible.\nPreserve the foreground person's facial identity, hairstyle and hair length, skin tone, body proportions, pose, hands and camera angle from <image1>. Preserve the source's existing accessories exactly. If there is no eyewear on the source face, keep the face without eyewear. Do not add or remove personal accessories.\nPreserve the background, background people, lighting, lower-body clothing and unrelated garments. Adapt only the replacement garment to the existing pose with coherent folds, shadows and natural occlusion by hair, hands and foreground objects. Do not shorten hair to reveal the garment.\nMake only the changes required for this garment transfer. A recolor of the original clothing is insufficient.\n",
+    "workflow_sha256": "9fed56687600498bee2539f905df6c3ed49d662dc9c6455a23d74c3738d828c3",
+    "input_hashes": {
+      "person": "8886ff6ccd369739e227274af8ad42d0f8627129d83c1643c84e3da1348ca986",
+      "garment": "9caf8b20c8a567c2ee3e7b56b1556942eed6eefa993f65b4d07d2f87bcafd2ad"
+    },
+    "status": "complete",
+    "scores": {
+      "identity": 2,
+      "body_pose": 2,
+      "garment_transfer": 2,
+      "background_lighting": 2,
+      "artifacts": 1
+    },
+    "reviewer": "Codex visual review (single AI reviewer)",
+    "notes": "Fresh output verified exactly RGB pixel-identical to previously visually reviewed reference_v3, with unchanged source/reference/prompt. Exact RGB pixel equivalence to previously visually reviewed reference_v2 output verified. Eyewear-free face, beard/hair, crossed hands/arms, trousers/waist and background retained. Charcoal pullover hood, kangaroo pocket, ribbed cuffs/hem, flame/SUPERIOR chest graphic and white sleeve star/lettering transfer. No invented drawstrings; fine sleeve lettering is approximate.",
+    "output": "evaluation/benchmarks/category_reference_v4/hoodie_03_gguf_04215594f057/2026093001.png",
+    "execution_seconds": 217.786,
+    "run_ordinal": 1,
+    "experiment": "category_reference_v4",
+    "environment_file": "environment.json",
+    "prompt_template_sha256": "1f16a1a2d2b3b5e207bb9b81487e698818adcdcc8c6fb737ae9d47f4306a9df3",
+    "prompt_id": "85640107-f563-4d93-bf5f-e3d2519e30ad",
+    "node_errors": {},
+    "wall_seconds": 222.067,
+    "sampled_device_peak_mib": 6754,
+    "output_size": [
+      768,
+      1376
+    ],
+    "output_sha256": "75fdac0e5fc47b380b5f54851be464eb2f7c5b1ce7f3dfaefb51b73c512c2f17",
+    "cache_state": "session_warm",
+    "history": "evaluation/benchmarks/category_reference_v4/hoodie_03_gguf_04215594f057/2026093001.history.json",
+    "graph": "evaluation/benchmarks/category_reference_v4/hoodie_03_gguf_04215594f057/2026093001.api.json"
+  },
+  {
+    "case_id": "hoodie_03",
+    "category": "hoodie",
+    "seed": 2026093002,
+    "model": "gguf",
+    "prompt": "Use <image1> as the edit target and <image2> only as the garment reference.\nReplace the foreground person's main upper-body garment in <image1> with the actual hoodie shown in <image2>. Transfer the reference design rather than making a generic garment of that category.\nMatch the visible reference silhouette, neckline or collar shape, sleeves, closures, pockets, fabric, color, pattern and printed graphics. Do not invent garment details absent from <image2>, including drawstrings, extra pockets, buttons or belts. When the reference hood has no drawstrings, keep it without drawstrings. Preserve visible text and graphics as accurately as possible.\nPreserve the foreground person's facial identity, hairstyle and hair length, skin tone, body proportions, pose, hands and camera angle from <image1>. Preserve the source's existing accessories exactly. If there is no eyewear on the source face, keep the face without eyewear. Do not add or remove personal accessories.\nPreserve the background, background people, lighting, lower-body clothing and unrelated garments. Adapt only the replacement garment to the existing pose with coherent folds, shadows and natural occlusion by hair, hands and foreground objects. Do not shorten hair to reveal the garment.\nMake only the changes required for this garment transfer. A recolor of the original clothing is insufficient.\n",
+    "workflow_sha256": "d9091d6b2bf80bf38eb30eb9535c5c0b34c60573b1f0b7ad3af123e21bcd8c01",
+    "input_hashes": {
+      "person": "8886ff6ccd369739e227274af8ad42d0f8627129d83c1643c84e3da1348ca986",
+      "garment": "9caf8b20c8a567c2ee3e7b56b1556942eed6eefa993f65b4d07d2f87bcafd2ad"
+    },
+    "status": "complete",
+    "scores": {
+      "identity": 2,
+      "body_pose": 2,
+      "garment_transfer": 2,
+      "background_lighting": 2,
+      "artifacts": 1
+    },
+    "reviewer": "Codex visual review (single AI reviewer)",
+    "notes": "Fresh output verified exactly RGB pixel-identical to previously visually reviewed reference_v3, with unchanged source/reference/prompt. Exact RGB pixel equivalence to previously visually reviewed reference_v2 output verified. Eyewear-free face, beard/hair, crossed hands/arms, trousers/waist and background retained. Charcoal pullover hood, kangaroo pocket, ribbed cuffs/hem, flame/SUPERIOR chest graphic and white sleeve star/lettering transfer. No invented drawstrings; fine sleeve lettering is approximate.",
+    "output": "evaluation/benchmarks/category_reference_v4/hoodie_03_gguf_04215594f057/2026093002.png",
+    "execution_seconds": 183.934,
+    "run_ordinal": 2,
+    "experiment": "category_reference_v4",
+    "environment_file": "environment.json",
+    "prompt_template_sha256": "1f16a1a2d2b3b5e207bb9b81487e698818adcdcc8c6fb737ae9d47f4306a9df3",
+    "prompt_id": "ec39b858-11e9-43cc-afe6-561a507c6b6b",
+    "node_errors": {},
+    "wall_seconds": 187.837,
+    "sampled_device_peak_mib": 6782,
+    "output_size": [
+      768,
+      1376
+    ],
+    "output_sha256": "3cede03765643461815ab99d132a5b8db26291617b508ac8d5b57fbb720d2eba",
+    "cache_state": "same_case_second_seed_warm",
+    "history": "evaluation/benchmarks/category_reference_v4/hoodie_03_gguf_04215594f057/2026093002.history.json",
+    "graph": "evaluation/benchmarks/category_reference_v4/hoodie_03_gguf_04215594f057/2026093002.api.json"
+  },
+  {
+    "case_id": "hoodie_04",
+    "category": "hoodie",
+    "seed": 2026093001,
+    "model": "gguf",
+    "prompt": "Use <image1> as the edit target and <image2> only as the garment reference.\nReplace the foreground person's main upper-body garment in <image1> with the actual hoodie shown in <image2>. Transfer the reference design rather than making a generic garment of that category.\nMatch the visible reference silhouette, neckline or collar shape, sleeves, closures, pockets, fabric, color, pattern and printed graphics. Do not invent garment details absent from <image2>, including drawstrings, extra pockets, buttons or belts. When the reference hood has no drawstrings, keep it without drawstrings. Preserve visible text and graphics as accurately as possible.\nPreserve the foreground person's facial identity, hairstyle and hair length, skin tone, body proportions, pose, hands and camera angle from <image1>. Preserve the source's existing accessories exactly. If there is no eyewear on the source face, keep the face without eyewear. Do not add or remove personal accessories.\nPreserve the background, background people, lighting, lower-body clothing and unrelated garments. Adapt only the replacement garment to the existing pose with coherent folds, shadows and natural occlusion by hair, hands and foreground objects. Do not shorten hair to reveal the garment.\nMake only the changes required for this garment transfer. A recolor of the original clothing is insufficient.\n",
+    "workflow_sha256": "e5e39ffdaf2037f050bd5a22c4301fbf7ab2084cf1c14e4f50e953c881e27cf0",
+    "input_hashes": {
+      "person": "d78bb2fe877531938e596026cb3c577ff7af7188cb911ea2c6f49c1daf62d174",
+      "garment": "9caf8b20c8a567c2ee3e7b56b1556942eed6eefa993f65b4d07d2f87bcafd2ad"
+    },
+    "status": "complete",
+    "scores": {
+      "identity": 2,
+      "body_pose": 2,
+      "garment_transfer": 2,
+      "background_lighting": 2,
+      "artifacts": 1
+    },
+    "reviewer": "Codex visual review (single AI reviewer)",
+    "notes": "Fresh output verified exactly RGB pixel-identical to previously visually reviewed reference_v3, with unchanged source/reference/prompt. Exact RGB pixel equivalence to previously visually reviewed reference_v2 output verified. Visible hood, chest flames/outlined print, sleeve stars and lettering transfer; face, short curls, pose and coastal scene retained. Fine lettering is approximate.",
+    "output": "evaluation/benchmarks/category_reference_v4/hoodie_04_gguf_04c26eececb8/2026093001.png",
+    "execution_seconds": 208.427,
+    "run_ordinal": 1,
+    "experiment": "category_reference_v4",
+    "environment_file": "environment.json",
+    "prompt_template_sha256": "1f16a1a2d2b3b5e207bb9b81487e698818adcdcc8c6fb737ae9d47f4306a9df3",
+    "prompt_id": "01ff282d-0e7b-403a-ac5f-79f1a33e378e",
+    "node_errors": {},
+    "wall_seconds": 210.446,
+    "sampled_device_peak_mib": 6846,
+    "output_size": [
+      1024,
+      1024
+    ],
+    "output_sha256": "bba24396b5784e327f76f89083a25e1db2dac3d8adc3fde4ac784ec26c28497d",
+    "cache_state": "session_warm",
+    "history": "evaluation/benchmarks/category_reference_v4/hoodie_04_gguf_04c26eececb8/2026093001.history.json",
+    "graph": "evaluation/benchmarks/category_reference_v4/hoodie_04_gguf_04c26eececb8/2026093001.api.json"
+  },
+  {
+    "case_id": "hoodie_04",
+    "category": "hoodie",
+    "seed": 2026093002,
+    "model": "gguf",
+    "prompt": "Use <image1> as the edit target and <image2> only as the garment reference.\nReplace the foreground person's main upper-body garment in <image1> with the actual hoodie shown in <image2>. Transfer the reference design rather than making a generic garment of that category.\nMatch the visible reference silhouette, neckline or collar shape, sleeves, closures, pockets, fabric, color, pattern and printed graphics. Do not invent garment details absent from <image2>, including drawstrings, extra pockets, buttons or belts. When the reference hood has no drawstrings, keep it without drawstrings. Preserve visible text and graphics as accurately as possible.\nPreserve the foreground person's facial identity, hairstyle and hair length, skin tone, body proportions, pose, hands and camera angle from <image1>. Preserve the source's existing accessories exactly. If there is no eyewear on the source face, keep the face without eyewear. Do not add or remove personal accessories.\nPreserve the background, background people, lighting, lower-body clothing and unrelated garments. Adapt only the replacement garment to the existing pose with coherent folds, shadows and natural occlusion by hair, hands and foreground objects. Do not shorten hair to reveal the garment.\nMake only the changes required for this garment transfer. A recolor of the original clothing is insufficient.\n",
+    "workflow_sha256": "c990d7fbef0aaec21ba48e8351fa0a78348dd35073fc3ccf70baf42e4fe941d8",
+    "input_hashes": {
+      "person": "d78bb2fe877531938e596026cb3c577ff7af7188cb911ea2c6f49c1daf62d174",
+      "garment": "9caf8b20c8a567c2ee3e7b56b1556942eed6eefa993f65b4d07d2f87bcafd2ad"
+    },
+    "status": "complete",
+    "scores": {
+      "identity": 2,
+      "body_pose": 2,
+      "garment_transfer": 2,
+      "background_lighting": 2,
+      "artifacts": 1
+    },
+    "reviewer": "Codex visual review (single AI reviewer)",
+    "notes": "Fresh output verified exactly RGB pixel-identical to previously visually reviewed reference_v3, with unchanged source/reference/prompt. Exact RGB pixel equivalence to previously visually reviewed reference_v2 output verified. Visible hood, chest flames/outlined print, sleeve stars and lettering transfer; face, short curls, pose and coastal scene retained. Fine lettering is approximate.",
+    "output": "evaluation/benchmarks/category_reference_v4/hoodie_04_gguf_04c26eececb8/2026093002.png",
+    "execution_seconds": 209.728,
+    "run_ordinal": 2,
+    "experiment": "category_reference_v4",
+    "environment_file": "environment.json",
+    "prompt_template_sha256": "1f16a1a2d2b3b5e207bb9b81487e698818adcdcc8c6fb737ae9d47f4306a9df3",
+    "prompt_id": "88eb9b91-38d6-4f45-95a3-9d068ef894d9",
+    "node_errors": {},
+    "wall_seconds": 210.176,
+    "sampled_device_peak_mib": 7262,
+    "output_size": [
+      1024,
+      1024
+    ],
+    "output_sha256": "62758768d4662ace90e86208d263d56d292cc873417794b71b7de52ba75d0ddc",
+    "cache_state": "same_case_second_seed_warm",
+    "history": "evaluation/benchmarks/category_reference_v4/hoodie_04_gguf_04c26eececb8/2026093002.history.json",
+    "graph": "evaluation/benchmarks/category_reference_v4/hoodie_04_gguf_04c26eececb8/2026093002.api.json"
+  },
+  {
+    "case_id": "hoodie_05",
+    "category": "hoodie",
+    "seed": 2026093001,
+    "model": "gguf",
+    "prompt": "Use <image1> as the edit target and <image2> only as the garment reference.\nReplace the foreground person's main upper-body garment in <image1> with the actual hoodie shown in <image2>. Transfer the reference design rather than making a generic garment of that category.\nMatch the visible reference silhouette, neckline or collar shape, sleeves, closures, pockets, fabric, color, pattern and printed graphics. Do not invent garment details absent from <image2>, including drawstrings, extra pockets, buttons or belts. When the reference hood has no drawstrings, keep it without drawstrings. Preserve visible text and graphics as accurately as possible.\nPreserve the foreground person's facial identity, hairstyle and hair length, skin tone, body proportions, pose, hands and camera angle from <image1>. Preserve the source's existing accessories exactly. If there is no eyewear on the source face, keep the face without eyewear. Do not add or remove personal accessories.\nPreserve the background, background people, lighting, lower-body clothing and unrelated garments. Adapt only the replacement garment to the existing pose with coherent folds, shadows and natural occlusion by hair, hands and foreground objects. Do not shorten hair to reveal the garment.\nMake only the changes required for this garment transfer. A recolor of the original clothing is insufficient.\n",
+    "workflow_sha256": "132747b3aea3b46e8a15034f94a2f2f215fbfd8ff724399ed5103bcc053f4e2c",
+    "input_hashes": {
+      "person": "51a0ddb8e992fb7d005715ae32fa43f3cdbfd3229e67e5f84448ca0ccb8dae35",
+      "garment": "9caf8b20c8a567c2ee3e7b56b1556942eed6eefa993f65b4d07d2f87bcafd2ad"
+    },
+    "status": "complete",
+    "scores": {
+      "identity": 2,
+      "body_pose": 2,
+      "garment_transfer": 2,
+      "background_lighting": 2,
+      "artifacts": 1
+    },
+    "reviewer": "Codex visual review (single AI reviewer)",
+    "notes": "Fresh output verified exactly RGB pixel-identical to previously visually reviewed reference_v3, with unchanged source/reference/prompt. Exact RGB pixel equivalence to previously visually reviewed reference_v2 output verified. Face and long blonde hair retained; hood, chest design, sleeve graphics and pocket transfer; wheat, white skirt and stance remain. Fine lettering approximate.",
+    "output": "evaluation/benchmarks/category_reference_v4/hoodie_05_gguf_3a2f61153736/2026093001.png",
+    "execution_seconds": 202.083,
+    "run_ordinal": 1,
+    "experiment": "category_reference_v4",
+    "environment_file": "environment.json",
+    "prompt_template_sha256": "1f16a1a2d2b3b5e207bb9b81487e698818adcdcc8c6fb737ae9d47f4306a9df3",
+    "prompt_id": "ee4f040c-6ef6-49eb-a336-6d00190427e2",
+    "node_errors": {},
+    "wall_seconds": 203.068,
+    "sampled_device_peak_mib": 7070,
+    "output_size": [
+      1216,
+      864
+    ],
+    "output_sha256": "66757a27526a00f00db14f0b30d54526267db3c0123d96ccfb0fa02647424664",
+    "cache_state": "session_warm",
+    "history": "evaluation/benchmarks/category_reference_v4/hoodie_05_gguf_3a2f61153736/2026093001.history.json",
+    "graph": "evaluation/benchmarks/category_reference_v4/hoodie_05_gguf_3a2f61153736/2026093001.api.json"
+  },
+  {
+    "case_id": "hoodie_05",
+    "category": "hoodie",
+    "seed": 2026093002,
+    "model": "gguf",
+    "prompt": "Use <image1> as the edit target and <image2> only as the garment reference.\nReplace the foreground person's main upper-body garment in <image1> with the actual hoodie shown in <image2>. Transfer the reference design rather than making a generic garment of that category.\nMatch the visible reference silhouette, neckline or collar shape, sleeves, closures, pockets, fabric, color, pattern and printed graphics. Do not invent garment details absent from <image2>, including drawstrings, extra pockets, buttons or belts. When the reference hood has no drawstrings, keep it without drawstrings. Preserve visible text and graphics as accurately as possible.\nPreserve the foreground person's facial identity, hairstyle and hair length, skin tone, body proportions, pose, hands and camera angle from <image1>. Preserve the source's existing accessories exactly. If there is no eyewear on the source face, keep the face without eyewear. Do not add or remove personal accessories.\nPreserve the background, background people, lighting, lower-body clothing and unrelated garments. Adapt only the replacement garment to the existing pose with coherent folds, shadows and natural occlusion by hair, hands and foreground objects. Do not shorten hair to reveal the garment.\nMake only the changes required for this garment transfer. A recolor of the original clothing is insufficient.\n",
+    "workflow_sha256": "508afb2ba15eb616d389269a3cd534fe2d571178db7514e3f89bdc057044f227",
+    "input_hashes": {
+      "person": "51a0ddb8e992fb7d005715ae32fa43f3cdbfd3229e67e5f84448ca0ccb8dae35",
+      "garment": "9caf8b20c8a567c2ee3e7b56b1556942eed6eefa993f65b4d07d2f87bcafd2ad"
+    },
+    "status": "complete",
+    "scores": {
+      "identity": 1,
+      "body_pose": 2,
+      "garment_transfer": 2,
+      "background_lighting": 2,
+      "artifacts": 1
+    },
+    "reviewer": "Codex visual review (single AI reviewer)",
+    "notes": "Fresh output verified exactly RGB pixel-identical to previously visually reviewed reference_v3, with unchanged source/reference/prompt. Exact RGB pixel equivalence to previously visually reviewed reference_v2 output verified. Face recognizable but long blonde hair is shortened to shoulder length. Hoodie design and wheat-holding pose otherwise transfer.",
+    "output": "evaluation/benchmarks/category_reference_v4/hoodie_05_gguf_3a2f61153736/2026093002.png",
+    "execution_seconds": 182.554,
+    "run_ordinal": 2,
+    "experiment": "category_reference_v4",
+    "environment_file": "environment.json",
+    "prompt_template_sha256": "1f16a1a2d2b3b5e207bb9b81487e698818adcdcc8c6fb737ae9d47f4306a9df3",
+    "prompt_id": "8ed2f5e5-f827-4832-b19e-13f3a2318f86",
+    "node_errors": {},
+    "wall_seconds": 187.544,
+    "sampled_device_peak_mib": 6691,
+    "output_size": [
+      1216,
+      864
+    ],
+    "output_sha256": "9e69cd085ad4c85f3bc5d5ae3c05e65505033ea14a643369bace80251e5bb570",
+    "cache_state": "same_case_second_seed_warm",
+    "history": "evaluation/benchmarks/category_reference_v4/hoodie_05_gguf_3a2f61153736/2026093002.history.json",
+    "graph": "evaluation/benchmarks/category_reference_v4/hoodie_05_gguf_3a2f61153736/2026093002.api.json"
+  },
+  {
+    "case_id": "jacket_01",
+    "category": "jacket",
+    "seed": 2026093001,
+    "model": "gguf",
+    "prompt": "Use <image1> as the edit target and <image2> only as the garment reference.\nReplace the foreground person's outermost upper-body garment in <image1> with the actual jacket shown in <image2>. Transfer the reference design rather than making a generic coat or jacket.\nCopy the reference collar architecture exactly. An upright stand collar must remain narrow and upright; do not replace it with a wide pointed shirt collar or lapels. A folded collar or embroidered shawl collar must retain the reference's visible shape and trim. Do not reuse the collar of the source's old outer garment. Preserve underlying clothing only where the new garment's opening would naturally expose it.\nMatch the visible reference length, silhouette, sleeve and cuff shape, closures, pockets, seams, color, pattern, material and decorative trim. Do not invent belts, extra pockets or closures absent from <image2>. A cropped jacket remains cropped; a long straight coat retains its long straight outline.\nPreserve the foreground person's facial identity, hairstyle and hair length, skin tone, body proportions, pose, hands and camera angle from <image1>. Preserve the source's existing accessories exactly. If there is no eyewear on the source face, keep the face without eyewear. Do not add or remove personal accessories.\nPreserve the background, background people, lighting, lower-body clothing and unrelated garments where they remain visible. Adapt only the replacement garment to the existing body and pose with coherent folds, shadows and natural occlusion by hair, hands and foreground objects. Do not shorten hair to reveal the garment.\nMake only the changes required for this garment transfer. A recolor of the original clothing is insufficient.\n",
+    "workflow_sha256": "5d93b458123217df80c75dbcf6b01a9af984ee18ae9a89355268f383913755a8",
+    "input_hashes": {
+      "person": "f750ded4fa7d359510b86d2973c33091238c01f089f2d67f619838b1051a02d0",
+      "garment": "c8f8d0f361dfe062818ef401db5cd0fbe586bd61d8c62c97c460b26c016e2f36"
+    },
+    "status": "complete",
+    "scores": {
+      "identity": 2,
+      "body_pose": 2,
+      "garment_transfer": 2,
+      "background_lighting": 2,
+      "artifacts": 2
+    },
+    "reviewer": "Codex visual review (single AI reviewer)",
+    "notes": "Fresh output verified exactly RGB pixel-identical to previously visually reviewed reference_v2, with unchanged source/reference/prompt. Stand collar, worn denim, brass button front, tall chest/hip pockets and sleeve construction transfer. Existing glasses, face, backpack and stance retained.",
+    "output": "evaluation/benchmarks/category_reference_v4/jacket_01_gguf_b53845bc28d8/2026093001.png",
+    "execution_seconds": 201.099,
+    "run_ordinal": 1,
+    "experiment": "category_reference_v4",
+    "environment_file": "environment.json",
+    "prompt_template_sha256": "bace9a08a387cf848f5ddf001ea49dfb7aabeac5f097d7ab930273577414c0a3",
+    "prompt_id": "d9b6a028-0f15-403a-a77c-e16a1be88b99",
+    "node_errors": {},
+    "wall_seconds": 202.778,
+    "sampled_device_peak_mib": 7262,
+    "output_size": [
+      832,
+      1248
+    ],
+    "output_sha256": "f2a6b38d4cea6fa8baef06f0c8adfe543a2826b3a4eb17fda220ff6406d32624",
+    "cache_state": "session_warm",
+    "history": "evaluation/benchmarks/category_reference_v4/jacket_01_gguf_b53845bc28d8/2026093001.history.json",
+    "graph": "evaluation/benchmarks/category_reference_v4/jacket_01_gguf_b53845bc28d8/2026093001.api.json"
+  },
+  {
+    "case_id": "jacket_01",
+    "category": "jacket",
+    "seed": 2026093002,
+    "model": "gguf",
+    "prompt": "Use <image1> as the edit target and <image2> only as the garment reference.\nReplace the foreground person's outermost upper-body garment in <image1> with the actual jacket shown in <image2>. Transfer the reference design rather than making a generic coat or jacket.\nCopy the reference collar architecture exactly. An upright stand collar must remain narrow and upright; do not replace it with a wide pointed shirt collar or lapels. A folded collar or embroidered shawl collar must retain the reference's visible shape and trim. Do not reuse the collar of the source's old outer garment. Preserve underlying clothing only where the new garment's opening would naturally expose it.\nMatch the visible reference length, silhouette, sleeve and cuff shape, closures, pockets, seams, color, pattern, material and decorative trim. Do not invent belts, extra pockets or closures absent from <image2>. A cropped jacket remains cropped; a long straight coat retains its long straight outline.\nPreserve the foreground person's facial identity, hairstyle and hair length, skin tone, body proportions, pose, hands and camera angle from <image1>. Preserve the source's existing accessories exactly. If there is no eyewear on the source face, keep the face without eyewear. Do not add or remove personal accessories.\nPreserve the background, background people, lighting, lower-body clothing and unrelated garments where they remain visible. Adapt only the replacement garment to the existing body and pose with coherent folds, shadows and natural occlusion by hair, hands and foreground objects. Do not shorten hair to reveal the garment.\nMake only the changes required for this garment transfer. A recolor of the original clothing is insufficient.\n",
+    "workflow_sha256": "065c95471a47e2a665b85fdbe07227a19d5c270096989cfd98b0ec3c1dd614f6",
+    "input_hashes": {
+      "person": "f750ded4fa7d359510b86d2973c33091238c01f089f2d67f619838b1051a02d0",
+      "garment": "c8f8d0f361dfe062818ef401db5cd0fbe586bd61d8c62c97c460b26c016e2f36"
+    },
+    "status": "complete",
+    "scores": {
+      "identity": 2,
+      "body_pose": 2,
+      "garment_transfer": 2,
+      "background_lighting": 2,
+      "artifacts": 2
+    },
+    "reviewer": "Codex visual review (single AI reviewer)",
+    "notes": "Fresh output verified exactly RGB pixel-identical to previously visually reviewed reference_v2, with unchanged source/reference/prompt. Stand collar, worn denim, brass button front, tall chest/hip pockets and sleeve construction transfer. Existing glasses, face, backpack and stance retained.",
+    "output": "evaluation/benchmarks/category_reference_v4/jacket_01_gguf_b53845bc28d8/2026093002.png",
+    "execution_seconds": 181.734,
+    "run_ordinal": 2,
+    "experiment": "category_reference_v4",
+    "environment_file": "environment.json",
+    "prompt_template_sha256": "bace9a08a387cf848f5ddf001ea49dfb7aabeac5f097d7ab930273577414c0a3",
+    "prompt_id": "875b35a3-f577-4668-90de-01223de1b78c",
+    "node_errors": {},
+    "wall_seconds": 182.47,
+    "sampled_device_peak_mib": 6755,
+    "output_size": [
+      832,
+      1248
+    ],
+    "output_sha256": "46d9d9d21490e4a560b331750cf13d94c1f363b82c603f257185449adb384df7",
+    "cache_state": "same_case_second_seed_warm",
+    "history": "evaluation/benchmarks/category_reference_v4/jacket_01_gguf_b53845bc28d8/2026093002.history.json",
+    "graph": "evaluation/benchmarks/category_reference_v4/jacket_01_gguf_b53845bc28d8/2026093002.api.json"
+  },
+  {
+    "case_id": "jacket_02",
+    "category": "jacket",
+    "seed": 2026093001,
+    "model": "gguf",
+    "prompt": "Use <image1> as the edit target and <image2> only as the garment reference.\nReplace the foreground person's outermost upper-body garment in <image1> with the actual jacket shown in <image2>. Transfer the reference design rather than making a generic coat or jacket.\nCopy the reference collar architecture exactly. An upright stand collar must remain narrow and upright; do not replace it with a wide pointed shirt collar or lapels. A folded collar or embroidered shawl collar must retain the reference's visible shape and trim. Do not reuse the collar of the source's old outer garment. Preserve underlying clothing only where the new garment's opening would naturally expose it.\nMatch the visible reference length, silhouette, sleeve and cuff shape, closures, pockets, seams, color, pattern, material and decorative trim. Do not invent belts, extra pockets or closures absent from <image2>. A cropped jacket remains cropped; a long straight coat retains its long straight outline.\nPreserve the foreground person's facial identity, hairstyle and hair length, skin tone, body proportions, pose, hands and camera angle from <image1>. Preserve the source's existing accessories exactly. If there is no eyewear on the source face, keep the face without eyewear. Do not add or remove personal accessories.\nPreserve the background, background people, lighting, lower-body clothing and unrelated garments where they remain visible. Adapt only the replacement garment to the existing body and pose with coherent folds, shadows and natural occlusion by hair, hands and foreground objects. Do not shorten hair to reveal the garment.\nMake only the changes required for this garment transfer. A recolor of the original clothing is insufficient.\n",
+    "workflow_sha256": "ce7a66ef0259070bf8bc9307531f37c2344498d25f526552f38e2b0b59204141",
+    "input_hashes": {
+      "person": "d888e9396587a3fd4ad500bbf5988fed0f7ba60ffa71628c29fced78bece3ac6",
+      "garment": "c8f8d0f361dfe062818ef401db5cd0fbe586bd61d8c62c97c460b26c016e2f36"
+    },
+    "status": "complete",
+    "scores": {
+      "identity": 2,
+      "body_pose": 2,
+      "garment_transfer": 2,
+      "background_lighting": 2,
+      "artifacts": 2
+    },
+    "reviewer": "Codex visual review (single AI reviewer)",
+    "notes": "Fresh output verified exactly RGB pixel-identical to previously visually reviewed reference_v2, with unchanged source/reference/prompt. Denim jacket has reference stand collar, brass closure, chest/hip pockets and stitching; original face, short hair, downturned pose and studio light retained.",
+    "output": "evaluation/benchmarks/category_reference_v4/jacket_02_gguf_7b52f110d98f/2026093001.png",
+    "execution_seconds": 200.208,
+    "run_ordinal": 1,
+    "experiment": "category_reference_v4",
+    "environment_file": "environment.json",
+    "prompt_template_sha256": "bace9a08a387cf848f5ddf001ea49dfb7aabeac5f097d7ab930273577414c0a3",
+    "prompt_id": "b19ef7f1-1ca4-4119-a267-e9b8e8717516",
+    "node_errors": {},
+    "wall_seconds": 203.01,
+    "sampled_device_peak_mib": 6815,
+    "output_size": [
+      896,
+      1152
+    ],
+    "output_sha256": "ad6bd0a3fa37fd3e1381034d923c3bcaf4aaf5d35be4cae93994bc69823e9549",
+    "cache_state": "session_warm",
+    "history": "evaluation/benchmarks/category_reference_v4/jacket_02_gguf_7b52f110d98f/2026093001.history.json",
+    "graph": "evaluation/benchmarks/category_reference_v4/jacket_02_gguf_7b52f110d98f/2026093001.api.json"
+  },
+  {
+    "case_id": "jacket_02",
+    "category": "jacket",
+    "seed": 2026093002,
+    "model": "gguf",
+    "prompt": "Use <image1> as the edit target and <image2> only as the garment reference.\nReplace the foreground person's outermost upper-body garment in <image1> with the actual jacket shown in <image2>. Transfer the reference design rather than making a generic coat or jacket.\nCopy the reference collar architecture exactly. An upright stand collar must remain narrow and upright; do not replace it with a wide pointed shirt collar or lapels. A folded collar or embroidered shawl collar must retain the reference's visible shape and trim. Do not reuse the collar of the source's old outer garment. Preserve underlying clothing only where the new garment's opening would naturally expose it.\nMatch the visible reference length, silhouette, sleeve and cuff shape, closures, pockets, seams, color, pattern, material and decorative trim. Do not invent belts, extra pockets or closures absent from <image2>. A cropped jacket remains cropped; a long straight coat retains its long straight outline.\nPreserve the foreground person's facial identity, hairstyle and hair length, skin tone, body proportions, pose, hands and camera angle from <image1>. Preserve the source's existing accessories exactly. If there is no eyewear on the source face, keep the face without eyewear. Do not add or remove personal accessories.\nPreserve the background, background people, lighting, lower-body clothing and unrelated garments where they remain visible. Adapt only the replacement garment to the existing body and pose with coherent folds, shadows and natural occlusion by hair, hands and foreground objects. Do not shorten hair to reveal the garment.\nMake only the changes required for this garment transfer. A recolor of the original clothing is insufficient.\n",
+    "workflow_sha256": "70bd926fd3dd85c777a2e3cd1211ddfdace05678e4039f77bb6443bc65392f02",
+    "input_hashes": {
+      "person": "d888e9396587a3fd4ad500bbf5988fed0f7ba60ffa71628c29fced78bece3ac6",
+      "garment": "c8f8d0f361dfe062818ef401db5cd0fbe586bd61d8c62c97c460b26c016e2f36"
+    },
+    "status": "complete",
+    "scores": {
+      "identity": 2,
+      "body_pose": 2,
+      "garment_transfer": 2,
+      "background_lighting": 2,
+      "artifacts": 2
+    },
+    "reviewer": "Codex visual review (single AI reviewer)",
+    "notes": "Fresh output verified exactly RGB pixel-identical to previously visually reviewed reference_v2, with unchanged source/reference/prompt. Denim jacket has reference stand collar, brass closure, chest/hip pockets and stitching; original face, short hair, downturned pose and studio light retained.",
+    "output": "evaluation/benchmarks/category_reference_v4/jacket_02_gguf_7b52f110d98f/2026093002.png",
+    "execution_seconds": 180.825,
+    "run_ordinal": 2,
+    "experiment": "category_reference_v4",
+    "environment_file": "environment.json",
+    "prompt_template_sha256": "bace9a08a387cf848f5ddf001ea49dfb7aabeac5f097d7ab930273577414c0a3",
+    "prompt_id": "0f6aeadd-d2bf-4f8a-97fa-7e57fd86ee6d",
+    "node_errors": {},
+    "wall_seconds": 182.38,
+    "sampled_device_peak_mib": 6690,
+    "output_size": [
+      896,
+      1152
+    ],
+    "output_sha256": "4da7f7b9b051746533907b706eab03ff7e057902f65df251e3b820a4c8e2dc76",
+    "cache_state": "same_case_second_seed_warm",
+    "history": "evaluation/benchmarks/category_reference_v4/jacket_02_gguf_7b52f110d98f/2026093002.history.json",
+    "graph": "evaluation/benchmarks/category_reference_v4/jacket_02_gguf_7b52f110d98f/2026093002.api.json"
+  },
+  {
+    "case_id": "jacket_03",
+    "category": "jacket",
+    "seed": 2026093001,
+    "model": "gguf",
+    "prompt": "Use <image1> as the edit target and <image2> only as the garment reference.\nReplace the foreground person's outermost upper-body garment in <image1> with the actual jacket shown in <image2>. Transfer the reference design rather than making a generic coat or jacket.\nCopy the reference collar architecture exactly. An upright stand collar must remain narrow and upright; do not replace it with a wide pointed shirt collar or lapels. A folded collar or embroidered shawl collar must retain the reference's visible shape and trim. Do not reuse the collar of the source's old outer garment. Preserve underlying clothing only where the new garment's opening would naturally expose it.\nMatch the visible reference length, silhouette, sleeve and cuff shape, closures, pockets, seams, color, pattern, material and decorative trim. Do not invent belts, extra pockets or closures absent from <image2>. A cropped jacket remains cropped; a long straight coat retains its long straight outline.\nPreserve the foreground person's facial identity, hairstyle and hair length, skin tone, body proportions, pose, hands and camera angle from <image1>. Preserve the source's existing accessories exactly. If there is no eyewear on the source face, keep the face without eyewear. Do not add or remove personal accessories.\nPreserve the background, background people, lighting, lower-body clothing and unrelated garments where they remain visible. Adapt only the replacement garment to the existing body and pose with coherent folds, shadows and natural occlusion by hair, hands and foreground objects. Do not shorten hair to reveal the garment.\nMake only the changes required for this garment transfer. A recolor of the original clothing is insufficient.\n",
+    "workflow_sha256": "0f0eea0226b25a01b721b110573ae3b5c786ca0f34f68900986bddb1cd0191c0",
+    "input_hashes": {
+      "person": "8886ff6ccd369739e227274af8ad42d0f8627129d83c1643c84e3da1348ca986",
+      "garment": "c8f8d0f361dfe062818ef401db5cd0fbe586bd61d8c62c97c460b26c016e2f36"
+    },
+    "status": "complete",
+    "scores": {
+      "identity": 2,
+      "body_pose": 2,
+      "garment_transfer": 2,
+      "background_lighting": 2,
+      "artifacts": 1
+    },
+    "reviewer": "Codex visual review (single AI reviewer)",
+    "notes": "Fresh output verified exactly RGB pixel-identical to previously visually reviewed reference_v2, with unchanged source/reference/prompt. Stand collar, brass buttons, denim and tall chest/hip pockets transfer around crossed arms. Original face, hair, facial hair, pose and background remain; small lower texture changes.",
+    "output": "evaluation/benchmarks/category_reference_v4/jacket_03_gguf_0412563969db/2026093001.png",
+    "execution_seconds": 203.187,
+    "run_ordinal": 1,
+    "experiment": "category_reference_v4",
+    "environment_file": "environment.json",
+    "prompt_template_sha256": "bace9a08a387cf848f5ddf001ea49dfb7aabeac5f097d7ab930273577414c0a3",
+    "prompt_id": "c5c8b89f-34c7-4a85-a04e-42bf9860566c",
+    "node_errors": {},
+    "wall_seconds": 207.836,
+    "sampled_device_peak_mib": 6912,
+    "output_size": [
+      768,
+      1376
+    ],
+    "output_sha256": "f6d4dcf285ae0e7f71894d62a664cddaec06bbdf99933e5991a17993f8136a2d",
+    "cache_state": "session_warm",
+    "history": "evaluation/benchmarks/category_reference_v4/jacket_03_gguf_0412563969db/2026093001.history.json",
+    "graph": "evaluation/benchmarks/category_reference_v4/jacket_03_gguf_0412563969db/2026093001.api.json"
+  },
+  {
+    "case_id": "jacket_03",
+    "category": "jacket",
+    "seed": 2026093002,
+    "model": "gguf",
+    "prompt": "Use <image1> as the edit target and <image2> only as the garment reference.\nReplace the foreground person's outermost upper-body garment in <image1> with the actual jacket shown in <image2>. Transfer the reference design rather than making a generic coat or jacket.\nCopy the reference collar architecture exactly. An upright stand collar must remain narrow and upright; do not replace it with a wide pointed shirt collar or lapels. A folded collar or embroidered shawl collar must retain the reference's visible shape and trim. Do not reuse the collar of the source's old outer garment. Preserve underlying clothing only where the new garment's opening would naturally expose it.\nMatch the visible reference length, silhouette, sleeve and cuff shape, closures, pockets, seams, color, pattern, material and decorative trim. Do not invent belts, extra pockets or closures absent from <image2>. A cropped jacket remains cropped; a long straight coat retains its long straight outline.\nPreserve the foreground person's facial identity, hairstyle and hair length, skin tone, body proportions, pose, hands and camera angle from <image1>. Preserve the source's existing accessories exactly. If there is no eyewear on the source face, keep the face without eyewear. Do not add or remove personal accessories.\nPreserve the background, background people, lighting, lower-body clothing and unrelated garments where they remain visible. Adapt only the replacement garment to the existing body and pose with coherent folds, shadows and natural occlusion by hair, hands and foreground objects. Do not shorten hair to reveal the garment.\nMake only the changes required for this garment transfer. A recolor of the original clothing is insufficient.\n",
+    "workflow_sha256": "a7119b788aa43b423b6e7a6900bdaad046d215360c208567f3bf532332054f9f",
+    "input_hashes": {
+      "person": "8886ff6ccd369739e227274af8ad42d0f8627129d83c1643c84e3da1348ca986",
+      "garment": "c8f8d0f361dfe062818ef401db5cd0fbe586bd61d8c62c97c460b26c016e2f36"
+    },
+    "status": "complete",
+    "scores": {
+      "identity": 2,
+      "body_pose": 2,
+      "garment_transfer": 2,
+      "background_lighting": 2,
+      "artifacts": 1
+    },
+    "reviewer": "Codex visual review (single AI reviewer)",
+    "notes": "Fresh output verified exactly RGB pixel-identical to previously visually reviewed reference_v2, with unchanged source/reference/prompt. Stand collar, brass buttons, denim and tall chest/hip pockets transfer around crossed arms. Original face, hair, facial hair, pose and background remain; small lower texture changes.",
+    "output": "evaluation/benchmarks/category_reference_v4/jacket_03_gguf_0412563969db/2026093002.png",
+    "execution_seconds": 184.229,
+    "run_ordinal": 2,
+    "experiment": "category_reference_v4",
+    "environment_file": "environment.json",
+    "prompt_template_sha256": "bace9a08a387cf848f5ddf001ea49dfb7aabeac5f097d7ab930273577414c0a3",
+    "prompt_id": "328ba6fc-4f05-4490-a22a-fcc03668e88b",
+    "node_errors": {},
+    "wall_seconds": 187.472,
+    "sampled_device_peak_mib": 6751,
+    "output_size": [
+      768,
+      1376
+    ],
+    "output_sha256": "ea4650493d05ff6999c54f4fda3e7936d873dbfc3626d430f0d214dc88bc9953",
+    "cache_state": "same_case_second_seed_warm",
+    "history": "evaluation/benchmarks/category_reference_v4/jacket_03_gguf_0412563969db/2026093002.history.json",
+    "graph": "evaluation/benchmarks/category_reference_v4/jacket_03_gguf_0412563969db/2026093002.api.json"
+  },
+  {
+    "case_id": "jacket_04",
+    "category": "jacket",
+    "seed": 2026093001,
+    "model": "gguf",
+    "prompt": "Use <image1> as the edit target and <image2> only as the garment reference.\nReplace the foreground person's outermost upper-body garment in <image1> with the actual jacket shown in <image2>. Transfer the reference design rather than making a generic coat or jacket.\nCopy the reference collar architecture exactly. An upright stand collar must remain narrow and upright; do not replace it with a wide pointed shirt collar or lapels. A folded collar or embroidered shawl collar must retain the reference's visible shape and trim. Do not reuse the collar of the source's old outer garment. Preserve underlying clothing only where the new garment's opening would naturally expose it.\nMatch the visible reference length, silhouette, sleeve and cuff shape, closures, pockets, seams, color, pattern, material and decorative trim. Do not invent belts, extra pockets or closures absent from <image2>. A cropped jacket remains cropped; a long straight coat retains its long straight outline.\nPreserve the foreground person's facial identity, hairstyle and hair length, skin tone, body proportions, pose, hands and camera angle from <image1>. Preserve the source's existing accessories exactly. If there is no eyewear on the source face, keep the face without eyewear. Do not add or remove personal accessories.\nPreserve the background, background people, lighting, lower-body clothing and unrelated garments where they remain visible. Adapt only the replacement garment to the existing body and pose with coherent folds, shadows and natural occlusion by hair, hands and foreground objects. Do not shorten hair to reveal the garment.\nMake only the changes required for this garment transfer. A recolor of the original clothing is insufficient.\n",
+    "workflow_sha256": "c8cca397ac62535e2351b7528e28f2072e93ea0499ff282011587a241f689a35",
+    "input_hashes": {
+      "person": "d78bb2fe877531938e596026cb3c577ff7af7188cb911ea2c6f49c1daf62d174",
+      "garment": "121f658b5f3ed6c683fa5dee12bb8b23d1190c54852cbfdf28aff53327e8ad63"
+    },
+    "status": "complete",
+    "scores": {
+      "identity": 2,
+      "body_pose": 1,
+      "garment_transfer": 2,
+      "background_lighting": 2,
+      "artifacts": 1
+    },
+    "reviewer": "Codex visual review (single AI reviewer)",
+    "notes": "Fresh output verified exactly RGB pixel-identical to previously visually reviewed reference_v2, with unchanged source/reference/prompt. Burgundy velvet, embroidered broad collar and fringe transfer, but the visible original pale skirt is replaced with dark fabric below the cropped hem. Unrelated lower clothing is not preserved.",
+    "output": "evaluation/benchmarks/category_reference_v4/jacket_04_gguf_d67ec35e40d1/2026093001.png",
+    "execution_seconds": 200.295,
+    "run_ordinal": 1,
+    "experiment": "category_reference_v4",
+    "environment_file": "environment.json",
+    "prompt_template_sha256": "bace9a08a387cf848f5ddf001ea49dfb7aabeac5f097d7ab930273577414c0a3",
+    "prompt_id": "c07a6db9-d1ab-4e0f-a112-ce554140e80f",
+    "node_errors": {},
+    "wall_seconds": 202.77,
+    "sampled_device_peak_mib": 6815,
+    "output_size": [
+      1024,
+      1024
+    ],
+    "output_sha256": "810c4cb155541494eb7b99eae2d6f78eef3f1738d548c3ca64881e629125471b",
+    "cache_state": "session_warm",
+    "history": "evaluation/benchmarks/category_reference_v4/jacket_04_gguf_d67ec35e40d1/2026093001.history.json",
+    "graph": "evaluation/benchmarks/category_reference_v4/jacket_04_gguf_d67ec35e40d1/2026093001.api.json"
+  },
+  {
+    "case_id": "jacket_04",
+    "category": "jacket",
+    "seed": 2026093002,
+    "model": "gguf",
+    "prompt": "Use <image1> as the edit target and <image2> only as the garment reference.\nReplace the foreground person's outermost upper-body garment in <image1> with the actual jacket shown in <image2>. Transfer the reference design rather than making a generic coat or jacket.\nCopy the reference collar architecture exactly. An upright stand collar must remain narrow and upright; do not replace it with a wide pointed shirt collar or lapels. A folded collar or embroidered shawl collar must retain the reference's visible shape and trim. Do not reuse the collar of the source's old outer garment. Preserve underlying clothing only where the new garment's opening would naturally expose it.\nMatch the visible reference length, silhouette, sleeve and cuff shape, closures, pockets, seams, color, pattern, material and decorative trim. Do not invent belts, extra pockets or closures absent from <image2>. A cropped jacket remains cropped; a long straight coat retains its long straight outline.\nPreserve the foreground person's facial identity, hairstyle and hair length, skin tone, body proportions, pose, hands and camera angle from <image1>. Preserve the source's existing accessories exactly. If there is no eyewear on the source face, keep the face without eyewear. Do not add or remove personal accessories.\nPreserve the background, background people, lighting, lower-body clothing and unrelated garments where they remain visible. Adapt only the replacement garment to the existing body and pose with coherent folds, shadows and natural occlusion by hair, hands and foreground objects. Do not shorten hair to reveal the garment.\nMake only the changes required for this garment transfer. A recolor of the original clothing is insufficient.\n",
+    "workflow_sha256": "521d1a0c1f7ccf1bdda3f4042e5c4456a9599c5b4a0ab73dbb98be8cf5daa9df",
+    "input_hashes": {
+      "person": "d78bb2fe877531938e596026cb3c577ff7af7188cb911ea2c6f49c1daf62d174",
+      "garment": "121f658b5f3ed6c683fa5dee12bb8b23d1190c54852cbfdf28aff53327e8ad63"
+    },
+    "status": "complete",
+    "scores": {
+      "identity": 2,
+      "body_pose": 2,
+      "garment_transfer": 2,
+      "background_lighting": 2,
+      "artifacts": 2
+    },
+    "reviewer": "Codex visual review (single AI reviewer)",
+    "notes": "Fresh output verified exactly RGB pixel-identical to previously visually reviewed reference_v2, with unchanged source/reference/prompt. Burgundy velvet, broad embroidered collar, fringed cuffs and cropped hem transfer. Face, curls, side pose, pale skirt and coastal background retained.",
+    "output": "evaluation/benchmarks/category_reference_v4/jacket_04_gguf_d67ec35e40d1/2026093002.png",
+    "execution_seconds": 181.574,
+    "run_ordinal": 2,
+    "experiment": "category_reference_v4",
+    "environment_file": "environment.json",
+    "prompt_template_sha256": "bace9a08a387cf848f5ddf001ea49dfb7aabeac5f097d7ab930273577414c0a3",
+    "prompt_id": "955cebf3-592e-4744-b3c1-5cec00b6d5d0",
+    "node_errors": {},
+    "wall_seconds": 182.567,
+    "sampled_device_peak_mib": 6687,
+    "output_size": [
+      1024,
+      1024
+    ],
+    "output_sha256": "346c14fb64f5a57dbd2abbeec05748142882684a51b17a25a0300c2533b77256",
+    "cache_state": "same_case_second_seed_warm",
+    "history": "evaluation/benchmarks/category_reference_v4/jacket_04_gguf_d67ec35e40d1/2026093002.history.json",
+    "graph": "evaluation/benchmarks/category_reference_v4/jacket_04_gguf_d67ec35e40d1/2026093002.api.json"
+  },
+  {
+    "case_id": "jacket_05",
+    "category": "jacket",
+    "seed": 2026093001,
+    "model": "gguf",
+    "prompt": "Use <image1> as the edit target and <image2> only as the garment reference.\nReplace the foreground person's outermost upper-body garment in <image1> with the actual jacket shown in <image2>. Transfer the reference design rather than making a generic coat or jacket.\nCopy the reference collar architecture exactly. An upright stand collar must remain narrow and upright; do not replace it with a wide pointed shirt collar or lapels. A folded collar or embroidered shawl collar must retain the reference's visible shape and trim. Do not reuse the collar of the source's old outer garment. Preserve underlying clothing only where the new garment's opening would naturally expose it.\nMatch the visible reference length, silhouette, sleeve and cuff shape, closures, pockets, seams, color, pattern, material and decorative trim. Do not invent belts, extra pockets or closures absent from <image2>. A cropped jacket remains cropped; a long straight coat retains its long straight outline.\nPreserve the foreground person's facial identity, hairstyle and hair length, skin tone, body proportions, pose, hands and camera angle from <image1>. Preserve the source's existing accessories exactly. If there is no eyewear on the source face, keep the face without eyewear. Do not add or remove personal accessories.\nPreserve the background, background people, lighting, lower-body clothing and unrelated garments where they remain visible. Adapt only the replacement garment to the existing body and pose with coherent folds, shadows and natural occlusion by hair, hands and foreground objects. Do not shorten hair to reveal the garment.\nMake only the changes required for this garment transfer. A recolor of the original clothing is insufficient.\n",
+    "workflow_sha256": "669270942f0f1e59d141df2025b3f1609f27b2179a9161aab3f7473cc39aad06",
+    "input_hashes": {
+      "person": "51a0ddb8e992fb7d005715ae32fa43f3cdbfd3229e67e5f84448ca0ccb8dae35",
+      "garment": "121f658b5f3ed6c683fa5dee12bb8b23d1190c54852cbfdf28aff53327e8ad63"
+    },
+    "status": "complete",
+    "scores": {
+      "identity": 2,
+      "body_pose": 2,
+      "garment_transfer": 2,
+      "background_lighting": 2,
+      "artifacts": 2
+    },
+    "reviewer": "Codex visual review (single AI reviewer)",
+    "notes": "Fresh output verified exactly RGB pixel-identical to previously visually reviewed reference_v2, with unchanged source/reference/prompt. Cropped burgundy velvet jacket, embroidered broad collar, fringe and cuffs transfer around the wheat. Face, long hair, hands, skirt, stance and field retained.",
+    "output": "evaluation/benchmarks/category_reference_v4/jacket_05_gguf_68dcd182feff/2026093001.png",
+    "execution_seconds": 201.27,
+    "run_ordinal": 1,
+    "experiment": "category_reference_v4",
+    "environment_file": "environment.json",
+    "prompt_template_sha256": "bace9a08a387cf848f5ddf001ea49dfb7aabeac5f097d7ab930273577414c0a3",
+    "prompt_id": "d2ea0ef6-509e-437c-ade7-df248ed90a12",
+    "node_errors": {},
+    "wall_seconds": 202.881,
+    "sampled_device_peak_mib": 7231,
+    "output_size": [
+      1216,
+      864
+    ],
+    "output_sha256": "e871895984a3eca2ecead3c0ea8c0d00a2ae194aec0419956b2e1457886fc549",
+    "cache_state": "session_warm",
+    "history": "evaluation/benchmarks/category_reference_v4/jacket_05_gguf_68dcd182feff/2026093001.history.json",
+    "graph": "evaluation/benchmarks/category_reference_v4/jacket_05_gguf_68dcd182feff/2026093001.api.json"
+  },
+  {
+    "case_id": "jacket_05",
+    "category": "jacket",
+    "seed": 2026093002,
+    "model": "gguf",
+    "prompt": "Use <image1> as the edit target and <image2> only as the garment reference.\nReplace the foreground person's outermost upper-body garment in <image1> with the actual jacket shown in <image2>. Transfer the reference design rather than making a generic coat or jacket.\nCopy the reference collar architecture exactly. An upright stand collar must remain narrow and upright; do not replace it with a wide pointed shirt collar or lapels. A folded collar or embroidered shawl collar must retain the reference's visible shape and trim. Do not reuse the collar of the source's old outer garment. Preserve underlying clothing only where the new garment's opening would naturally expose it.\nMatch the visible reference length, silhouette, sleeve and cuff shape, closures, pockets, seams, color, pattern, material and decorative trim. Do not invent belts, extra pockets or closures absent from <image2>. A cropped jacket remains cropped; a long straight coat retains its long straight outline.\nPreserve the foreground person's facial identity, hairstyle and hair length, skin tone, body proportions, pose, hands and camera angle from <image1>. Preserve the source's existing accessories exactly. If there is no eyewear on the source face, keep the face without eyewear. Do not add or remove personal accessories.\nPreserve the background, background people, lighting, lower-body clothing and unrelated garments where they remain visible. Adapt only the replacement garment to the existing body and pose with coherent folds, shadows and natural occlusion by hair, hands and foreground objects. Do not shorten hair to reveal the garment.\nMake only the changes required for this garment transfer. A recolor of the original clothing is insufficient.\n",
+    "workflow_sha256": "5d83688d9671e2a199d85632d48a05aefbbdaf2f3d3702a72eeb7b2e44550524",
+    "input_hashes": {
+      "person": "51a0ddb8e992fb7d005715ae32fa43f3cdbfd3229e67e5f84448ca0ccb8dae35",
+      "garment": "121f658b5f3ed6c683fa5dee12bb8b23d1190c54852cbfdf28aff53327e8ad63"
+    },
+    "status": "complete",
+    "scores": {
+      "identity": 2,
+      "body_pose": 2,
+      "garment_transfer": 2,
+      "background_lighting": 2,
+      "artifacts": 2
+    },
+    "reviewer": "Codex visual review (single AI reviewer)",
+    "notes": "Fresh output verified exactly RGB pixel-identical to previously visually reviewed reference_v2, with unchanged source/reference/prompt. Cropped burgundy velvet jacket, embroidered broad collar, fringe and cuffs transfer around the wheat. Face, long hair, hands, skirt, stance and field retained.",
+    "output": "evaluation/benchmarks/category_reference_v4/jacket_05_gguf_68dcd182feff/2026093002.png",
+    "execution_seconds": 182.277,
+    "run_ordinal": 2,
+    "experiment": "category_reference_v4",
+    "environment_file": "environment.json",
+    "prompt_template_sha256": "bace9a08a387cf848f5ddf001ea49dfb7aabeac5f097d7ab930273577414c0a3",
+    "prompt_id": "758ca1df-62e2-45b1-8f48-9875f01e2ccc",
+    "node_errors": {},
+    "wall_seconds": 182.706,
+    "sampled_device_peak_mib": 6687,
+    "output_size": [
+      1216,
+      864
+    ],
+    "output_sha256": "a31eeb28628f925f9b9df26d9eb9c88b4252d7a1f010f752bf1cf91313060a20",
+    "cache_state": "same_case_second_seed_warm",
+    "history": "evaluation/benchmarks/category_reference_v4/jacket_05_gguf_68dcd182feff/2026093002.history.json",
+    "graph": "evaluation/benchmarks/category_reference_v4/jacket_05_gguf_68dcd182feff/2026093002.api.json"
+  },
+  {
+    "case_id": "coat_01",
+    "category": "coat",
+    "seed": 2026093001,
+    "model": "gguf",
+    "prompt": "Edit only the foreground person's outer garment in <image1>. Replace it with the exact coat in <image2>.\nImage2 determines the new garment's entire design: its actual collar shape, front opening, buttons, pockets, material, color, trim, sleeve shape and full length. Do not keep the collar or hem length of the old garment in image1.\nFor a coat, reproduce the reference's long coat silhouette: its hem hangs down over the hips toward the knees, even if the old outer garment is short. Preserve this length within the existing camera frame; if the hem falls outside the frame, keep it outside the frame rather than cropping the coat into a jacket. Copy the actual folded collar from the reference when it has one. For a jacket, reproduce its reference collar and hem length as shown.\nKeep exactly the original person's face, facial hair, hair shape and length, existing eyewear or absence of eyewear, body proportions, hands, pose, personal accessories, camera viewpoint and background. Keep unrelated clothing exactly where it remains visible; allow the new garment to cover it naturally. Preserve the original lighting.\nMake the reference garment look naturally worn in the original pose, with plausible folds and shadows. Preserve occlusion by hair, arms, hands and objects. Add no belts, decorations, pockets or accessories absent from the reference. Do not shorten the hair. Do not recolor or retain the old outer garment.\n",
+    "workflow_sha256": "096e95afbbef7936ef22b32ad517bafce647667701e26167f9cc1893c1c34148",
+    "input_hashes": {
+      "person": "f750ded4fa7d359510b86d2973c33091238c01f089f2d67f619838b1051a02d0",
+      "garment": "d92ad38cd74e71bd566e9bf94eb445490b08049469f26d3eb15b14b562f5d26a"
+    },
+    "status": "complete",
+    "scores": {
+      "identity": 2,
+      "body_pose": 2,
+      "garment_transfer": 2,
+      "background_lighting": 2,
+      "artifacts": 2
+    },
+    "reviewer": "Codex visual review (single AI reviewer)",
+    "notes": "Fresh output verified exactly RGB pixel-identical to previously visually reviewed reference_v3, with unchanged source/reference/prompt. Source/reference/output compared: pointed coat collar, pale straight silhouette, visible closures, source face, pose and background retained. Cropped views retain a coat extending outside the camera frame.",
+    "output": "evaluation/benchmarks/category_reference_v4/coat_01_gguf_8767ec295a14/2026093001.png",
+    "execution_seconds": 200.146,
+    "run_ordinal": 1,
+    "experiment": "category_reference_v4",
+    "environment_file": "environment.json",
+    "prompt_template_sha256": "b6c58b86f7a756101219b9e1a695ee4e1978dc5d711bae0151e9956950f8194d",
+    "prompt_id": "96a368a5-8836-4b12-a1fa-59f99949ca85",
+    "node_errors": {},
+    "wall_seconds": 202.849,
+    "sampled_device_peak_mib": 6847,
+    "output_size": [
+      832,
+      1248
+    ],
+    "output_sha256": "c032b79c99d681c8f0b4bdb89175df9c1b74f2aa8bfb95dac742656eecde872b",
+    "cache_state": "session_warm",
+    "history": "evaluation/benchmarks/category_reference_v4/coat_01_gguf_8767ec295a14/2026093001.history.json",
+    "graph": "evaluation/benchmarks/category_reference_v4/coat_01_gguf_8767ec295a14/2026093001.api.json"
+  },
+  {
+    "case_id": "coat_01",
+    "category": "coat",
+    "seed": 2026093002,
+    "model": "gguf",
+    "prompt": "Edit only the foreground person's outer garment in <image1>. Replace it with the exact coat in <image2>.\nImage2 determines the new garment's entire design: its actual collar shape, front opening, buttons, pockets, material, color, trim, sleeve shape and full length. Do not keep the collar or hem length of the old garment in image1.\nFor a coat, reproduce the reference's long coat silhouette: its hem hangs down over the hips toward the knees, even if the old outer garment is short. Preserve this length within the existing camera frame; if the hem falls outside the frame, keep it outside the frame rather than cropping the coat into a jacket. Copy the actual folded collar from the reference when it has one. For a jacket, reproduce its reference collar and hem length as shown.\nKeep exactly the original person's face, facial hair, hair shape and length, existing eyewear or absence of eyewear, body proportions, hands, pose, personal accessories, camera viewpoint and background. Keep unrelated clothing exactly where it remains visible; allow the new garment to cover it naturally. Preserve the original lighting.\nMake the reference garment look naturally worn in the original pose, with plausible folds and shadows. Preserve occlusion by hair, arms, hands and objects. Add no belts, decorations, pockets or accessories absent from the reference. Do not shorten the hair. Do not recolor or retain the old outer garment.\n",
+    "workflow_sha256": "08f27b5a335037239c17941651d6583bd5422e248cd95c6b5fb1fb37760dcdd5",
+    "input_hashes": {
+      "person": "f750ded4fa7d359510b86d2973c33091238c01f089f2d67f619838b1051a02d0",
+      "garment": "d92ad38cd74e71bd566e9bf94eb445490b08049469f26d3eb15b14b562f5d26a"
+    },
+    "status": "complete",
+    "scores": {
+      "identity": 2,
+      "body_pose": 2,
+      "garment_transfer": 2,
+      "background_lighting": 2,
+      "artifacts": 2
+    },
+    "reviewer": "Codex visual review (single AI reviewer)",
+    "notes": "Fresh output verified exactly RGB pixel-identical to previously visually reviewed reference_v3, with unchanged source/reference/prompt. Source/reference/output compared: pointed coat collar, pale straight silhouette, visible closures, source face, pose and background retained. Cropped views retain a coat extending outside the camera frame.",
+    "output": "evaluation/benchmarks/category_reference_v4/coat_01_gguf_8767ec295a14/2026093002.png",
+    "execution_seconds": 181.013,
+    "run_ordinal": 2,
+    "experiment": "category_reference_v4",
+    "environment_file": "environment.json",
+    "prompt_template_sha256": "b6c58b86f7a756101219b9e1a695ee4e1978dc5d711bae0151e9956950f8194d",
+    "prompt_id": "4d843597-8063-400b-b3d7-134d579dd1d8",
+    "node_errors": {},
+    "wall_seconds": 182.499,
+    "sampled_device_peak_mib": 6687,
+    "output_size": [
+      832,
+      1248
+    ],
+    "output_sha256": "1ab2346879f7da2a67efd4d1202c42dda8afe758b474bba272a4b2657ee3d0b9",
+    "cache_state": "same_case_second_seed_warm",
+    "history": "evaluation/benchmarks/category_reference_v4/coat_01_gguf_8767ec295a14/2026093002.history.json",
+    "graph": "evaluation/benchmarks/category_reference_v4/coat_01_gguf_8767ec295a14/2026093002.api.json"
+  },
+  {
+    "case_id": "coat_02",
+    "category": "coat",
+    "seed": 2026093001,
+    "model": "gguf",
+    "prompt": "Edit only the foreground person's outer garment in <image1>. Replace it with the exact coat in <image2>.\nImage2 determines the new garment's entire design: its actual collar shape, front opening, buttons, pockets, material, color, trim, sleeve shape and full length. Do not keep the collar or hem length of the old garment in image1.\nFor a coat, reproduce the reference's long coat silhouette: its hem hangs down over the hips toward the knees, even if the old outer garment is short. Preserve this length within the existing camera frame; if the hem falls outside the frame, keep it outside the frame rather than cropping the coat into a jacket. Copy the actual folded collar from the reference when it has one. For a jacket, reproduce its reference collar and hem length as shown.\nKeep exactly the original person's face, facial hair, hair shape and length, existing eyewear or absence of eyewear, body proportions, hands, pose, personal accessories, camera viewpoint and background. Keep unrelated clothing exactly where it remains visible; allow the new garment to cover it naturally. Preserve the original lighting.\nMake the reference garment look naturally worn in the original pose, with plausible folds and shadows. Preserve occlusion by hair, arms, hands and objects. Add no belts, decorations, pockets or accessories absent from the reference. Do not shorten the hair. Do not recolor or retain the old outer garment.\n",
+    "workflow_sha256": "5bd4f5a560e88c63e0822a6d62daa63a7ab6c2b5d1cf548921a85bbee200fb74",
+    "input_hashes": {
+      "person": "d888e9396587a3fd4ad500bbf5988fed0f7ba60ffa71628c29fced78bece3ac6",
+      "garment": "d92ad38cd74e71bd566e9bf94eb445490b08049469f26d3eb15b14b562f5d26a"
+    },
+    "status": "complete",
+    "scores": {
+      "identity": 2,
+      "body_pose": 2,
+      "garment_transfer": 2,
+      "background_lighting": 2,
+      "artifacts": 2
+    },
+    "reviewer": "Codex visual review (single AI reviewer)",
+    "notes": "Fresh output verified exactly RGB pixel-identical to previously visually reviewed reference_v3, with unchanged source/reference/prompt. Source/reference/output compared: pointed coat collar, pale straight silhouette, visible closures, source face, pose and background retained. Cropped views retain a coat extending outside the camera frame.",
+    "output": "evaluation/benchmarks/category_reference_v4/coat_02_gguf_0f327c91820b/2026093001.png",
+    "execution_seconds": 199.981,
+    "run_ordinal": 1,
+    "experiment": "category_reference_v4",
+    "environment_file": "environment.json",
+    "prompt_template_sha256": "b6c58b86f7a756101219b9e1a695ee4e1978dc5d711bae0151e9956950f8194d",
+    "prompt_id": "1c4b1c8b-a4c4-478e-b4c2-cdfafd6f79a3",
+    "node_errors": {},
+    "wall_seconds": 202.832,
+    "sampled_device_peak_mib": 6847,
+    "output_size": [
+      896,
+      1152
+    ],
+    "output_sha256": "7cca5a3a2bb55caac1a3c7a1da2efcd6e73bb21712e881d356c66b0368b8cce9",
+    "cache_state": "session_warm",
+    "history": "evaluation/benchmarks/category_reference_v4/coat_02_gguf_0f327c91820b/2026093001.history.json",
+    "graph": "evaluation/benchmarks/category_reference_v4/coat_02_gguf_0f327c91820b/2026093001.api.json"
+  },
+  {
+    "case_id": "coat_02",
+    "category": "coat",
+    "seed": 2026093002,
+    "model": "gguf",
+    "prompt": "Edit only the foreground person's outer garment in <image1>. Replace it with the exact coat in <image2>.\nImage2 determines the new garment's entire design: its actual collar shape, front opening, buttons, pockets, material, color, trim, sleeve shape and full length. Do not keep the collar or hem length of the old garment in image1.\nFor a coat, reproduce the reference's long coat silhouette: its hem hangs down over the hips toward the knees, even if the old outer garment is short. Preserve this length within the existing camera frame; if the hem falls outside the frame, keep it outside the frame rather than cropping the coat into a jacket. Copy the actual folded collar from the reference when it has one. For a jacket, reproduce its reference collar and hem length as shown.\nKeep exactly the original person's face, facial hair, hair shape and length, existing eyewear or absence of eyewear, body proportions, hands, pose, personal accessories, camera viewpoint and background. Keep unrelated clothing exactly where it remains visible; allow the new garment to cover it naturally. Preserve the original lighting.\nMake the reference garment look naturally worn in the original pose, with plausible folds and shadows. Preserve occlusion by hair, arms, hands and objects. Add no belts, decorations, pockets or accessories absent from the reference. Do not shorten the hair. Do not recolor or retain the old outer garment.\n",
+    "workflow_sha256": "b10ae21dff1a44a018f347c198ef296394041bb0da2de2d502c3628fc7906ac0",
+    "input_hashes": {
+      "person": "d888e9396587a3fd4ad500bbf5988fed0f7ba60ffa71628c29fced78bece3ac6",
+      "garment": "d92ad38cd74e71bd566e9bf94eb445490b08049469f26d3eb15b14b562f5d26a"
+    },
+    "status": "complete",
+    "scores": {
+      "identity": 2,
+      "body_pose": 2,
+      "garment_transfer": 2,
+      "background_lighting": 2,
+      "artifacts": 2
+    },
+    "reviewer": "Codex visual review (single AI reviewer)",
+    "notes": "Fresh output verified exactly RGB pixel-identical to previously visually reviewed reference_v3, with unchanged source/reference/prompt. Source/reference/output compared: pointed coat collar, pale straight silhouette, visible closures, source face, pose and background retained. Cropped views retain a coat extending outside the camera frame.",
+    "output": "evaluation/benchmarks/category_reference_v4/coat_02_gguf_0f327c91820b/2026093002.png",
+    "execution_seconds": 181.014,
+    "run_ordinal": 2,
+    "experiment": "category_reference_v4",
+    "environment_file": "environment.json",
+    "prompt_template_sha256": "b6c58b86f7a756101219b9e1a695ee4e1978dc5d711bae0151e9956950f8194d",
+    "prompt_id": "93b097ad-06a1-467d-b005-7c26977ba626",
+    "node_errors": {},
+    "wall_seconds": 182.468,
+    "sampled_device_peak_mib": 6755,
+    "output_size": [
+      896,
+      1152
+    ],
+    "output_sha256": "071d1ffc4f5b2b35f1d0a3509575a3fbb3d2530c767aa23742a26f945a3ccedf",
+    "cache_state": "same_case_second_seed_warm",
+    "history": "evaluation/benchmarks/category_reference_v4/coat_02_gguf_0f327c91820b/2026093002.history.json",
+    "graph": "evaluation/benchmarks/category_reference_v4/coat_02_gguf_0f327c91820b/2026093002.api.json"
+  },
+  {
+    "case_id": "coat_03",
+    "category": "coat",
+    "seed": 2026093001,
+    "model": "gguf",
+    "prompt": "Edit only the foreground person's outer garment in <image1>. Replace it with the exact coat in <image2>.\nImage2 determines the new garment's entire design: its actual collar shape, front opening, buttons, pockets, material, color, trim, sleeve shape and full length. Do not keep the collar or hem length of the old garment in image1.\nFor a coat, reproduce the reference's long coat silhouette: its hem hangs down over the hips toward the knees, even if the old outer garment is short. Preserve this length within the existing camera frame; if the hem falls outside the frame, keep it outside the frame rather than cropping the coat into a jacket. Copy the actual folded collar from the reference when it has one. For a jacket, reproduce its reference collar and hem length as shown.\nKeep exactly the original person's face, facial hair, hair shape and length, existing eyewear or absence of eyewear, body proportions, hands, pose, personal accessories, camera viewpoint and background. Keep unrelated clothing exactly where it remains visible; allow the new garment to cover it naturally. Preserve the original lighting.\nMake the reference garment look naturally worn in the original pose, with plausible folds and shadows. Preserve occlusion by hair, arms, hands and objects. Add no belts, decorations, pockets or accessories absent from the reference. Do not shorten the hair. Do not recolor or retain the old outer garment.\n",
+    "workflow_sha256": "f48efb3bc14d2e6b3adfd262531f356a476874ca3496923b814eb5a292060920",
+    "input_hashes": {
+      "person": "8886ff6ccd369739e227274af8ad42d0f8627129d83c1643c84e3da1348ca986",
+      "garment": "d92ad38cd74e71bd566e9bf94eb445490b08049469f26d3eb15b14b562f5d26a"
+    },
+    "status": "complete",
+    "scores": {
+      "identity": 2,
+      "body_pose": 2,
+      "garment_transfer": 2,
+      "background_lighting": 2,
+      "artifacts": 2
+    },
+    "reviewer": "Codex visual review (single AI reviewer)",
+    "notes": "Fresh output verified exactly RGB pixel-identical to previously visually reviewed reference_v3, with unchanged source/reference/prompt. Source/reference/output compared: pointed coat collar, pale straight silhouette, visible closures, source face, pose and background retained. Cropped views retain a coat extending outside the camera frame.",
+    "output": "evaluation/benchmarks/category_reference_v4/coat_03_gguf_c5d82e950661/2026093001.png",
+    "execution_seconds": 203.542,
+    "run_ordinal": 1,
+    "experiment": "category_reference_v4",
+    "environment_file": "environment.json",
+    "prompt_template_sha256": "b6c58b86f7a756101219b9e1a695ee4e1978dc5d711bae0151e9956950f8194d",
+    "prompt_id": "4e84e4a5-93e6-4593-981f-4e6c6682d5da",
+    "node_errors": {},
+    "wall_seconds": 207.813,
+    "sampled_device_peak_mib": 7263,
+    "output_size": [
+      768,
+      1376
+    ],
+    "output_sha256": "fa7cb52a72f9d61c5d6c7bd68a3b8a32e961057102f2e777d59609b6b6e7bd77",
+    "cache_state": "session_warm",
+    "history": "evaluation/benchmarks/category_reference_v4/coat_03_gguf_c5d82e950661/2026093001.history.json",
+    "graph": "evaluation/benchmarks/category_reference_v4/coat_03_gguf_c5d82e950661/2026093001.api.json"
+  },
+  {
+    "case_id": "coat_03",
+    "category": "coat",
+    "seed": 2026093002,
+    "model": "gguf",
+    "prompt": "Edit only the foreground person's outer garment in <image1>. Replace it with the exact coat in <image2>.\nImage2 determines the new garment's entire design: its actual collar shape, front opening, buttons, pockets, material, color, trim, sleeve shape and full length. Do not keep the collar or hem length of the old garment in image1.\nFor a coat, reproduce the reference's long coat silhouette: its hem hangs down over the hips toward the knees, even if the old outer garment is short. Preserve this length within the existing camera frame; if the hem falls outside the frame, keep it outside the frame rather than cropping the coat into a jacket. Copy the actual folded collar from the reference when it has one. For a jacket, reproduce its reference collar and hem length as shown.\nKeep exactly the original person's face, facial hair, hair shape and length, existing eyewear or absence of eyewear, body proportions, hands, pose, personal accessories, camera viewpoint and background. Keep unrelated clothing exactly where it remains visible; allow the new garment to cover it naturally. Preserve the original lighting.\nMake the reference garment look naturally worn in the original pose, with plausible folds and shadows. Preserve occlusion by hair, arms, hands and objects. Add no belts, decorations, pockets or accessories absent from the reference. Do not shorten the hair. Do not recolor or retain the old outer garment.\n",
+    "workflow_sha256": "4a49506f574917beece1796366ceeb9c0eb99eb60738e75a4b9f6f5829e6641d",
+    "input_hashes": {
+      "person": "8886ff6ccd369739e227274af8ad42d0f8627129d83c1643c84e3da1348ca986",
+      "garment": "d92ad38cd74e71bd566e9bf94eb445490b08049469f26d3eb15b14b562f5d26a"
+    },
+    "status": "complete",
+    "scores": {
+      "identity": 2,
+      "body_pose": 2,
+      "garment_transfer": 2,
+      "background_lighting": 2,
+      "artifacts": 2
+    },
+    "reviewer": "Codex visual review (single AI reviewer)",
+    "notes": "Fresh output verified exactly RGB pixel-identical to previously visually reviewed reference_v3, with unchanged source/reference/prompt. Source/reference/output compared: pointed coat collar, pale straight silhouette, visible closures, source face, pose and background retained. Cropped views retain a coat extending outside the camera frame.",
+    "output": "evaluation/benchmarks/category_reference_v4/coat_03_gguf_c5d82e950661/2026093002.png",
+    "execution_seconds": 184.395,
+    "run_ordinal": 2,
+    "experiment": "category_reference_v4",
+    "environment_file": "environment.json",
+    "prompt_template_sha256": "b6c58b86f7a756101219b9e1a695ee4e1978dc5d711bae0151e9956950f8194d",
+    "prompt_id": "94210c39-0883-4645-99e8-6e56547435b6",
+    "node_errors": {},
+    "wall_seconds": 187.421,
+    "sampled_device_peak_mib": 6750,
+    "output_size": [
+      768,
+      1376
+    ],
+    "output_sha256": "5b4f93f94836bedda2611cbe23f56dbb4b856f104e153c1eea675ca54fab7786",
+    "cache_state": "same_case_second_seed_warm",
+    "history": "evaluation/benchmarks/category_reference_v4/coat_03_gguf_c5d82e950661/2026093002.history.json",
+    "graph": "evaluation/benchmarks/category_reference_v4/coat_03_gguf_c5d82e950661/2026093002.api.json"
+  },
+  {
+    "case_id": "coat_04",
+    "category": "coat",
+    "seed": 2026093001,
+    "model": "gguf",
+    "prompt": "Edit only the foreground person's outer garment in <image1>. Replace it with the exact coat in <image2>.\nImage2 determines the new garment's entire design: its actual collar shape, front opening, buttons, pockets, material, color, trim, sleeve shape and full length. Do not keep the collar or hem length of the old garment in image1.\nFor a coat, reproduce the reference's long coat silhouette: its hem hangs down over the hips toward the knees, even if the old outer garment is short. Preserve this length within the existing camera frame; if the hem falls outside the frame, keep it outside the frame rather than cropping the coat into a jacket. Copy the actual folded collar from the reference when it has one. For a jacket, reproduce its reference collar and hem length as shown.\nKeep exactly the original person's face, facial hair, hair shape and length, existing eyewear or absence of eyewear, body proportions, hands, pose, personal accessories, camera viewpoint and background. Keep unrelated clothing exactly where it remains visible; allow the new garment to cover it naturally. Preserve the original lighting.\nMake the reference garment look naturally worn in the original pose, with plausible folds and shadows. Preserve occlusion by hair, arms, hands and objects. Add no belts, decorations, pockets or accessories absent from the reference. Do not shorten the hair. Do not recolor or retain the old outer garment.\n",
+    "workflow_sha256": "0aa73461c99f46117cf56674c31db72d98a10aac45fab85f367ffe9b46e1d44a",
+    "input_hashes": {
+      "person": "d78bb2fe877531938e596026cb3c577ff7af7188cb911ea2c6f49c1daf62d174",
+      "garment": "d92ad38cd74e71bd566e9bf94eb445490b08049469f26d3eb15b14b562f5d26a"
+    },
+    "status": "complete",
+    "scores": {
+      "identity": 2,
+      "body_pose": 2,
+      "garment_transfer": 2,
+      "background_lighting": 2,
+      "artifacts": 2
+    },
+    "reviewer": "Codex visual review (single AI reviewer)",
+    "notes": "Fresh output verified exactly RGB pixel-identical to previously visually reviewed reference_v3, with unchanged source/reference/prompt. Source/reference/output compared: pointed coat collar, pale straight silhouette, visible closures, source face, pose and background retained. Cropped views retain a coat extending outside the camera frame.",
+    "output": "evaluation/benchmarks/category_reference_v4/coat_04_gguf_2dc85e788319/2026093001.png",
+    "execution_seconds": 204.971,
+    "run_ordinal": 1,
+    "experiment": "category_reference_v4",
+    "environment_file": "environment.json",
+    "prompt_template_sha256": "b6c58b86f7a756101219b9e1a695ee4e1978dc5d711bae0151e9956950f8194d",
+    "prompt_id": "35d56df5-b7ad-4257-8997-30ce7d09d359",
+    "node_errors": {},
+    "wall_seconds": 208.963,
+    "sampled_device_peak_mib": 6878,
+    "output_size": [
+      1024,
+      1024
+    ],
+    "output_sha256": "98a7fef3e46097620bfba4bf3b5bd2c69e5af8ab7edc6da69ea3f873f794fbea",
+    "cache_state": "session_warm",
+    "history": "evaluation/benchmarks/category_reference_v4/coat_04_gguf_2dc85e788319/2026093001.history.json",
+    "graph": "evaluation/benchmarks/category_reference_v4/coat_04_gguf_2dc85e788319/2026093001.api.json"
+  },
+  {
+    "case_id": "coat_04",
+    "category": "coat",
+    "seed": 2026093002,
+    "model": "gguf",
+    "prompt": "Edit only the foreground person's outer garment in <image1>. Replace it with the exact coat in <image2>.\nImage2 determines the new garment's entire design: its actual collar shape, front opening, buttons, pockets, material, color, trim, sleeve shape and full length. Do not keep the collar or hem length of the old garment in image1.\nFor a coat, reproduce the reference's long coat silhouette: its hem hangs down over the hips toward the knees, even if the old outer garment is short. Preserve this length within the existing camera frame; if the hem falls outside the frame, keep it outside the frame rather than cropping the coat into a jacket. Copy the actual folded collar from the reference when it has one. For a jacket, reproduce its reference collar and hem length as shown.\nKeep exactly the original person's face, facial hair, hair shape and length, existing eyewear or absence of eyewear, body proportions, hands, pose, personal accessories, camera viewpoint and background. Keep unrelated clothing exactly where it remains visible; allow the new garment to cover it naturally. Preserve the original lighting.\nMake the reference garment look naturally worn in the original pose, with plausible folds and shadows. Preserve occlusion by hair, arms, hands and objects. Add no belts, decorations, pockets or accessories absent from the reference. Do not shorten the hair. Do not recolor or retain the old outer garment.\n",
+    "workflow_sha256": "711220b893b07e1c318fad1adfc36cc27989dfe2cff0bae5fe199343b0059771",
+    "input_hashes": {
+      "person": "d78bb2fe877531938e596026cb3c577ff7af7188cb911ea2c6f49c1daf62d174",
+      "garment": "d92ad38cd74e71bd566e9bf94eb445490b08049469f26d3eb15b14b562f5d26a"
+    },
+    "status": "complete",
+    "scores": {
+      "identity": 2,
+      "body_pose": 2,
+      "garment_transfer": 2,
+      "background_lighting": 2,
+      "artifacts": 2
+    },
+    "reviewer": "Codex visual review (single AI reviewer)",
+    "notes": "Fresh output verified exactly RGB pixel-identical to previously visually reviewed reference_v3, with unchanged source/reference/prompt. Source/reference/output compared: pointed coat collar, pale straight silhouette, visible closures, source face, pose and background retained. Cropped views retain a coat extending outside the camera frame.",
+    "output": "evaluation/benchmarks/category_reference_v4/coat_04_gguf_2dc85e788319/2026093002.png",
+    "execution_seconds": 185.355,
+    "run_ordinal": 2,
+    "experiment": "category_reference_v4",
+    "environment_file": "environment.json",
+    "prompt_template_sha256": "b6c58b86f7a756101219b9e1a695ee4e1978dc5d711bae0151e9956950f8194d",
+    "prompt_id": "7964e380-9885-4772-a3ee-261e1c904f34",
+    "node_errors": {},
+    "wall_seconds": 186.31,
+    "sampled_device_peak_mib": 6722,
+    "output_size": [
+      1024,
+      1024
+    ],
+    "output_sha256": "6be55162cb77e6d32fe118eb6460ff3f96a6ae67a3f05cff86187359f8d4d3fd",
+    "cache_state": "same_case_second_seed_warm",
+    "history": "evaluation/benchmarks/category_reference_v4/coat_04_gguf_2dc85e788319/2026093002.history.json",
+    "graph": "evaluation/benchmarks/category_reference_v4/coat_04_gguf_2dc85e788319/2026093002.api.json"
+  },
+  {
+    "case_id": "coat_05",
+    "category": "coat",
+    "seed": 2026093001,
+    "model": "gguf",
+    "prompt": "Edit only the foreground person's outer garment in <image1>. Replace it with the exact coat in <image2>.\nImage2 determines the new garment's entire design: its actual collar shape, front opening, buttons, pockets, material, color, trim, sleeve shape and full length. Do not keep the collar or hem length of the old garment in image1.\nFor a coat, reproduce the reference's long coat silhouette: its hem hangs down over the hips toward the knees, even if the old outer garment is short. Preserve this length within the existing camera frame; if the hem falls outside the frame, keep it outside the frame rather than cropping the coat into a jacket. Copy the actual folded collar from the reference when it has one. For a jacket, reproduce its reference collar and hem length as shown.\nKeep exactly the original person's face, facial hair, hair shape and length, existing eyewear or absence of eyewear, body proportions, hands, pose, personal accessories, camera viewpoint and background. Keep unrelated clothing exactly where it remains visible; allow the new garment to cover it naturally. Preserve the original lighting.\nMake the reference garment look naturally worn in the original pose, with plausible folds and shadows. Preserve occlusion by hair, arms, hands and objects. Add no belts, decorations, pockets or accessories absent from the reference. Do not shorten the hair. Do not recolor or retain the old outer garment.\n",
+    "workflow_sha256": "37983f97485089cc4efdfe87ec268d8bc34a05be03b754822066e2e4176152d6",
+    "input_hashes": {
+      "person": "51a0ddb8e992fb7d005715ae32fa43f3cdbfd3229e67e5f84448ca0ccb8dae35",
+      "garment": "d92ad38cd74e71bd566e9bf94eb445490b08049469f26d3eb15b14b562f5d26a"
+    },
+    "status": "complete",
+    "scores": {
+      "identity": 2,
+      "body_pose": 2,
+      "garment_transfer": 2,
+      "background_lighting": 2,
+      "artifacts": 2
+    },
+    "reviewer": "Codex visual review (single AI reviewer)",
+    "notes": "Fresh output verified exactly RGB pixel-identical to previously visually reviewed reference_v3, with unchanged source/reference/prompt. Source/reference/output compared: pointed coat collar, pale straight silhouette, visible closures, source face, pose and background retained. Cropped views retain a coat extending outside the camera frame.",
+    "output": "evaluation/benchmarks/category_reference_v4/coat_05_gguf_be3f6ed372e5/2026093001.png",
+    "execution_seconds": 204.834,
+    "run_ordinal": 1,
+    "experiment": "category_reference_v4",
+    "environment_file": "environment.json",
+    "prompt_template_sha256": "b6c58b86f7a756101219b9e1a695ee4e1978dc5d711bae0151e9956950f8194d",
+    "prompt_id": "ba158672-0dd7-4926-abfd-44ef41877d8a",
+    "node_errors": {},
+    "wall_seconds": 205.698,
+    "sampled_device_peak_mib": 6942,
+    "output_size": [
+      1216,
+      864
+    ],
+    "output_sha256": "c9c37e5a57110590aeb6624537a376109edfceab83c6041188ef755e9af5a051",
+    "cache_state": "session_warm",
+    "history": "evaluation/benchmarks/category_reference_v4/coat_05_gguf_be3f6ed372e5/2026093001.history.json",
+    "graph": "evaluation/benchmarks/category_reference_v4/coat_05_gguf_be3f6ed372e5/2026093001.api.json"
+  },
+  {
+    "case_id": "coat_05",
+    "category": "coat",
+    "seed": 2026093002,
+    "model": "gguf",
+    "prompt": "Edit only the foreground person's outer garment in <image1>. Replace it with the exact coat in <image2>.\nImage2 determines the new garment's entire design: its actual collar shape, front opening, buttons, pockets, material, color, trim, sleeve shape and full length. Do not keep the collar or hem length of the old garment in image1.\nFor a coat, reproduce the reference's long coat silhouette: its hem hangs down over the hips toward the knees, even if the old outer garment is short. Preserve this length within the existing camera frame; if the hem falls outside the frame, keep it outside the frame rather than cropping the coat into a jacket. Copy the actual folded collar from the reference when it has one. For a jacket, reproduce its reference collar and hem length as shown.\nKeep exactly the original person's face, facial hair, hair shape and length, existing eyewear or absence of eyewear, body proportions, hands, pose, personal accessories, camera viewpoint and background. Keep unrelated clothing exactly where it remains visible; allow the new garment to cover it naturally. Preserve the original lighting.\nMake the reference garment look naturally worn in the original pose, with plausible folds and shadows. Preserve occlusion by hair, arms, hands and objects. Add no belts, decorations, pockets or accessories absent from the reference. Do not shorten the hair. Do not recolor or retain the old outer garment.\n",
+    "workflow_sha256": "94a4a3be5f965eaae3e624f63c94d92e29a3769455aebf5cf5c86a461f94cde2",
+    "input_hashes": {
+      "person": "51a0ddb8e992fb7d005715ae32fa43f3cdbfd3229e67e5f84448ca0ccb8dae35",
+      "garment": "d92ad38cd74e71bd566e9bf94eb445490b08049469f26d3eb15b14b562f5d26a"
+    },
+    "status": "complete",
+    "scores": {
+      "identity": 2,
+      "body_pose": 2,
+      "garment_transfer": 1,
+      "background_lighting": 2,
+      "artifacts": 2
+    },
+    "reviewer": "Codex visual review (single AI reviewer)",
+    "notes": "Fresh output verified exactly RGB pixel-identical to previously visually reviewed reference_v3, with unchanged source/reference/prompt. Pointed collar correct, but visible hem ends too high on the thighs relative to the long knee-directed reference; garment-length fidelity fails.",
+    "output": "evaluation/benchmarks/category_reference_v4/coat_05_gguf_be3f6ed372e5/2026093002.png",
+    "execution_seconds": 185.751,
+    "run_ordinal": 2,
+    "experiment": "category_reference_v4",
+    "environment_file": "environment.json",
+    "prompt_template_sha256": "b6c58b86f7a756101219b9e1a695ee4e1978dc5d711bae0151e9956950f8194d",
+    "prompt_id": "1ebe0f91-4875-489f-8744-5c02b4b5ef0b",
+    "node_errors": {},
+    "wall_seconds": 190.122,
+    "sampled_device_peak_mib": 6751,
+    "output_size": [
+      1216,
+      864
+    ],
+    "output_sha256": "daa3d2d90a817ac87b15b675bc4b095e62bb1af01e7bc895536f2d4013e8d2a9",
+    "cache_state": "same_case_second_seed_warm",
+    "history": "evaluation/benchmarks/category_reference_v4/coat_05_gguf_be3f6ed372e5/2026093002.history.json",
+    "graph": "evaluation/benchmarks/category_reference_v4/coat_05_gguf_be3f6ed372e5/2026093002.api.json"
+  }
+]

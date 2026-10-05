@@ -1,0 +1,108 @@
+{
+  "defined_date": "2026-10-03",
+  "status": "defined_before_execution",
+  "baseline_experiment": "category_reference_v4",
+  "seeds": [
+    2026093001,
+    2026093002
+  ],
+  "graph_sha256": "13fff76af45b4b336476ceac019f6b9c276d45b368e3c43ba490340689a46fd5",
+  "implementation_sha256": "221cff1c5af678bd99b4724cc93a7bb72d58664423163440f5b61b660cdfff50",
+  "scoring": "All declared outputs retained, including failures. Identity/pose 2 required; artifacts/background at least1. Detailed fidelity 0-4 scored separately for visible collar, hem, print/trim and closures; masks and outfit modes do not inherit single-garment validation.",
+  "experiment": "multiple_reference_v2",
+  "matched_outputs": 8,
+  "capacity_outputs": 0,
+  "rationale": "Observed v1 jacket back/detail outputs repeat unintended pale-to-dark lower-clothing changes. Keep jacket extra views disabled. Before v2 execution, declare a fresh eight-output hoodie-detail-only study across four original subjects with unchanged seeds and scoring. Never substitute v1 quality outputs into this fresh gate.",
+  "gate": "Matched detailed-fidelity improvement with no identity/pose/background regression; every output reviewed. Five-input capacity reported separately, including memory or execution failures.",
+  "capacity_study": {
+    "experiment": "multiple_reference_v1",
+    "protocol_sha256": "a4fd6253087d54cf0b5e71ad12fcb33c3431fcec4a4b7d641c90dd1316507144",
+    "sample_id": "capacity_five_inputs"
+  },
+  "samples": [
+    {
+      "id": "hoodie_01",
+      "baseline_case": "hoodie_01",
+      "category": "hoodie",
+      "mode": "multi_reference",
+      "base_prompt": "evaluation/prompts/upper_body_reference_v2.txt",
+      "images": {
+        "person": {
+          "path": "evaluation/assets/upstream/casual_male_portrait.png",
+          "sha256": "f750ded4fa7d359510b86d2973c33091238c01f089f2d67f619838b1051a02d0"
+        },
+        "garment": {
+          "path": "evaluation/assets/commons/hoodie_m7agar.jpg",
+          "sha256": "9caf8b20c8a567c2ee3e7b56b1556942eed6eefa993f65b4d07d2f87bcafd2ad"
+        },
+        "detail": {
+          "path": "evaluation/assets/met/hoodie_detail.png",
+          "sha256": "8909d327f4d62ad94e3a7120993da11adbea193fafb219160c9b64a070c05585"
+        }
+      }
+    },
+    {
+      "id": "hoodie_02",
+      "baseline_case": "hoodie_02",
+      "category": "hoodie",
+      "mode": "multi_reference",
+      "base_prompt": "evaluation/prompts/upper_body_reference_v2.txt",
+      "images": {
+        "person": {
+          "path": "evaluation/assets/upstream/portrait_model_denim.png",
+          "sha256": "d888e9396587a3fd4ad500bbf5988fed0f7ba60ffa71628c29fced78bece3ac6"
+        },
+        "garment": {
+          "path": "evaluation/assets/commons/hoodie_m7agar.jpg",
+          "sha256": "9caf8b20c8a567c2ee3e7b56b1556942eed6eefa993f65b4d07d2f87bcafd2ad"
+        },
+        "detail": {
+          "path": "evaluation/assets/met/hoodie_detail.png",
+          "sha256": "8909d327f4d62ad94e3a7120993da11adbea193fafb219160c9b64a070c05585"
+        }
+      }
+    },
+    {
+      "id": "hoodie_03",
+      "baseline_case": "hoodie_03",
+      "category": "hoodie",
+      "mode": "multi_reference",
+      "base_prompt": "evaluation/prompts/upper_body_reference_v2.txt",
+      "images": {
+        "person": {
+          "path": "evaluation/assets/upstream/urban_man.png",
+          "sha256": "8886ff6ccd369739e227274af8ad42d0f8627129d83c1643c84e3da1348ca986"
+        },
+        "garment": {
+          "path": "evaluation/assets/commons/hoodie_m7agar.jpg",
+          "sha256": "9caf8b20c8a567c2ee3e7b56b1556942eed6eefa993f65b4d07d2f87bcafd2ad"
+        },
+        "detail": {
+          "path": "evaluation/assets/met/hoodie_detail.png",
+          "sha256": "8909d327f4d62ad94e3a7120993da11adbea193fafb219160c9b64a070c05585"
+        }
+      }
+    },
+    {
+      "id": "hoodie_04",
+      "baseline_case": "hoodie_04",
+      "category": "hoodie",
+      "mode": "multi_reference",
+      "base_prompt": "evaluation/prompts/upper_body_reference_v2.txt",
+      "images": {
+        "person": {
+          "path": "evaluation/assets/upstream/coastal_smiling_woman.png",
+          "sha256": "d78bb2fe877531938e596026cb3c577ff7af7188cb911ea2c6f49c1daf62d174"
+        },
+        "garment": {
+          "path": "evaluation/assets/commons/hoodie_m7agar.jpg",
+          "sha256": "9caf8b20c8a567c2ee3e7b56b1556942eed6eefa993f65b4d07d2f87bcafd2ad"
+        },
+        "detail": {
+          "path": "evaluation/assets/met/hoodie_detail.png",
+          "sha256": "8909d327f4d62ad94e3a7120993da11adbea193fafb219160c9b64a070c05585"
+        }
+      }
+    }
+  ]
+}

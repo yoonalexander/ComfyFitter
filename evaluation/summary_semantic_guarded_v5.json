@@ -1,0 +1,84 @@
+{
+  "experiment": "semantic_guarded_v5",
+  "expected": 40,
+  "reviewed": 40,
+  "passing": 36,
+  "categories": {
+    "shirt": 9,
+    "hoodie": 9,
+    "jacket": 9,
+    "coat": 9
+  },
+  "source_experiment": "category_reference_v4",
+  "raw_passing": 36,
+  "fallback_outputs": 31,
+  "raw_protected_pixels_changed": 5997294,
+  "protected_pixels_changed": 0,
+  "exact_source_pixel_protection_verified": true,
+  "decision": "passed",
+  "matched_score_changes": {
+    "identity": {
+      "improved": 0,
+      "unchanged": 40,
+      "regressed": 0,
+      "total": 0
+    },
+    "body_pose": {
+      "improved": 0,
+      "unchanged": 40,
+      "regressed": 0,
+      "total": 0
+    },
+    "garment_transfer": {
+      "improved": 0,
+      "unchanged": 40,
+      "regressed": 0,
+      "total": 0
+    },
+    "background_lighting": {
+      "improved": 0,
+      "unchanged": 40,
+      "regressed": 0,
+      "total": 0
+    },
+    "artifacts": {
+      "improved": 0,
+      "unchanged": 40,
+      "regressed": 0,
+      "total": 0
+    }
+  },
+  "cpu_parser_and_compositing_seconds": {
+    "count": 40,
+    "minimum": 5.354312,
+    "median": 6.3322115,
+    "maximum": 11.46201
+  },
+  "revised_compositing_seconds": {
+    "count": 40,
+    "minimum": 0.262092,
+    "median": 0.501234,
+    "maximum": 0.676773
+  },
+  "cold_parser_load_seconds": {
+    "count": 20,
+    "minimum": 0.164452,
+    "median": 0.179891,
+    "maximum": 0.315291
+  },
+  "cpu_process_peak_mib": 1318.984,
+  "parser_manifest_sha256": "c2ffe502f0674d73bfd1f886146c515f791ace884e2f2068b718ac9b4683cc05",
+  "model_revision": "584abc1e1d260e23c0fc627c5217a09b2b461046",
+  "gpu_regeneration_required": false,
+  "baseline_quality_sha256": "ea548321b1bf30e5173e04007895c3baffdb3d5aeb0741e92247923306961409",
+  "implementation_sha256": "df17d7a7643bcee426e204f2880b7c38f8bc045a00e37acb5780ac5d3a957a5a",
+  "protocol_sha256": "3c62c179eeda3558b79b08ed89d7875316937e54a9397153a59f7c8e47c251b4",
+  "guard_sha256": "803fad8be9ab9d4231ee8f9c383a16bb38da221af74854a366be040e6cf28652",
+  "runtime_parity": {
+    "expected": 40,
+    "exact_outputs": 40,
+    "helper_outputs": 4,
+    "engine_sha256": "d63b04ec5761455411f91d5fc4d9f1905065cbbb46014cbc43aea9716def3f62",
+    "helper_sha256": "668e7e57d22a5cf6d236f82d869720e0b493302971069e23698a0ad111c2ccb6"
+  }
+}

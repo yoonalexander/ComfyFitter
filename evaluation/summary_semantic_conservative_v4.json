@@ -1,0 +1,76 @@
+{
+  "experiment": "semantic_conservative_v4",
+  "expected": 40,
+  "reviewed": 40,
+  "passing": 35,
+  "categories": {
+    "shirt": 9,
+    "hoodie": 9,
+    "jacket": 10,
+    "coat": 7
+  },
+  "source_experiment": "category_reference_v4",
+  "raw_passing": 36,
+  "fallback_outputs": 8,
+  "raw_protected_pixels_changed": 22749865,
+  "protected_pixels_changed": 0,
+  "exact_source_pixel_protection_verified": true,
+  "decision": "rejected",
+  "matched_score_changes": {
+    "identity": {
+      "improved": 0,
+      "unchanged": 40,
+      "regressed": 0,
+      "total": 0
+    },
+    "body_pose": {
+      "improved": 1,
+      "unchanged": 39,
+      "regressed": 0,
+      "total": 1
+    },
+    "garment_transfer": {
+      "improved": 0,
+      "unchanged": 38,
+      "regressed": 2,
+      "total": -2
+    },
+    "background_lighting": {
+      "improved": 0,
+      "unchanged": 40,
+      "regressed": 0,
+      "total": 0
+    },
+    "artifacts": {
+      "improved": 1,
+      "unchanged": 31,
+      "regressed": 8,
+      "total": -7
+    }
+  },
+  "cpu_parser_and_compositing_seconds": {
+    "count": 40,
+    "minimum": 5.354312,
+    "median": 6.3322115,
+    "maximum": 11.46201
+  },
+  "revised_compositing_seconds": {
+    "count": 0,
+    "minimum": null,
+    "median": null,
+    "maximum": null
+  },
+  "cold_parser_load_seconds": {
+    "count": 20,
+    "minimum": 0.164452,
+    "median": 0.179891,
+    "maximum": 0.315291
+  },
+  "cpu_process_peak_mib": 1318.984,
+  "parser_manifest_sha256": "c2ffe502f0674d73bfd1f886146c515f791ace884e2f2068b718ac9b4683cc05",
+  "model_revision": "584abc1e1d260e23c0fc627c5217a09b2b461046",
+  "gpu_regeneration_required": false,
+  "baseline_quality_sha256": "ea548321b1bf30e5173e04007895c3baffdb3d5aeb0741e92247923306961409",
+  "implementation_sha256": "df17d7a7643bcee426e204f2880b7c38f8bc045a00e37acb5780ac5d3a957a5a",
+  "protocol_sha256": "017896075d9a2379a85521e8c975da85d2a142706b8a332610241baf3916e458"
+}

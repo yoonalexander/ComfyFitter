@@ -1,0 +1,179 @@
+{
+  "defined_date": "2026-10-03",
+  "status": "defined_before_execution",
+  "baseline_experiment": "category_reference_v4",
+  "seeds": [
+    2026093001,
+    2026093002
+  ],
+  "graph_sha256": "13fff76af45b4b336476ceac019f6b9c276d45b368e3c43ba490340689a46fd5",
+  "implementation_sha256": "221cff1c5af678bd99b4724cc93a7bb72d58664423163440f5b61b660cdfff50",
+  "scoring": "All declared outputs retained, including failures. Identity/pose 2 required; artifacts/background at least1. Detailed fidelity 0-4 scored separately for visible collar, hem, print/trim and closures; masks and outfit modes do not inherit single-garment validation.",
+  "experiment": "two_garment_v2",
+  "expected": 16,
+  "gate": "At least 7/8 passing per combination, all eight per combination reviewed, independent inner/outer fidelity 2, identity/pose 2, layering/occlusion at least1, background/artifacts at least1. Only evaluated passing combinations offered.",
+  "samples": [
+    {
+      "id": "shirt_jacket_01",
+      "mode": "two_garment",
+      "category": "shirt",
+      "outer_category": "jacket",
+      "images": {
+        "person": {
+          "path": "evaluation/assets/upstream/casual_male_portrait.png",
+          "sha256": "f750ded4fa7d359510b86d2973c33091238c01f089f2d67f619838b1051a02d0"
+        },
+        "garment": {
+          "path": "evaluation/assets/upstream/clothing_light_blue_denim_shirt.png",
+          "sha256": "5f8d348aa0079922743e53ab687ba5661c57696d373a0113cc61dae9a36761a3"
+        },
+        "outer": {
+          "path": "evaluation/assets/commons/tender_denim_jacket.jpg",
+          "sha256": "c8f8d0f361dfe062818ef401db5cd0fbe586bd61d8c62c97c460b26c016e2f36"
+        }
+      }
+    },
+    {
+      "id": "shirt_jacket_02",
+      "mode": "two_garment",
+      "category": "shirt",
+      "outer_category": "jacket",
+      "images": {
+        "person": {
+          "path": "evaluation/assets/upstream/portrait_model_denim.png",
+          "sha256": "d888e9396587a3fd4ad500bbf5988fed0f7ba60ffa71628c29fced78bece3ac6"
+        },
+        "garment": {
+          "path": "evaluation/assets/upstream/clothing_light_blue_denim_shirt.png",
+          "sha256": "5f8d348aa0079922743e53ab687ba5661c57696d373a0113cc61dae9a36761a3"
+        },
+        "outer": {
+          "path": "evaluation/assets/commons/tender_denim_jacket.jpg",
+          "sha256": "c8f8d0f361dfe062818ef401db5cd0fbe586bd61d8c62c97c460b26c016e2f36"
+        }
+      }
+    },
+    {
+      "id": "shirt_jacket_03",
+      "mode": "two_garment",
+      "category": "shirt",
+      "outer_category": "jacket",
+      "images": {
+        "person": {
+          "path": "evaluation/assets/upstream/urban_man.png",
+          "sha256": "8886ff6ccd369739e227274af8ad42d0f8627129d83c1643c84e3da1348ca986"
+        },
+        "garment": {
+          "path": "evaluation/assets/upstream/clothing_light_blue_denim_shirt.png",
+          "sha256": "5f8d348aa0079922743e53ab687ba5661c57696d373a0113cc61dae9a36761a3"
+        },
+        "outer": {
+          "path": "evaluation/assets/commons/tender_denim_jacket.jpg",
+          "sha256": "c8f8d0f361dfe062818ef401db5cd0fbe586bd61d8c62c97c460b26c016e2f36"
+        }
+      }
+    },
+    {
+      "id": "shirt_jacket_05",
+      "mode": "two_garment",
+      "category": "shirt",
+      "outer_category": "jacket",
+      "images": {
+        "person": {
+          "path": "evaluation/assets/commons/plus_size_model.jpg",
+          "sha256": "51a0ddb8e992fb7d005715ae32fa43f3cdbfd3229e67e5f84448ca0ccb8dae35"
+        },
+        "garment": {
+          "path": "evaluation/assets/upstream/clothing_light_blue_denim_shirt.png",
+          "sha256": "5f8d348aa0079922743e53ab687ba5661c57696d373a0113cc61dae9a36761a3"
+        },
+        "outer": {
+          "path": "evaluation/assets/met/jacket_159165.jpg",
+          "sha256": "121f658b5f3ed6c683fa5dee12bb8b23d1190c54852cbfdf28aff53327e8ad63"
+        }
+      }
+    },
+    {
+      "id": "shirt_coat_01",
+      "mode": "two_garment",
+      "category": "shirt",
+      "outer_category": "coat",
+      "images": {
+        "person": {
+          "path": "evaluation/assets/upstream/casual_male_portrait.png",
+          "sha256": "f750ded4fa7d359510b86d2973c33091238c01f089f2d67f619838b1051a02d0"
+        },
+        "garment": {
+          "path": "evaluation/assets/upstream/clothing_light_blue_denim_shirt.png",
+          "sha256": "5f8d348aa0079922743e53ab687ba5661c57696d373a0113cc61dae9a36761a3"
+        },
+        "outer": {
+          "path": "evaluation/assets/commons/ford_trenchcoat.jpg",
+          "sha256": "d92ad38cd74e71bd566e9bf94eb445490b08049469f26d3eb15b14b562f5d26a"
+        }
+      }
+    },
+    {
+      "id": "shirt_coat_02",
+      "mode": "two_garment",
+      "category": "shirt",
+      "outer_category": "coat",
+      "images": {
+        "person": {
+          "path": "evaluation/assets/upstream/portrait_model_denim.png",
+          "sha256": "d888e9396587a3fd4ad500bbf5988fed0f7ba60ffa71628c29fced78bece3ac6"
+        },
+        "garment": {
+          "path": "evaluation/assets/upstream/clothing_light_blue_denim_shirt.png",
+          "sha256": "5f8d348aa0079922743e53ab687ba5661c57696d373a0113cc61dae9a36761a3"
+        },
+        "outer": {
+          "path": "evaluation/assets/commons/ford_trenchcoat.jpg",
+          "sha256": "d92ad38cd74e71bd566e9bf94eb445490b08049469f26d3eb15b14b562f5d26a"
+        }
+      }
+    },
+    {
+      "id": "shirt_coat_03",
+      "mode": "two_garment",
+      "category": "shirt",
+      "outer_category": "coat",
+      "images": {
+        "person": {
+          "path": "evaluation/assets/upstream/urban_man.png",
+          "sha256": "8886ff6ccd369739e227274af8ad42d0f8627129d83c1643c84e3da1348ca986"
+        },
+        "garment": {
+          "path": "evaluation/assets/upstream/clothing_light_blue_denim_shirt.png",
+          "sha256": "5f8d348aa0079922743e53ab687ba5661c57696d373a0113cc61dae9a36761a3"
+        },
+        "outer": {
+          "path": "evaluation/assets/commons/ford_trenchcoat.jpg",
+          "sha256": "d92ad38cd74e71bd566e9bf94eb445490b08049469f26d3eb15b14b562f5d26a"
+        }
+      }
+    },
+    {
+      "id": "shirt_coat_05",
+      "mode": "two_garment",
+      "category": "shirt",
+      "outer_category": "coat",
+      "images": {
+        "person": {
+          "path": "evaluation/assets/commons/plus_size_model.jpg",
+          "sha256": "51a0ddb8e992fb7d005715ae32fa43f3cdbfd3229e67e5f84448ca0ccb8dae35"
+        },
+        "garment": {
+          "path": "evaluation/assets/upstream/clothing_light_blue_denim_shirt.png",
+          "sha256": "5f8d348aa0079922743e53ab687ba5661c57696d373a0113cc61dae9a36761a3"
+        },
+        "outer": {
+          "path": "evaluation/assets/commons/ford_trenchcoat.jpg",
+          "sha256": "d92ad38cd74e71bd566e9bf94eb445490b08049469f26d3eb15b14b562f5d26a"
+        }
+      }
+    }
+  ],
+  "outfit_implementation_sha256": "28501c0284ef5bdb39659cef938167a7172476c0b323596095534a4f54686e2b",
+  "rationale": "Fresh uniform sixteen-output rerun after v1 failed outer stand-collar fidelity and two source pose/lower-clothing cases. Same full matrix, seeds, graph and independent scoring floors. Add explicit reference collar, wrist/object-contact and lower-clothing constraints, without substituting successful old outputs. Original references implementation remains unchanged; refined outfit module is independently hash-bound."
+}

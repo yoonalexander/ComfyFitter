@@ -1,0 +1,28 @@
+{
+  "status": "rejected",
+  "reviewed": 8,
+  "counts": {
+    "shirt+coat": {
+      "expected": 8,
+      "passed": 2
+    }
+  },
+  "combinations": [],
+  "all_combinations_passed": false,
+  "preservation_noninferior": false,
+  "verified_total_inputs": 3,
+  "experiment": "two_garment_v4",
+  "protocol_sha256": "44a450d16f0de2cc6904013a4d87af4a05ee57c086d474522b15e21262146eb7",
+  "execution_seconds": {
+    "count": 7,
+    "minimum": 282.618,
+    "median": 296.744,
+    "maximum": 443.1
+  },
+  "sampled_device_peak_mib": 7748,
+  "vram_sampling_unavailable_outputs": 1,
+  "measurement_note": "Reported device peak is from available sampled records. Recovered successes retain exact native execution time; verified worker interruptions remain failures with no invented output or timing. These records lack complete VRAM or wall-time measurements. No resubmission.",
+  "outfit_implementation_sha256": "28501c0284ef5bdb39659cef938167a7172476c0b323596095534a4f54686e2b",
+  "coat_refinement_sha256": "5d2e4536fde9ea575dce6bf6c1ff9e0ea55bb3183ee8ef09a3fe1c25d826c0ff",
+  "bag_refinement_sha256": "93b815f7cae5bce14de48435925a34263b72c8606bced311c0007473ef8d4503"
+}

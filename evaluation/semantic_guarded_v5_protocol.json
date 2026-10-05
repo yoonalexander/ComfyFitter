@@ -1,0 +1,21 @@
+{
+  "experiment": "semantic_guarded_v5",
+  "defined_date": "2026-10-03",
+  "status": "defined_before_execution",
+  "baseline_experiment": "category_reference_v4",
+  "mask_policy": "occlusion_v3",
+  "implementation_sha256": "df17d7a7643bcee426e204f2880b7c38f8bc045a00e37acb5780ac5d3a957a5a",
+  "baseline_protocol_sha256": "b9a94ef6beecd75a206efabb86cd5a4b84ec489e9135901a9aa7a93058d13b99",
+  "cases_sha256": "455e6af7fee339dae5809beb9944df75a81a2cef3a3afa84992a15d602be1793",
+  "parser_manifest_sha256": "c2ffe502f0674d73bfd1f886146c515f791ace884e2f2068b718ac9b4683cc05",
+  "expected": 40,
+  "seeds": [
+    2026093001,
+    2026093002
+  ],
+  "rationale": "Full earlier studies exposed thin neck boundaries in source-protected outputs. Before any guarded outputs are generated, declare a conservative discontinuity fallback: if over15 percent of protected face/hair/arm boundary pixels differ by over30 mean RGB levels, retain the raw preview. Applies uniformly to all40 fixed outputs; no category/case/seed selection. Cached parser outputs reuse the complete preceding CPU study; parse timing is retained separately.",
+  "gate": "All40 matched fixed outputs reviewed. Fewer changed protected-region pixels; no identity/body/background, garment or artifact score regressions; at least32/40 and8/10 each category. Keep raw fallback; no performance claim from cached parsing.",
+  "cached_source_experiment": "semantic_conservative_v4",
+  "guard_sha256": "803fad8be9ab9d4231ee8f9c383a16bb38da221af74854a366be040e6cf28652",
+  "cached_source_protocol_sha256": "017896075d9a2379a85521e8c975da85d2a142706b8a332610241baf3916e458"
+}

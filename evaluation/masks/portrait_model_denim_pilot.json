@@ -1,0 +1,73 @@
+{
+  "editable_polygons": [
+    [
+      [
+        0.02,
+        0.66
+      ],
+      [
+        0.26,
+        0.47
+      ],
+      [
+        0.48,
+        0.35
+      ],
+      [
+        0.61,
+        0.31
+      ],
+      [
+        0.78,
+        0.4
+      ],
+      [
+        0.99,
+        0.54
+      ],
+      [
+        0.99,
+        1
+      ],
+      [
+        0.02,
+        1
+      ]
+    ]
+  ],
+  "protected_polygons": [
+    [
+      [
+        0,
+        0
+      ],
+      [
+        0.69,
+        0
+      ],
+      [
+        0.66,
+        0.28
+      ],
+      [
+        0.58,
+        0.38
+      ],
+      [
+        0.43,
+        0.43
+      ],
+      [
+        0.2,
+        0.48
+      ],
+      [
+        0,
+        0.43
+      ]
+    ]
+  ],
+  "person_sha256": "d888e9396587a3fd4ad500bbf5988fed0f7ba60ffa71628c29fced78bece3ac6",
+  "feather_pixels": 8,
+  "annotation": "Codex manual polygon pilot; requires visual boundary review; not automatic segmentation"
+}

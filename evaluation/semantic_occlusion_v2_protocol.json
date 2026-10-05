@@ -1,0 +1,11 @@
+{
+  "defined_date": "2026-10-03",
+  "source_experiment": "reference_v2",
+  "cached_parser_experiment": "semantic_full_v3",
+  "outputs": 40,
+  "policy": "occlusion_v2",
+  "growth": 5,
+  "feather": 4,
+  "ambiguous_hair_overlap_limit": 0.25,
+  "rule": "Include generated dress class for coats; permit new sleeves to cover old exposed arms; preserve source hair/face; fallback on ambiguous parser regions. Compare every case and seed without excluding failures."
+}
