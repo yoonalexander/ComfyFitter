@@ -3,13 +3,15 @@
 **Status:** Draft v0.1  
 **Primary inference backend:** ComfyUI  
 **Primary model:** Qwen Image 2.1 Image Edit, GGUF  
-**Initial target:** Local desktop development, expandable to hosted GPU inference later
+**Initial target:** Local web application using the existing ComfyUI installation, expandable to hosted GPU inference later
+
+The [implementation roadmap](docs/ROADMAP.md) governs current scope, architecture decisions, milestone order, and completion gates. This document supplies design background; future feature examples do not expand the current milestone.
 
 ## 1. Project Summary
 
 The project is an AI-powered virtual clothing try-on application. A user uploads a photo of themselves and one or more reference images of a garment. The application uses Qwen Image 2.1 Image Edit through ComfyUI to generate a new image in which the user is wearing the referenced garment while preserving their identity, pose, body proportions, lighting, and background as closely as possible.
 
-The current proof of concept is already functional in ComfyUI. The Qwen Image 2.1 Image Edit template has successfully used a reference image to modify the color of a coat in a user photo.
+The local inference baseline has been captured and reproduced. The original coat-color result used one image and an int8 model; it did not demonstrate garment-reference transfer. The later saved graph selects GGUF, which is now undergoing the fixed Phase 1 two-image evaluation. See [SETUP.md](docs/SETUP.md) and [the protocol](evaluation/PROTOCOL.md).
 
 The first production goal is not precise physical sizing simulation. The goal is visual outfit preview: helping a user understand how the color, style, silhouette, and overall appearance of clothing may look on them.
 
@@ -79,14 +81,14 @@ The generated image should be treated as a visual approximation.
 
 ## 4. Existing Technical Foundation
 
-The development environment already contains:
+The verified local development environment contains:
 
 - ComfyUI
 - a GGUF version of Qwen Image 2.1
 - the ComfyUI Qwen Image 2.1 Image Edit template
 - a working local inference setup
 
-The existing workflow has already demonstrated reference-based image editing by changing the color of a coat using a supplied image.
+The original saved output demonstrates a single-image int8 coat recolor. The saved editable graph selects GGUF. Both recolor baselines executed successfully in the isolated local server; the complete garment-transfer evaluation is separate.
 
 This existing workflow should be preserved as the baseline before introducing more complex masking, preprocessing, or postprocessing.
 
@@ -110,7 +112,7 @@ The first image is the image being edited. Additional images are references.
 
 ### 5.1 Initial Image Assignment
 
-For the MVP:
+For single-garment mode, including later multi-reference support (the MVP uses only the first two inputs):
 
 | Image | Purpose |
 |---|---|
@@ -190,7 +192,7 @@ Preview result
 
 The first version should focus on upper-body clothing because it is easier to constrain and evaluate.
 
-Recommended MVP categories:
+Candidate MVP categories, enabled only after passing the roadmap's evaluation gate:
 
 - T-shirt
 - Shirt
@@ -258,7 +260,7 @@ Later versions can add:
 
 A suitable stack would be:
 
-- React or Next.js
+- React with Vite for the local web MVP
 - TypeScript
 - Tailwind CSS
 - browser image upload and preview
@@ -271,7 +273,8 @@ A suitable stack would be:
 - FastAPI
 - Python
 - Pydantic request models
-- Pillow or OpenCV for deterministic image preprocessing where required
+- Pillow for deterministic image validation and preprocessing
+- SQLite for durable local job records
 - WebSocket or polling integration with ComfyUI
 
 FastAPI is a natural choice because ComfyUI orchestration and image preprocessing can remain in Python.
@@ -695,9 +698,11 @@ For each generation:
 - store the seed alongside the result
 - allow "Try Again"
 - optionally allow "Create Variations"
-- allow reproducing a result using the same workflow version, prompt, settings, and seed
+- allow rerunning a result while the same input assets, workflow, prompt, models, and settings remain available; identical pixels across runtime changes are not guaranteed
 
 Stored generation metadata should include:
+
+The example below is illustrative. Use the complete [generation manifest](docs/ROADMAP.md#generation-manifest) when implementing job storage.
 
 ```json
 {
@@ -1013,140 +1018,11 @@ This makes it possible to answer whether a more complex workflow is actually wor
 
 ## 26. Development Phases
 
-### Phase 0: Existing Proof of Concept
+Use the [implementation roadmap](docs/ROADMAP.md) as the source of truth for phase scope and completion criteria. It preserves the sequence from inference validation through backend integration and a local browser MVP, then separates product extensions from optional desktop packaging and hosting.
 
-Already achieved:
+Phase 0 captures and reproduces the reported working setup. Phase 1 establishes measurable garment-transfer and preservation quality. Phase 2 delivers reliable backend jobs. Phase 3 completes the MVP with one garment reference. Multiple references, segmentation, full outfits, and saved looks are later features.
 
-- ComfyUI installed
-- Qwen Image 2.1 GGUF installed
-- official Image Edit template working
-- reference-based coat color editing validated
-
-### Phase 1: Manual ComfyFitter
-
-Goal:
-
-Prove garment replacement works reliably in ComfyUI before building the application.
-
-Tasks:
-
-- test shirts
-- test hoodies
-- test jackets
-- test coats
-- test single garment reference
-- test multiple garment references
-- develop initial prompt template
-- determine baseline generation settings
-- collect failures
-
-Success criterion:
-
-A useful percentage of controlled test images produce recognizable garment transfer while keeping the person visually consistent.
-
-### Phase 2: ComfyUI API Integration
-
-Goal:
-
-Run the same workflow without manually using the ComfyUI interface.
-
-Tasks:
-
-- export API workflow
-- identify dynamic input nodes
-- upload user image
-- upload garment images
-- inject prompt
-- submit workflow
-- track job
-- retrieve output
-- save generation metadata
-
-### Phase 3: Local Web Application
-
-Goal:
-
-Provide a usable interface around local ComfyUI.
-
-Features:
-
-- person image upload
-- garment image upload
-- garment category
-- generate button
-- generation status
-- result preview
-- before / after view
-- retry
-- local history
-
-### Phase 4: Multi-Reference Try-On
-
-Goal:
-
-Improve garment accuracy.
-
-Features:
-
-- multiple garment images
-- image role selector:
-  - front
-  - back
-  - side
-  - detail
-- dynamic prompt generation
-- multi-reference benchmarking
-
-### Phase 5: Automatic Segmentation
-
-Goal:
-
-Reduce unintended edits.
-
-Features:
-
-- detect person
-- segment clothing/body regions
-- generate category-aware mask
-- preserve non-target regions
-- benchmark identity preservation before and after masking
-
-### Phase 6: Full Outfit Support
-
-Goal:
-
-Combine independent garment references.
-
-Possible mapping:
-
-```text
-<image1> user
-<image2> shirt
-<image3> pants
-<image4> jacket
-<image5> shoes
-```
-
-This phase should only begin once single-garment transfer is reliable.
-
-### Phase 7: Hosted Service
-
-Goal:
-
-Run the application without requiring users to install ComfyUI.
-
-Requirements:
-
-- GPU server
-- private ComfyUI service
-- job queue
-- authentication
-- storage lifecycle
-- rate limiting
-- privacy policy
-- abuse prevention
-- observability
-- cost controls
+The inference baseline is captured and Phase 1 evaluation is in progress. The coat-color experiment is not proof of full garment-transfer quality; the locked 40-output evaluation governs category readiness.
 
 ---
 
@@ -1377,23 +1253,15 @@ The MVP is complete when a user can:
 8. Compare it to the original.
 9. Retry with a new seed.
 
-The MVP does not require masking, accounts, cloud inference, multiple garments, or exact sizing.
+The MVP does not require masking, accounts, cloud inference, multiple references, multiple garments, persistent look history, a desktop installer, or exact sizing. It runs as a local web application and ends at Phase 3 of the roadmap.
 
 ---
 
 ## 33. Immediate Next Steps
 
-1. Duplicate the existing working Qwen Image 2.1 Image Edit workflow.
-2. Save it specifically as the project's baseline try-on workflow.
-3. Test complete garment replacement rather than only color replacement.
-4. Test one reference image versus two, three, and four reference images.
-5. Create a standard upper-body prompt.
-6. Build a small evaluation set.
-7. Record successful and unsuccessful generations.
-8. Export the stable workflow in API format.
-9. Build the backend ComfyUI client.
-10. Create the minimal upload and result UI.
-11. Add segmentation only after the baseline workflow has measurable limitations.
+Complete [Phase 0 of the roadmap](docs/ROADMAP.md#phase-0-capture-the-inference-baseline): duplicate the actual working graph, export it in editable and API formats, record the exact models and runtime dependencies, and reproduce the reported experiment.
+
+Then proceed to Phase 1 garment-transfer evaluation. Backend integration and UI implementation follow the quality gate; multi-reference support and segmentation follow measured needs.
 
 ---
 
